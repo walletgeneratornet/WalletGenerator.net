@@ -151,6 +151,7 @@ h1 { margin: 0px; height: 91px; }
 #coinLogoImg { width: 100%; height: 100%; }
 
 .coinIcoin { width: 64px; height: 64px; padding: 10px; position: absolute; top: 272px; left: 48px; }
+.cardCoinIcoin { width: 64px; height: 64px; padding: 10px; position: absolute; top: 0px; right: 0px; }
 #coinImg { width: 100%; height: 100%; }
 
 #main { position: relative; text-align: center; margin: 0px auto; width: 1005px; }
@@ -203,6 +204,20 @@ h1 { margin: 0px; height: 91px; }
 }
 #suppliedPrivateKey { width: 420px; }
 #papergenerate { margin-left: 10px; margin-right: 0px;}
+
+#cardarea .artcard { position: relative; width: 334px; height: 213px; display: inline-block; }
+
+#cardarea .artcard .cardsvg { width: 334px; height: 213px; }
+
+#cardarea .artcard .card_qrcode_public { top: 0px; left: 0px; z-index: 100; margin: 0; float: none; display: block; position: absolute; background-color: #FFFFFF;
+		                                padding: 5px 5px 2px 5px; }
+
+#cardarea .artcard .card_btcaddress
+{
+	position: absolute; bottom: 45px; left: 145px; z-index: 100; font-size: 14px; background-color: transparent;
+	font-weight: 100; color: #000000; margin: 0; width: 150px; height: 32px; text-align: center;
+    word-wrap: break-word; font-family: Courier, monospace;
+}
 
 .displayNone { displa: none; }
 .redColor { color: red; }
