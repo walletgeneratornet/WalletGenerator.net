@@ -350,9 +350,12 @@ Walletgenerator.net use the same security measures as the original project. All-
 			<div id="cardarea" class="walletarea">
 				<div class="commands">
 					<div id="papercommands" class="row">
-					  <input placeholder="Enter your public address" id="suppliedPublicAddress" name="suppliedPublicAddress" spellcheck="false" />&nbsp;
+						<span><label id="cardFillInfo" for="suppliedPublicAddress" class="i18n">Enter your public address:</label>
+					    <input placeholder="Public address" id="suppliedPublicAddress" name="suppliedPublicAddress" spellcheck="false" />&nbsp;
+					    <label id="cardCustomText" for="suppliedCustomText" class="i18n">Insert text you want to see on cards:</label>
 						<input placeholder="Custom text" id="suppliedCustomText" name="suppliedCustomText" spellcheck="false" />&nbsp;
 						<input type="button" id="cardgenerate" value="Apply &raquo;" onClick="ninja.wallets.cardwallet.generate();" />
+						</span>
 						
 						<span class="print"><input type="button" name="print" value="Print" id="cardprint" onclick="window.print();" /></span>
 					</div>
