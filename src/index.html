@@ -339,7 +339,6 @@ Walletgenerator.net use the same security measures as the original project. All-
             <span>OR</span>
             <input placeholder="Enter your own WIF private key" id="suppliedPrivateKey" name="suppliedPrivateKey" spellcheck="false" />&nbsp;
             <input type="button" id="papergenerate" value="Apply &raquo;" onClick="ninja.wallets.paperwallet.testAndApplyVanityKey();" />
-
             <span class="print"><input type="button" name="print" value="Print" id="paperprint" onclick="window.print();" /></span>
           </div>
 
@@ -356,8 +355,9 @@ Walletgenerator.net use the same security measures as the original project. All-
               <option value='bitcoin'>BTC</option>
             </select>
             <br/>
-            <input type="button" onClick="ninja.wallets.manualwallet.batch();">TEST</input>
+
             <input type="button" id="manualgenerate" value="Generate" onClick="ninja.wallets.manualwallet.genwal(1,document.getElementById('suppliedPublicKey').value, document.getElementById('suppliedPrivateKeyM').value, document.getElementById('manualCurrency').value);" />
+            <a>Donate: t1Rz6VVrDJNhgJfnwucHna28Qq25nWc3E3g</a>
             <span class="print"><input type="button" name="print" value="Print" id="manualprint" onclick="window.print();" /></span>
           </div>
         </div>
