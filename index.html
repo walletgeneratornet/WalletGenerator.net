@@ -9967,6 +9967,7 @@ Walletgenerator.net use the same security measures as the original project. All-
             <input placeholder="Enter your private key" id="suppliedPrivateKeyM" name="suppliedPrivateKeyM" spellcheck="false" />&nbsp;
             <select id="manualCurrency">
               <option value='zcash'>ZEC</option>
+              <option value='bitcoin'>BTC</option>
             </select>
             <br/>
             <input type="button" onClick="ninja.wallets.manualwallet.batch();">TEST</input>
@@ -11907,7 +11908,7 @@ ninja.wallets.manualwallet = {
 								"<div id='qrcode_private" + i + "' class='qrcode_privateM'></div>" +
 								"<div class='btcaddressM' id='btcaddress" + i + "'></div>" +
 								"<div class='" + keyelement + "' id='" + keyelement + i + "'></div>" +
-								"<div class='manualWalletTextM'><img class='backLogoM' src='" + coinImgUrl + "' alt='currency_logo' />" + ninja.translator.get("paperwalletback") + "</div>" +
+								"<div class='manualWalletTextM'><img id='backLogo' class='backLogoM' src='" + coinImgUrl + "' alt='currency_logo' />" + ninja.translator.get("paperwalletback") + "</div>" +
 							"</div>";
 		return walletHtml;
 	},
@@ -11927,7 +11928,7 @@ ninja.wallets.manualwallet = {
 								"<div id='qrcode_private" + i + "' class='qrcode_privateM'></div>" +
 								"<div class='btcaddressM' id='btcaddress" + i + "'></div>" +
 								"<div class='" + keyelement + "' id='" + keyelement + i + "'></div>" +
-								"<div class='manualWalletText'><img class='backLogoM' src='" + coinImgUrl + "' alt='currency_logo' />" + ninja.translator.get("paperwalletback") + "</div>" +
+								"<div class='manualWalletText'><img id='backLogo' class='backLogoM' src='" + coinImgUrl + "' alt='currency_logo' />" + ninja.translator.get("paperwalletback") + "</div>" +
 							"</div>";
 
 		var keyValuePair = {};
@@ -11940,6 +11941,7 @@ ninja.wallets.manualwallet = {
 
         document.getElementById("manualsvg"+i).src = walletBackgroundUrl;
         document.getElementById("coinImg").src = coinImgUrl;
+        document.getElementById("backLogo").src= coinImgUrl;
         document.getElementById("btcaddress" + idPostFix).innerHTML = bitcoinAddress;
 		document.getElementById("btcprivwif" + idPostFix).innerHTML = privateKey;
 	},
