@@ -212,6 +212,75 @@ h1 { margin: 0px; height: 91px; }
 .paperWalletText li { line-height: 13px; margin-bottom: 5px; }
 
 .qrzone { margin: 20px 0px 20px 20px; }
+
+#coinLogoM { width: 55px; height: 55px; padding: 10px; position: absolute; top: 2px; left: 10px; }
+#coinLogoImgM { width: 100%; height: 100%; }
+
+.coinIcoinM { width: 64px; height: 64px; padding: 10px; position: absolute; top: 272px; left: 48px; }
+#coinImgM { width: 100%; height: 100%; }
+
+#main { position: relative; text-align: center; margin: 0px auto; width: 1005px; }
+#logo { width: 578px; height: 80px; }
+
+.backLogoM { float: right; width: 50px; height: 50px; }
+
+#manualarea { min-height: 120px; display: none; }
+#manualarea .manualkeyarea { border: 1px solid #BFBFBF; border-top: 0; }
+#manualarea .manualkeyarea.art { display: block; height: auto; border: 0; font-family: Ubuntu, Arial; padding: 0; margin: 0; }
+#manualarea .artwallet .manualsvgM { width: 1004px; height: 426px; border: 0; margin: 0; padding: 0; left: 0; }
+#manualarea .artwallet .qrcode_publicM { top: 263px; left: 780px; z-index: 100; margin: 0; float: none; display: block; position: absolute; background-color: #FFFFFF;
+                                    padding: 5px 5px 2px 5px; }
+#manualarea .artwallet .qrcode_privateM { top: 37px; right: 446px; z-index: 100; margin: 0; float: none; display: block; position: absolute; background-color: #FFFFFF;
+                                    padding: 5px 5px 2px 5px;
+                                    -ms-transform: rotate(180deg); /* IE 9 */
+                    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+                    transform: rotate(180deg);
+                                     }
+.supportWalletGenerator { margin: 30px; }
+.errorMsg { color: red; text-align: center !important; width: 100% !important; padding-top: 15px !important; }
+#manualarea .artwallet .btcaddressM
+{
+  position: absolute; bottom: 88px; left: 874px; z-index: 100; font-size: 11px; background-color: transparent;
+  font-weight: 100; color: #000000; margin: 0; width: 124px; height: 32px; text-align: center;
+    word-wrap: break-word; font-family: Courier, monospace;
+    -ms-transform: rotate(-90deg); /* IE 9 */
+  -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+  transform: rotate(-90deg); font-family: Courier, monospace;
+}
+#manualarea .artwallet .btcprivwif
+{
+  position: absolute; top: 86px; right: 540px; z-index: 100; font-size: 11px; background-color: transparent;
+  font-weight: 100; color: #000000; margin: 0; width: 124px; height: 32px; text-align: center;
+    word-wrap: break-word;
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+    font-family: Courier, monospace;
+}
+#manualarea .artwallet .btcencryptedkey
+{
+  position: absolute; top: 86px; right: 540px; z-index: 100; font-size: 11px; background-color: transparent;
+  font-weight:100; color: #000000; margin: 0; width: 110px; height: 32px; text-align: center;
+  word-wrap: break-word;
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+  font-family: Courier, monospace;
+}
+#suppliedPrivateKey { width: 420px; }
+#manualgenerate { margin-left: 10px; margin-right: 0px;}
+
+.displayNone { displa: none; }
+.redColor { color: red; }
+.1percentwidth { width: 1%; }
+.100pxwidth { width: 100px; }
+
+.manualWalletText { bottom: 8px; height: 156px; left: 339px; padding: 15px 15px 17px 37px; position: absolute; width: 265px; font-size: 10px; color: #383838; line-height: 15px; }
+.manualWalletText ul { margin: 0px; padding: 0px; }
+.manualWalletText li { line-height: 13px; margin-bottom: 5px; }
+
+.qrzone { margin: 20px 0px 20px 20px; }
+
 #detaillabelenterprivatekey { margin-right: 15px; }
 
 .qrcodeinputwrapper { position: relative; margin-right: 15px; }

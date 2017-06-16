@@ -32,6 +32,7 @@ module.exports = function (grunt) {
 					{ token: "//ninja.translator.js", file: "./src/ninja.translator.js" },
 					{ token: "//ninja.singlewallet.js", file: "./src/ninja.singlewallet.js" },
 					{ token: "//ninja.paperwallet.js", file: "./src/ninja.paperwallet.js" },
+					{ token: "//ninja.manualwallet.js", file: "./src/ninja.manualwallet.js" },
 					{ token: "//ninja.bulkwallet.js", file: "./src/ninja.bulkwallet.js" },
 					{ token: "//ninja.brainwallet.js", file: "./src/ninja.brainwallet.js" },
 					{ token: "//ninja.detailwallet.js", file: "./src/ninja.detailwallet.js" },
@@ -53,7 +54,7 @@ module.exports = function (grunt) {
                 ]
             }
         }
-        
+
 	});
 
 	grunt.file.defaultEncoding = 'utf-8';

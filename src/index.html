@@ -146,6 +146,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     <div class="menu" id="menu">
       <div class="tab i18n selected" id="singlewallet" onclick="ninja.tabSwitch(this);">Single Wallet</div>
       <div class="tab i18n" id="paperwallet" onclick="ninja.tabSwitch(this);">Paper Wallet</div>
+      <div class="tab i18n" id="manualwallet" onclick="ninja.tabSwitch(this);">Manual Wallet</div>
       <div class="tab i18n" id="bulkwallet" onclick="ninja.tabSwitch(this);">Bulk Wallet</div>
       <div class="tab i18n" id="brainwallet" onclick="ninja.tabSwitch(this);">Brain Wallet</div>
       <div class="tab i18n" id="detailwallet" onclick="ninja.tabSwitch(this);">Wallet Details</div>
@@ -344,6 +345,25 @@ Walletgenerator.net use the same security measures as the original project. All-
 
         </div>
         <div id="paperkeyarea"></div>
+      </div>
+      <div id="manualarea">
+        <div class="commands">
+          <div id="manualcommands" class="row">
+
+            <span>  <input placeholder="Public key" id="suppliedPublicKey" name="suppliedPublicKey" spellcheck="false" /></span>
+            <input placeholder="Enter your private key" id="suppliedPrivateKeyM" name="suppliedPrivateKeyM" spellcheck="false" />&nbsp;
+            <select id="manualCurrency">
+              <option value='zcash'>ZEC</option>
+            </select>
+            <br/>
+            <input type="button" onClick="ninja.wallets.manualwallet.templateArtisticHtml(1,document.getElementById('manualCurrency').value);">TEST</input>
+            <input type="button" id="manualgenerate" value="Generate" onClick="ninja.wallets.manualwallet.showArtisticWallet(1,document.getElementById('suppliedPublicKey').value, document.getElementById('suppliedPrivateKeyM').value, document.getElementById('manualCurrency').value);" />
+
+            <span class="print"><input type="button" name="print" value="Print" id="manualprint" onclick="window.print();" /></span>
+          </div>
+
+        </div>
+        <div id="manualkeyarea"></div>
       </div>
 
       <div id="bulkarea" class="walletarea">
@@ -738,6 +758,9 @@ Walletgenerator.net use the same security measures as the original project. All-
   </script>
   <script type="text/javascript">
 //ninja.paperwallet.js
+  </script>
+  <script type="text/javascript">
+//ninja.manualwallet.js
   </script>
   <script type="text/javascript">
 //ninja.bulkwallet.js
