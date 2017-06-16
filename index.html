@@ -9317,6 +9317,14 @@ hr { margin: 20px 0; border-top: 1px dashed #008000; }
 .keyarea .output { display: block; font-family: monospace; font-size: 1.25em; }
 .keyarea .qrcode_public { display: inline-block; float: left; }
 .keyarea .qrcode_private { display: inline-block; position: relative; top: 28px; float: right; }
+.manualkeyarea { height: 110px; text-align: left; position: relative; padding: 25px 25px 10px; }
+.manualkeyarea .public { float: left; }
+.manualkeyarea .pubaddress { display: inline-block; height: 40px; padding: 0 0 0 10px; float: left; }
+.manualkeyarea .privwif { margin: 0;  float: right; text-align: right; padding: 0 20px 0 0; position: relative; }
+.manualkeyarea .label { font-weight: bold; }
+.manualkeyarea .output { display: block; font-family: monospace; font-size: 1.25em; }
+.manualkeyarea .qrcode_publicM { display: inline-block; float: left; }
+.manualkeyarea .qrcode_privateM { display: inline-block; position: relative; top: 28px; float: right; }
 .pubkeyhex { word-wrap: break-word; }
 html { height: 100%; }
 body { font-family: Arial; background-image: url('images/diamonds.png'); height: 100%; }
@@ -9532,18 +9540,18 @@ h1 { margin: 0px; height: 91px; }
 #manualarea { min-height: 120px; display: none; }
 #manualarea .manualkeyarea { border: 1px solid #BFBFBF; border-top: 0; }
 #manualarea .manualkeyarea.art { display: block; height: auto; border: 0; font-family: Ubuntu, Arial; padding: 0; margin: 0; }
-#manualarea .artwallet .manualsvgM { width: 1004px; height: 426px; border: 0; margin: 0; padding: 0; left: 0; }
-#manualarea .artwallet .qrcode_publicM { top: 263px; left: 780px; z-index: 100; margin: 0; float: none; display: block; position: absolute; background-color: #FFFFFF;
+#manualarea .artwalletm .manualsvg { width: 1004px; height: 426px; border: 0; margin: 0; padding: 0; left: 0; }
+#manualarea .artwalletm .qrcode_publicM { top: 263px; left: 780px; z-index: 100; margin: 0; float: none; display: block; position: absolute; background-color: #FFFFFF;
                                     padding: 5px 5px 2px 5px; }
-#manualarea .artwallet .qrcode_privateM { top: 37px; right: 446px; z-index: 100; margin: 0; float: none; display: block; position: absolute; background-color: #FFFFFF;
+#manualarea .artwalletm .qrcode_privateM { top: 37px; right: 446px; z-index: 100; margin: 0; float: none; display: block; position: absolute; background-color: #FFFFFF;
                                     padding: 5px 5px 2px 5px;
                                     -ms-transform: rotate(180deg); /* IE 9 */
                     -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
                     transform: rotate(180deg);
                                      }
-.supportWalletGenerator { margin: 30px; }
+.supportWalletGeneratorm { margin: 30px; }
 .errorMsg { color: red; text-align: center !important; width: 100% !important; padding-top: 15px !important; }
-#manualarea .artwallet .btcaddressM
+#manualarea .artwalletm .btcaddressM
 {
   position: absolute; bottom: 88px; left: 874px; z-index: 100; font-size: 11px; background-color: transparent;
   font-weight: 100; color: #000000; margin: 0; width: 124px; height: 32px; text-align: center;
@@ -9552,7 +9560,7 @@ h1 { margin: 0px; height: 91px; }
   -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
   transform: rotate(-90deg); font-family: Courier, monospace;
 }
-#manualarea .artwallet .btcprivwif
+#manualarea .artwalletm .btcprivwif
 {
   position: absolute; top: 86px; right: 540px; z-index: 100; font-size: 11px; background-color: transparent;
   font-weight: 100; color: #000000; margin: 0; width: 124px; height: 32px; text-align: center;
@@ -9562,7 +9570,7 @@ h1 { margin: 0px; height: 91px; }
   transform: rotate(90deg);
     font-family: Courier, monospace;
 }
-#manualarea .artwallet .btcencryptedkey
+#manualarea .artwalletm .btcencryptedkey
 {
   position: absolute; top: 86px; right: 540px; z-index: 100; font-size: 11px; background-color: transparent;
   font-weight:100; color: #000000; margin: 0; width: 110px; height: 32px; text-align: center;
@@ -9575,14 +9583,14 @@ h1 { margin: 0px; height: 91px; }
 #suppliedPrivateKey { width: 420px; }
 #manualgenerate { margin-left: 10px; margin-right: 0px;}
 
-.displayNone { displa: none; }
+.displayNone { display: none; }
 .redColor { color: red; }
 .1percentwidth { width: 1%; }
 .100pxwidth { width: 100px; }
 
-.manualWalletText { bottom: 8px; height: 156px; left: 339px; padding: 15px 15px 17px 37px; position: absolute; width: 265px; font-size: 10px; color: #383838; line-height: 15px; }
-.manualWalletText ul { margin: 0px; padding: 0px; }
-.manualWalletText li { line-height: 13px; margin-bottom: 5px; }
+.manualWalletTextM { bottom: 8px; height: 156px; left: 339px; padding: 15px 15px 17px 37px; position: absolute; width: 265px; font-size: 10px; color: #383838; line-height: 15px; }
+.manualWalletTextM ul { margin: 0px; padding: 0px; }
+.manualWalletTextM li { line-height: 13px; margin-bottom: 5px; }
 
 .qrzone { margin: 20px 0px 20px 20px; }
 
@@ -9700,6 +9708,8 @@ h1 { margin: 0px; height: 91px; }
   #singlesafety { border: 0; }
   #paperarea .keyarea:first-child { border-top: 1px solid #BFBFBF; }
   #paperarea .keyarea.art:first-child { border: 0; }
+  #manualarea .keyarea:first-child { border-top: 1px solid #BFBFBF; }
+  #manualarea .manualkeyarea.art:first-child { border: 0; }
   .pagebreak { height: 1px; }
   .paper #logo { display: none; }
   .menu, .footer, .commands, #tagline, #faqs, #culturemenu { display: none; }
@@ -9713,7 +9723,9 @@ h1 { margin: 0px; height: 91px; }
   .banner { display: none; }
   #currency { display: none; }
   #paperarea .artwallet .btcaddress, #paperarea .artwallet .btcprivwif { z-index: 999; }
+  #manualarea .artwalletm .btcaddress, #manualarea .artwalletm .btcprivwif { z-index: 999; }
   .paperWalletText { z-index: 999;}
+  .paperWalletTextM { z-index: 999;}
     .dogeTag { display: none; }
 }
 
@@ -9951,23 +9963,19 @@ Walletgenerator.net use the same security measures as the original project. All-
       <div id="manualarea">
         <div class="commands">
           <div id="manualcommands" class="row">
-
             <span>  <input placeholder="Public key" id="suppliedPublicKey" name="suppliedPublicKey" spellcheck="false" /></span>
             <input placeholder="Enter your private key" id="suppliedPrivateKeyM" name="suppliedPrivateKeyM" spellcheck="false" />&nbsp;
             <select id="manualCurrency">
               <option value='zcash'>ZEC</option>
             </select>
             <br/>
-            <input type="button" onClick="ninja.wallets.manualwallet.templateArtisticHtml(1,document.getElementById('manualCurrency').value);">TEST</input>
-            <input type="button" id="manualgenerate" value="Generate" onClick="ninja.wallets.manualwallet.showArtisticWallet(1,document.getElementById('suppliedPublicKey').value, document.getElementById('suppliedPrivateKeyM').value, document.getElementById('manualCurrency').value);" />
-
+            <input type="button" onClick="ninja.wallets.manualwallet.batch();">TEST</input>
+            <input type="button" id="manualgenerate" value="Generate" onClick="ninja.wallets.manualwallet.genwal(1,document.getElementById('suppliedPublicKey').value, document.getElementById('suppliedPrivateKeyM').value, document.getElementById('manualCurrency').value);" />
             <span class="print"><input type="button" name="print" value="Print" id="manualprint" onclick="window.print();" /></span>
           </div>
-
         </div>
         <div id="manualkeyarea"></div>
       </div>
-
       <div id="bulkarea" class="walletarea">
         <div class="commands">
           <div id="bulkcommands" class="row">
@@ -11819,8 +11827,7 @@ ninja.wallets.manualwallet = {
 		var pageBreakAt = ninja.wallets.manualwallet.pageBreakAtArtisticDefault;
 
 		if (document.getElementById("manualkeyarea").innerHTML == "") {
-			ninja.wallets.manualwallet.encrypt = false;
-			ninja.wallets.manualwallet.build(document.getElementById('manualCurrency').value);
+			ninja.wallets.manualwallet.build();
 		}
 	},
 
@@ -11835,7 +11842,7 @@ ninja.wallets.manualwallet = {
 	pageBreakAtArtisticDefault: 1,
 	pageBreakAt: null,
 
-	build: function (currency) {
+	build: function () {
 		var numWallets = 1;
 		var pageBreakAt = 1;
 		ninja.wallets.manualwallet.remaining = numWallets;
@@ -11844,7 +11851,7 @@ ninja.wallets.manualwallet = {
 
 		document.getElementById("manualkeyarea").innerHTML = "";
 
-			ninja.wallets.manualwallet.batch;
+		ninja.wallets.manualwallet.batch;
 
 	},
 
@@ -11855,75 +11862,46 @@ ninja.wallets.manualwallet = {
 			var i = ninja.wallets.manualwallet.count;
 			var pageBreakAt = ninja.wallets.manualwallet.pageBreakAt;
 			var div = document.createElement("div");
-			div.setAttribute("id", "manualkeyarea" + i);
+			div.setAttribute("id", "keyarea" + i);
 
 			div.innerHTML = ninja.wallets.manualwallet.templateArtisticHtml(i);
 			div.setAttribute("class", "manualkeyarea art");
 
-			if (manualArea.innerHTML != "") {
-				// page break
-				if ((i - 1) % pageBreakAt == 0 && i >= pageBreakAt) {
-					var pBreak = document.createElement("div");
-					pBreak.setAttribute("class", "pagebreak");
-					document.getElementById("manualkeyarea").appendChild(pBreak);
-					div.style.pageBreakBefore = "always";
-				}
-			}
+      if (manualArea.innerHTML != "") {
+        // page break
+        if ((i - 1) % pageBreakAt == 0 && i >= pageBreakAt) {
+          var pBreak = document.createElement("div");
+          pBreak.setAttribute("class", "pagebreak");
+          document.getElementById("manualkeyarea").appendChild(pBreak);
+          div.style.pageBreakBefore = "always";
+        }
+      }
+      document.getElementById("manualkeyarea").appendChild(div);
+      ninja.wallets.manualwallet.showArtisticWallet(1,"","","zcash")
+      ninja.wallets.manualwallet.remaining--;
+      setTimeout(ninja.wallets.manualwallet.batch, 0);
+
+
+			var pBreak = document.createElement("div");
+			pBreak.setAttribute("class", "pagebreak");
+			document.getElementById("manualkeyarea").appendChild(pBreak);
+
 			document.getElementById("manualkeyarea").appendChild(div);
-			ninja.wallets.manualwallet.generateNewWallet(i);
-			ninja.wallets.manualwallet.remaining--;
-			setTimeout(ninja.wallets.manualwallet.batch, 0);
+
 		}
 	},
 
-	// generate bitcoin address, private key, QR Code and update information in the HTML
-	// idPostFix: 1, 2, 3, etc.
-	generateNewWallet: function (idPostFix) {
-		if (ninja.wallets.manualwallet.encrypt) {
-			ninja.privateKey.BIP38GenerateECAddressAsync(ninja.wallets.manualwallet.intermediatePoint, false, function (address, encryptedKey) {
-				ninja.wallets.manualwallet.showArtisticWallet(idPostFix, address, encryptedKey);
-			});
-		}
-		else {
-			var key = new Bitcoin.ECKey(false);
-			var bitcoinAddress = key.getBitcoinAddress();
-			var privateKeyWif = key.getBitcoinWalletImportFormat();
-
-			ninja.wallets.manualwallet.showArtisticWallet(idPostFix, bitcoinAddress, privateKeyWif);
-		}
-	},
 
 	// Verify that a self-entered key is valid, and compute the corresponding
 	// public address, render the wallet.
-	testAndApplyVanityKey: function () {
-		var suppliedKey = document.getElementById('suppliedPrivateKey').value;
-		suppliedKey = suppliedKey.trim(); // in case any spaces or whitespace got pasted in
-		document.getElementById('suppliedPrivateKey').value = suppliedKey;
-		if (!ninja.privateKey.isPrivateKey(suppliedKey)) {
-			alert(ninja.translator.get("detailalertnotvalidprivatekey"));
-		} else {
-			var computedPublicAddress = new Bitcoin.ECKey(suppliedKey).getBitcoinAddress();
-			if (ninja.wallets.manualwallet.encrypt) {
-				document.getElementById("busyblock").className = "busy";
-				ninja.privateKey.BIP38PrivateKeyToEncryptedKeyAsync(suppliedKey,
-					document.getElementById('manualpassphrase').value, false, function(encodedKey) {
-					document.getElementById("busyblock").className = "";
-					ninja.wallets.manualwallet.showArtisticWallet(1, computedPublicAddress, encodedKey);
-				});
-			}
-			else {
-				ninja.wallets.manualwallet.showArtisticWallet(1, computedPublicAddress, suppliedKey);
-			}
-		}
-	},
 
 	templateArtisticHtml: function (i) {
 		var keyelement = 'btcprivwif';
-		var coinImgUrl = "logos/" + document.getElementsByClassName('manualCurrency').value + ".png";
-		var walletBackgroundUrl = "wallets/" +  document.getElementsByClassName('manualCurrency').value + ".png";
+		var coinImgUrl = "logos/" + document.getElementById('manualCurrency').value + ".png";
+		var walletBackgroundUrl = "wallets/" +  document.getElementById('manualCurrency').value + ".png";
 
 		var walletHtml =
-							"<div class='coinIcoinM'> <img id='coinImg' src='" + coinImgUrl + "' alt='currency_logo' /></div><div class='artwallet' id='artwallet" + i + "'>" +
+							"<div class='coinIcoinM'> <img id='coinImg' src='" + coinImgUrl + "' alt='currency_logo' /></div><div class='artwalletm' id='artwalletm" + i + "'>" +
 								"<img id='manualsvg" + i + "' class='manualsvg' src='" + walletBackgroundUrl + "' />" +
 								"<div id='qrcode_public" + i + "' class='qrcode_publicM'></div>" +
 								"<div id='qrcode_private" + i + "' class='qrcode_privateM'></div>" +
@@ -11933,14 +11911,17 @@ ninja.wallets.manualwallet = {
 							"</div>";
 		return walletHtml;
 	},
-
+  genwal: function (idPostFix, bitcoinAddress, privateKey, currencyname){
+    ninja.wallets.manualwallet.batch();
+    ninja.wallets.manualwallet.showArtisticWallet(idPostFix, bitcoinAddress, privateKey, currencyname);
+  },
 	showArtisticWallet: function (idPostFix, bitcoinAddress, privateKey, currencyname) {
     var coinImgUrl = "logos/" + currencyname + ".png";
 		var walletBackgroundUrl = "wallets/" + currencyname + ".png";
     var keyelement = 'btcprivwif';
     var i = idPostFix;
     var walletHtml =
-							"<div class='coinIcoinM'> <img id='coinImg' src='" + coinImgUrl + "' alt='currency_logo' /></div><div class='artwallet' id='artwallet" + i + "'>" +
+							"<div class='coinIcoinM'> <img id='coinImg' src='" + coinImgUrl + "' alt='currency_logo' /></div><div class='artwalletm' id='artwalletm" + i + "'>" +
 								"<img id='manualsvg" + i + "' class='manualsvgM' src='" + walletBackgroundUrl + "' />" +
 								"<div id='qrcode_public" + i + "' class='qrcode_publicM'></div>" +
 								"<div id='qrcode_private" + i + "' class='qrcode_privateM'></div>" +
@@ -11948,7 +11929,7 @@ ninja.wallets.manualwallet = {
 								"<div class='" + keyelement + "' id='" + keyelement + i + "'></div>" +
 								"<div class='manualWalletText'><img class='backLogoM' src='" + coinImgUrl + "' alt='currency_logo' />" + ninja.translator.get("paperwalletback") + "</div>" +
 							"</div>";
-    document.getElementById('manualkeyarea').innerHTML=walletHtml;
+
 		var keyValuePair = {};
 		keyValuePair["qrcode_public" + idPostFix] = bitcoinAddress;
 		ninja.qrCode.showQrCode(keyValuePair, 3.5);

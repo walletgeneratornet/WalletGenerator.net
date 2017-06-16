@@ -349,23 +349,19 @@ Walletgenerator.net use the same security measures as the original project. All-
       <div id="manualarea">
         <div class="commands">
           <div id="manualcommands" class="row">
-
             <span>  <input placeholder="Public key" id="suppliedPublicKey" name="suppliedPublicKey" spellcheck="false" /></span>
             <input placeholder="Enter your private key" id="suppliedPrivateKeyM" name="suppliedPrivateKeyM" spellcheck="false" />&nbsp;
             <select id="manualCurrency">
               <option value='zcash'>ZEC</option>
             </select>
             <br/>
-            <input type="button" onClick="ninja.wallets.manualwallet.templateArtisticHtml(1,document.getElementById('manualCurrency').value);">TEST</input>
-            <input type="button" id="manualgenerate" value="Generate" onClick="ninja.wallets.manualwallet.showArtisticWallet(1,document.getElementById('suppliedPublicKey').value, document.getElementById('suppliedPrivateKeyM').value, document.getElementById('manualCurrency').value);" />
-
+            <input type="button" onClick="ninja.wallets.manualwallet.batch();">TEST</input>
+            <input type="button" id="manualgenerate" value="Generate" onClick="ninja.wallets.manualwallet.genwal(1,document.getElementById('suppliedPublicKey').value, document.getElementById('suppliedPrivateKeyM').value, document.getElementById('manualCurrency').value);" />
             <span class="print"><input type="button" name="print" value="Print" id="manualprint" onclick="window.print();" /></span>
           </div>
-
         </div>
         <div id="manualkeyarea"></div>
       </div>
-
       <div id="bulkarea" class="walletarea">
         <div class="commands">
           <div id="bulkcommands" class="row">
