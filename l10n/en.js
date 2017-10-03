@@ -1,7 +1,7 @@
 ﻿"en": {
-    "defaultTitle" : "WalletGenerator.net - Universal Paper wallet generator for Bitcoin and other cryptocurrencies",
+    "defaultTitle" : "WalletGenerator.net - Universal Paper wallet generator for Needlecoin",
     "title" : "Paper Wallet Generator",
-    "bulkgeneratingaddresses": "Generating addresses... ",
+    "bulkgeneratingaddresses": "Generating Needlecoin addresses... ",
     "brainalertpassphrasetooshort": "The passphrase you entered is too short.\n\n",
     "brainalertpassphrasewarning": "Warning: Choosing a strong passphrase is important to avoid brute force attempts to guess your passphrase and steal your coins.",
     "brainalertpassphrasedoesnotmatch": "The passphrase does not match the confirm passphrase.",
