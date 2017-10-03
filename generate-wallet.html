@@ -10710,7 +10710,52 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             width: 440px;
             font-size: 11px;
         }
+        #loader {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 1;
+            width: 150px;
+            height: 150px;
+            margin: -75px 0 0 -75px;
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #3498db;
+            width: 120px;
+            height: 120px;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+            display:none;
+        }
 
+        @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Add animation to "page content" */
+        .animate-bottom {
+            position: relative;
+            -webkit-animation-name: animatebottom;
+            -webkit-animation-duration: 1s;
+            animation-name: animatebottom;
+            animation-duration: 1s
+        }
+
+        @-webkit-keyframes animatebottom {
+            from { bottom:-100px; opacity:0 }
+            to { bottom:0px; opacity:1 }
+        }
+
+        @keyframes animatebottom {
+            from{ bottom:-100px; opacity:0 }
+            to{ bottom:0; opacity:1 }
+        }
         @media screen {
             #tagline {
                 margin: 10px 0 0 310px;
@@ -11004,12 +11049,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             #backCustomMessageEntry {
                 display: none;
             }
+
         }
     </style>
 
 </head>
 <body onclick="SecureRandom.seedTime();" onmousemove="ninja.seeder.seed(event);" ontouchmove="ninja.seeder.seed(event);"
       onLoad="setDesign(ninja.getQueryString()['design'], true, ninja.getQueryString()['lang']); guessPrinterSettings(); ">
+<div id="loader"></div>
 <div id="busyblock">
     <div class="background"></div>
     <div class="dialog dialog-narrow">
@@ -11256,7 +11303,7 @@ Find your scissors! The final step is to cut out your wallet, fold it, and seal 
 
         <div id="paperarea" class="walletarea">
             <div id="papercommands" class="commands">
-                <div style="display: none;"><!-- no need to reveal these -->
+                <div style="display: block;" id="showhideart"><!-- no need to reveal these -->
                     <span><label id="paperlabelhideart">Hide Art?</label> <input type="checkbox" id="paperart"
                                                                                  onChange="ninja.wallets.paperwallet.toggleArt(this); "/></span>
                     <span><label id="paperlabeladdressesperpage">Addresses per page:</label> <input type="text"
@@ -11267,7 +11314,7 @@ Find your scissors! The final step is to cut out your wallet, fold it, and seal 
 
                 <div id="keyButtons" style="display: block; float: left;">
                     <input type="button" id="papergenerate1" value="RANDOM GENERATE NEW WALLET"
-                           onClick="ninja.wallets.paperwallet.build(document.getElementById('paperlimit').value * 1, document.getElementById('paperlimitperpage').value * 1, !document.getElementById('paperart').checked, document.getElementById('paperpassphrase').value); printCounter=0;"/>
+                           onClick="ninja.wallets.paperwallet.build(document.getElementById('paperlimit').value * 1, document.getElementById('paperlimitperpage').value * 1, !document.getElementById('paperart').checked, document.getElementById('paperpassphrase').value); printCounter=0;document.getElementById('loader').style.display = 'block';">
 
                     <input type="button" id="papergenerate2" value="Enter my own key, dice rolls, brain wallet, etc..."
                            onClick="ninja.wallets.paperwallet.toggleVanityField(true);"/>
@@ -11407,10 +11454,6 @@ Find your scissors! The final step is to cut out your wallet, fold it, and seal 
                             <option value="alt-trezarcoin-color2">Trezarcoin Color Alternative</option>
                         </optgroup>
                     </select>
-                    </div>
-                    <div style="display: block;">
-                        <span><label id="paperlabeladdressesperpage">Addresses per page:</label> <input type="text" id="paperlimitperpage" /></span>
-                        <span><label id="paperlabeladdressestogenerate">Addresses to generate:</label> <input type="text" id="paperlimit" /></span>
                     </div>
                 </div>
 
@@ -12726,7 +12769,8 @@ Find your scissors! The final step is to cut out your wallet, fold it, and seal 
                 return;
             }
             ninja.wallets.paperwallet.passphrase = passphrase;
-            setTimeout(ninja.wallets.paperwallet.batch, 0);
+            setTimeout(ninja.wallets.paperwallet.batch, numWallets*100);
+
         },
 
         buildManual: function (wallet, passphrase) {
@@ -12887,6 +12931,7 @@ Find your scissors! The final step is to cut out your wallet, fold it, and seal 
             //		}
             //	}
             //}
+            document.getElementById("loader").style.display = "none";
         },
 
         toggleArt: function (element) {
@@ -14685,10 +14730,11 @@ Find your scissors! The final step is to cut out your wallet, fold it, and seal 
         document.getElementById('designPicker').value = whichDesign; // force menu option in case it was picked during onload.
         document.getElementById('langPicker').value = whichLanguage;
         if(whichDesign.substring(0,14) == 'alt-trezarcoin'){
-            console.log("display");
             document.getElementById("toogle_design").style.display="block";
+            document.getElementById("showhideart").style.display="block";
         }else{
             document.getElementById("toogle_design").style.display="none";
+            document.getElementById("showhideart").style.display="none";
         }
     }
 
