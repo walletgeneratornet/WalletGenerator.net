@@ -2,13 +2,16 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Universal Open Source Client-Side Paper Wallet Generator for BitCoins and other cryptocurrencies. Create your own paper wallet in a few easy steps : Generate, Print and Fold !">
-  <meta name="keywords" content="universal, paper, wallet, generator, cryptocurrencies, bitcoin, litecoin, dogecoin" />
+  <meta name="description" content="Open source client-side paper wallet generator for Bitcoin, 611 coin and other cryptocurrencies. Create your own paper wallet in a few easy steps: generate, print and fold!">
+  <meta name="keywords" content="paper, wallet, generator, bitcoin, litecoin, 611 coin, sixeleven, crpytocurrency" />
 
   <!--
 
 Notice of Copyrights and Licenses:
 ---------------------------------------
+The PaperWallet.611.to project, software and embedded resources are copyright PaperWallet.611.to.
+The PaperWallet.611.to name and logo are not part of the open source license.
+
 The WalletGenerator.net project, software and embedded resources are copyright WalletGenerator.net.
 The WalletGenerator.net name and logo are not part of the open source license.
 
@@ -28,6 +31,8 @@ window.QRCode         MIT License
 window.Bitcoin        MIT License
 jsqrcode              Apache License, 2.0
 
+The PaperWallet.611.to software is available under The MIT License (MIT)
+Copyright (c) 2017 PaperWallet.611.to
 
 The WalletGenerator.net software is available under The MIT License (MIT)
 Copyright (c) 2014 WalletGenerator.net
@@ -48,10 +53,10 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
-  GitHub Repository: https://github.com/MichaelMure/WalletGenerator.net
+  GitHub Repository: https://github.com/611project/sixeleven-wallet-generator
   -->
 
-  <title>WalletGenerator.net - Universal Paper wallet generator for Bitcoin and other cryptocurrencies</title>
+  <title>PaperWallet.611.to - Paper Wallet generator for Bitcoin, SixEleven coin and other cryptocurrencies</title>
 
   <script type="text/javascript">
 // Array.prototype.map function is in the public domain.
@@ -9305,7 +9310,7 @@ function QRCodeScanner(width, height, container, success, error) {
   <style type="text/css">
 .more { background: url("./images/plus.png") no-repeat left center; width: 17px; height: 17px; display: inline-block; float: right; }
 .less { background: url("./images/minus.png") no-repeat left center; width: 17px; height: 17px; display: inline-block; float: right; }
-a { position: relative; z-index: 20; text-decoration: none; color: #d58424; }
+a { position: relative; z-index: 20; text-decoration: none; color: #314c40; }
 .right { text-align: right; }
 .walletarea { display: none; border: 1px solid #BFBFBF; background-color: white; }
 hr { margin: 20px 0; border-top: 1px dashed #008000; }
@@ -9319,7 +9324,7 @@ hr { margin: 20px 0; border-top: 1px dashed #008000; }
 .keyarea .qrcode_private { display: inline-block; position: relative; top: 28px; float: right; }
 .pubkeyhex { word-wrap: break-word; }
 html { height: 100%; }
-body { font-family: Arial; background-image: url('images/diamonds.png'); height: 100%; }
+body { font-family: Arial; background-image: url('images/hugo-sousa-270201-web.jpg'); background-size: cover; }
 .faqs ol { padding: 0 0 0 25px; }
 .faqs li { padding: 3px 0; }
 .question { padding: 10px 15px; text-align: left; cursor: pointer; }
@@ -9340,17 +9345,17 @@ body { font-family: Arial; background-image: url('images/diamonds.png'); height:
 #btcaddress, #btcprivwif, #detailaddress, #detailaddresscomp, #detailprivwif, #detailprivwifcomp { font-family: monospace; font-size: 1.25em; }
 #seedpoolarea { display: none; }
 #seedpooldisplay {  font-family: monospace; font-size: 1em; width: 640px; padding: 15px 5px; word-wrap: break-word; min-height: 98px; }
-.seedpoint { width: 6px; height: 6px; display: block; border-radius: 3px; background-color: #80CF80; position: absolute; z-index: 10; }
+.seedpoint { width: 6px; height: 6px; display: block; border-radius: 3px; background-color: #599278; position: absolute; z-index: 10; }
 
 #seedSkipper { font-size: 11px; text-align: center; line-height: 14px;}
 #skipMessage { margin-top: 8px; }
 
 #generate #mousemovelimit { font-size: 16px; color: #FFF; }
 #rightArea { position: absolute; right: 66px; top: 62px; width: 170px; }
-#progress-bar { width: 170px; background:#80CF80; position: relative; margin-bottom: 20px;
+#progress-bar { width: 170px; background:#FFE6C9; position: relative; margin-bottom: 20px;
   -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
  }
-#progress-bar-percentage { background:#FFA247; padding: 3px 0px; text-align: center; height: 18px;
+#progress-bar-percentage { background:#314C40; padding: 3px 0px; text-align: center; height: 18px;
   -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
  }
 #progress-bar-percentage span { display: inline-block; position: absolute; width: 100%; left: 0; }
@@ -9376,7 +9381,7 @@ h1 { margin: 0px; height: 91px; }
 #keyarea .public { width: 30%; display: table-cell; }
 #singlearea { font-size: 90%; display: block; }
 #singlesecret { position: relative; top: -130px; float: right; right: 200px; color: red; font-weight: bolder; font-size: 200%;  }
-#singleshare { position: relative; top: -110px; float: left; left: 160px; color: green; font-weight: bolder; font-size: 200%;  }
+#singleshare { position: relative; top: -110px; float: left; left: 160px; color: #314c40; font-weight: bolder; font-size: 200%;  }
 #singlesafety { text-align: left; border-bottom: 1px solid #bfbfbf; position: relative; min-height: 500px; }
 
 #singlesafety p { font-size: 13px; }
@@ -9656,8 +9661,9 @@ h1 { margin: 0px; height: 91px; }
     <div id="culturemenu">
       <span><a href="?culture=en" id="cultureen" class="selected">English</a></span> |
       <span><a href="?culture=fr" id="culturefr">Français</a></span> |
-      <span><a href="?culture=ru" id="cultureru">Русский</a></span> |
       <span><a href="?culture=es" id="culturees">Spanish</a></span> |
+      <span><a href="?culture=de" id="culturede">German</a></span> |
+      <span><a href="?culture=ru" id="cultureru">Русский</a></span> |
       <span><a href="?culture=ua" id="cultureua">Українська</a></span> |
     </div>
 
@@ -9666,7 +9672,7 @@ h1 { margin: 0px; height: 91px; }
         <img id="coinLogoImg" src="logos/bitcoin.png" alt="Universal Open Source Client-Side Wallet Generator" />
       </div>
       <h1>
-        <img id="siteTitle" src="images/banner.png" alt="Bitcoin Paper Wallet Generator" />
+        <img id="siteTitle" src="images/banner-sixeleven.png" alt="Paper Wallet Generator" />
       </h1>
     </div>
 
@@ -9773,7 +9779,7 @@ h1 { margin: 0px; height: 91px; }
 
           </div>
           <div class="secondHalfSingleSafety">
-            <img class="frontPageImage" src="images/overview.png" alt="Overview image of 4 paper wallet" />
+            <img class="frontPageImage" src="images/overview-sixeleven.jpg" alt="Overview image of 4 paper wallet" />
 
             <div class="securityChecklist">
               <b id="securitychecktitle" class="i18n">Security Checklist :</b>
@@ -9806,7 +9812,7 @@ h1 { margin: 0px; height: 91px; }
           <p class="faqAnswer" id="faqQuestion1.1">
 We think that having a unique generator for multiple currencies lead to a much better reviewed tool for all than having a myriad of half-backed generators.
 Changes made to this generator are available on Github in small and divided commits and those are easy to review and reuse.
-Walletgenerator.net use the same security measures as the original project. All-in-one html document, no ajax, no analytics, no external calls, no CDN that can inject anything they want. And trust us, we have seen some nasty things when reviewing some wallet generator.
+PaperWallet.611.to use the same security measures as the original project. All-in-one html document, no ajax, no analytics, no external calls, no CDN that can inject anything they want. And trust us, we have seen some nasty things when reviewing some wallet generator.
           </p>
 
           <h3 class="faqQuestion"><a class="faqLink" onclick="ninja.toggleFaqQuestion('faqQuestion2');">&#8226; Why should I use a paper wallet ?</a></h3>
@@ -9827,7 +9833,7 @@ Walletgenerator.net use the same security measures as the original project. All-
             You will need to import your private key in a real client, that you can download from the currency website. The exact method to do that will depend on the client. If there is no integrated method, you can usually fall back to the debug console and use the command “importprivkey [yourprivatekey]“.
           </p>
 
-          <h3 class="faqQuestion"><a class="faqLink" onclick="ninja.toggleFaqQuestion('faqQuestion5');">&#8226; How walletgenerator.net is different than another wallet generator ?</a></h3>
+          <h3 class="faqQuestion"><a class="faqLink" onclick="ninja.toggleFaqQuestion('faqQuestion5');">&#8226; How PaperWallet.611.to is different than another wallet generator ?</a></h3>
           <p class="faqAnswer" id="faqQuestion5">
             It’s not that different. You will find another design for the paper wallet and some improvements here and there. The big difference is that this is a unique project for a lot of currencies, so more people can review it and check its safety.
           </p>
@@ -9855,7 +9861,7 @@ Walletgenerator.net use the same security measures as the original project. All-
 
           <h3 class="faqQuestion"><a class="faqLink" onclick="ninja.toggleFaqQuestion('faqQuestion11');">&#8226; How can I help ?</a></h3>
           <p class="faqAnswer" id="faqQuestion11">
-            Donation are always welcome, but you can also help us translate the website. It's really easy. Just add "?i18nextract=LANGUAGECODE" in the end of the url (for instance http://walletgenerator.net/?i18nextract=es for Spanish). You will see at the end of the page a pre-filled javascript array ready to be translated. Translate or correct it, and send it to us the way you prefer. Even partial translation are helpful !
+            Donation are always welcome, but you can also help us translate the website. It's really easy. Just add "?i18nextract=LANGUAGECODE" in the end of the url (for instance http://PaperWallet.611.to/?i18nextract=es for Spanish). You will see at the end of the page a pre-filled javascript array ready to be translated. Translate or correct it, and send it to us the way you prefer. Even partial translation are helpful !
           </p>
 
         </div>
@@ -10048,6 +10054,13 @@ Walletgenerator.net use the same security measures as the original project. All-
     <div id="changelog">
       <hr/>
       <h3>Release notes</h3>
+      <p>
+      10.2017 --
+        <ul>
+          <li>New translation in German. Contribution from fflo.</li>
+          <li>Add support for 611 (SixEleven) [coin]</li>
+        </ul>
+      </p>
       <p>
       09.2017 --
         <ul>
@@ -10248,7 +10261,7 @@ Walletgenerator.net use the same security measures as the original project. All-
       04.2014 --
         <ul>
           <li>Add support for Blackcoin and Primecoin</li>
-          <li>Add direct access to a currency. Example: <a href="http://walletgenerator.net/?currency=Vertcoin">http://walletgenerator.net/?currency=Vertcoin</a></li>
+          <li>Add direct access to a currency. Example: <a href="https://PaperWallet.611.to/?currency=Vertcoin">https://PaperWallet.611.to/?currency=Vertcoin</a></li>
         </ul>
       <p>
       04.2014 --
@@ -10264,12 +10277,12 @@ Walletgenerator.net use the same security measures as the original project. All-
 
     <div id="footer" class="footer">
       <div>
-        <span class="item"><a id="footersupport" href="#" onclick="ninja.tabSwitch(document.getElementById('donate'));" class="i18n">Support WalletGenerator.net</a></span>
-        <span class="item"><a href="https://github.com/MichaelMure/WalletGenerator.net" target="_blank" id="footerlabelgithub" class="i18n">Download (GitHub Repository)</a></span>
-        <span class="item"><a href="https://twitter.com/WalletGenerator">@WalletGenerator</a></span>
+        <span class="item"><a id="footersupport" href="#" onclick="ninja.tabSwitch(document.getElementById('donate'));" class="i18n">Support PaperWallet.611.to</a></span>
+        <span class="item"><a href="https://github.com/611project/sixeleven-wallet-generator" target="_blank" id="footerlabelgithub" class="i18n">Download (GitHub Repository)</a></span>
+        <!-- <span class="item"><a href="https://twitter.com/SixElevenProject">@SixElevenProject</a></span> -->
       </div>
       <div class="copyright">
-        <span id="footerlabelcopyright1">Copyright WalletGenerator.net.</span>
+        <span id="footerlabelcopyright1">Copyright PaperWallet.611.to.</span>
         <span id="footerlabelcopyright2" class="i18n">JavaScript copyrights are included in the source.</span>
         <span id="footerlabelnowarranty" class="i18n">No warranty.</span>
       </div>
@@ -10404,8 +10417,10 @@ janin.currency = {
         // Update i18n link
         document.getElementById("cultureen").href = "?culture=en&currency=" + janin.currency.name().toLowerCase();
         document.getElementById("culturefr").href = "?culture=fr&currency=" + janin.currency.name().toLowerCase();
-        document.getElementById("cultureru").href = "?culture=ru&currency=" + janin.currency.name().toLowerCase();
         document.getElementById("culturees").href = "?culture=es&currency=" + janin.currency.name().toLowerCase();
+        document.getElementById("culturede").href = "?culture=de&currency=" + janin.currency.name().toLowerCase();
+        document.getElementById("cultureru").href = "?culture=ru&currency=" + janin.currency.name().toLowerCase();
+        document.getElementById("cultureua").href = "?culture=ua&currency=" + janin.currency.name().toLowerCase();
 
         if(ninja.seeder.isDone())
         {
@@ -10562,6 +10577,7 @@ janin.currencies = [
     janin.currency.createCurrency ("Sambacoin",           0x3e, 0xbe, "7",    "V"    , "SJdiAgazqtum79HzGbNDxi879NzSDjtH5P"),
     janin.currency.createCurrency ("SecKCoin",            0x3f, 0xbf, "7",    "V"    , "Se1aaa5T1HRpMEfyBPGswVUgTQoZUst9jA"),
     janin.currency.createCurrency ("SibCoin",             0x3f, 0x80, "5",    "[LK]" , "SY7GAzvFVS8bUA89e7hosPMxqMS482ecsp"),
+    janin.currency.createCurrency ("SixEleven",           0x34, 0x80, "5",    "[LK]" , "NGPimZxoZMmAsoF4eJME8TkG7UW8vqoJQJ"),
     janin.currency.createCurrency ("SmileyCoin",          0x19, 0x99, "6",    "P"    , "BEaZDZ8gCbbP1y3t2gPNKwqZa76rUDfR73"),
     janin.currency.createCurrency ("SongCoin",            0x3f, 0xbf, "7",    "V"    , "SSK9MXormZXgF5ZfV599okJRXYh3g9RXGN"),
     janin.currency.createCurrency ("SpreadCoin",          0x3f, 0xbf, "7",    "V"    , "SjPkh7V2KkySjL52wsD2CpEj4quTtjiaVW"),
@@ -11154,10 +11170,10 @@ ninja.envSecurityCheck = function() {
 	switch(window.location.protocol) {
 		case 'http:':
 		case 'https:':
-			innerHTML = '<span style="color: #990000;">' + ninja.translator.get("securitychecklistofflineNOK") + '</span>';
+			innerHTML = '<span style="color: #5B957B;">' + ninja.translator.get("securitychecklistofflineNOK") + '</span>';
 			break;
 		case 'file:':
-			innerHTML = '<span style="color: #009900;">' + ninja.translator.get("securitychecklistofflineOK") + '</span>';
+			innerHTML = '<span style="color: #5B957B;">' + ninja.translator.get("securitychecklistofflineOK") + '</span>';
 			break;
 		default:
 	} 
@@ -11167,9 +11183,9 @@ ninja.envSecurityCheck = function() {
 ninja.browserSecurityCheck = function() {
 	var innerHTML = "";
 	if (window.crypto && window.crypto.getRandomValues) {
-		innerHTML = '<span style="color: #009900;">' + ninja.translator.get("securitychecklistrandomOK") + '</span>';
+		innerHTML = '<span style="color: #5B957B;">' + ninja.translator.get("securitychecklistrandomOK") + '</span>';
 	} else {
-		innerHTML = '<span style="color: #990000;">' + ninja.translator.get("securitychecklistrandomNOK") + '</span>';
+		innerHTML = '<span style="color: #5B957B;">' + ninja.translator.get("securitychecklistrandomNOK") + '</span>';
 	} 
 	document.getElementById('browserSecurityCheck').innerHTML = innerHTML;
 }
@@ -11283,9 +11299,9 @@ ninja.translator = {
 		"paperwalletback",
     ],
 
-	translations: {
+    translations: {
     ﻿"en": {
-    "defaultTitle" : "WalletGenerator.net - Universal Paper wallet generator for Bitcoin and other cryptocurrencies",
+    "defaultTitle" : "PaperWallet.611.to - Universal Paper wallet generator for Bitcoin and other cryptocurrencies",
     "title" : "Paper Wallet Generator",
     "bulkgeneratingaddresses": "Generating addresses... ",
     "brainalertpassphrasetooshort": "The passphrase you entered is too short.\n\n",
@@ -11301,19 +11317,18 @@ ninja.translator = {
 	"securitychecklistofflineOK": "You are running this generator from your own download.",
 	"paperwalletback": "<ul><li>To deposit funds to this paper wallet, send cryptocurrency to its public address, anytime.</li><li>Verify your balance by searching for the public address using a blockchain explorer such as blockchain.info.</li><li><b>DO NOT REVEAL THE PRIVATE KEY</b> until you are ready to import the balance on this wallet to a cryptocurrency client, exchange or online wallet.</li></ul><b>Amount :</b> ___________ &nbsp; &nbsp; &nbsp; <b>Date :</b> ________________<br /><b>Notes :</b> ______________________________________",
 },
-
     ﻿"fr": {
-	"choosecurrency": "Choisissez une monnaie",
-	"singlewallet": "Porte-Monnaie Simple",
-	"paperwallet": "Porte-Monnaie Papier",
-	"bulkwallet": "Porte-Monnaie En Vrac",
-	"brainwallet": "Porte-Monnaie Cerveau",
-	"detailwallet": "Détails du Porte-Monnaie",
-	"donate": "Soutien",
-	"generatelabelbitcoinaddress": "Génération d'une nouvelle adresse...",
-	"generatelabelmovemouse": "BOUGEZ votre souris pour ajouter de l'entropie...",
-	"generatelabelkeypress": "OU tapez des lettres aléatoires dans le champ texte",
-	"skipMessage": "Vous pouvez passer cette étape si vous ne voulez pas générer de porte-monnaie",
+    "choosecurrency": "Choisissez une monnaie",
+    "singlewallet": "Porte-Monnaie Simple",
+    "paperwallet": "Porte-Monnaie Papier",
+    "bulkwallet": "Porte-Monnaie En Vrac",
+    "brainwallet": "Porte-Monnaie Cerveau",
+    "detailwallet": "Détails du Porte-Monnaie",
+    "donate": "Soutien",
+    "generatelabelbitcoinaddress": "Génération d'une nouvelle adresse...",
+    "generatelabelmovemouse": "BOUGEZ votre souris pour ajouter de l'entropie...",
+    "generatelabelkeypress": "OU tapez des lettres aléatoires dans le champ texte",
+    "skipMessage": "Vous pouvez passer cette étape si vous ne voulez pas générer de porte-monnaie",
 	"singlelabelbitcoinaddress": "Adresse publique",
 	"singleshare": "PUBLIQUE",
 	"singlelabelprivatekey": "Clé privée (format WIF)",
@@ -11365,7 +11380,7 @@ ninja.translator = {
 	"detaillabelq1": "Comment générer un porte-monnaie avec des dés ? Qu'est-ce que la Base6 (B6) ?",
 	"detaila1": "Une partie importante de la création d'un porte-monnaie pour les monnaies cryptographiques est de s'assurer que les nombres aléatoires utilisés pour la génération sont réellement aléatoires. L'aléatoire d'origine physique est bien meilleur que le pseudo-aléatoire généré par un ordinateur. La façon la plus facile de générer de l'aléatoire physique est d'utiliser des dés. Pour générer une clé privée, vous avez uniquement besoin d'un dé à 6 faces que vous allez lancer 99 fois. Arrêtez-vous après chaque lancé pour noter la valeur. Pour noter la valeur, suivez les règles suivantes: 1=1, 2=2, 3=3, 4=4, 5=5, 6=0. En faisant ça, vous générez un grand nombre aléatoire, votre clé privée, en Base6 (B6). Vous pouvez ensuite entrer les 99 caractères B6 de votre clé privée dans le champs texte au dessus et cliquer sur \"View Details\". Vous verrez ensuite l'adresse publique associée à cette clé privée. Vous devrez également noter votre clé privée au format WIF, car il est plus courant d'usage que la clé privée brute.",
 	"donatetextfooter": "Pour soutenir le développement de ce générateur de porte-monnaie, vous pouvez faire une donation grâce aux adresses suivante. Quand le support pour une monnaie a été ajouté par un contributeur externe au projet, les donations lui parviennent directement.",
-	"footersupport": "Soutenir WalletGenerator.net",
+	"footersupport": "Soutenir PaperWallet.611.to",
 	"footerlabelgithub": "Télécharger (dépôt GitHub)",
 	"footerlabelcopyright2": "Les licences javascript sont incluses dans le code source.",
 	"footerlabelnowarranty": "Aucune garantie.",
@@ -11384,89 +11399,6 @@ ninja.translator = {
 	"securitychecklistofflineNOK": "Il semble que vous utilisez ce générateur directement depuis le site web, ce qui n'est pas recommandé pour générer des portes-monnaie. A la place, utilisez le lien de téléchargement en bas de cette page pour télécharger une archive ZIP depuis Github et lancez ce générateur hors-ligne comme un fichier HTML local.",
 	"securitychecklistofflineOK": "Vous exécutez ce générateur depuis votre propre téléchargement.",
 	"paperwalletback": "<ul><li>Pour transférer des fonds sur ce porte-monnaie, envoyez des fonds à l'adresse publique, à n'importe quel moment.</li><li>Vérifier votre solde en cherchant l'adresse publique dans un explorateur de Blockchain.</li><li><b>NE REVELEZ PAS VOTRE CLE PRIVEE</b> jusqu'au moment où vous voudrez importer votre solde dans un porte-monnaie logiciel.</li></ul><b>Montant :</b> ___________       <b>Date :</b> ________________<br /><b>Notes :</b> ______________________________________",
-},
-    "ru": {
-	"choosecurrency": "Выберите валюту",
-	"singlewallet": "Единичный кошелек",
-	"paperwallet": "Бумажный кошелек",
-	"bulkwallet": "Несколько кошельков",
-	"brainwallet": "\"Умственный\" кошелек",
-	"detailwallet": "Подробности о кошельке",
-	"donate": "Поддержка",
-	"generatelabelbitcoinaddress": "Создается новый адрес...",
-	"generatelabelmovemouse": "ПОДВИГАЙТЕ мышкой, чтобы сделать генерацию немного более случайной...",
-	"generatelabelkeypress": "ИЛИ введите случайные символы в это поле для текста",
-	"skipMessage": "Этот шаг можно пропустить, если вы не планируете использовать генератор случайных ключей",
-	"singlelabelbitcoinaddress": "Открытый адрес",
-	"singleshare": "ОТКРЫТЫЙ",
-	"singlelabelprivatekey": "Закрытый ключ (в формате импорта в кошелек - WIF)",
-	"singlesecret": "СЕКРЕТНЫЙ",
-	"securitystep0title": "Шаг 0. Следуйте рекомендациям в \"Перечне безопасности\"",
-	"securitystep0": "Первым делом <strong>скачайте</strong> этот веб-сайт с <a href=\"https://github.com/MichaelMure/PaperWallet/archive/master.zip\">Github</a>, распакуйте и откройте файл index.html непосредственно с Вашего компьютера. Cпрятать вредоносный код в 6000+ строках javascript, чтобы украсть Ваш закрытый ключ, довольно просто, а Вам вряд ли этого хочется. Система контроля версий позволяет значительно упростить взаимную проверку исполняемого кода. Для большей безопасности <strong>отключитесь от Интернета</strong> на время создания кошелька.",
-	"securitystep1title": "Шаг 1. Создайте новый адрес",
-	"securitystep1": "Выберите Вашу валюту и нажмите на кнопку \"Создать новый адрес\"",
-	"securitystep2title": "Шаг 2. Распечатайте бумажный кошелек",
-	"securitystep2": "Нажмите на закладку \"Бумажный кошелек\" и распечатайте страницу в высоком качестве. <strong>Никогда не сохраняйте страницу как PDF файл для последующей печати, поскольку файл имеет гораздо более высокие шансы быть скомпрометированным, чем бумага.</strong>",
-	"securitystep3title": "Шаг 3. Сверните бумажный кошелек",
-	"securitystep3": " Сверните Ваш новый бумажный кошелек согласно линиям\n<img src=\"images/foldinginstructions.png\" alt=\"Согните пополам продольно, а потом каждую треть поперечно.\"><br>\nВы можете вставить одну часть внутрь другой, чтобы скрепить кошелек.",
-	"securitystep4title": "Шаг 4. Делитесь Вашим открытым адресом",
-	"securitystep4": "Используйте Ваш открытый адрес для получения денег от других пользователей крипто-валюты. Вы можете делиться открытым адресом сколько угодно раз.",
-	"securitystep5title": "Шаг 5. Держите Ваш закрытый ключ в тайне",
-	"securitystep5": "Закрытый ключ, по сути, и есть Ваши деньги - если кто-то получит к нему доступ, он сможет не только вывести деньги, которые будут там находиться на тот момент, но и выводить все средства, получаемые на этот кошелек в будущем.",
-	"securitystep6": "Перед тем как получать значительные платежи, пожалуйста, попробуйте вывести с кошелька небольшие суммы.",
-	"securitychecktitle": "Перечень безопасности :",
-	"securitychecklivecd": "Используете ли Вы безопасную операционную систему, гарантированно чистую от различного рода шпионских программ и вирусов, например, такую как Ubuntu LiveCD?",
-	"supportedcurrencylbl": "валют доступно !",
-	"paperlabelencrypt": "Зашифровать с помощью BIP38?",
-	"paperlabelBIPpassphrase": "Кодовая фраза:",
-	"bulklabelstartindex": "Начальный индекс:",
-	"bulklabelrowstogenerate": "Количество генерируемых строк:",
-	"bulklabelcompressed": "Создавать сжатые адреса?",
-	"bulklabelcsv": "Значения, разделенные запятой: Индекс,Адрес,Закрытый ключ (WIF)",
-	"brainlabelenterpassphraselbl": "Введите кодовую фразу:",
-	"brainlabelconfirmlbl": "Подтвердите кодовую фразу:",
-	"brainalgorithm": "Алгоритм: SHA256(кодовая фраза)",
-	"brainlabelbitcoinaddress": "Открытый адрес:",
-	"brainlabelprivatekey": "Закрытый ключ (в формате импорта в кошелек - WIF):",
-	"detaillabelenterprivatekey": "Введите закрытый ключ",
-	"qrcaminstructiontitle": "Сосканируйте QR-код с помощью Вашей камеры",
-	"paperqrnotsupported": "К сожалению, Ваш браузер не поддерживает возможности HTML5 по управлению камерой. Попробуйте использовать свежую версию Firefox (рекомендуется), Chrome или Opera.",
-	"paperqrpermissiondenied": "<p>Доступ запрещен. Ваш браюзер должен отобразить сообщение с запросом доступа к Вашей камере. Пожалуйста, нажмите кнопку \"Разрешить\", чтобы предоставить доступ к Вашей камере.</p>",
-	"detaillabelpassphrase": "Введите кодовую фразу BIP38",
-	"detaillabelnote1": "Ваш закрытый ключ - это уникальный секретный номер, который знаете только Вы. Он может быть представлен в различных форматах. Ниже показаны открытый адрес и открытый ключ, соответствующие Вашему закрытому ключу, а также Ваш закрытый ключ в наиболее популярных форматах (WIF, WIFC, HEX, B64).",
-	"detaillabelbitcoinaddress": "Открытый адрес",
-	"detaillabelbitcoinaddresscomp": "Сжатый открытый адрес",
-	"detaillabelpublickey": "Открытый ключ (130 символов [0-9A-F]):",
-	"detaillabelpublickeycomp": "Открытый ключ (сжатый, 66 символов [0-9A-F]):",
-	"detaillabelprivwif": "Закрытый ключ WIF<br>51 символ Base58",
-	"detaillabelprivwifcomp": "Сжатый закрытый ключ WIF <br>52 символа Base58",
-	"detaillabelprivhex": "Закрытый ключ в шестнадцатеричном формате (64 символа [0-9A-F]):",
-	"detaillabelprivb64": "Закрытый ключ Base64 (44 символа):",
-	"detaillabelprivmini": "Закрытый ключ в мини-формате (22, 26 или 30 символов):",
-	"detaillabelprivb6": "Закрытый ключ в формате Base6 (99 символов [0-5]):",
-	"detaillabelprivbip38": "Закрытый ключ в формате BIP38 (58 символов Base58):",
-	"detaillabelq1": "Как мне создать кошелек с помощью игрального кубика? Что такое B6?",
-	"detaila1": "Важная чать в создании кошелька для крипто-валюты заключается в том, чтобы убедиться, что используются действительно случайные числа. Физическая случайность лучше, чем сгенерированные компьютером псевдо-случайные числа. Простейший способ сгенерировать физически случайные числа - игральный кубик. Для создания закрытого ключа нужен лишь 6-гранный кубик, который нужно будет кинуть 99 раз. Записывайте каждое значение, при этом следуйте следующему правилу: 1=1, 2=2, 3=3, 4=4, 5=5, 6=0. Таким образом, Вы получите большое случайное число - Ваш закрытый ключ в формате B6, т.е. в шестиричном формате. Теперь Вы можете ввести 99-тисимвольный закрытый ключ в шестиричном формате в текстовое поле сверху и нажать кнопку \"Посмотреть подробности\". Вы увидите открытый адрес, соответствующий Вашему закрытому ключу. Обратите также внимание на Ваш закрытый ключ в формате WIF, поскольку этот формат является наиболее широко используемым.",
-	"donatetextfooter": "Для поддержки разработчиков этого генератора кошельков используйте следующие адреса. Если поддержка для валюты добавлена внешним разработчиком, он получает Ваши пожертвования напрямую.",
-	"footersupport": "Поддержать WalletGenerator.net",
-	"footerlabelgithub": "Скачать (репозиторий на GitHub)",
-	"footerlabelcopyright2": "Копирайты на JavaScript включены в исходники.",
-	"footerlabelnowarranty": "Гарантии не предоставляются.",
-	"defaultTitle": "WalletGenerator.net - Универсальный генератор бумажных кошельков для Bitcoin и других криптовалют",
-	"title": "Генератор бумажных кошельков",
-	"brainalertpassphrasewarning": "Внимание: Выбор сильной кодовой фразы очень важен для предотвращения взлома путем прямого перебора, совершаемого злоумышленниками с целью похитить Ваши деньги.",
-	"brainalertpassphrasetooshort": "Введенная Вами кодовая слишком короткая.",
-	"brainalertpassphrasedoesnotmatch": "Введенные кодовые фразы не совпадают.",
-	"bulkgeneratingaddresses": "Создаются адреса...",
-	"bip38alertincorrectpassphrase": "Неправильная кодовая фраза для данного закрытого ключа.",
-	"bip38alertpassphraserequired": "Для закрытого ключа в формате BIP38 требуется кодовая фраза",
-	"detailconfirmsha256": "Введенный Вами текст не является закрытым ключом!\nХотите использовать введенный текст в качестве кодовой фразы и создать закрытый ключ, используя SHA256 хэш этой кодовой фразы?\nВнимание: Выбор сильной кодовой фразы очень важен для предотвращения взлома путем прямого перебора, совершаемого злоумышленниками с целью похитить Ваши деньги.",
-	"detailalertnotvalidprivatekey": "Введенный Вами текст не является закрытым ключом",
-	"securitychecklistrandomOK": "Ваш браузер способен генерировать криптографически случайные ключи с помощью функции window.crypto.getRandomValues",
-	"securitychecklistrandomNOK": "Ваш браузер НЕ поддерживает функцию window.crypto.getRandomValues(), которая важна для генерирования максимально безопасных случайных чисел. Пожалуйста, используйте более современный браузер.",
-	"securitychecklistofflineNOK": "Похоже, что Вы запустили этот генератор с сайта, что не рекомендуется для создания ценных кошельков. Вместо этого, используйте ссылку внизу данной страницы для скачивания ZIP-файла с GitHub и запустите этот генератор из локального HTML-файла, отключив доступ к интернету.",
-	"securitychecklistofflineOK": "Вы запустили генератор из локального файла.",
-	"paperwalletback": "<ul><li>Для пополнения средств этого бумажного кошелька отправьте криптовалюту на его открытый адрес.</li><li>Проверьте Ваш балас, найдя открытый адрес в просмотрщиках блокчейна, таких как blockchain.info.</li><li><b>НЕ РАССКРЫВАЙТЕ ЗАКРЫТЫЙ КЛЮЧ</b> пока Вы не будете готовы импортировать баланс этого кошелька в крипто-клиент, биржу или онлайн-кошелек.</li></ul><b>Сумма :</b> ___________       <b>Дата :</b> ________________<br /><b>Пометки :</b> ______________________________________",
 },
     "es": {
     "choosecurrency": "Elige criptodivisa",
@@ -11531,11 +11463,11 @@ ninja.translator = {
     "detaillabelq1": "Cómo puedo crear una cartera usando dados? Qué  es B6?",
     "detaila1": "Una parte importante de la creación de una cartera para una criptomoneda es cerciorarse de que los números aleatorios utilizados para crearla son verdaderamente aleatorios. La aleatoriedad real es mucho mejor que la pseudo-aleatoriedad generada por ordenador. La manera más sencilla de generar aleatoriedad real es usando dados. Para crear una clave privada para una criptomoneda sólo necesitas un dado de 6 caras, que tirarás 99 veces, anotando cada vez el valor del dado. Cuando anotes los valores, sigue estas reglas: 1=1, 2=2, 3=3, 4=4, 5=5, 6=0. Haciéndolo así estarás creando un gran número aleatorio, que será tu clave privada, en formato B6 o base 6. Si introduces tu clave privada de 99 caracteres en base 6 en el cuadro de texto de arriba y haces click en ver detalles, verás la dirección pública asociada a tu clave privada. Deberías anotarte también tu clave privada en formato WIF, porque su uso está más extendido.",
     "donatetextfooter": "Para apoyar el desarrollo de este generador de carteras, puedes hacer donaciones a las siguientes direcciones. Cuando el soporte para una criptodivisa ha sido añadido por un colaborador externo del proyecto, él recibe la donación directamente.",
-    "footersupport": "Ayuda a WalletGenerator.net",
+    "footersupport": "Ayuda a PaperWallet.611.to",
     "footerlabelgithub": "Descargar (Repositorio GitHub)",
     "footerlabelcopyright2": "Los copyrights del JavaScript se incluyen en el código fuente.",
     "footerlabelnowarranty": "Sin garantía.",
-    "defaultTitle": "WalletGenerator.net - Generador universal de carteras de papel para Bitcoin y otras criptodivisas",
+    "defaultTitle": "PaperWallet.611.to - Generador universal de carteras de papel para Bitcoin y otras criptodivisas",
     "title": "Generador de carteras de papel",
     "brainalertpassphrasewarning": "Atención: Elegir una contraseña robusta es importante para evitar los intentos de adivinarla mediante la fuerza bruta y que te roben tus monedas.",
     "brainalertpassphrasetooshort": "La contraseña introducida es demasiado corta.",
@@ -11551,9 +11483,174 @@ ninja.translator = {
     "securitychecklistofflineOK": "Estás ejecutando este generador de forma local.",
     "paperwalletback": "<ul><li>Para depositar fondos en esta cartera de papel, envía criptomonedas a su dirección pública, en cualquier momento.</li><li>Comprueba tu balance buscando la dirección pública en un explorador de bloques como blockchain.info.</li><li><b>NUNCA REVELES LA CLAVE PRIVADA</b> hasta que estés listo para importar el balance de esta cartera a un cliente de criptomoneda, portal de cambio o cartera online.</li></ul><b>Cantidad:</b> ___________       <b>Fecha:</b> ________________<br /><b>Notas:</b> ______________________________________",
 },
-
-		"ua": {
-  "choosecurrency": "Оберіть валюту",
+    ﻿"de": {
+	"choosecurrency": "Kryptowährung Auswahl",
+	"singlewallet": "einfache Geldbörse",
+	"paperwallet": "Papier Geldbörse",
+	"bulkwallet": "Geldbörse(n) Tabelle",
+	"brainwallet": "Gedächtnis Geldbörse",
+	"detailwallet": "Geldbörse Details",
+	"donate": "Spende!",
+	"generatelabelbitcoinaddress": "Generiere neuen Schlüssel... ",
+	"generatelabelmovemouse": "BEWEGEN Sie bitte Ihre Maus für etwas Entropie... ",
+	"generatelabelkeypress": "ODER tippen Sie etwas zufälligen Text in diese Textbox ",
+	"skipMessage": "Sie können diesen Schritt überspringen, falls Sie nicht den Zufallsgenerator verwenden möchten.",
+	"singlelabelbitcoinaddress": "öffentliche Adresse",
+	"singleshare": "ÖFFENTLICH",
+	"singlelabelprivatekey": "Privater Schlüssel (Format: WIF)",
+	"singlesecret": "GEHEIM",
+	"securitystep0title": "Folgen Sie der Sicherheits Checkliste",
+	"securitystep0": "Zu Beginn <strong>downladen</strong> Sie dieses Programm von der <a href=\"https://github.com/MichaelMure/PaperWallet/archive/master.zip\">Github</a> Webseite und öffnen die Datei index.html direkt auf Ihrem Computer, Notebook oder Tablet. Angreifer könnten anderenfalls auf einer Webseite möglicherweise den mehr als 6000 Zeilen umfassenden Code verändern und Ihren privaten Schlüssel abgreifen. Für zusätzliche Sicherheit unterbrechen Sie die Verbindung zum Internet, während Sie Ihre Geldbörse(n) generieren.",
+	"securitystep1title": "Schritt 1: Generierung eines neuen Schlüssels",
+	"securitystep1": "Wählen Sie eine Kryptowährung und wählen Sie \"Generiere neuen Schlüssel\".",
+	"securitystep2title": "Schritt 2: Ausdruck Ihrer Papier Geldbörse",
+	"securitystep2": "Klicken Sie auf die Tabelle \"Papier Geldbörse\" und drucken Sie die Seite in hoher Qualität aus. Empfehlung: Verwenden Sie nach Möglichkeit hochwertiges Papier. <strong>Hinweis:</strong> Speichern Sie die Druckausgabe nicht im PDF-Format, weil diese Datei ansonsten später von Angreifern abgegriffen und Ihr Guthaben gestolen werden könnte.",
+	"securitystep3title": "Schritt 3: Ausdruck Papier Geldbörse falten",
+	"securitystep3": "Falten Sie Ihre neue Papier Geldbörse an folgenden Linien.\n<img src=\"images/foldinginstructions.png\" alt=\"Falten Sie einmal quer und zweimal längs.\"><br>\nDie öffentliche Adresse liegt zum Schutz auf dem privaten Schlüssel, beide Schlüssel schützen Sie mit der Deckfaltung von rechts.",
+	"securitystep4title": "Schritt 4: Teilen Sie Ihre öffentliche Adresse",
+	"securitystep4": "Verwenden Sie Ihre öffentliche Adresse, um eingehende Zahlungen von anderen Nutzern der ausgewählten Kryptowährung zu erhalten. Ihre öffentliche Adresse können Sie nach belieben teilen. Mit Ihrer öffentlichen Adresse können Sie zudem jederzeit Ihr Guthaben über einen öffentlichen Block-Explorer überprüfen.",
+	"securitystep5title": "Schritt 5: Privaten Schlüssel Geheim halten",
+	"securitystep5": "Halten Sie Ihren privaten Schlüssel geheim. Nur mit Ihrem privaten Schlüssel können Sie Zahlungen aus Ihrer Papier Geldbörse leisten.<br>\n<strong>Achtung:</strong>Falls jemand Dritter Ihren privaten Schlüssel erlangt, kann er all Ihr Guthaben aus der Papier Geldbörse stehlen.",
+	"securitystep6": "Bitte testen Sie die Papier Geldbörse mit kleinen Beträgen, bevor Sie große Geldsummen auf die Papier Geldbörse buchen.",
+	"securitychecktitle": "Sicherheits Checkliste :",
+	"securitychecklivecd": "Verwenden Sie nur ein Betriebssystem, dass garantiert frei von Spyware und Viren ist, beispielsweise eine sichere Ubuntu LiveCD.",
+	"supportedcurrencylbl": "unterstützte Crypto-Währungen !",
+	"paperlabelencrypt": "Verschlüsselung mit BIP38 ?",
+	"paperlabelBIPpassphrase": "BIP38 Kennwort:",
+	"bulklabelstartindex": "Start Index:",
+	"bulklabelrowstogenerate": "zu generierende Zeilen:",
+	"bulklabelcompressed": "Komprimierte Schlüssel ?",
+	"bulklabelcsv": "Komma separierte Werte (CSV): Index, öffentliche Adresse, private Schlüssel (WIF)",
+	"brainlabelenterpassphraselbl": "Passwort Phrase (z. B. Satz mit Minus-Zeichen verbunden):",
+	"brainlabelconfirmlbl": "Passwort Phrase bestätigen:",
+	"brainalgorithm": "Algorithmus: SHA256(Passwort Phrase)",
+	"brainlabelbitcoinaddress": "Öffentliche Adresse",
+	"brainlabelprivatekey": "Privater Schlüssel (WIF Format):",
+	"detaillabelenterprivatekey": "Geben Sie Ihren privaten Schlüssel ein",
+	"qrcaminstructiontitle": "Scannen Sie Ihren QR-Code mit Ihrer Webcam",
+	"paperqrnotsupported": "Fehler. Ihr Web Browser unterstützt nicht den HTML5 Kamerazugriff. Verwenden Sie bitte nach Möglichkeit einen aktuellen Browser von Firefox, Chrome oder Opera.",
+	"paperqrpermissiondenied": "<p>Zugriff verweigert. Ihr Browser sollte eine Warnmeldung anzeigen, die den Zugriff auf Ihre Webcam authorisiert. Klicken Sie bitte auf \"Autorisieren\", um Ihre Webcam zu aktivieren.</p>",
+	"detaillabelpassphrase": "BIP38 Passwort Phrase eingeben",
+	"detaillabelnote1": "Ihr privater Schlüssel ist ein weltweit einmaliger Schlüssel, den nur Sie kennen. Dieser kann in verschiedenen Format encodiert werden. Unterhalb wird die öffentliche Adresse, der dazugehörige öffentliche Schlüssel und Ihr privater Schlüssel in den häufig verwendeten Formaten (WIF, WIFC, HEX, B64) dargestellt.",
+	"detaillabelbitcoinaddress": "Öffentliche Adresse",
+	"detaillabelbitcoinaddresscomp": "Öffentliche Adresse komprimiert",
+	"detaillabelpublickey": "Öffentliche Adresse (130 Zeichen [0-9A-F]):",
+	"detaillabelpublickeycomp": "Öffentliche Adresse komprimiert (66 Zeichen [0-9A-F]):",
+	"detaillabelprivwif": "Privater Schlüssel WIF<br>51 Zeichen Base58",
+	"detaillabelprivwifcomp": "Privater Schlüssel WIF komprimiert<br>52 Zeichen Base58",
+	"detaillabelprivhex": "Privater Schlüssel hexadezimal (64 Zeichen [0-9A-F]):",
+	"detaillabelprivb64": "Privater Schlüssel Base64 (44 Zeichen):",
+	"detaillabelprivmini": "Privater Schlüssel MINI Format (22, 26 oder 30 Zeichen):",
+	"detaillabelprivb6": "Privater Schlüssel Base6 (99 Zeichen [0-5]):",
+	"detaillabelprivbip38": "Privater Schlüssel BIP38 Format (58 Zeichen Base58):",
+	"detaillabelq1": "Wie erstelle ich eine zufällige Geldbörse? Was ist Base6 (B6)?",
+	"detaila1": "Voraussetzung für die sichere Erstellung eine Kryptowährungs-Geldbörse ist die Verwendung von zufälligen Zeichen, die verwendet werden, um eine sichere Geldbörse zu generieren. Physikalische Zufallsgeneratoren sind in der Regel hochwertiger, wie von Computern berechnete Pseudo-Zufallszahlen. Physikalischer Zufall lässt sich zum Beispiel mit einem Würfel erzeugen. Um einen privaten Schlüssel einer Kryptowährung zu generieren, müssen Sie einen Standardwürfel mit sechs Ziffern 99 Mal werfen. Notieren Sie hierbei jedes Würfelergebnis. Bei der Aufzeichnung verwenden Sie folgende Regel: 1=1, 2=2, 3=3, 4=4, 5=5, 6=0. Dadurch generieren Sie manuell eine lange, zufällige Zahl: Ihren privaten Schlüssel im B6 oder Base6 Format. Sie können anschließend die 99 Zeichen als Base6 privater Schlüssel in das obere Textfeld einfügen und anschließend auf \"Details darstellen\" klicken. Anschließend wird Ihnen die öffentliche Adresse zu Ihrem privaten Schlüssel dargestellt. Notieren Sie bitte Ihren privaten Schlüssel auch im WIF Format, da dieses häufig verwendet wird.",
+	"donatetextfooter": "Um die Entwicklung von diesem Kryptogeldbörsen-Generator zu unterstützen, bitten wir Sie um eine Spende an eine der folgenden Adressen. Falls die Unterstützung für eine Kryptowährung von einem externen Programmierer beigetragen wurde, erhält dieser direkt Ihre Spende.",
+	"footersupport": "Unterstützen Sie PaperWallet.611.to",
+	"footerlabelgithub": "Download (GitHub Depot)",
+	"footerlabelcopyright2": "JavaScript Copyright Rechte sind im Quelltext inkludiert.",
+	"footerlabelnowarranty": "Nutzung auf eigene Gefahr. Haftungsausschluss für etwaige Schäden.",
+	"defaultTitle": "PaperWallet.611.to - Universeller Papier Geldbörsen Generator für Kryptowährungen wie Bitcoin und andere",
+	"title": "Papier Geldbörse für Kryptowährung",
+	"brainalertpassphrasewarning": "Achtung: Die Verwendung einer möglichst langen und sicheren Passwort Phrase ist wichtig, weil anderenfalls Ihr Passwort erraten und damit Ihr Guthaben gestolen werden kann.",
+	"brainalertpassphrasetooshort": "Die von Ihnen eingegebene Passwort Phrase ist zu kurz.",
+	"brainalertpassphrasedoesnotmatch": "Die zwei von Ihnen eingegebenen Passwort Phrasen stimmen nicht überein.",
+	"bulkgeneratingaddresses": "Generiere Schlüssel...",
+	"bip38alertincorrectpassphrase": "Falsche Passwort Phrase für diesen privaten Schlüssel.",
+	"bip38alertpassphraserequired": "Passwort Phrase wird benötigt für BIP38 gesicherten Schlüssel.",
+	"detailconfirmsha256": "Ihr eingegebener Text ist kein gültiger privater Schlüssel!\nMöchten Sie den eingegebenen Text als Passwort Phrase verwenden, um mittels SHA256 Hash-Funktion einen privaten Schlüssel zu erstellen?\n\nAchtung: Die Verwendung einer möglichst langen und sicheren Passwort Phrase ist wichtig, weil anderenfalls Ihr Passwort erraten und damit Ihr Guthaben gestolen werden kann.",
+	"detailalertnotvalidprivatekey": "Ihr eingetragener Text ist kein gültiger privater Schlüssel",
+	"securitychecklistrandomOK": "Ihr Browser kann kryptografische Zufallszahlen mit der Funktion wie folgt generieren: window.crypto.getRandomValues",
+	"securitychecklistrandomNOK": "Ihr Browser unterstützt NICHT die Funktion window.crypto.getRandomValues(), die benötigt wird um möglichst sichere zufällige Zahlen zu generieren. Bitte verwenden Sie einen aktuelleren Browser...",
+	"securitychecklistofflineNOK": "Warnung: Sie verwenden diesen Generator von einer Live Webseite. Dies ist nicht empfohlen. Bitte laden Sie möglichst eine Kopie des Quelltextes von GitHub auf einen geschützten Computer, falls Sie beabsichtigen wertvolle Geldbeträge auf Ihre generierte(n) Papiergeldbörse(n) zu übertragen.",
+	"securitychecklistofflineOK": "OK: Sie verwenden eine lokale Kopie dieses Programmes zur Erstellung einer Papier Geldbörse für Kryptowährungen.",
+	"paperwalletback": "<ul><li>Verwenden Sie Ihre öffentliche Adresse, um Zahlungen auf diese Geldbörse zu überweisen.</li><li>Kontrollieren Sie Ihr Guthaben durch Eingabe Ihrer öffentlichen Adresse mit Hilfe eines Online Blockchain-Explorers. z.B. https://chainz.cryptoid.info</li><li><b>NIEMALS DEN PRIVATEN SCHLÜSSEL PREISGEBEN!</b> Importieren Sie den privaten Schlüssel erst in eine Online-Geldbörse, wenn Sie Ihr Guthaben ausgeben möchten.</li></ul><b>Guthaben:</b> _____________ <b>Datum:</b> ________________<br /><b>Notizen:</b> ______________________________________",
+},
+	"ru": {
+	"choosecurrency": "Выберите валюту",
+	"singlewallet": "Единичный кошелек",
+	"paperwallet": "Бумажный кошелек",
+	"bulkwallet": "Несколько кошельков",
+	"brainwallet": "\"Умственный\" кошелек",
+	"detailwallet": "Подробности о кошельке",
+	"donate": "Поддержка",
+	"generatelabelbitcoinaddress": "Создается новый адрес...",
+	"generatelabelmovemouse": "ПОДВИГАЙТЕ мышкой, чтобы сделать генерацию немного более случайной...",
+	"generatelabelkeypress": "ИЛИ введите случайные символы в это поле для текста",
+	"skipMessage": "Этот шаг можно пропустить, если вы не планируете использовать генератор случайных ключей",
+	"singlelabelbitcoinaddress": "Открытый адрес",
+	"singleshare": "ОТКРЫТЫЙ",
+	"singlelabelprivatekey": "Закрытый ключ (в формате импорта в кошелек - WIF)",
+	"singlesecret": "СЕКРЕТНЫЙ",
+	"securitystep0title": "Шаг 0. Следуйте рекомендациям в \"Перечне безопасности\"",
+	"securitystep0": "Первым делом <strong>скачайте</strong> этот веб-сайт с <a href=\"https://github.com/MichaelMure/PaperWallet/archive/master.zip\">Github</a>, распакуйте и откройте файл index.html непосредственно с Вашего компьютера. Cпрятать вредоносный код в 6000+ строках javascript, чтобы украсть Ваш закрытый ключ, довольно просто, а Вам вряд ли этого хочется. Система контроля версий позволяет значительно упростить взаимную проверку исполняемого кода. Для большей безопасности <strong>отключитесь от Интернета</strong> на время создания кошелька.",
+	"securitystep1title": "Шаг 1. Создайте новый адрес",
+	"securitystep1": "Выберите Вашу валюту и нажмите на кнопку \"Создать новый адрес\"",
+	"securitystep2title": "Шаг 2. Распечатайте бумажный кошелек",
+	"securitystep2": "Нажмите на закладку \"Бумажный кошелек\" и распечатайте страницу в высоком качестве. <strong>Никогда не сохраняйте страницу как PDF файл для последующей печати, поскольку файл имеет гораздо более высокие шансы быть скомпрометированным, чем бумага.</strong>",
+	"securitystep3title": "Шаг 3. Сверните бумажный кошелек",
+	"securitystep3": " Сверните Ваш новый бумажный кошелек согласно линиям\n<img src=\"images/foldinginstructions.png\" alt=\"Согните пополам продольно, а потом каждую треть поперечно.\"><br>\nВы можете вставить одну часть внутрь другой, чтобы скрепить кошелек.",
+	"securitystep4title": "Шаг 4. Делитесь Вашим открытым адресом",
+	"securitystep4": "Используйте Ваш открытый адрес для получения денег от других пользователей крипто-валюты. Вы можете делиться открытым адресом сколько угодно раз.",
+	"securitystep5title": "Шаг 5. Держите Ваш закрытый ключ в тайне",
+	"securitystep5": "Закрытый ключ, по сути, и есть Ваши деньги - если кто-то получит к нему доступ, он сможет не только вывести деньги, которые будут там находиться на тот момент, но и выводить все средства, получаемые на этот кошелек в будущем.",
+	"securitystep6": "Перед тем как получать значительные платежи, пожалуйста, попробуйте вывести с кошелька небольшие суммы.",
+	"securitychecktitle": "Перечень безопасности :",
+	"securitychecklivecd": "Используете ли Вы безопасную операционную систему, гарантированно чистую от различного рода шпионских программ и вирусов, например, такую как Ubuntu LiveCD?",
+	"supportedcurrencylbl": "валют доступно !",
+	"paperlabelencrypt": "Зашифровать с помощью BIP38?",
+	"paperlabelBIPpassphrase": "Кодовая фраза:",
+	"bulklabelstartindex": "Начальный индекс:",
+	"bulklabelrowstogenerate": "Количество генерируемых строк:",
+	"bulklabelcompressed": "Создавать сжатые адреса?",
+	"bulklabelcsv": "Значения, разделенные запятой: Индекс,Адрес,Закрытый ключ (WIF)",
+	"brainlabelenterpassphraselbl": "Введите кодовую фразу:",
+	"brainlabelconfirmlbl": "Подтвердите кодовую фразу:",
+	"brainalgorithm": "Алгоритм: SHA256(кодовая фраза)",
+	"brainlabelbitcoinaddress": "Открытый адрес:",
+	"brainlabelprivatekey": "Закрытый ключ (в формате импорта в кошелек - WIF):",
+	"detaillabelenterprivatekey": "Введите закрытый ключ",
+	"qrcaminstructiontitle": "Сосканируйте QR-код с помощью Вашей камеры",
+	"paperqrnotsupported": "К сожалению, Ваш браузер не поддерживает возможности HTML5 по управлению камерой. Попробуйте использовать свежую версию Firefox (рекомендуется), Chrome или Opera.",
+	"paperqrpermissiondenied": "<p>Доступ запрещен. Ваш браюзер должен отобразить сообщение с запросом доступа к Вашей камере. Пожалуйста, нажмите кнопку \"Разрешить\", чтобы предоставить доступ к Вашей камере.</p>",
+	"detaillabelpassphrase": "Введите кодовую фразу BIP38",
+	"detaillabelnote1": "Ваш закрытый ключ - это уникальный секретный номер, который знаете только Вы. Он может быть представлен в различных форматах. Ниже показаны открытый адрес и открытый ключ, соответствующие Вашему закрытому ключу, а также Ваш закрытый ключ в наиболее популярных форматах (WIF, WIFC, HEX, B64).",
+	"detaillabelbitcoinaddress": "Открытый адрес",
+	"detaillabelbitcoinaddresscomp": "Сжатый открытый адрес",
+	"detaillabelpublickey": "Открытый ключ (130 символов [0-9A-F]):",
+	"detaillabelpublickeycomp": "Открытый ключ (сжатый, 66 символов [0-9A-F]):",
+	"detaillabelprivwif": "Закрытый ключ WIF<br>51 символ Base58",
+	"detaillabelprivwifcomp": "Сжатый закрытый ключ WIF <br>52 символа Base58",
+	"detaillabelprivhex": "Закрытый ключ в шестнадцатеричном формате (64 символа [0-9A-F]):",
+	"detaillabelprivb64": "Закрытый ключ Base64 (44 символа):",
+	"detaillabelprivmini": "Закрытый ключ в мини-формате (22, 26 или 30 символов):",
+	"detaillabelprivb6": "Закрытый ключ в формате Base6 (99 символов [0-5]):",
+	"detaillabelprivbip38": "Закрытый ключ в формате BIP38 (58 символов Base58):",
+	"detaillabelq1": "Как мне создать кошелек с помощью игрального кубика? Что такое B6?",
+	"detaila1": "Важная чать в создании кошелька для крипто-валюты заключается в том, чтобы убедиться, что используются действительно случайные числа. Физическая случайность лучше, чем сгенерированные компьютером псевдо-случайные числа. Простейший способ сгенерировать физически случайные числа - игральный кубик. Для создания закрытого ключа нужен лишь 6-гранный кубик, который нужно будет кинуть 99 раз. Записывайте каждое значение, при этом следуйте следующему правилу: 1=1, 2=2, 3=3, 4=4, 5=5, 6=0. Таким образом, Вы получите большое случайное число - Ваш закрытый ключ в формате B6, т.е. в шестиричном формате. Теперь Вы можете ввести 99-тисимвольный закрытый ключ в шестиричном формате в текстовое поле сверху и нажать кнопку \"Посмотреть подробности\". Вы увидите открытый адрес, соответствующий Вашему закрытому ключу. Обратите также внимание на Ваш закрытый ключ в формате WIF, поскольку этот формат является наиболее широко используемым.",
+	"donatetextfooter": "Для поддержки разработчиков этого генератора кошельков используйте следующие адреса. Если поддержка для валюты добавлена внешним разработчиком, он получает Ваши пожертвования напрямую.",
+	"footersupport": "Поддержать PaperWallet.611.to",
+	"footerlabelgithub": "Скачать (репозиторий на GitHub)",
+	"footerlabelcopyright2": "Копирайты на JavaScript включены в исходники.",
+	"footerlabelnowarranty": "Гарантии не предоставляются.",
+	"defaultTitle": "PaperWallet.611.to - Универсальный генератор бумажных кошельков для Bitcoin и других криптовалют",
+	"title": "Генератор бумажных кошельков",
+	"brainalertpassphrasewarning": "Внимание: Выбор сильной кодовой фразы очень важен для предотвращения взлома путем прямого перебора, совершаемого злоумышленниками с целью похитить Ваши деньги.",
+	"brainalertpassphrasetooshort": "Введенная Вами кодовая слишком короткая.",
+	"brainalertpassphrasedoesnotmatch": "Введенные кодовые фразы не совпадают.",
+	"bulkgeneratingaddresses": "Создаются адреса...",
+	"bip38alertincorrectpassphrase": "Неправильная кодовая фраза для данного закрытого ключа.",
+	"bip38alertpassphraserequired": "Для закрытого ключа в формате BIP38 требуется кодовая фраза",
+	"detailconfirmsha256": "Введенный Вами текст не является закрытым ключом!\nХотите использовать введенный текст в качестве кодовой фразы и создать закрытый ключ, используя SHA256 хэш этой кодовой фразы?\nВнимание: Выбор сильной кодовой фразы очень важен для предотвращения взлома путем прямого перебора, совершаемого злоумышленниками с целью похитить Ваши деньги.",
+	"detailalertnotvalidprivatekey": "Введенный Вами текст не является закрытым ключом",
+	"securitychecklistrandomOK": "Ваш браузер способен генерировать криптографически случайные ключи с помощью функции window.crypto.getRandomValues",
+	"securitychecklistrandomNOK": "Ваш браузер НЕ поддерживает функцию window.crypto.getRandomValues(), которая важна для генерирования максимально безопасных случайных чисел. Пожалуйста, используйте более современный браузер.",
+	"securitychecklistofflineNOK": "Похоже, что Вы запустили этот генератор с сайта, что не рекомендуется для создания ценных кошельков. Вместо этого, используйте ссылку внизу данной страницы для скачивания ZIP-файла с GitHub и запустите этот генератор из локального HTML-файла, отключив доступ к интернету.",
+	"securitychecklistofflineOK": "Вы запустили генератор из локального файла.",
+	"paperwalletback": "<ul><li>Для пополнения средств этого бумажного кошелька отправьте криптовалюту на его открытый адрес.</li><li>Проверьте Ваш балас, найдя открытый адрес в просмотрщиках блокчейна, таких как blockchain.info.</li><li><b>НЕ РАССКРЫВАЙТЕ ЗАКРЫТЫЙ КЛЮЧ</b> пока Вы не будете готовы импортировать баланс этого кошелька в крипто-клиент, биржу или онлайн-кошелек.</li></ul><b>Сумма :</b> ___________       <b>Дата :</b> ________________<br /><b>Пометки :</b> ______________________________________",
+},
+	"ua": {
+    "choosecurrency": "Оберіть валюту",
     "singlewallet": "Один гаманець",
     "paperwallet": "Паперовий гаманець",
     "bulkwallet": "Кілька гаманців",
@@ -11615,11 +11712,11 @@ ninja.translator = {
     "detaillabelq1": "Як я можу створити гаманець за допомогою кубіків? Що таке B6?",
     "detaila1": "При створенні гаманця для криптовалюти, важливо переконатися, що використовуються випадкові числа. Фізична випадковість краща ніж згенеровані комп'ютером псевдо-випадкові числа. Найпростіший шлях згенерувати фізично випадкові числа - це гральний кубік. Щоб створити криптовалютний приватний ключ вам слід кинути шестигранний кубік 99 разів. Занотуйте кожне значення, дотримуючись наступного правила: 1=1, 2=2, 3=3, 4=4, 5=5, 6=0. Таким чином ви одержите довге випадкове число - ваш приватний ключ у форматі B6. Тепер ви можете ввести ці 99 знаків вашого приватного ключа B6 у текстове поле зверху сторінки і клацніть на кнопку \"Показати подробиці\". Ви побачите публічну адресу, яка створена від відповідного приватного ключа. Зверніть увагу на ваш приватний ключ у форматі WIF, бо цей формат є найпоширенішим.",
     "donatetextfooter": "Для пожертв розробникам цього генератора гаманців, використовуйте наступні адреси. Якщо підтримка для валюти додана зовнішнім учасником проекту, він одержує пожертви напряму.",
-    "footersupport": "Підтримати WalletGenerator.net",
+    "footersupport": "Підтримати PaperWallet.611.to",
     "footerlabelgithub": "Завантажити (репозиторій на GitHub)",
     "footerlabelcopyright2": "Авторські права на JavaScript включено у джерела.",
     "footerlabelnowarranty": "Гарантії не надаються.",
-    "defaultTitle": "WalletGenerator.net - універсальний генератор паперових гаманців для біткойнів та інших криптовалют",
+    "defaultTitle": "PaperWallet.611.to - універсальний генератор паперових гаманців для біткойнів та інших криптовалют",
     "title": "Генератор паперових гаманців",
     "brainalertpassphrasewarning": "Увага: Вибір складної парольної фрази вельми важливий щоб запобігти шахраям поцупити ваші гроші.",
     "brainalertpassphrasetooshort": "Парольна фраза, що ви її ввели, є дуже короткою.",
@@ -12807,7 +12904,7 @@ if (ninja.getQueryString()["showseedpool"] == "true" || ninja.getQueryString()["
 	document.getElementById("seedpoolarea").style.display = "block";
 }
 // change currency
-var currency = ninja.getQueryString()["currency"] || "bitcoin";
+var currency = ninja.getQueryString()["currency"] || "sixeleven";
 currency = currency.toLowerCase();
 for(i = 0; i < janin.currencies.length; i++) {
 	if (janin.currencies[i].name.toLowerCase() == currency)
