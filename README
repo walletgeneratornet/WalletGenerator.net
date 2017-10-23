@@ -1,18 +1,15 @@
-**** LOOKING FOR THE ZIP FILE TO DOWNLOAD ? ***********************************
-It's here: https://github.com/MichaelMure/WalletGenerator.net/archive/master.zip
-*******************************************************************************
+---- LOOKING FOR THE ZIP FILE TO DOWNLOAD? ----
+direct download of latest version:
+https://github.com/611project/sixelven-wallet-generator/archive/master.zip
 
-WalletGenerator.net
-Universal Client-Side Wallet Generator
+PaperWallet.611.to
+Your universal client-side offline wallet generator.
 
 Now crypto-currency wallets addresses and their corresponding private key can be conveniently generated in a web browser.
 
-The WalletGenerator.net project provides an all-in-one HTML document with embedded JavaScript/Css/Images. The JavaScript is readable, not minified and contains no XMLHttpRequest's (no AJAX). The benefit of this technique is you can load the JavaScript locally and trust that the JavaScript did not change after being loaded.
-
+The PaperWallet.611.to project provides an all-in-one HTML document with embedded JavaScript/Css/Images. The JavaScript is readable, not minified and contains no XMLHttpRequest's (no AJAX). The benefit of this technique is you can load the JavaScript locally and trust that the JavaScript did not change after being loaded.
 
 Please send DONATIONS for this project using the crypto-currency addresses available on the 'Donate' tab of the website.
-
-You can help us support more currency by following this non-developer How-To: https://github.com/MichaelMure/WalletGenerator.net/wiki/How-to-add-a-new-currency
 
 END USER NOTES:
  1) To print QRCode in IE8 you must enable the "Print Background Colors and Images" checkbox on the "Page Setup" screen.
@@ -25,6 +22,9 @@ END USER NOTES:
 
 Notice of Copyrights and Licenses:
 ---------------------------------------
+The PaperWallet.611.to project, software and embedded resources are copyright PaperWallet.611.to.
+The PaperWallet.611.to name and logo are not part of the open source license.
+
 The WalletGenerator.net project, software and embedded resources are copyright WalletGenerator.net.
 The WalletGenerator.net name and logo are not part of the open source license.
 
@@ -42,6 +42,8 @@ window.QRCode         MIT License
 window.Bitcoin        MIT License
 jsqrcode              Apache License, 2.0
 
+The PaperWallet.611.to software is available under The MIT License (MIT)
+Copyright (c) 2017 PaperWallet.611.to
 
 The WalletGenerator.net software is available under The MIT License (MIT)
 Copyright (c) 2014 WalletGenerator.net
