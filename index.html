@@ -9348,10 +9348,10 @@ body { font-family: Arial; background-image: url('images/diamonds.png'); height:
 #generate #mousemovelimit { font-size: 16px; color: #FFF; }
 #rightArea { position: absolute; right: 66px; top: 62px; width: 170px; }
 #progress-bar { width: 170px; background:#80CF80; position: relative; margin-bottom: 20px;
-	-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+  -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
  }
 #progress-bar-percentage { background:#FFA247; padding: 3px 0px; text-align: center; height: 18px;
-	-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+  -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
  }
 #progress-bar-percentage span { display: inline-block; position: absolute; width: 100%; left: 0; }
 .nicerButton { font-size: 14px; }
@@ -9382,29 +9382,27 @@ h1 { margin: 0px; height: 91px; }
 #singlesafety p { font-size: 13px; }
 
 .firstHalfSingleSafety, .secondHalfSingleSafety {
-	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
-	box-sizing: border-box;         /* Opera/IE 8+ */
-	display: inline-block;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  display: inline-block;
     vertical-align: top;
     position: relative;
 }
 
-.firstHalfSingleSafety { width: 50%; padding: 10px 30px 10px 30px; min-height: 930px; }
+.firstHalfSingleSafety { width: 50%; padding: 10px 30px 10px 30px; }
 
  .secondHalfSingleSafety {
-    position: absolute;
-    top: 0px;
-    right: 0px;
     width: 50%;
     padding: 20px;
     text-align: center;
+    float: right;
  }
 
 .frontPageImage, .seedFrontPageImage {
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
 .frontPageImage { width: 100%; }
 .seedFrontPageImage { max-height: 340px; }
@@ -9412,38 +9410,39 @@ h1 { margin: 0px; height: 91px; }
 .currencyNameColumn { min-width: 120px; }
 
 .securityChecklist {
-	background-color: #FFE6C9;
-	margin-top: 15px;
+  background-color: #FFE6C9;
+  margin-top: 15px;
     padding: 20px;
     -webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	text-align: left;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-align: left;
 }
 
 .supportedCurrenciesChecklist {
-	background-color: #C2F2C3;
-	margin-top: 10px;
-	margin-bottom: 10px;
+  background-color: #C2F2C3;
+  margin-top: 10px;
+  margin-bottom: 10px;
     padding: 20px;
     -webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	text-align: left;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-align: left;
 }
 
 .supportedCurrenciesChecklist ul {
-	list-style-type: none;
-	padding-left: 14px;
+  list-style-type: none;
+  padding-left: 14px;
 }
 
 #supportedcurrencies {
-	line-height: 20px;
+  line-height: 20px;
     padding: 12px 12px 0;
+  text-align: justify;
 }
 
 .frontPageInstructions {
-	padding: 5px;
+  padding: 5px;
 }
 
 .securityChecklist ul { padding: 5px 0 0 20px; }
@@ -9468,43 +9467,43 @@ h1 { margin: 0px; height: 91px; }
 #paperarea .keyarea.art { display: block; height: auto; border: 0; font-family: Ubuntu, Arial; padding: 0; margin: 0; }
 #paperarea .artwallet .papersvg { width: 1004px; height: 426px; border: 0; margin: 0; padding: 0; left: 0; }
 #paperarea .artwallet .qrcode_public { top: 263px; left: 780px; z-index: 100; margin: 0; float: none; display: block; position: absolute; background-color: #FFFFFF;
-		                                padding: 5px 5px 2px 5px; }
+                                    padding: 5px 5px 2px 5px; }
 #paperarea .artwallet .qrcode_private { top: 37px; right: 446px; z-index: 100; margin: 0; float: none; display: block; position: absolute; background-color: #FFFFFF;
-		                                padding: 5px 5px 2px 5px;
-	                                	-ms-transform: rotate(180deg); /* IE 9 */
-										-webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
-										transform: rotate(180deg);
-		                                 }
+                                    padding: 5px 5px 2px 5px;
+                                    -ms-transform: rotate(180deg); /* IE 9 */
+                    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+                    transform: rotate(180deg);
+                                     }
 .supportWalletGenerator { margin: 30px; }
 .errorMsg { color: red; text-align: center !important; width: 100% !important; padding-top: 15px !important; }
 #paperarea .artwallet .btcaddress
 {
-	position: absolute; bottom: 88px; left: 874px; z-index: 100; font-size: 11px; background-color: transparent;
-	font-weight: 100; color: #000000; margin: 0; width: 124px; height: 32px; text-align: center;
+  position: absolute; bottom: 88px; left: 874px; z-index: 100; font-size: 11px; background-color: transparent;
+  font-weight: 100; color: #000000; margin: 0; width: 124px; height: 32px; text-align: center;
     word-wrap: break-word; font-family: Courier, monospace;
     -ms-transform: rotate(-90deg); /* IE 9 */
-	-webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
-	transform: rotate(-90deg); font-family: Courier, monospace;
+  -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+  transform: rotate(-90deg); font-family: Courier, monospace;
 }
 #paperarea .artwallet .btcprivwif
 {
-	position: absolute; top: 86px; right: 540px; z-index: 100; font-size: 11px; background-color: transparent;
-	font-weight: 100; color: #000000; margin: 0; width: 124px; height: 32px; text-align: center;
+  position: absolute; top: 86px; right: 540px; z-index: 100; font-size: 11px; background-color: transparent;
+  font-weight: 100; color: #000000; margin: 0; width: 124px; height: 32px; text-align: center;
     word-wrap: break-word;
-	-ms-transform: rotate(90deg); /* IE 9 */
-	-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-	transform: rotate(90deg);
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
     font-family: Courier, monospace;
 }
 #paperarea .artwallet .btcencryptedkey
 {
-	position: absolute; top: 86px; right: 540px; z-index: 100; font-size: 11px; background-color: transparent;
-	font-weight:100; color: #000000; margin: 0; width: 110px; height: 32px; text-align: center;
-	word-wrap: break-word;
-	-ms-transform: rotate(90deg); /* IE 9 */
-	-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-	transform: rotate(90deg);
-	font-family: Courier, monospace;
+  position: absolute; top: 86px; right: 540px; z-index: 100; font-size: 11px; background-color: transparent;
+  font-weight:100; color: #000000; margin: 0; width: 110px; height: 32px; text-align: center;
+  word-wrap: break-word;
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+  font-family: Courier, monospace;
 }
 #suppliedPrivateKey { width: 420px; }
 #papergenerate { margin-left: 10px; margin-right: 0px;}
@@ -9581,72 +9580,72 @@ h1 { margin: 0px; height: 91px; }
 
 @media screen
 {
-	#tagline { margin: 0 0 15px 0; font-style: italic; text-align: left; }
-	.menu { text-align: left; }
-	.menu .tab { border-top-left-radius: 5px; border-top-right-radius: 5px; display: inline-block; background-color: #F5F5F5;
-					border: 1px solid #BFBFBF; padding: 5px; margin: 0 2px 0 0; position: relative; top: 1px; z-index: 110; cursor: pointer; }
-	.menu .tab:hover { color: #d58424; }
-	.menu .tab.selected { background-color: #FFF; border-bottom: 1px solid #FFF; cursor: default; }
-	.menu .tab.selected:hover { color: #000; }
-	.pagebreak { height: 50px; }
-	.commands { border-bottom: 1px solid #BFBFBF;  padding: 10px 2px; margin-bottom: 0; background-color: white; }
-	.commands .row { padding: 0 0; text-align: left; }
-	.commands .row.extra { padding-top: 6px; }
-	.commands span { padding: 0 10px; }
-	.commands span.print { float: right; }
-	.commands span.right { float: right; }
-	.expandable { padding: 10px 15px; text-align: left; cursor: pointer; }
+  #tagline { margin: 0 0 15px 0; font-style: italic; text-align: left; }
+  .menu { text-align: left; }
+  .menu .tab { border-top-left-radius: 5px; border-top-right-radius: 5px; display: inline-block; background-color: #F5F5F5;
+          border: 1px solid #BFBFBF; padding: 5px; margin: 0 2px 0 0; position: relative; top: 1px; z-index: 110; cursor: pointer; }
+  .menu .tab:hover { color: #d58424; }
+  .menu .tab.selected { background-color: #FFF; border-bottom: 1px solid #FFF; cursor: default; }
+  .menu .tab.selected:hover { color: #000; }
+  .pagebreak { height: 50px; }
+  .commands { border-bottom: 1px solid #BFBFBF;  padding: 10px 2px; margin-bottom: 0; background-color: white; }
+  .commands .row { padding: 0 0; text-align: left; }
+  .commands .row.extra { padding-top: 6px; }
+  .commands span { padding: 0 10px; }
+  .commands span.print { float: right; }
+  .commands span.right { float: right; }
+  .expandable { padding: 10px 15px; text-align: left; cursor: pointer; }
 
     #menu { visibility: hidden; font-size: 90%; }
     #culturemenu { text-align: right; padding: 0 20px; font-size: 14px; margin-bottom: 35px; }
     #culturemenu span { padding: 3px; }
     #culturemenu .selected { text-decoration: none; color: #000000; }
 
-	#braincommands .row .label { width: 200px; display: inline-block; }
-	#braincommands .notes { font-size: 80%; display: block; padding: 5px 10px; }
-	#brainpassphrase { width: 280px; }
-	#brainpassphraseconfirm { width: 280px; }
-	#brainwarning {  }
-	#detailcommands { padding: 10px 0; }
-	#detailcommands span { padding: 0 10px; }
-	#detailprivkey { width: 300px; }
-	#detailprivkeypassphrase { width: 250px; }
-	.paper .commands { border: 1px solid #BFBFBF; }
-	#bulkstartindex { width: 35px; }
-	#bulklimit { width: 45px; }
+  #braincommands .row .label { width: 200px; display: inline-block; }
+  #braincommands .notes { font-size: 80%; display: block; padding: 5px 10px; }
+  #brainpassphrase { width: 280px; }
+  #brainpassphraseconfirm { width: 280px; }
+  #brainwarning {  }
+  #detailcommands { padding: 10px 0; }
+  #detailcommands span { padding: 0 10px; }
+  #detailprivkey { width: 300px; }
+  #detailprivkeypassphrase { width: 250px; }
+  .paper .commands { border: 1px solid #BFBFBF; }
+  #bulkstartindex { width: 35px; }
+  #bulklimit { width: 45px; }
 
-	.footer { font-size: 90%; clear: both; width: 750px; padding: 10px 0 10px 0; margin: 50px auto auto auto; }
-	.footer div span.item { margin: 10px; }
-	.footer .authorbtc { float: left; width: 470px; }
-	.footer .authorbtc span.item { text-align: left; display: block; padding: 0 20px; }
-	.footer .authorbtc div { position: relative; z-index: 100; }
-	.footer .authorpgp { position: relative; }
-	.footer .authorpgp span.item { text-align: right; display: block; padding: 0 20px; }
-	.footer .copyright { font-size: 80%; clear: both; padding: 5px 0; }
-	.footer .copyright span { padding: 10px 2px; }
+  .footer { font-size: 90%; clear: both; width: 750px; padding: 10px 0 10px 0; margin: 50px auto auto auto; }
+  .footer div span.item { margin: 10px; }
+  .footer .authorbtc { float: left; width: 470px; }
+  .footer .authorbtc span.item { text-align: left; display: block; padding: 0 20px; }
+  .footer .authorbtc div { position: relative; z-index: 100; }
+  .footer .authorpgp { position: relative; }
+  .footer .authorpgp span.item { text-align: right; display: block; padding: 0 20px; }
+  .footer .copyright { font-size: 80%; clear: both; padding: 5px 0; }
+  .footer .copyright span { padding: 10px 2px; }
 }
 @media print
 {
-	body { -webkit-print-color-adjust: exact; width: 1000px; height: 450px;}
-	#main { width: auto; }
-	#singlearea { border: 0; }
-	#singlesafety { border: 0; }
-	#paperarea .keyarea:first-child { border-top: 1px solid #BFBFBF; }
-	#paperarea .keyarea.art:first-child { border: 0; }
-	.pagebreak { height: 1px; }
-	.paper #logo { display: none; }
-	.menu, .footer, .commands, #tagline, #faqs, #culturemenu { display: none; }
-	#detailprivwif { width: 285px; word-wrap: break-word; }
-	#detailprivwifcomp { width: 310px; word-wrap: break-word; text-align: right; }
-	#detailarea .privqr .item.right { width: 310px; }
-	#detailarea .privqr .item { width: 285px; }
-	#detailarea .notes { display: none; }
-	#seedpoolarea { display: none; }
-	.faq { display: none; }
-	.banner { display: none; }
-	#currency { display: none; }
-	#paperarea .artwallet .btcaddress, #paperarea .artwallet .btcprivwif { z-index: 999; }
-	.paperWalletText { z-index: 999;}
+  body { -webkit-print-color-adjust: exact; width: 1000px; height: 450px;}
+  #main { width: auto; }
+  #singlearea { border: 0; }
+  #singlesafety { border: 0; }
+  #paperarea .keyarea:first-child { border-top: 1px solid #BFBFBF; }
+  #paperarea .keyarea.art:first-child { border: 0; }
+  .pagebreak { height: 1px; }
+  .paper #logo { display: none; }
+  .menu, .footer, .commands, #tagline, #faqs, #culturemenu { display: none; }
+  #detailprivwif { width: 285px; word-wrap: break-word; }
+  #detailprivwifcomp { width: 310px; word-wrap: break-word; text-align: right; }
+  #detailarea .privqr .item.right { width: 310px; }
+  #detailarea .privqr .item { width: 285px; }
+  #detailarea .notes { display: none; }
+  #seedpoolarea { display: none; }
+  .faq { display: none; }
+  .banner { display: none; }
+  #currency { display: none; }
+  #paperarea .artwallet .btcaddress, #paperarea .artwallet .btcprivwif { z-index: 999; }
+  .paperWalletText { z-index: 999;}
     .dogeTag { display: none; }
 }
 
@@ -9658,8 +9657,13 @@ h1 { margin: 0px; height: 91px; }
     <div id="culturemenu">
       <span><a href="?culture=en" id="cultureen" class="selected">English</a></span> |
       <span><a href="?culture=fr" id="culturefr">Français</a></span> |
+      <span><a href="?culture=de" id="culturede">German</a></span> |
+      <span><a href="?culture=nl" id="culturenl">Dutch</a></span> |
       <span><a href="?culture=ru" id="cultureru">Русский</a></span> |
       <span><a href="?culture=es" id="culturees">Spanish</a></span> |
+      <span><a href="?culture=it" id="cultureit">Italiano</a></span> |
+      <span><a href="?culture=ua" id="cultureua">Українська</a></span> |
+      <span><a href="?culture=tr" id="culturetr">Türk</a></span> |
     </div>
 
     <div class="banner">
@@ -9770,7 +9774,10 @@ h1 { margin: 0px; height: 91px; }
             <p>
               <strong id="securitystep6" class="i18n">Please test spending a small amount before receiving any large payments.</strong><br /><br />
             </p>
-
+            <h3 id="securitystep7title" class="i18n">Consider supporting us</h3>
+            <p id="securitystep7" class="i18n">
+              This service is free and will stay free, without advertising or tracking of any sort. Please consider <a href="#" onclick="ninja.tabSwitch(document.getElementById('donate'));">making a donation</a> to support us and the people that add support for new currencies.
+            </p>
 
           </div>
           <div class="secondHalfSingleSafety">
@@ -9800,9 +9807,11 @@ h1 { margin: 0px; height: 91px; }
         <div id="faqZone">
           <h2>Frequently asked questions :</h2>
 
-          <h3 class="faqQuestion"><a class="faqLink" onclick="ninja.toggleFaqQuestion('faqQuestion1');">&#8226; Is it safe ?</a></h3>
+          <h3 class="faqQuestion"><a class="faqLink" onclick="ninja.toggleFaqQuestion('faqQuestion1');ninja.toggleFaqQuestion('faqQuestion1.1')">&#8226; Is it safe ?</a></h3>
           <p class="faqAnswer" id="faqQuestion1">
             We try to make it that way ! The core of the tool, that generate the keys is 99% the same as the well reviewed bitaddress.org. We only changed it to be able to generate addresses for different crypto-currencies.
+          </p>
+          <p class="faqAnswer" id="faqQuestion1.1">
 We think that having a unique generator for multiple currencies lead to a much better reviewed tool for all than having a myriad of half-backed generators.
 Changes made to this generator are available on Github in small and divided commits and those are easy to review and reuse.
 Walletgenerator.net use the same security measures as the original project. All-in-one html document, no ajax, no analytics, no external calls, no CDN that can inject anything they want. And trust us, we have seen some nasty things when reviewing some wallet generator.
@@ -10047,6 +10056,75 @@ Walletgenerator.net use the same security measures as the original project. All-
     <div id="changelog">
       <hr/>
       <h3>Release notes</h3>
+      <p>
+      10.2017 --
+        <ul>
+          <li>New translation in Dutch ! Contribution from MadnessJax.</li>
+          <li>New translation in German ! Contribution from fflo.</li>
+          <li>New partial translation in Turkish ! Contribution from snipeTR.</li>
+          <li>Add support for WACoins. Contribution from WACoinsTeam.</li>
+          <li>Add support forNeedleCoin. Contribution from F3de81.</li>
+          <li>Add support for Rupaya. Contribution from rupaya-project.</li>
+          <li>Add support for Particl. Contribution from dasource.</li>
+          <li>Add support for Madbytecoin. Contribution from mvidberg.</li>
+          <li>Add support for CryptoWisdomCoin. Contribution from mvidberg.</li>
+          <li>Add support for Terracoin. Contribution from caique39.</li>
+          <li>Add support for SixEleven. Contribution from fflo.</li>
+          <li>Update Syscoin to new wallet format. Contribution from donredhorse.</li>
+          <li>Update MonetaryUnit to new wallet format. Contribution from BBoBBG.</li>
+          <li>Improved Chaincoin graphics. Contribution from suprnurd.</li>
+        </ul>
+      <p>
+      09.2017 --
+        <ul>
+          <li>New translation in Ukrainian ! Contribution from Dmytro.</li>
+          <li>Add support for Bitcoin Cash.</li>
+          <li>Add support for C2Coin. Contribution from Chris.</li>
+          <li>Add support for frazcoin. Contribution from frazcoin.</li>
+          <li>Add support for Condensate. Contribution from OBAVi.</li>
+          <li>Add support for pinkcoin. Contribution from Christopher Siminski.</li>
+          <li>Add support for innox. Contribution from Dave</li>
+          <li>Add support for electra. Contribution from bob van egeraat.</li>
+          <li>Add support for ChainCoin. Contribution from brakmic.</li>
+          <li>Add support for prospercoin classic. Contribution from inmean.</li>
+          <li>Add support for Cagecoin. Contribution from knkrth.</li>
+          <li>Add support for deeponion. Contribution from deeponion.</li>
+          <li>Add support for Florin. Contribution from bitspill.</li>
+          <li>Add support for SmileyCoin. Contribution from fridasnaedis.</li>
+          <li>Add support for Cryptonite. Contribution from tnotm.</li>
+          <li>Add support for 2Give, Fedoracoin and Qubitcoin. Contribution from jemekite.</li>
+          <li>Add support for Versioncoin. Contribution from CryptoRagazzo.</li>
+          <li>Add support fpr PIVX and Testnet PIVX. Contribution from Fuzzbawls.</li>
+          <li>Add support for lomocoin. Contribution from liuji.</li>
+          <li>Add support for SwagBucks. Contribution from pinkmagicdev.</li>
+        </ul>
+      <p>
+      01.2017 --
+        <ul>
+          <li>Add support for Espers. Contribution from ctgiant.</li>
+          <li>Add support for Vcash, Dogecoin testnet and BitSynq. Contribution from tloriato.</li>
+          <li>Add support for Deutsche eMark. Contribution from xBlackEye.</li>
+          <li>Add support for MintCoin. Contribution from Fuzzbawls.</li>
+          <li>Add support for IncaKoin. Contribution from WorldBot.</li>
+          <li>Add support for Aquariuscoin, Lanacoin, Tajcoin and Nevacoin. Contribution from cryptosi.</li>
+          <li>Add support for DigiByte. Contribution from Maurice van Beurden.</li>
+          <li>Add support for Emerald. contribution from Paraskewas Zormbalas.</li>
+        </ul>
+      <p>
+      05.2016 --
+        <ul>
+          <li>Add support for ParkByte. Contribution from ParkByte.</li>
+          <li>Add support for BlackJack. Contribution from BlackJackDev.</li>
+          <li>Add support for SecKCoin. Contribution from hevsnt.</li>
+          <li>Add support for CashCoin. Contribution from BigDig.</li>
+          <li>Add support for iCash. Contribution from Alexander Pochtov.</li>
+        </ul>
+      02.2016 --
+        <ul>
+          <li>Add support for TransferCoin. Contribution from Stoner19.</li>
+          <li>Add support for BitcoinDark and Spreadcoin. Contribution from vx28643.</li>
+          <li>Rename Guldencoin to Gulden. Contribution from mjmacleod.</li>
+        </ul>
       <p>
       11.2015 --
         <ul>
@@ -10352,8 +10430,13 @@ janin.currency = {
         // Update i18n link
         document.getElementById("cultureen").href = "?culture=en&currency=" + janin.currency.name().toLowerCase();
         document.getElementById("culturefr").href = "?culture=fr&currency=" + janin.currency.name().toLowerCase();
+        document.getElementById("culturede").href = "?culture=de&currency=" + janin.currency.name().toLowerCase();
+        document.getElementById("culturenl").href = "?culture=nl&currency=" + janin.currency.name().toLowerCase();
         document.getElementById("cultureru").href = "?culture=ru&currency=" + janin.currency.name().toLowerCase();
         document.getElementById("culturees").href = "?culture=es&currency=" + janin.currency.name().toLowerCase();
+        document.getElementById("cultureua").href = "?culture=ua&currency=" + janin.currency.name().toLowerCase();
+        document.getElementById("culturetr").href = "?culture=tr&currency=" + janin.currency.name().toLowerCase();
+        document.getElementById("cultureit").href = "?culture=it&currency=" + janin.currency.name().toLowerCase();
 
         if(ninja.seeder.isDone())
         {
@@ -10383,120 +10466,171 @@ janin.currency = {
 };
 
 janin.currencies = [
-    //                    name, networkVersion, privateKeyPrefix, WIF_Start, CWIF_Start, donate
-    janin.currency.createCurrency ("42coin",     0x08, 0x88, "5",    "M"    , "4Fs42jYtLYrUMfKEXc6arojuhRsnYnerxN"),
-    janin.currency.createCurrency ("Acoin",      0x17, 0xe6, "8",    "b"    , "AJvChtExuvLgAor9aw1Xz9bkvJY7JKD9uL"),
-    janin.currency.createCurrency ("Alphacoin",  0x52, 0xd2, "8",    "Y"    , "aAWhiGBDUugXC9ZBvw8CDNQH7KRurjy4Nq"),
-    janin.currency.createCurrency ("Animecoin",  0x17, 0x97, "6",    "P"    , "AdA5nLS5FtPws6A3BX8aXccbP7fReptdw7"),
-    janin.currency.createCurrency ("Anoncoin",   0x17, 0x97, "6",    "P"    , "AS3BvkE4wvsXJpn1bGhQni5vZajthnrWQE"),
-    janin.currency.createCurrency ("Apexcoin",   0x17, 0x97, "6",    "P"    , "AdPxUCGLDUhHUTGYftffwFVdxbFy2nkXGX"),
-    janin.currency.createCurrency ("Auroracoin", 0x17, 0x97, "6",    "T"    , "AVWH1ZutLd4Y5LPDDj5FkBjbm2Gci4iFx3"),
-    janin.currency.createCurrency ("BBQcoin",    0x55, 0xd5, "6",    "T"    , "bTFFC3Gg2XzQygLxxakHkNM3ravBZby1y9"),
-    janin.currency.createCurrency ("Bitcoin",    0x00, 0x80, "5",    "[LK]" , "15DHZzv7eBUwss77qczZiL3DUEZLjDYhbM"),
-    janin.currency.createCurrency ("BitcoinDark", 0x3c, 0xbc, "7",    "U"    , "RWtY5fg9ZQ9tYaPd7WJLgsdae1m1ZfrVRe"),
-    janin.currency.createCurrency ("Birdcoin",   0x2f, 0xaf, "6",    "[ST]" , "L97vGT4wRnyyiugHpLXzZzjqueN8YWRdRJ"),
-    janin.currency.createCurrency ("Blackcoin",  0x19, 0x99, "6",    "P"    , "BFeJrZGyJ6bntd7RLXoNGvdn1HB5AQeiz4"),
-    janin.currency.createCurrency ("BunnyCoin",  0x1a, 0x9a, "6",    "P"    , "BosRXiiSB6WmiSbvzVAdUjpezCWhqpJGyW"),
-    janin.currency.createCurrency ("CanadaeCoin",0x1c, 0x9c, "6",    "Q"    , "CbaoyW9KYP8qQHb9Lu59crvjemryCD88Hv"),
-    janin.currency.createCurrency ("CannabisCoin",0x1c,0x9c, "6",    "Q"    , "Cb7SSkHpnk1PwKqKbreMALzJpnmAsBNvnG"),
-    janin.currency.createCurrency ("Capricoin",  0x1c, 0x9c, "6",    "Q"    , "CS1mBL1dyCR8jH5hRrQiZ4Xz37UWwcbUAJ"),
-    janin.currency.createCurrency ("CassubianDetk",0x1e,0x9e,"6",    "Q"    , "DBPagysmjfdkND4Zp1SM4myLenNfXpFWnG"),
-    janin.currency.createCurrency ("Catcoin",    0x15, 0x95, "[56]", "P"    , "9rEXDemG6S3k2ddAsKFzRpnMVz3bVryYXZ"),
-    janin.currency.createCurrency ("Corgicoin",  0x1c, 0x9c, "6",    "Q"    , "CNwV11TaKrfB3TnBS8vQjNbWT6CNxV8GBi"),
-    janin.currency.createCurrency ("CryptoBullion",0xb,0x8b, "5",    "M"    , "Cd9CgzTChm9yJQZ3SL3PUSsMkEEN8LGwCF"),
-    janin.currency.createCurrency ("CryptoClub", 0x23, 0xa3, "6",    "R"    , "FKPFTw5LjoeGTZP1d3zHLfZNm91FktgPWY"),
-    janin.currency.createCurrency ("Cryptoescudo",0x1c,0x9c, "6",    "Q"    , "Cd9CgzTChm9yJQZ3SL3PUSsMkEEN8LGwCF"),
-    janin.currency.createCurrency ("Dash",       0x4c, 0xcc, "7",    "X"    , "XdYX6AbDzjb3AVL1tAmWjuYMD28LD9fcWS"),
-    janin.currency.createCurrency ("DeafDollars",0x30, 0xb0, "6",    "T"    , "LNHYnoqySwoN5aMyEVavEBT3CxHA9WrTZs"),
-    janin.currency.createCurrency ("Devcoin",    0x00, 0x80, "5",    "[LK]" , "1GUeBfpVhN7xySQej3HiSe5c8jQoVQPosv"),
-    janin.currency.createCurrency ("Digitalcoin",0x1e, 0x9e, "6",    "Q"    , "D7fJwPfW4dFSJNq4NHbMiYJhYnrZehMpqx"),
-    janin.currency.createCurrency ("Dogecoin",   0x1e, 0x9e, "6",    "Q"    , "D74Npoqhwhjw9fShkm5wbj6DD2BJXpmzPj"),
-    janin.currency.createCurrency ("DogecoinDark",0x1e,0x9e, "6",    "Q"    , "DLbjdRYsfiT62JZf5YxSAfNZJo1VKxDTNP"),
-    janin.currency.createCurrency ("eGulden",    0x30, 0xb0, "6",    "T"    , "LhBsKs2GUb24KBAzZfua5AsqfQF5uPdWXQ"),
-    janin.currency.createCurrency ("eKrona",     0x2d, 0xad, "6",    "S"    , "KLi8FnMZmSH8EfXYgJwi4R2ZyMscJykXT5"),
-    janin.currency.createCurrency ("Emercoin",   0x21, 0xa1, "6",    "Q"    , "EN5nVyEbLrhYfcjoyGgQFtD3QHETyj1dy1"),
-    janin.currency.createCurrency ("EnergyCoin", 0x5c, 0xdc, "8",    "Z"    , "eD2P3q5PdyHYNwT94Dg6Wt4pBz64k8gwGf"),
-    janin.currency.createCurrency ("Fastcoin",   0x60, 0xe0, "8",    "a"    , "frxe8F7gQdiAVgy4mRXjpXH5vN1wyta1db"),
-    janin.currency.createCurrency ("Feathercoin",0x0e, 0x8e, "5",    "N"    , "6dxAP6oacHsove5X2kZPpddcT1Am167YzC"),
-    janin.currency.createCurrency ("Fibre",      0x23, 0xa3, "6",    "R"    , "F6qGSM29vJm2q3Q9uvozpym7WYqKXBrpqm"),
-    janin.currency.createCurrency ("Fluttercoin",0x23, 0xa3, "6",    "R"    , "FJioRLt3gLtqk3tUdMhwjAVo1sdWjRuwqt"),
-    janin.currency.createCurrency ("Freicoin",   0x00, 0x80, "5",    "[LK]" , "18kVnAk5Undi7CqEgGx63YDKBPFpxYJmT9"),
-    janin.currency.createCurrency ("FUDcoin",    0x23, 0xa3, "6",    "R"    , "FEKsbaLJHjbEnuMiRDvtnyvxaJqehBtQ5V"),
-    janin.currency.createCurrency ("Fuelcoin",   0x24, 0x80, "5",    "[KL]" , "Fq1sL24MgDt7tTiKh8MPvhz2UMP8e1uCo4"),
-    janin.currency.createCurrency ("Fujicoin",   0x24, 0xa4, "6",    "R"    , "Fqr2ZrqWPCryqsfjdghwMT3enGHukGonit"),
-    janin.currency.createCurrency ("GabenCoin",  0x10, 0x90, "5",    "N"    , "7cwtF11nW4qAGp2pFdLuUZ5gzJWiXtUvi1"),
-    janin.currency.createCurrency ("GlobalBoost",0x26, 0xa6, "6",    "R"    , "GeXdH1WhzA7ayYim9sdCCQKcVukUq1W8LJ"),
-    janin.currency.createCurrency ("Goodcoin",   0x26, 0xa6, "6",    "R"    , "GM3kAbQGaMVAYk8U3CrVGhSwz1hZaF6gVM"),
-    janin.currency.createCurrency ("GridcoinResearch",0x3e,0xbe,"7", "V"    , "SHs9ESzUL9VAEcq7kStfF1JUAMaNT1EYzJ"),
-    janin.currency.createCurrency ("Guldencoin", 0x26, 0xa6, "6",    "R"    , "GLD7BDBYyddx6Sr72zGfreRG21dJAe74j8"),
-    janin.currency.createCurrency ("Guncoin",    0x27, 0xa7, "6",    "R"    , "GwVej6c3tF9GqEdSKmwJiUDWtQVK2wY9fP"),
-    janin.currency.createCurrency ("HamRadioCoin",0x00,0x80, "5",    "LK"   , "1JQVWKT1NQJUJbbq4UdJUY8DbWmgqrrHWz"),
-    janin.currency.createCurrency ("HTML5Coin",  0x28, 0xa8, "6",    "R"    , "HBUk5NzWyemrwLffC8pLFXabbJuMRKbkc7"),
-    janin.currency.createCurrency ("HyperStake", 0x75, 0xf5, "9",    "d"    , "p71G6VRVxTTxg3Hqa9CbENeJY1PumBjtvL"),
-    janin.currency.createCurrency ("ImperiumCoin",0x30,0xb0, "6",    "T"    , "LKcNNWGDyKyedwL8QNsCkg2122fBQyiDat"),
-    janin.currency.createCurrency ("IncognitoCoin",0x00,0x80,"5",    "LK"   , "1BbRmhGKyKshFge9kBMdfJyQr3KZoh5K5t"),
-    janin.currency.createCurrency ("Influxcoin", 0x66, 0xe6, "8",    "b"    , "i83eN9HxFvfsxSwjXiZQZaWf13cWF25K9Y"),
-    janin.currency.createCurrency ("IridiumCoin",0x30, 0xb0, "6",    "T"    , "LKTu2strS8zV1mDJxJtgE3HLqChD2m54yN"),
-    janin.currency.createCurrency ("iXcoin",     0x8a, 0x80, "5",    "[LK]" , "xnF1nshqFLaVdDGBmQ4k2jBQkr8nbuCkLz"),
-    janin.currency.createCurrency ("Judgecoin",  0x2b, 0xab, "6",    "S"    , "JbF9ZnvoFkBdasPEq21jCCTnTUDSiyWrAQ"),
-    janin.currency.createCurrency ("Jumbucks",   0x2b, 0xab, "6",    "S"    , "JSzHiaoD6ewtymBMJHsHqkpFzCYKBzxJeC"),
-    janin.currency.createCurrency ("Latium",     0x17, 0x80, "5",    "[LK]" , "ASz2EgegeXfKyHaY1SbJ6nCDK6sxd7BpXg"),
-    janin.currency.createCurrency ("Litecoin",   0x30, 0xb0, "6",    "T"    , "LiScnsyPcqsyxn1fx92BcFguryXcw4DgCy"),
-    janin.currency.createCurrency ("LiteDoge",   0x5a, 0xab, "6",    "S"    , "daaV1gQ63HpHHn4Ny1fJZHMA7KCeUVE538"),
-    janin.currency.createCurrency ("MagicInternetMoney", 0x30, 0xb0,"6", "T", "LPRqCTYEy53FkEzhRTCauLc7Qq23Z5mxZU"),
-    janin.currency.createCurrency ("Magicoin",   0x14, 0x94, "5",    "[NP]" , "9H6ddyu9S9gyrEHxVrpMBTBZWrwAvdtehD"),
-    janin.currency.createCurrency ("Marscoin",   0x32, 0xb2, "6",    "T"    , "M8caDttyKt2r7V7WHMMkRZ1jEzxj16fgCn"),
-    janin.currency.createCurrency ("MarteXcoin", 0x32, 0xb2, "6",    "T"    , "M8DSVG13j3qpNDRbuuUBh5juQmSd15wLXH"),
-    janin.currency.createCurrency ("MasterDoge", 0x33, 0x8b, "5",    "M"    , "Mm4Xqy9FYZ8N1NJzuXCaJLZcw8o2cmVC7c"),
-    janin.currency.createCurrency ("Mazacoin",   0x32, 0xe0, "8",    "a"    , "MLUXCv3GfNgmUSXc5Ek3ePaQ4cfsJwEXHa"),
-    janin.currency.createCurrency ("Megacoin",   0x32, 0xb2, "6",    "T"    , "MPeVmJHvkXN3caneWCB5zGgtGHRRBSLmWd"),
-    janin.currency.createCurrency ("MobiusCoin", 0x00, 0x80, "5",    "[LK]" , "1HKNrUR3BaFC8u4VMfnjCuXDPrYGh7jU8S"),
-    janin.currency.createCurrency ("MonetaryUnit",0x0f,0x8f, "5",    "N"    , "7R6jCc1h3frSuCrmY87B4iVPzLsZKmkwV5"),
-    janin.currency.createCurrency ("Monocle",    0x32, 0xb2, "6",    "T"    , "M9CFHZjyCipuKqByD5K1sCHmt7etuCFGsc"),
-    janin.currency.createCurrency ("MoonCoin",   0x03, 0x83, "5",    "L"    , "2P2V9npcK7apbUFsWN3zL7R6ARBMwTJ4hA"),
-    janin.currency.createCurrency ("Myriadcoin", 0x32, 0xb2, "6",    "T"    , "MWGDtjDw9c8C6zicDQF22yZBWbEX53v4o9"),
-    janin.currency.createCurrency ("NameCoin",   0x34, 0x80, "5",    "[LK]" , "NASxLK4nt5hgX9wQEny5qPPJ2q4uSGCvT9"),
-    janin.currency.createCurrency ("Neoscoin",   0x35, 0xb1, "6",    "T"    , "NZw6WJPiKYcXxua1VveieihiNJRYanHjrP"),
-    janin.currency.createCurrency ("Novacoin",   0x08, 0x88, "5",    "M"    , "4EZMrEA5LnmwtcK5b2JfCq9k5YS4ZVZrtT"),
-    janin.currency.createCurrency ("Nubits",     0x19, 0xbf, "7",    "V"    , "BPWCkyaVqWdaf3uqahrgdTjB2QTnRZzPMM"),
-    janin.currency.createCurrency ("Ocupy",      0x73, 0xf3, "9",    "[cd]" , "ocLKVPkQRFtKn5mFygrd4QJG9eZd1sKTyi"),
-    janin.currency.createCurrency ("Omnicoin",   0x73, 0xf3, "9",    "[cd]" , "oMesh62joeab2yMoJUH28mGE8h2suDzcYc"),
-    janin.currency.createCurrency ("Onyxcoin",   0x73, 0xf3, "9",    "[cd]" , "odRRCGXooJvKs7cn7sax1bJv9EJwwEy94Z"),
-    janin.currency.createCurrency ("Paycoin",    0x37, 0xb7, "7",    "U"    , "PV2t9zzj9rQm81c9VJqqL8edj1ndpcW9HD"),
-    janin.currency.createCurrency ("Pandacoin",  0x37, 0xb7, "7",    "U"    , "PT6guZjCgsrBkqCUhTnG1NNBYBqgzo8gVv"),
-    janin.currency.createCurrency ("Pesetacoin", 0x2f, 0xaf, "6",    "[ST]" , "L6qoz2SQN6U9vGNoST35QP85PQbg4s5rDn"),
-    janin.currency.createCurrency ("PHCoin",     0x37, 0xb7, "7",    "U"    , "P9e6c714JUHUfuBVHSS36eqaxGCN6X8nyU"),
-    janin.currency.createCurrency ("PhoenixCoin",0x38, 0xb8, "7",    "U"    , "PsaaD2mLfAPUJXhMYdC1DBavkJhZj14k6X"),
-    janin.currency.createCurrency ("Peercoin",   0x37, 0xb7, "7",    "U"    , "PSnwUwknbmqUU1GCcM1DNxcANqihpdt3tW"),
-    janin.currency.createCurrency ("Potcoin",    0x37, 0xb7, "7",    "U"    , "PQcMNuCdeooMcS5H3DGwxXnSE2kmyVMU39"),
-    janin.currency.createCurrency ("Primecoin",  0x17, 0x97, "6",    "P"    , "AbXChfoHyFESePFuVh1xLZdn7Rj1mfD2a4"),
-    janin.currency.createCurrency ("Quark",      0x3a, 0xba, "7",    "U"    , "QNGJBwRApKKwEevTvDwpeoSgmo6w6wv8yQ"),
-    janin.currency.createCurrency ("Reddcoin",   0x3d, 0xbd, "7",    "[UV]" , "RmAB99NsX6Wbjk5WdqNeEab83y72d7zkqZ"),
-    janin.currency.createCurrency ("Riecoin",    0x3c, 0x80, "5",    "[LK]" , "RUsNQFds88sdWszMUVKwfdBhE9PtzLTK6N"),
-    janin.currency.createCurrency ("Rimbit",     0x3c, 0xbc, "7",    "U"    , "RJNYNAafwKmkGf1hb3LDXiL1gRhSPPrXxN"),
-    janin.currency.createCurrency ("Rubycoin",   0x3c, 0xbc, "7",    "U"    , "RNsGHZnnr4pa3nYSp5NsuPtqTAGHT6XWqb"),
-    janin.currency.createCurrency ("Sambacoin",  0x3e, 0xbe, "7",    "V"    , "SJdiAgazqtum79HzGbNDxi879NzSDjtH5P"),
-    janin.currency.createCurrency ("SibCoin",    0x3f, 0x80, "5",    "[LK]" , "SY7GAzvFVS8bUA89e7hosPMxqMS482ecsp"),
-    janin.currency.createCurrency ("SongCoin",   0x3f, 0xbf, "7",    "V"    , "SSK9MXormZXgF5ZfV599okJRXYh3g9RXGN"),
-    janin.currency.createCurrency ("Spreadcoin", 0x3f, 0xbf, "7",    "V"    , "SjPkh7V2KkySjL52wsD2CpEj4quTtjiaVW"),
-	janin.currency.createCurrency ("StealthCoin",0x3e, 0xbe, "7",    "V"    , "SJJGGq7UyoUH1TExGJCQ6ee49ztJr2quF8"),
-    janin.currency.createCurrency ("Syscoin",    0x3f, 0xbf, "7",    "V"    , "SbycbQikGW6dWGbeDAb1NyircpAwXvCsDF"),
-    janin.currency.createCurrency ("Titcoin",    0x00, 0x80, "5",    "[LK]" , "1CHAo7muicsLHdPk5q4asrEbh6aUeSPpdC"),
-    janin.currency.createCurrency ("TittieCoin", 0x41, 0xc1, "7",    "V"    , "TYrdtLy9irV4u1yo2YQVCkS27RzDzBqWwJ"),
-    janin.currency.createCurrency ("Topcoin",    0x42, 0xc2, "7",    "V"    , "TmDTsQqqv1LWGw4xjGNiJ7ABwdCenf2BFF"),
-    janin.currency.createCurrency ("TreasureHuntCoin",0x32,0xb2,"6", "T"    , "MKnC2upgCNfVMS2phkV8SqGaXUGkn39EaX"),
-    janin.currency.createCurrency ("Unobtanium", 0x82, 0xe0, "8",    "a"    , "uZ8Gq61NGJ2wz3PLybXyXKLYC1FhRpz8Kq"),
-    janin.currency.createCurrency ("USDe",       0x26, 0xa6, "6",    "R"    , "GQTeNSfx6xPbBNsUfqoZNrrCBQXeY5Dtdu"),
-    janin.currency.createCurrency ("Vertcoin",   0x47, 0xc7, "7",    "W"    , "VkmBz8JJWLP1sVH9sGwc1Fz7o5RtXLW4J5"),
-    janin.currency.createCurrency ("Viacoin",    0x47, 0xc7, "7",    "W"    , "VeJMvqvsZFoTkYfitzEG8fYy7bC7hxMfT1"),
-    janin.currency.createCurrency ("VikingCoin", 0x46, 0x56, "3",    "D"    , "VJXz1cD1mDGQmu52aDdd7Q2G5ejqA6mcqw"),
-    janin.currency.createCurrency ("W2Coin",     0x49, 0xc9, "7",    "W"    , "Wa3AvKUP5J3BpEa93nwKHPAAQ2P1XdTCeU"),
-    janin.currency.createCurrency ("WankCoin",   0x0,  0x80, "5",    "[LK]" , "1CnEFZZxJQkNAvgFGdRV5JEKShkNj1LRWL"),
-    janin.currency.createCurrency ("WeAreSatoshiCoin", 0x87,0x97,"6","P"    , "wSEgPsCGqQESLDyzBJkwCXvMP1z3e1Qi3X"),
-    janin.currency.createCurrency ("WorldCoin",  0x49, 0xc9, "7",    "W"    , "WNmGkn2WQZKS6xKHEsj5AqSbuE4sh9Upyb"),
-    janin.currency.createCurrency ("Zetacoin",   0x50, 0xE0, "8",    "a"    , "ZRU6TP8NLzoyey4DPPaa3uCCgDNDc96PXJ"),
+    //                              name, networkVersion, privateKeyPrefix, WIF_Start, CWIF_Start, donate
+    janin.currency.createCurrency ("2GIVE",               0x27, 0xa7, "6",    "R"    , "Givewmf4yv8uuHZG6Eb7sm17fJS2Trf6U8"),
+    janin.currency.createCurrency ("42coin",              0x08, 0x88, "5",    "M"    , "4Fs42jYtLYrUMfKEXc6arojuhRsnYnerxN"),
+    janin.currency.createCurrency ("Acoin",               0x17, 0xe6, "8",    "b"    , "AJvChtExuvLgAor9aw1Xz9bkvJY7JKD9uL"),
+    janin.currency.createCurrency ("Alphacoin",           0x52, 0xd2, "8",    "Y"    , "aAWhiGBDUugXC9ZBvw8CDNQH7KRurjy4Nq"),
+    janin.currency.createCurrency ("Animecoin",           0x17, 0x97, "6",    "P"    , "AdA5nLS5FtPws6A3BX8aXccbP7fReptdw7"),
+    janin.currency.createCurrency ("Anoncoin",            0x17, 0x97, "6",    "P"    , "AS3BvkE4wvsXJpn1bGhQni5vZajthnrWQE"),
+    janin.currency.createCurrency ("Apexcoin",            0x17, 0x97, "6",    "P"    , "AdPxUCGLDUhHUTGYftffwFVdxbFy2nkXGX"),
+    janin.currency.createCurrency ("Auroracoin",          0x17, 0x97, "6",    "T"    , "AVWH1ZutLd4Y5LPDDj5FkBjbm2Gci4iFx3"),
+    janin.currency.createCurrency ("Aquariuscoin",        0x17, 0x97, "6",    "P"    , "ARk4VoaCHDoPDn2dctGizJaHFvXNRiDUDr"),
+    janin.currency.createCurrency ("BBQcoin",             0x55, 0xd5, "6",    "T"    , "bTFFC3Gg2XzQygLxxakHkNM3ravBZby1y9"),
+    janin.currency.createCurrency ("Bitcoin",             0x00, 0x80, "5",    "[LK]" , "15DHZzv7eBUwss77qczZiL3DUEZLjDYhbM"),
+    janin.currency.createCurrency ("BitcoinCash",         0x00, 0x80, "5",    "[LK]" , "15DHZzv7eBUwss77qczZiL3DUEZLjDYhbM"),
+    janin.currency.createCurrency ("BitcoinDark",         0x3c, 0xbc, "7",    "U"    , "RWtY5fg9ZQ9tYaPd7WJLgsdae1m1ZfrVRe"),
+    janin.currency.createCurrency ("Birdcoin",            0x2f, 0xaf, "6",    "[ST]" , "L97vGT4wRnyyiugHpLXzZzjqueN8YWRdRJ"),
+    janin.currency.createCurrency ("BitSynq",             0x3f, 0xbf, "7",    "V"    , "SRtKRZxSjjwb9BXujkmvLfRHiutk7s7VXh"),
+    janin.currency.createCurrency ("Blackcoin",           0x19, 0x99, "6",    "P"    , "BFeJrZGyJ6bntd7RLXoNGvdn1HB5AQeiz4"),
+    janin.currency.createCurrency ("BlackJack",           0x15, 0x95, "[56]", "P"    , "9pzHRZkJ4Df3EBiqXhDVgtB2A7FaAq6nnG"),
+    janin.currency.createCurrency ("BunnyCoin",           0x1a, 0x9a, "6",    "P"    , "BosRXiiSB6WmiSbvzVAdUjpezCWhqpJGyW"),
+    janin.currency.createCurrency ("Cagecoin",            0x1f, 0x9f, "6",    "Q"    , "DjUXeu9pUYq5RsN7qpowb1C8LcvPNi9Bx3"),
+    janin.currency.createCurrency ("CanadaeCoin",         0x1c, 0x9c, "6",    "Q"    , "CbaoyW9KYP8qQHb9Lu59crvjemryCD88Hv"),
+    janin.currency.createCurrency ("CannabisCoin",        0x1c, 0x9c, "6",    "Q"    , "Cb7SSkHpnk1PwKqKbreMALzJpnmAsBNvnG"),
+    janin.currency.createCurrency ("Capricoin",           0x1c, 0x9c, "6",    "Q"    , "CS1mBL1dyCR8jH5hRrQiZ4Xz37UWwcbUAJ"),
+    janin.currency.createCurrency ("CassubianDetk",       0x1e, 0x9e, "6",    "Q"    , "DBPagysmjfdkND4Zp1SM4myLenNfXpFWnG"),
+    janin.currency.createCurrency ("CashCoin",            0x22, 0xa2, "6",    "[QR]" , "F3bkQC7xGZZcPFmsucYas7KuHoEwCPtGHC"),
+    janin.currency.createCurrency ("Catcoin",             0x15, 0x95, "[56]", "P"    , "9rEXDemG6S3k2ddAsKFzRpnMVz3bVryYXZ"),
+    janin.currency.createCurrency ("ChainCoin",           0x1c, 0x9c, "6",    "Q"    , "Ca62ZnR3sfKotqDJzsBW6k75rTFFgFkw1x"),
+    janin.currency.createCurrency ("Condensate",          0x3c, 0xbc, "7",    "U"    , "RRZZMHaYZXCeUWRVeRvttKCNcvTRCxBfqD"),
+    janin.currency.createCurrency ("Corgicoin",           0x1c, 0x9c, "6",    "Q"    , "CNwV11TaKrfB3TnBS8vQjNbWT6CNxV8GBi"),
+    janin.currency.createCurrency ("CryptoBullion",       0xb,  0x8b, "5",    "M"    , "Cd9CgzTChm9yJQZ3SL3PUSsMkEEN8LGwCF"),
+    janin.currency.createCurrency ("CryptoClub",          0x23, 0xa3, "6",    "R"    , "FKPFTw5LjoeGTZP1d3zHLfZNm91FktgPWY"),
+    janin.currency.createCurrency ("Cryptoescudo",        0x1c, 0x9c, "6",    "Q"    , "Cd9CgzTChm9yJQZ3SL3PUSsMkEEN8LGwCF"),
+    janin.currency.createCurrency ("Cryptonite",          0x1c, 0x80, "5",    "[LK]" , "CP6uhgcDnXzdgQhnz2q1xhSFMFinmqkQkh"),
+    janin.currency.createCurrency ("CryptoWisdomCoin",    0x49, 0x87, "5",    "[LM]" , "WYeSz9KmpjgdtycPiJVPcQdp7bBqECfr3W"),
+    janin.currency.createCurrency ("C2coin",              0x1c, 0x9c, "6",    "Q"    , "Cd3kyj77p2zivnqbcoBzNya7LD1w7uUU9v"),
+    janin.currency.createCurrency ("Dash",                0x4c, 0xcc, "7",    "X"    , "XdYX6AbDzjb3AVL1tAmWjuYMD28LD9fcWS"),
+    janin.currency.createCurrency ("DeafDollars",         0x30, 0xb0, "6",    "T"    , "LNHYnoqySwoN5aMyEVavEBT3CxHA9WrTZs"),
+    janin.currency.createCurrency ("DeepOnion",           0x1f, 0x9f, "6",    "Q"    , "DhUAMCqydnYNx9PmeQ1wnyeyAxi477DbTz"),
+    janin.currency.createCurrency ("Deutsche eMark",      0x35, 0xb5, "7",    "T"    , "Ni4112Tmv1ScZ9fkN76knJ4jRTxeHQieJM"),
+    janin.currency.createCurrency ("Devcoin",             0x00, 0x80, "5",    "[LK]" , "1GUeBfpVhN7xySQej3HiSe5c8jQoVQPosv"),
+    janin.currency.createCurrency ("DigiByte",            0x1e, 0x9e, "6",    "Q"    , "D9s71nQPBCEbM2SvGwHQcrhay6KrJaVo3Z"),
+    janin.currency.createCurrency ("Digitalcoin",         0x1e, 0x9e, "6",    "Q"    , "D7fJwPfW4dFSJNq4NHbMiYJhYnrZehMpqx"),
+    janin.currency.createCurrency ("Dogecoin",            0x1e, 0x9e, "6",    "Q"    , "D74Npoqhwhjw9fShkm5wbj6DD2BJXpmzPj"),
+    janin.currency.createCurrency ("DogecoinDark",        0x1e, 0x9e, "6",    "Q"    , "DLbjdRYsfiT62JZf5YxSAfNZJo1VKxDTNP"),
+    janin.currency.createCurrency ("eGulden",             0x30, 0xb0, "6",    "T"    , "LhBsKs2GUb24KBAzZfua5AsqfQF5uPdWXQ"),
+    janin.currency.createCurrency ("eKrona",              0x2d, 0xad, "6",    "S"    , "KLi8FnMZmSH8EfXYgJwi4R2ZyMscJykXT5"),
+    janin.currency.createCurrency ("ELECTRA",             0x21, 0xa1, "6",    "Q"    , "EeJGVF9efipxqJcwf7dup735ATEDc2f1Yk"),
+    janin.currency.createCurrency ("Emerald",             0x22, 0xa2, "6",    "[QR]" , "EnJnzAQSpPp7RshMhNx9zhRnabxTLird6W"),
+    janin.currency.createCurrency ("Emercoin",            0x21, 0xa1, "6",    "Q"    , "EN5nVyEbLrhYfcjoyGgQFtD3QHETyj1dy1"),
+    janin.currency.createCurrency ("EnergyCoin",          0x5c, 0xdc, "8",    "Z"    , "eD2P3q5PdyHYNwT94Dg6Wt4pBz64k8gwGf"),
+    janin.currency.createCurrency ("Espers",              0x21, 0xa1, "6",    "Q"    , "EbENTy3x9Mr4PcmnNyzfdSALfkPaFSW3dt"),
+    janin.currency.createCurrency ("Fastcoin",            0x60, 0xe0, "8",    "a"    , "frxe8F7gQdiAVgy4mRXjpXH5vN1wyta1db"),
+    janin.currency.createCurrency ("Feathercoin",         0x0e, 0x8e, "5",    "N"    , "6dxAP6oacHsove5X2kZPpddcT1Am167YzC"),
+    janin.currency.createCurrency ("Fedoracoin",          0x21, 0x80, "5",    "[KL]" , "ENRPj6iEh14Xky2hv4B7zTJGMe5Kchjeo8"),
+    janin.currency.createCurrency ("Fibre",               0x23, 0xa3, "6",    "R"    , "F6qGSM29vJm2q3Q9uvozpym7WYqKXBrpqm"),
+    janin.currency.createCurrency ("Florincoin",          0x23, 0xb0, "6",    "T"    , "FLJ7vLPZDLMVr2KPEvZMgWvh8TCXj5Bn3m"),
+    janin.currency.createCurrency ("Fluttercoin",         0x23, 0xa3, "6",    "R"    , "FJioRLt3gLtqk3tUdMhwjAVo1sdWjRuwqt"),
+    janin.currency.createCurrency ("FrazCoin",            0x23, 0xA3, "6",    "R"    , "F8uHqHrLrToXSMrVVTzap34LBhVSEEWUmm"),
+    janin.currency.createCurrency ("Freicoin",            0x00, 0x80, "5",    "[LK]" , "18kVnAk5Undi7CqEgGx63YDKBPFpxYJmT9"),
+    janin.currency.createCurrency ("FUDcoin",             0x23, 0xa3, "6",    "R"    , "FEKsbaLJHjbEnuMiRDvtnyvxaJqehBtQ5V"),
+    janin.currency.createCurrency ("Fuelcoin",            0x24, 0x80, "5",    "[KL]" , "Fq1sL24MgDt7tTiKh8MPvhz2UMP8e1uCo4"),
+    janin.currency.createCurrency ("Fujicoin",            0x24, 0xa4, "6",    "R"    , "Fqr2ZrqWPCryqsfjdghwMT3enGHukGonit"),
+    janin.currency.createCurrency ("GabenCoin",           0x10, 0x90, "5",    "N"    , "7cwtF11nW4qAGp2pFdLuUZ5gzJWiXtUvi1"),
+    janin.currency.createCurrency ("GlobalBoost",         0x26, 0xa6, "6",    "R"    , "GeXdH1WhzA7ayYim9sdCCQKcVukUq1W8LJ"),
+    janin.currency.createCurrency ("Goodcoin",            0x26, 0xa6, "6",    "R"    , "GM3kAbQGaMVAYk8U3CrVGhSwz1hZaF6gVM"),
+    janin.currency.createCurrency ("GridcoinResearch",    0x3e, 0xbe, "7",    "V"    , "SHs9ESzUL9VAEcq7kStfF1JUAMaNT1EYzJ"),
+    janin.currency.createCurrency ("Gulden",              0x26, 0xa6, "6",    "R"    , "GLD7BDBYyddx6Sr72zGfreRG21dJAe74j8"),
+    janin.currency.createCurrency ("Guncoin",             0x27, 0xa7, "6",    "R"    , "GwVej6c3tF9GqEdSKmwJiUDWtQVK2wY9fP"),
+    janin.currency.createCurrency ("HamRadioCoin",        0x00, 0x80, "5",    "LK"   , "1JQVWKT1NQJUJbbq4UdJUY8DbWmgqrrHWz"),
+    janin.currency.createCurrency ("HTML5Coin",           0x28, 0xa8, "6",    "R"    , "HBUk5NzWyemrwLffC8pLFXabbJuMRKbkc7"),
+    janin.currency.createCurrency ("HyperStake",          0x75, 0xf5, "9",    "d"    , "p71G6VRVxTTxg3Hqa9CbENeJY1PumBjtvL"),
+    janin.currency.createCurrency ("ImperiumCoin",        0x30, 0xb0, "6",    "T"    , "LKcNNWGDyKyedwL8QNsCkg2122fBQyiDat"),
+    janin.currency.createCurrency ("IncaKoin",            0x35, 0xb5, "7",    "T"    , "NdEXATr2NSG1pkzC2kScnEnj6g3KYpLnT9"),
+    janin.currency.createCurrency ("IncognitoCoin",       0x00, 0x80, "5",    "LK"   , "1BbRmhGKyKshFge9kBMdfJyQr3KZoh5K5t"),
+    janin.currency.createCurrency ("Influxcoin",          0x66, 0xe6, "8",    "b"    , "i83eN9HxFvfsxSwjXiZQZaWf13cWF25K9Y"),
+    janin.currency.createCurrency ("Innox",               0x4b, 0xcb, "7",    "X"    , "XQm6Vy2tTh87ZnWg6cBdZBmYVExbVuScBF"),
+    janin.currency.createCurrency ("IridiumCoin",         0x30, 0xb0, "6",    "T"    , "LKTu2strS8zV1mDJxJtgE3HLqChD2m54yN"),
+    janin.currency.createCurrency ("iCash",               0x66, 0xcc, "7",    "X"    , "iKCghTCFEPhriPxrduWxks2SCDE1XKzCU6"),
+    janin.currency.createCurrency ("iXcoin",              0x8a, 0x80, "5",    "[LK]" , "xnF1nshqFLaVdDGBmQ4k2jBQkr8nbuCkLz"),
+    janin.currency.createCurrency ("Judgecoin",           0x2b, 0xab, "6",    "S"    , "JbF9ZnvoFkBdasPEq21jCCTnTUDSiyWrAQ"),
+    janin.currency.createCurrency ("Jumbucks",            0x2b, 0xab, "6",    "S"    , "JSzHiaoD6ewtymBMJHsHqkpFzCYKBzxJeC"),
+    janin.currency.createCurrency ("Lanacoin",            0x30, 0xb0, "6",    "T"    , "LhqrrTHtfNMn8rZi7QesFbbpJYeGWX7319"),
+    janin.currency.createCurrency ("Latium",              0x17, 0x80, "5",    "[LK]" , "ASz2EgegeXfKyHaY1SbJ6nCDK6sxd7BpXg"),
+    janin.currency.createCurrency ("Litecoin",            0x30, 0xb0, "6",    "T"    , "LiScnsyPcqsyxn1fx92BcFguryXcw4DgCy"),
+    janin.currency.createCurrency ("LiteDoge",            0x5a, 0xab, "6",    "S"    , "daaV1gQ63HpHHn4Ny1fJZHMA7KCeUVE538"),
+    janin.currency.createCurrency ("LoMoCoin",            0x30, 0xb0, "6",    "T"    , "LSdeGMxfMFX38GHCFQT65SJaU1E8ezT2og"),
+    janin.currency.createCurrency ("MadbyteCoin",         0x32, 0x6e, "4",    "H"    , "MCBdZDK326yhGM77nWjj3vHX96edd2PQW3"),
+    janin.currency.createCurrency ("MagicInternetMoney",  0x30, 0xb0, "6",    "T"    , "LPRqCTYEy53FkEzhRTCauLc7Qq23Z5mxZU"),
+    janin.currency.createCurrency ("Magicoin",            0x14, 0x94, "5",    "[NP]" , "9H6ddyu9S9gyrEHxVrpMBTBZWrwAvdtehD"),
+    janin.currency.createCurrency ("Marscoin",            0x32, 0xb2, "6",    "T"    , "M8caDttyKt2r7V7WHMMkRZ1jEzxj16fgCn"),
+    janin.currency.createCurrency ("MarteXcoin",          0x32, 0xb2, "6",    "T"    , "M8DSVG13j3qpNDRbuuUBh5juQmSd15wLXH"),
+    janin.currency.createCurrency ("MasterDoge",          0x33, 0x8b, "5",    "M"    , "Mm4Xqy9FYZ8N1NJzuXCaJLZcw8o2cmVC7c"),
+    janin.currency.createCurrency ("Mazacoin",            0x32, 0xe0, "8",    "a"    , "MLUXCv3GfNgmUSXc5Ek3ePaQ4cfsJwEXHa"),
+    janin.currency.createCurrency ("Megacoin",            0x32, 0xb2, "6",    "T"    , "MPeVmJHvkXN3caneWCB5zGgtGHRRBSLmWd"),
+    janin.currency.createCurrency ("MintCoin",            0x33, 0xb3, "[67]", "T"    , "MdT7t7MhbgQLSdMhHJCyoGHUuniqZDrj4h"),
+    janin.currency.createCurrency ("MobiusCoin",          0x00, 0x80, "5",    "[LK]" , "1HKNrUR3BaFC8u4VMfnjCuXDPrYGh7jU8S"),
+    janin.currency.createCurrency ("MonetaryUnit",        0x10, 0x7e, "5",    "K"    , "7gzstwRu4owvwk7Se5pPVG8A5pgdgsDzUV"),
+    janin.currency.createCurrency ("Monocle",             0x32, 0xb2, "6",    "T"    , "M9CFHZjyCipuKqByD5K1sCHmt7etuCFGsc"),
+    janin.currency.createCurrency ("MoonCoin",            0x03, 0x83, "5",    "L"    , "2P2V9npcK7apbUFsWN3zL7R6ARBMwTJ4hA"),
+    janin.currency.createCurrency ("Myriadcoin",          0x32, 0xb2, "6",    "T"    , "MWGDtjDw9c8C6zicDQF22yZBWbEX53v4o9"),
+    janin.currency.createCurrency ("NameCoin",            0x34, 0x80, "5",    "[LK]" , "NASxLK4nt5hgX9wQEny5qPPJ2q4uSGCvT9"),
+    janin.currency.createCurrency ("NeedleCoin",          0x35, 0xb5, "7",    "T"    , "NYtEDYHNabMqiad5J2tEPFwE9wnhJQpN1W"),
+    janin.currency.createCurrency ("Neoscoin",            0x35, 0xb1, "6",    "T"    , "NZw6WJPiKYcXxua1VveieihiNJRYanHjrP"),
+    janin.currency.createCurrency ("Nevacoin",            0x35, 0xb1, "6",    "T"    , "NQDJrKGP3TNhKhKzaHMdg1Wk9FWCT4Nx3q"),
+    janin.currency.createCurrency ("Novacoin",            0x08, 0x88, "5",    "M"    , "4EZMrEA5LnmwtcK5b2JfCq9k5YS4ZVZrtT"),
+    janin.currency.createCurrency ("Nubits",              0x19, 0xbf, "7",    "V"    , "BPWCkyaVqWdaf3uqahrgdTjB2QTnRZzPMM"),
+    janin.currency.createCurrency ("Ocupy",               0x73, 0xf3, "9",    "[cd]" , "ocLKVPkQRFtKn5mFygrd4QJG9eZd1sKTyi"),
+    janin.currency.createCurrency ("Omnicoin",            0x73, 0xf3, "9",    "[cd]" , "oMesh62joeab2yMoJUH28mGE8h2suDzcYc"),
+    janin.currency.createCurrency ("Onyxcoin",            0x73, 0xf3, "9",    "[cd]" , "odRRCGXooJvKs7cn7sax1bJv9EJwwEy94Z"),
+    janin.currency.createCurrency ("Particl",             0x38, 0x6c, "4",    "[HG]" , ""),
+    janin.currency.createCurrency ("Paycoin",             0x37, 0xb7, "7",    "U"    , "PV2t9zzj9rQm81c9VJqqL8edj1ndpcW9HD"),
+    janin.currency.createCurrency ("Pandacoin",           0x37, 0xb7, "7",    "U"    , "PT6guZjCgsrBkqCUhTnG1NNBYBqgzo8gVv"),
+    janin.currency.createCurrency ("ParkByte",            0x37, 0xb7, "7",    "U"    , "PCLozfQ5cBinqdRFGEf6DkuC56YU1jWzMQ"),
+    janin.currency.createCurrency ("Pesetacoin",          0x2f, 0xaf, "6",    "[ST]" , "L6qoz2SQN6U9vGNoST35QP85PQbg4s5rDn"),
+    janin.currency.createCurrency ("PHCoin",              0x37, 0xb7, "7",    "U"    , "P9e6c714JUHUfuBVHSS36eqaxGCN6X8nyU"),
+    janin.currency.createCurrency ("PhoenixCoin",         0x38, 0xb8, "7",    "U"    , "PsaaD2mLfAPUJXhMYdC1DBavkJhZj14k6X"),
+    janin.currency.createCurrency ("Pinkcoin",            0x3,  0x83, "[RQP]","L"    , "2Xgy8K2n5cVmnm8Se2rDojQ1GdfHdktx8r"),
+    janin.currency.createCurrency ("PIVX",                0x1e, 0xd4, "8",    "Y"    , "DSiCurCzgdzqSP1urFg3VZJfrpyhMWjEAp"),
+    janin.currency.createCurrency ("Peercoin",            0x37, 0xb7, "7",    "U"    , "PSnwUwknbmqUU1GCcM1DNxcANqihpdt3tW"),
+    janin.currency.createCurrency ("Potcoin",             0x37, 0xb7, "7",    "U"    , "PQcMNuCdeooMcS5H3DGwxXnSE2kmyVMU39"),
+    janin.currency.createCurrency ("Primecoin",           0x17, 0x97, "6",    "P"    , "AbXChfoHyFESePFuVh1xLZdn7Rj1mfD2a4"),
+    janin.currency.createCurrency ("ProsperCoinClassic",  0x3a, 0xba, "7",    "Q"    , "QXLqozFHKP1fdvx4LKMYmtEHWciEZ9pD2F"),
+    janin.currency.createCurrency ("Quark",               0x3a, 0xba, "7",    "U"    , "QNGJBwRApKKwEevTvDwpeoSgmo6w6wv8yQ"),
+    janin.currency.createCurrency ("Qubitcoin",           0x26, 0xe0, "8",    "a"    , "GeNTNSwEh5ZCRCE6LtnMwHCk8VU2Lu8QE7"),
+    janin.currency.createCurrency ("Reddcoin",            0x3d, 0xbd, "7",    "[UV]" , "RmAB99NsX6Wbjk5WdqNeEab83y72d7zkqZ"),
+    janin.currency.createCurrency ("Riecoin",             0x3c, 0x80, "5",    "[LK]" , "RUsNQFds88sdWszMUVKwfdBhE9PtzLTK6N"),
+    janin.currency.createCurrency ("Rimbit",              0x3c, 0xbc, "7",    "U"    , "RJNYNAafwKmkGf1hb3LDXiL1gRhSPPrXxN"),
+    janin.currency.createCurrency ("Rubycoin",            0x3c, 0xbc, "7",    "U"    , "RNsGHZnnr4pa3nYSp5NsuPtqTAGHT6XWqb"),
+    janin.currency.createCurrency ("Rupaya",              0x3c, 0xbc, "7",    "U"    , "RENYagTnHvczPgFYaAhfVqh9y6B1yaMaij"),
+    janin.currency.createCurrency ("Sambacoin",           0x3e, 0xbe, "7",    "V"    , "SJdiAgazqtum79HzGbNDxi879NzSDjtH5P"),
+    janin.currency.createCurrency ("SecKCoin",            0x3f, 0xbf, "7",    "V"    , "Se1aaa5T1HRpMEfyBPGswVUgTQoZUst9jA"),
+    janin.currency.createCurrency ("SibCoin",             0x3f, 0x80, "5",    "[LK]" , "SY7GAzvFVS8bUA89e7hosPMxqMS482ecsp"),
+    janin.currency.createCurrency ("SixEleven",           0x34, 0x80, "5",    "[LK]" , "NGPimZxoZMmAsoF4eJME8TkG7UW8vqoJQJ"),
+    janin.currency.createCurrency ("SmileyCoin",          0x19, 0x99, "6",    "P"    , "BEaZDZ8gCbbP1y3t2gPNKwqZa76rUDfR73"),
+    janin.currency.createCurrency ("SongCoin",            0x3f, 0xbf, "7",    "V"    , "SSK9MXormZXgF5ZfV599okJRXYh3g9RXGN"),
+    janin.currency.createCurrency ("SpreadCoin",          0x3f, 0xbf, "7",    "V"    , "SjPkh7V2KkySjL52wsD2CpEj4quTtjiaVW"),
+    janin.currency.createCurrency ("StealthCoin",         0x3e, 0xbe, "7",    "V"    , "SJJGGq7UyoUH1TExGJCQ6ee49ztJr2quF8"),
+    janin.currency.createCurrency ("SwagBucks",           0x3f, 0x99, "6",    "P"    , "SJJGGq7UyoUH1TExGJCQ6ee49ztJr2quF8"),
+    janin.currency.createCurrency ("Syscoin",             0x00, 0x80, "5",    "[LK]" , "133miKEHohCR5qnbEZ64MFZkCzFM2HpeAd"),
+    janin.currency.createCurrency ("Tajcoin",             0x41, 0x6f, "6",    "H"    , "TWYZCoBw6Kd5fKZ5wWpqgJaeNAbuRF9Qg8"),
+    janin.currency.createCurrency ("Terracoin",           0x00, 0x80, "5",    "[LK]" , "1BQH6gBzkxxyMQG3VSJCHnmVGfWu64nbPL"),
+    janin.currency.createCurrency ("Titcoin",             0x00, 0x80, "5",    "[LK]" , "1CHAo7muicsLHdPk5q4asrEbh6aUeSPpdC"),
+    janin.currency.createCurrency ("TittieCoin",          0x41, 0xc1, "7",    "V"    , "TYrdtLy9irV4u1yo2YQVCkS27RzDzBqWwJ"),
+    janin.currency.createCurrency ("Topcoin",             0x42, 0xc2, "7",    "V"    , "TmDTsQqqv1LWGw4xjGNiJ7ABwdCenf2BFF"),
+    janin.currency.createCurrency ("TransferCoin",        0x42, 0x99, "6",    "P"    , "TbnW6ih8314ksuutJpRjwUbc2mAkz64Tij"),
+    janin.currency.createCurrency ("TreasureHuntCoin",    0x32, 0xb2, "6",    "T"    , "MKnC2upgCNfVMS2phkV8SqGaXUGkn39EaX"),
+    janin.currency.createCurrency ("Unobtanium",          0x82, 0xe0, "8",    "a"    , "uZ8Gq61NGJ2wz3PLybXyXKLYC1FhRpz8Kq"),
+    janin.currency.createCurrency ("USDe",                0x26, 0xa6, "6",    "R"    , "GQTeNSfx6xPbBNsUfqoZNrrCBQXeY5Dtdu"),
+    janin.currency.createCurrency ("Vcash",               0x47, 0xc7, "7",    "W"    , "VoaKH8ndxJoFfM3XJ7DK3P6g7kxASpCf5g"),
+    janin.currency.createCurrency ("Versioncoin",         0x46, 0xc6, "7",    "W"    , "VRYmn3ABchWK7ZSx2V3VD6TzxmqCLsxJSH"),
+    janin.currency.createCurrency ("Vertcoin",            0x47, 0xc7, "7",    "W"    , "VkmBz8JJWLP1sVH9sGwc1Fz7o5RtXLW4J5"),
+    janin.currency.createCurrency ("Viacoin",             0x47, 0xc7, "7",    "W"    , "VeJMvqvsZFoTkYfitzEG8fYy7bC7hxMfT1"),
+    janin.currency.createCurrency ("VikingCoin",          0x46, 0x56, "3",    "D"    , "VJXz1cD1mDGQmu52aDdd7Q2G5ejqA6mcqw"),
+    janin.currency.createCurrency ("W2Coin",              0x49, 0xc9, "7",    "W"    , "Wa3AvKUP5J3BpEa93nwKHPAAQ2P1XdTCeU"),
+    janin.currency.createCurrency ("WACoins",             0x49, 0xc9, "7",    "W"    , ""),
+    janin.currency.createCurrency ("WankCoin",            0x00, 0x80, "5",    "[LK]" , "1CnEFZZxJQkNAvgFGdRV5JEKShkNj1LRWL"),
+    janin.currency.createCurrency ("WeAreSatoshiCoin",    0x87, 0x97, "6",    "P"    , "wSEgPsCGqQESLDyzBJkwCXvMP1z3e1Qi3X"),
+    janin.currency.createCurrency ("WorldCoin",           0x49, 0xc9, "7",    "W"    , "WNmGkn2WQZKS6xKHEsj5AqSbuE4sh9Upyb"),
+    janin.currency.createCurrency ("Zetacoin",            0x50, 0xE0, "8",    "a"    , "ZRU6TP8NLzoyey4DPPaa3uCCgDNDc96PXJ"),
 
-    janin.currency.createCurrency ("Testnet Bitcoin", 0x6f, 0xef, "9", "c", null)
+    janin.currency.createCurrency ("Testnet Bitcoin",     0x6f, 0xef, "9",    "c"    , null),
+    janin.currency.createCurrency ("Testnet Dogecoin",    0x71, 0xf1, "9",    "c"    , null),
+    janin.currency.createCurrency ("Testnet MonetaryUnit",0x26, 0x40, "3",    "A"    , null),
+    janin.currency.createCurrency ("Testnet PIVX",        0x8b, 0xef, "9",    "c"    , null),
+    janin.currency.createCurrency ("Testnet WACoins",     0x51, 0xd1, "8",    "[XY]" , null)
                    ];
 
   </script>
@@ -11171,27 +11305,27 @@ ninja.translator = {
 		var translation = ninja.translator.translations[ninja.translator.currentCulture][id];
 		return translation;
 	},
-    
-    staticID: [
-        "defaultTitle",
-        "title",
-        "brainalertpassphrasewarning",
-        "brainalertpassphrasetooshort",
-        "brainalertpassphrasedoesnotmatch",
-        "bulkgeneratingaddresses",
-        "bip38alertincorrectpassphrase",
-        "bip38alertpassphraserequired",
-        "detailconfirmsha256",
-        "detailalertnotvalidprivatekey",
+
+	staticID: [
+		"defaultTitle",
+		"title",
+		"brainalertpassphrasewarning",
+		"brainalertpassphrasetooshort",
+		"brainalertpassphrasedoesnotmatch",
+		"bulkgeneratingaddresses",
+		"bip38alertincorrectpassphrase",
+		"bip38alertpassphraserequired",
+		"detailconfirmsha256",
+		"detailalertnotvalidprivatekey",
 		"securitychecklistrandomOK",
 		"securitychecklistrandomNOK",
 		"securitychecklistofflineNOK",
 		"securitychecklistofflineOK",
 		"paperwalletback",
-    ],
+	],
 
 	translations: {
-    ﻿"en": {
+		﻿"en": {
     "defaultTitle" : "WalletGenerator.net - Universal Paper wallet generator for Bitcoin and other cryptocurrencies",
     "title" : "Paper Wallet Generator",
     "bulkgeneratingaddresses": "Generating addresses... ",
@@ -11209,90 +11343,258 @@ ninja.translator = {
 	"paperwalletback": "<ul><li>To deposit funds to this paper wallet, send cryptocurrency to its public address, anytime.</li><li>Verify your balance by searching for the public address using a blockchain explorer such as blockchain.info.</li><li><b>DO NOT REVEAL THE PRIVATE KEY</b> until you are ready to import the balance on this wallet to a cryptocurrency client, exchange or online wallet.</li></ul><b>Amount :</b> ___________ &nbsp; &nbsp; &nbsp; <b>Date :</b> ________________<br /><b>Notes :</b> ______________________________________",
 },
 
-    ﻿"fr": {
-	"choosecurrency": "Choisissez une monnaie",
-	"singlewallet": "Porte-Monnaie Simple",
-	"paperwallet": "Porte-Monnaie Papier",
-	"bulkwallet": "Porte-Monnaie En Vrac",
-	"brainwallet": "Porte-Monnaie Cerveau",
-	"detailwallet": "Détails du Porte-Monnaie",
-	"donate": "Soutien",
-	"generatelabelbitcoinaddress": "Génération d'une nouvelle adresse...",
-	"generatelabelmovemouse": "BOUGEZ votre souris pour ajouter de l'entropie...",
-	"generatelabelkeypress": "OU tapez des lettres aléatoires dans le champ texte",
-	"skipMessage": "Vous pouvez passer cette étape si vous ne voulez pas générer de porte-monnaie",
-	"singlelabelbitcoinaddress": "Adresse publique",
-	"singleshare": "PUBLIQUE",
-	"singlelabelprivatekey": "Clé privée (format WIF)",
-	"singlesecret": "SECRET",
-	"securitystep0title": "Étape 0. Suivez les recommandations de la liste de sécurité",
-	"securitystep0": "La première étape est de <strong>télécharger</strong> ce site à partir de <a href=\"https://github.com/MichaelMure/PaperWallet/archive/master.zip\">Github</a> et d'ouvrir le fichier index.html directement sur votre ordinateur. Il est beaucoup trop facile d'ajouter du code malicieux dans les 6000+ lignes de javascript pour transmettre votre clé privée, et vous ne voulez pas voir vos fonds volés, n'est-ce pas ? Le versionnage de code source rend bien plus facile la vérification par des personnes extérieures du code qui est exécuté. Pour une sécurité supplémentaire, <strong>débranchez votre accès Internet</strong> pendant la génération de votre porte-monnaie.",
-	"securitystep1title": "Étape 1. Générez une nouvelle adresse",
-	"securitystep1": "Choisissez votre monnaie et cliquez sur le bouton \"Générer une nouvelle adresse\".",
-	"securitystep2title": "Étape 2. Imprimez votre porte-monnaie",
-	"securitystep2": "Cliquez sur l'onglet \"Porte-Monnaie Papier\" et imprimez la page en haute qualité. <strong>Ne sauvegardez jamais la page au format PDF, car un fichier est plus susceptible d'être piraté qu'une feuille de papier.</strong>",
-	"securitystep3title": "Étape 3. Pliez le porte-monnaie papier",
-	"securitystep3": "Pliez votre nouveau porte-monnaie papier en suivant les lignes.\n<img src=\"images/foldinginstructions.png\" alt=\"Pliez en deux dans le sens de la longueur, puis en trois dans le sens de la largeur.\"><br>\nVous pouvez insérer un coté dans l'autre pour fermer le porte-monnaie.",
-	"securitystep4title": "Étape 4. Partagez votre adresse publique",
-	"securitystep4": "Transmettez votre adresse publique pour recevoir de l'argent d'autres utilisateurs de cette monnaie. Vous pouvez partager l'adresse publique autant que vous voulez.",
-	"securitystep5title": "Étape 5. Gardez votre clé privée secrète",
-	"securitystep5": "Votre clé privée est littéralement la clé pour accéder à votre argent. Si quelqu'un y accédait, il pourrait utiliser tous les fonds actuellement sur le porte-monnaie, ainsi que tous les fonds qui seront déposés dans le futur.",
-	"securitystep6": "Faites un essai avec un montant faible avant de recevoir des paiements importants.",
-	"securitychecktitle": "Liste de sécurité :",
-	"securitychecklivecd": "Utilisez vous un système d'exploitation garanti sans malware ou virus, comme par exemple un live-CD Ubuntu ?",
-	"supportedcurrencylbl": "monnaies supportées !",
-	"paperlabelencrypt": "Chiffrer en BIP38 ?",
-	"paperlabelBIPpassphrase": "Phrase de passe:",
-	"bulklabelstartindex": "Index de départ:",
-	"bulklabelrowstogenerate": "Quantité à générer:",
-	"bulklabelcompressed": "Compresser les adresses ?",
-	"bulklabelcsv": "Valeurs Séparées Par Des Virgules (CSV): Index, Adresse, Clé privée (WIF)",
-	"brainlabelenterpassphraselbl": "Phrase de passe:",
-	"brainlabelconfirmlbl": "Confirmer la phrase de passe:",
-	"brainalgorithm": "Algorithme: SHA256(phrase de passe)",
-	"brainlabelbitcoinaddress": "Adresse publique",
-	"brainlabelprivatekey": "Clé privée (format WIF):",
-	"detaillabelenterprivatekey": "Entrez votre clé privée",
-	"qrcaminstructiontitle": "Scannez votre QR code avec votre webcam",
-	"paperqrnotsupported": "Désolé, mais votre navigateur ne supporte pas les contrôles de webcam HTML5. Essayez avec une version récente de Firefox (recommandé), de Chrome ou d'Opera",
-	"paperqrpermissiondenied": "<p>Permission refusée. Votre navigateur devrait afficher un message demandant l'autorisation d'accéder à votre webcam. Cliquez sur le bouton \"Autoriser\" pour activer la webcam.</p>",
-	"detaillabelpassphrase": "Phrase de passe BIP38",
-	"detaillabelnote1": "Votre clé privée est un nombre secret unique que seul vous connaissez. Elle peut être encodé selon différents formats. Ci-dessous s'affiche l'adresse publique et la clé publique qui correspond à votre clé privée, ainsi que votre clé privée dans les formats les plus populaires (WIF, WIFC, HEX, B64).",
-	"detaillabelbitcoinaddress": "Adresse publique",
-	"detaillabelbitcoinaddresscomp": "Adresse publique compressée",
-	"detaillabelpublickey": "Clé publique (130 caractères [0-9A-F]):",
-	"detaillabelpublickeycomp": "Clé publique compressée (66 caractères [0-9A-F]):",
-	"detaillabelprivwif": "Clé privée WIF<br>51 caractère Base58",
-	"detaillabelprivwifcomp": "Clé privée WIF compressée<br>52 caractères Base58",
-	"detaillabelprivhex": "Clé privée en hexadécimal (64 caractères [0-9A-F]):",
-	"detaillabelprivb64": "Clé privée en Base64 (44 caractères):",
-	"detaillabelprivmini": "Clé privée au format MINI (22, 26 or 30 caractères):",
-	"detaillabelprivb6": "Clé privée en Base6 (99 caractères [0-5]):",
-	"detaillabelprivbip38": "Clé privée chiffrée au format BIP38 (58 caractères Base58):",
-	"detaillabelq1": "Comment générer un porte-monnaie avec des dés ? Qu'est-ce que la Base6 (B6) ?",
-	"detaila1": "Une partie importante de la création d'un porte-monnaie pour les monnaies cryptographiques est de s'assurer que les nombres aléatoires utilisés pour la génération sont réellement aléatoires. L'aléatoire d'origine physique est bien meilleur que le pseudo-aléatoire généré par un ordinateur. La façon la plus facile de générer de l'aléatoire physique est d'utiliser des dés. Pour générer une clé privée, vous avez uniquement besoin d'un dé à 6 faces que vous allez lancer 99 fois. Arrêtez-vous après chaque lancé pour noter la valeur. Pour noter la valeur, suivez les règles suivantes: 1=1, 2=2, 3=3, 4=4, 5=5, 6=0. En faisant ça, vous générez un grand nombre aléatoire, votre clé privée, en Base6 (B6). Vous pouvez ensuite entrer les 99 caractères B6 de votre clé privée dans le champs texte au dessus et cliquer sur \"View Details\". Vous verrez ensuite l'adresse publique associée à cette clé privée. Vous devrez également noter votre clé privée au format WIF, car il est plus courant d'usage que la clé privée brute.",
-	"donatetextfooter": "Pour soutenir le développement de ce générateur de porte-monnaie, vous pouvez faire une donation grâce aux adresses suivante. Quand le support pour une monnaie a été ajouté par un contributeur externe au projet, les donations lui parviennent directement.",
-	"footersupport": "Soutenir WalletGenerator.net",
-	"footerlabelgithub": "Télécharger (dépôt GitHub)",
-	"footerlabelcopyright2": "Les licences javascript sont incluses dans le code source.",
-	"footerlabelnowarranty": "Aucune garantie.",
-	"defaultTitle": "Générateur de porte-monnaie papier universel pour Bitcoin et autres monnaies cryptographiques",
-	"title": "Générateur de porte-monnaie papier",
-	"brainalertpassphrasewarning": "Attention: choisir une passe de phrase forte est important pour éviter les attaques par bruteforce, pour deviner votre phrase de passe et voler vos fonds.",
-	"brainalertpassphrasetooshort": "La phrase de passe entrée est trop courte.",
-	"brainalertpassphrasedoesnotmatch": "Les deux phrases de passe ne correspondent pas.",
-	"bulkgeneratingaddresses": "Génération en cours des adresses...",
-	"bip38alertincorrectpassphrase": "Phrase de passe incorrecte pour cette clé privée chiffrée.",
-	"bip38alertpassphraserequired": "Phrase de passe requise pour une clé chiffrée BIP38.",
-	"detailconfirmsha256": "Le texte que vous avez entré n'est pas une clé privée valide !\nVoulez vous utiliser le texte comme une phrase de passe et générer une clé privée en prenant un hash SHA256 de cette phrase ?\n\nAttention: Choisir un mot de passe solide est important pour vous protéger des attaques bruteforce visant à trouver votre mot de passe et voler vos fonds.",
-	"detailalertnotvalidprivatekey": "Le texte que vous avez entré n'est pas une clé privée valide",
-	"securitychecklistrandomOK": "Votre navigateur est capable de générer des clés cryptographiques sécurisés en utilisant window.crypto.getRandomValues",
-	"securitychecklistrandomNOK": "Votre navigateur ne supporte PAS window.crypto.getRandomValues(), ce qui est important pour générer des portes-monnaies les plus sécurisé possible. Utilisez un navigateur plus moderne.",
-	"securitychecklistofflineNOK": "Il semble que vous utilisez ce générateur directement depuis le site web, ce qui n'est pas recommandé pour générer des portes-monnaie. A la place, utilisez le lien de téléchargement en bas de cette page pour télécharger une archive ZIP depuis Github et lancez ce générateur hors-ligne comme un fichier HTML local.",
-	"securitychecklistofflineOK": "Vous exécutez ce générateur depuis votre propre téléchargement.",
-	"paperwalletback": "<ul><li>Pour transférer des fonds sur ce porte-monnaie, envoyez des fonds à l'adresse publique, à n'importe quel moment.</li><li>Vérifier votre solde en cherchant l'adresse publique dans un explorateur de Blockchain.</li><li><b>NE REVELEZ PAS VOTRE CLE PRIVEE</b> jusqu'au moment où vous voudrez importer votre solde dans un porte-monnaie logiciel.</li></ul><b>Montant :</b> ___________       <b>Date :</b> ________________<br /><b>Notes :</b> ______________________________________",
+		﻿"fr": {
+  "choosecurrency": "Choisissez une monnaie",
+    "singlewallet": "Porte-Monnaie Simple",
+    "paperwallet": "Porte-Monnaie Papier",
+    "bulkwallet": "Porte-Monnaie En Vrac",
+    "brainwallet": "Porte-Monnaie Cerveau",
+    "detailwallet": "Détails du Porte-Monnaie",
+    "donate": "Soutien",
+    "generatelabelbitcoinaddress": "Génération d'une nouvelle adresse...",
+    "generatelabelmovemouse": "BOUGEZ votre souris pour ajouter de l'entropie...",
+    "generatelabelkeypress": "OU tapez des lettres aléatoires dans le champ texte",
+    "skipMessage": "Vous pouvez passer cette étape si vous ne voulez pas générer de porte-monnaie",
+    "singlelabelbitcoinaddress": "Adresse publique",
+    "singleshare": "PUBLIQUE",
+    "singlelabelprivatekey": "Clé privée (format WIF)",
+    "singlesecret": "SECRET",
+    "securitystep0title": "Étape 0. Suivez les recommandations de la liste de sécurité",
+    "securitystep0": "La première étape est de <strong>télécharger</strong> ce site à partir de <a href=\"https://github.com/MichaelMure/PaperWallet/archive/master.zip\">Github</a> et d'ouvrir le fichier index.html directement sur votre ordinateur. Il est beaucoup trop facile d'ajouter du code malicieux dans les 6000+ lignes de javascript pour transmettre votre clé privée, et vous ne voulez pas voir vos fonds volés, n'est-ce pas ? Le versionnage de code source rend bien plus facile la vérification par des personnes extérieures du code qui est exécuté. Pour une sécurité supplémentaire, <strong>débranchez votre accès Internet</strong> pendant la génération de votre porte-monnaie.",
+    "securitystep1title": "Étape 1. Générez une nouvelle adresse",
+    "securitystep1": "Choisissez votre monnaie et cliquez sur le bouton \"Générer une nouvelle adresse\".",
+    "securitystep2title": "Étape 2. Imprimez votre porte-monnaie",
+    "securitystep2": "Cliquez sur l'onglet \"Porte-Monnaie Papier\" et imprimez la page en haute qualité. <strong>Ne sauvegardez jamais la page au format PDF, car un fichier est plus susceptible d'être piraté qu'une feuille de papier.</strong>",
+    "securitystep3title": "Étape 3. Pliez le porte-monnaie papier",
+    "securitystep3": "Pliez votre nouveau porte-monnaie papier en suivant les lignes.\n<img src=\"images/foldinginstructions.png\" alt=\"Pliez en deux dans le sens de la longueur, puis en trois dans le sens de la largeur.\"><br>\nVous pouvez insérer un coté dans l'autre pour fermer le porte-monnaie.",
+    "securitystep4title": "Étape 4. Partagez votre adresse publique",
+    "securitystep4": "Transmettez votre adresse publique pour recevoir de l'argent d'autres utilisateurs de cette monnaie. Vous pouvez partager l'adresse publique autant que vous voulez.",
+    "securitystep5title": "Étape 5. Gardez votre clé privée secrète",
+    "securitystep5": "Votre clé privée est littéralement la clé pour accéder à votre argent. Si quelqu'un y accédait, il pourrait utiliser tous les fonds actuellement sur le porte-monnaie, ainsi que tous les fonds qui seront déposés dans le futur.",
+    "securitystep6": "Faites un essai avec un montant faible avant de recevoir des paiements importants.",
+    "securitystep7title": "Pourquoi pas faire un don ?",
+    "securitystep7": "Ce service est gratuit et le sera toujours, sans publicité ni pistage Peut-être voulez-vous <a href=\"#\" onclick=\"ninja.tabSwitch(document.getElementById('donate'));\">faire un don</a> pour nous aider ainsi que les personnes qui ajoutent des nouvelles monnaies ?",
+    "securitychecktitle": "Liste de sécurité :",
+    "securitychecklivecd": "Utilisez vous un système d'exploitation garanti sans malware ou virus, comme par exemple un live-CD Ubuntu ?",
+    "supportedcurrencylbl": "monnaies supportées !",
+    "paperlabelencrypt": "Chiffrer en BIP38 ?",
+    "paperlabelBIPpassphrase": "Phrase de passe:",
+    "bulklabelstartindex": "Index de départ:",
+    "bulklabelrowstogenerate": "Quantité à générer:",
+    "bulklabelcompressed": "Compresser les adresses ?",
+    "bulklabelcsv": "Valeurs Séparées Par Des Virgules (CSV): Index, Adresse, Clé privée (WIF)",
+    "brainlabelenterpassphraselbl": "Phrase de passe:",
+    "brainlabelconfirmlbl": "Confirmer la phrase de passe:",
+    "brainalgorithm": "Algorithme: SHA256(phrase de passe)",
+    "brainlabelbitcoinaddress": "Adresse publique",
+    "brainlabelprivatekey": "Clé privée (format WIF):",
+    "detaillabelenterprivatekey": "Entrez votre clé privée",
+    "qrcaminstructiontitle": "Scannez votre QR code avec votre webcam",
+    "paperqrnotsupported": "Désolé, mais votre navigateur ne supporte pas les contrôles de webcam HTML5. Essayez avec une version récente de Firefox (recommandé), de Chrome ou d'Opera",
+    "paperqrpermissiondenied": "<p>Permission refusée. Votre navigateur devrait afficher un message demandant l'autorisation d'accéder à votre webcam. Cliquez sur le bouton \"Autoriser\" pour activer la webcam.</p>",
+    "detaillabelpassphrase": "Phrase de passe BIP38",
+    "detaillabelnote1": "Votre clé privée est un nombre secret unique que seul vous connaissez. Elle peut être encodé selon différents formats. Ci-dessous s'affiche l'adresse publique et la clé publique qui correspond à votre clé privée, ainsi que votre clé privée dans les formats les plus populaires (WIF, WIFC, HEX, B64).",
+    "detaillabelbitcoinaddress": "Adresse publique",
+    "detaillabelbitcoinaddresscomp": "Adresse publique compressée",
+    "detaillabelpublickey": "Clé publique (130 caractères [0-9A-F]):",
+    "detaillabelpublickeycomp": "Clé publique compressée (66 caractères [0-9A-F]):",
+    "detaillabelprivwif": "Clé privée WIF<br>51 caractère Base58",
+    "detaillabelprivwifcomp": "Clé privée WIF compressée<br>52 caractères Base58",
+    "detaillabelprivhex": "Clé privée en hexadécimal (64 caractères [0-9A-F]):",
+    "detaillabelprivb64": "Clé privée en Base64 (44 caractères):",
+    "detaillabelprivmini": "Clé privée au format MINI (22, 26 or 30 caractères):",
+    "detaillabelprivb6": "Clé privée en Base6 (99 caractères [0-5]):",
+    "detaillabelprivbip38": "Clé privée chiffrée au format BIP38 (58 caractères Base58):",
+    "detaillabelq1": "Comment générer un porte-monnaie avec des dés ? Qu'est-ce que la Base6 (B6) ?",
+    "detaila1": "Une partie importante de la création d'un porte-monnaie pour les monnaies cryptographiques est de s'assurer que les nombres aléatoires utilisés pour la génération sont réellement aléatoires. L'aléatoire d'origine physique est bien meilleur que le pseudo-aléatoire généré par un ordinateur. La façon la plus facile de générer de l'aléatoire physique est d'utiliser des dés. Pour générer une clé privée, vous avez uniquement besoin d'un dé à 6 faces que vous allez lancer 99 fois. Arrêtez-vous après chaque lancé pour noter la valeur. Pour noter la valeur, suivez les règles suivantes: 1=1, 2=2, 3=3, 4=4, 5=5, 6=0. En faisant ça, vous générez un grand nombre aléatoire, votre clé privée, en Base6 (B6). Vous pouvez ensuite entrer les 99 caractères B6 de votre clé privée dans le champs texte au dessus et cliquer sur \"View Details\". Vous verrez ensuite l'adresse publique associée à cette clé privée. Vous devrez également noter votre clé privée au format WIF, car il est plus courant d'usage que la clé privée brute.",
+    "donatetextfooter": "Pour soutenir le développement de ce générateur de porte-monnaie, vous pouvez faire une donation grâce aux adresses suivante. Quand le support pour une monnaie a été ajouté par un contributeur externe au projet, les donations lui parviennent directement.",
+    "footersupport": "Soutenir WalletGenerator.net",
+    "footerlabelgithub": "Télécharger (dépôt GitHub)",
+    "footerlabelcopyright2": "Les licences javascript sont incluses dans le code source.",
+    "footerlabelnowarranty": "Aucune garantie.",
+    "defaultTitle": "Générateur de porte-monnaie papier universel pour Bitcoin et autres monnaies cryptographiques",
+    "title": "Générateur de porte-monnaie papier",
+    "brainalertpassphrasewarning": "Attention: choisir une passe de phrase forte est important pour éviter les attaques par bruteforce, pour deviner votre phrase de passe et voler vos fonds.",
+    "brainalertpassphrasetooshort": "La phrase de passe entrée est trop courte.",
+    "brainalertpassphrasedoesnotmatch": "Les deux phrases de passe ne correspondent pas.",
+    "bulkgeneratingaddresses": "Génération en cours des adresses...",
+    "bip38alertincorrectpassphrase": "Phrase de passe incorrecte pour cette clé privée chiffrée.",
+    "bip38alertpassphraserequired": "Phrase de passe requise pour une clé chiffrée BIP38.",
+    "detailconfirmsha256": "Le texte que vous avez entré n'est pas une clé privée valide !\nVoulez vous utiliser le texte comme une phrase de passe et générer une clé privée en prenant un hash SHA256 de cette phrase ?\nAttention: Choisir un mot de passe solide est important pour vous protéger des attaques bruteforce visant à trouver votre mot de passe et voler vos fonds.",
+    "detailalertnotvalidprivatekey": "Le texte que vous avez entré n'est pas une clé privée valide",
+    "securitychecklistrandomOK": "Votre navigateur est capable de générer des clés cryptographiques sécurisés en utilisant window.crypto.getRandomValues",
+    "securitychecklistrandomNOK": "Votre navigateur ne supporte PAS window.crypto.getRandomValues(), ce qui est important pour générer des portes-monnaies les plus sécurisé possible. Utilisez un navigateur plus moderne.",
+    "securitychecklistofflineNOK": "Il semble que vous utilisez ce générateur directement depuis le site web, ce qui n'est pas recommandé pour générer des portes-monnaie. A la place, utilisez le lien de téléchargement en bas de cette page pour télécharger une archive ZIP depuis Github et lancez ce générateur hors-ligne comme un fichier HTML local.",
+    "securitychecklistofflineOK": "Vous exécutez ce générateur depuis votre propre téléchargement.",
+    "paperwalletback": "<ul><li>Pour transférer des fonds sur ce porte-monnaie, envoyez des fonds à l'adresse publique, à n'importe quel moment.</li><li>Vérifier votre solde en cherchant l'adresse publique dans un explorateur de Blockchain.</li><li><b>NE REVELEZ PAS VOTRE CLE PRIVEE</b> jusqu'au moment où vous voudrez importer votre solde dans un porte-monnaie logiciel.</li></ul><b>Montant :</b> ___________       <b>Date :</b> ________________<br /><b>Notes :</b> ______________________________________",
 },
-    "ru": {
+		﻿"de": {
+  "choosecurrency": "Kryptowährung Auswahl",
+    "singlewallet": "einfache Geldbörse",
+    "paperwallet": "Papier Geldbörse",
+    "bulkwallet": "Geldbörse(n) Tabelle",
+    "brainwallet": "Gedächtnis Geldbörse",
+    "detailwallet": "Geldbörse Details",
+    "donate": "Spende!",
+    "generatelabelbitcoinaddress": "Generiere neuen Schlüssel...",
+    "generatelabelmovemouse": "BEWEGEN Sie bitte Ihre Maus für etwas Entropie...",
+    "generatelabelkeypress": "ODER tippen Sie etwas zufälligen Text in diese Textbox",
+    "skipMessage": "Sie können diesen Schritt überspringen, falls Sie nicht den Zufallsgenerator verwenden möchten.",
+    "singlelabelbitcoinaddress": "öffentliche Adresse",
+    "singleshare": "ÖFFENTLICH",
+    "singlelabelprivatekey": "Privater Schlüssel (Format: WIF)",
+    "singlesecret": "GEHEIM",
+    "securitystep0title": "Folgen Sie der Sicherheits Checkliste",
+    "securitystep0": "Zu Beginn <strong>downladen</strong> Sie dieses Programm von der <a href=\"https://github.com/MichaelMure/PaperWallet/archive/master.zip\">Github</a> Webseite und öffnen die Datei index.html direkt auf Ihrem Computer, Notebook oder Tablet. Angreifer könnten anderenfalls auf einer Webseite möglicherweise den mehr als 6000 Zeilen umfassenden Code verändern und Ihren privaten Schlüssel abgreifen. Für zusätzliche Sicherheit unterbrechen Sie die Verbindung zum Internet, während Sie Ihre Geldbörse(n) generieren.",
+    "securitystep1title": "Schritt 1: Generierung eines neuen Schlüssels",
+    "securitystep1": "Wählen Sie eine Kryptowährung und wählen Sie \"Generiere neuen Schlüssel\".",
+    "securitystep2title": "Schritt 2: Ausdruck Ihrer Papier Geldbörse",
+    "securitystep2": "Klicken Sie auf die Tabelle \"Papier Geldbörse\" und drucken Sie die Seite in hoher Qualität aus. Empfehlung: Verwenden Sie nach Möglichkeit hochwertiges Papier. <strong>Hinweis:</strong> Speichern Sie die Druckausgabe nicht im PDF-Format, weil diese Datei ansonsten später von Angreifern abgegriffen und Ihr Guthaben gestolen werden könnte.",
+    "securitystep3title": "Schritt 3: Ausdruck Papier Geldbörse falten",
+    "securitystep3": "Falten Sie Ihre neue Papier Geldbörse an folgenden Linien.\n<img src=\"images/foldinginstructions.png\" alt=\"Falten Sie einmal quer und zweimal längs.\"><br>\nDie öffentliche Adresse liegt zum Schutz auf dem privaten Schlüssel, beide Schlüssel schützen Sie mit der Deckfaltung von rechts.",
+    "securitystep4title": "Schritt 4: Teilen Sie Ihre öffentliche Adresse",
+    "securitystep4": "Verwenden Sie Ihre öffentliche Adresse, um eingehende Zahlungen von anderen Nutzern der ausgewählten Kryptowährung zu erhalten. Ihre öffentliche Adresse können Sie nach belieben teilen. Mit Ihrer öffentlichen Adresse können Sie zudem jederzeit Ihr Guthaben über einen öffentlichen Block-Explorer überprüfen.",
+    "securitystep5title": "Schritt 5: Privaten Schlüssel Geheim halten",
+    "securitystep5": "Halten Sie Ihren privaten Schlüssel geheim. Nur mit Ihrem privaten Schlüssel können Sie Zahlungen aus Ihrer Papier Geldbörse leisten.<br>\n<strong>Achtung:</strong>Falls jemand Dritter Ihren privaten Schlüssel erlangt, kann er all Ihr Guthaben aus der Papier Geldbörse stehlen.",
+    "securitystep6": "Bitte testen Sie die Papier Geldbörse mit kleinen Beträgen, bevor Sie große Geldsummen auf die Papier Geldbörse buchen.",
+    "securitychecktitle": "Sicherheits Checkliste :",
+    "securitychecklivecd": "Verwenden Sie nur ein Betriebssystem, dass garantiert frei von Spyware und Viren ist, beispielsweise eine sichere Ubuntu LiveCD.",
+    "supportedcurrencylbl": "unterstützte Crypto-Währungen !",
+    "paperlabelencrypt": "Verschlüsselung mit BIP38 ?",
+    "paperlabelBIPpassphrase": "BIP38 Kennwort:",
+    "bulklabelstartindex": "Start Index:",
+    "bulklabelrowstogenerate": "zu generierende Zeilen:",
+    "bulklabelcompressed": "Komprimierte Schlüssel ?",
+    "bulklabelcsv": "Komma separierte Werte (CSV): Index, öffentliche Adresse, private Schlüssel (WIF)",
+    "brainlabelenterpassphraselbl": "Passwort Phrase (z. B. Satz mit Minus-Zeichen verbunden):",
+    "brainlabelconfirmlbl": "Passwort Phrase bestätigen:",
+    "brainalgorithm": "Algorithmus: SHA256(Passwort Phrase)",
+    "brainlabelbitcoinaddress": "Öffentliche Adresse",
+    "brainlabelprivatekey": "Privater Schlüssel (WIF Format):",
+    "detaillabelenterprivatekey": "Geben Sie Ihren privaten Schlüssel ein",
+    "qrcaminstructiontitle": "Scannen Sie Ihren QR-Code mit Ihrer Webcam",
+    "paperqrnotsupported": "Fehler. Ihr Web Browser unterstützt nicht den HTML5 Kamerazugriff. Verwenden Sie bitte nach Möglichkeit einen aktuellen Browser von Firefox, Chrome oder Opera.",
+    "paperqrpermissiondenied": "<p>Zugriff verweigert. Ihr Browser sollte eine Warnmeldung anzeigen, die den Zugriff auf Ihre Webcam authorisiert. Klicken Sie bitte auf \"Autorisieren\", um Ihre Webcam zu aktivieren.</p>",
+    "detaillabelpassphrase": "BIP38 Passwort Phrase eingeben",
+    "detaillabelnote1": "Ihr privater Schlüssel ist ein weltweit einmaliger Schlüssel, den nur Sie kennen. Dieser kann in verschiedenen Format encodiert werden. Unterhalb wird die öffentliche Adresse, der dazugehörige öffentliche Schlüssel und Ihr privater Schlüssel in den häufig verwendeten Formaten (WIF, WIFC, HEX, B64) dargestellt.",
+    "detaillabelbitcoinaddress": "Öffentliche Adresse",
+    "detaillabelbitcoinaddresscomp": "Öffentliche Adresse komprimiert",
+    "detaillabelpublickey": "Öffentliche Adresse (130 Zeichen [0-9A-F]):",
+    "detaillabelpublickeycomp": "Öffentliche Adresse komprimiert (66 Zeichen [0-9A-F]):",
+    "detaillabelprivwif": "Privater Schlüssel WIF<br>51 Zeichen Base58",
+    "detaillabelprivwifcomp": "Privater Schlüssel WIF komprimiert<br>52 Zeichen Base58",
+    "detaillabelprivhex": "Privater Schlüssel hexadezimal (64 Zeichen [0-9A-F]):",
+    "detaillabelprivb64": "Privater Schlüssel Base64 (44 Zeichen):",
+    "detaillabelprivmini": "Privater Schlüssel MINI Format (22, 26 oder 30 Zeichen):",
+    "detaillabelprivb6": "Privater Schlüssel Base6 (99 Zeichen [0-5]):",
+    "detaillabelprivbip38": "Privater Schlüssel BIP38 Format (58 Zeichen Base58):",
+    "detaillabelq1": "Wie erstelle ich eine zufällige Geldbörse? Was ist Base6 (B6)?",
+    "detaila1": "Voraussetzung für die sichere Erstellung eine Cryptowährungs-Geldbörse ist die Verwendung von zufälligen Zeichen, die verwendet werden, um eine sichere Geldbörse zu generieren. Physikalische Zufallsgeneratoren sind in der Regel hochwertiger, wie von Computern berechnete Pseudo-Zufallszahlen. Physikalischer Zufall lässt sich zum Beispiel mit einem Würfel erzeugen. Um einen privaten Schlüssel einer Kryptowährung zu generieren, müssen Sie einen Standardwürfel mit sechs Ziffern 99 Mal werfen. Notieren Sie hierbei jedes Würfelergebnis. Bei der Aufzeichnung verwenden Sie folgende Regel: 1=1, 2=2, 3=3, 4=4, 5=5, 6=0. Dadurch generieren Sie manuell eine lange, zufällige Zahl: Ihren privaten Schlüssel im B6 oder Base6 Format. Sie können anschließend die 99 Zeichen als Base6 privater Schlüssel in das obere Textfeld einfügen und anschließend auf \"Details darstellen\" klicken. Anschließend wird Ihnen die öffentliche Adresse zu Ihrem privaten Schlüssel dargestellt. Notieren Sie bitte Ihren privaten Schlüssel auch im WIF Format, da dieses häufig verwendet wird.",
+    "donatetextfooter": "Um die Entwicklung von diesem Kryptogeldbörsen-Generator zu unterstützen, bitten wir Sie um eine Spende an eine der folgenden Adressen. Falls die Unterstützung für eine Kryptowährung von einem externen Programmierer beigetragen wurde, erhält dieser direkt Ihre Spende.",
+    "footersupport": "Unterstützen Sie WalletGenerator.net",
+    "footerlabelgithub": "Download (GitHub Depot)",
+    "footerlabelcopyright2": "JavaScript Copyright Rechte sind im Quelltext inkludiert.",
+    "footerlabelnowarranty": "Nutzung auf eigene Gefahr. Haftungsausschluss für etwaige Schäden.",
+    "defaultTitle": "WalletGenerator.Net - Universeller Papier Geldbörsen Generator für Kryptowährungen wie Bitcoin und andere",
+    "title": "Papier Geldbörse für Kryptowährung",
+    "brainalertpassphrasewarning": "Achtung: Die Verwendung einer möglichst langen und sicheren Passwort Phrase ist wichtig, weil anderenfalls Ihr Passwort erraten und damit Ihr Guthaben gestolen werden kann.",
+    "brainalertpassphrasetooshort": "Die von Ihnen eingegebene Passwort Phrase ist zu kurz.",
+    "brainalertpassphrasedoesnotmatch": "Die zwei von Ihnen eingegebenen Passwort Phrasen stimmen nicht überein.",
+    "bulkgeneratingaddresses": "Generiere Schlüssel...",
+    "bip38alertincorrectpassphrase": "Falsche Passwort Phrase für diesen privaten Schlüssel.",
+    "bip38alertpassphraserequired": "Passwort Phrase wird benötigt für BIP38 gesicherten Schlüssel.",
+    "detailconfirmsha256": "Ihr eingegebener Text ist kein gültiger privater Schlüssel!\nMöchten Sie den eingegebenen Text als Passwort Phrase verwenden, um mittels SHA256 Hash-Funktion einen privaten Schlüssel zu erstellen?\nAchtung: Die Verwendung einer möglichst langen und sicheren Passwort Phrase ist wichtig, weil anderenfalls Ihr Passwort erraten und damit Ihr Guthaben gestolen werden kann.",
+    "detailalertnotvalidprivatekey": "Ihr eingetragener Text ist kein gültiger privater Schlüssel",
+    "securitychecklistrandomOK": "Ihr Browser kann kryptografische Zufallszahlen mit der Funktion wie folgt generieren: window.crypto.getRandomValues",
+    "securitychecklistrandomNOK": "Ihr Browser unterstützt NICHT die Funktion window.crypto.getRandomValues(), die benötigt wird um möglichst sichere zufällige Zahlen zu generieren. Bitte verwenden Sie einen aktuelleren Browser...",
+    "securitychecklistofflineNOK": "Warnung: Sie verwenden diesen Generator von einer Live Webseite. Dies ist nicht empfohlen. Bitte laden Sie möglichst eine Kopie des Quelltextes von GitHub auf einen geschützten Computer, falls Sie beabsichtigen wertvolle Geldbeträge auf Ihre generierte(n) Papiergeldbörse(n) zu übertragen.",
+    "securitychecklistofflineOK": "OK: Sie verwenden eine lokale Kopie dieses Programmes zur Erstellung einer Papier Geldbörse für Kryptowährungen.",
+    "paperwalletback": "<ul><li>Verwenden Sie Ihre öffentliche Adresse, um Zahlungen auf diese Geldbörse zu überweisen.</li><li>Kontrollieren Sie Ihr Guthaben durch Eingabe Ihrer öffentlichen Adresse mit Hilfe eines Online Blockchain-Explorers. z.B. https://chainz.cryptoid.info</li><li><b>NIEMALS DEN PRIVATEN SCHLÜSSEL PREISGEBEN!</b> Importieren Sie den privaten Schlüssel erst in eine Online-Geldbörse, wenn Sie Ihr Guthaben ausgeben möchten.</li></ul><b>Guthaben:</b> _____________ <b>Datum:</b> ________________<br /><b>Notizen:</b> ______________________________________",
+},
+		"nl": {
+	"choosecurrency": "Kies Valuta",
+	"singlewallet": "Enkelvoudige Portomonee",
+	"paperwallet": "Papieren Portomonee",
+	"bulkwallet": "Meerdere Portomonees",
+	"brainwallet": "Brein Portomonee",
+	"detailwallet": "Portomonee Details",
+	"donate": "Steun ons",
+	"generatelabelbitcoinaddress": "Genereren van een nieuw adres...",
+	"generatelabelmovemouse": "BEWEEG je muis in de rondte om wat willekeurigheid toe te voegen...",
+	"generatelabelkeypress": "OF type wat willekeurige karakters in deze textbox",
+	"skipMessage": "Je kunt deze stap overslaan als je geen gebruik wilt maken van de willekeurige sleutel generator",
+	"singlelabelbitcoinaddress": "Publiek Adres",
+	"singleshare": "DELEN",
+	"singlelabelprivatekey": "Prive Sleutel (Portomonee Import Formaat)",
+	"singlesecret": "GEHEIM",
+	"securitystep0title": "Stap 0. Volg de veiligheids controlelijst aanbevelingen",
+	"securitystep0": "De eerste stap is om deze website te <strong>downloaden</strong> van <a href=\"https://github.com/MichaelMure/PaperWallet/archive/master.zip\">Github</a> en vervolgens het bestand index.html direct vanaf je computer te openen. Het is voor hackers gewoon te makkelijk om kwaadaardige code tussen de 6000+ regels javascript toe te voegen en om je prive sleutel uit te lezen, en je wilt natuurlijk niet zien hoe je fondsen gestolen worden. Versiebeheer maakt het makkelijk om te controleren wat er daadwerkelijk gerunt wordt. Om er extra zeker van te zijn dat je veilig bezig bent kun je het beste connectie met het internet verbreken.",
+	"securitystep1title": "Stap 1. Geneer een nieuw adres",
+	"securitystep1": "Kies een valuta en klik op de \"Generate new address\" knop.",
+	"securitystep2title": "Stap 2. Print de Papieren Portomonee",
+	"securitystep2": "Klik de Papieren Portomonee tab en print de pagina in hoge kwaliteit uit.",
+	"securitystep3title": "Stap 3. Vouw de Papieren Portomonee",
+	"securitystep3": "Vouw je nieuwe Papieren Portomonee langs de aangegeven lijnen. \n<img src=\"images/foldinginstructions.png\" alt=\"Vouw het eerst om in één lange deel in de lengte, en daarna in drie delen in de breedte\"><br>",
+	"securitystep4title": "Stap 4. Deel je publiek adres",
+	"securitystep4": "Gebruik je publiek adres om geld van andere crypto-currency gebruikers te ontvangen. Je kunt je publieke sleutel zoveel delen als je maar wilt.",
+	"securitystep5title": "Stap 5. Bewaar je prive sleutel op een veilige plek",
+	"securitystep5": "De prive sleutel is letterlijk de sleutels tot je portomonee, als iemand deze zou weten te bemachtigen, dan zouden ze fondsen die er op dat moment in zitten kunnen opnemen, en alle fondsen die eventueel nog gestort zouden worden.",
+	"securitystep6": "Probeer eerst een klein bedrag te storten voordat je grote bedragen overmaakt.",
+	"securitychecktitle": "Beveiligings controlelijst :",
+	"securitychecklivecd": "Gebruik je een beveiligd besturingssysteem die gegarandeerd vrij is van spyware en virussen, bijvoorbeeld een Ubuntu LiveCD?",
+	"supportedcurrencylbl": "Ondersteunde munten !",
+	"paperlabelencrypt": "BIP38 Encrypt?",
+	"paperlabelBIPpassphrase": "Wachtwoordzin:",
+	"bulklabelstartindex": "Start index:",
+	"bulklabelrowstogenerate": "Rijen om te genereren:",
+	"bulklabelcompressed": "Gecomprimeerde addressen?",
+	"bulklabelcsv": "Komma gescheiden waardes: Index,Address,Private Key (WIF)",
+	"brainlabelenterpassphraselbl": "Voer wachtwoordzin in:",
+	"brainlabelconfirmlbl": "Bevestig wachtwoordzin:",
+	"brainalgorithm": "Algorithm: SHA256(wachtwoordzin)",
+	"brainlabelbitcoinaddress": "Publiek Adres:",
+	"brainlabelprivatekey": "Prive sleutel (Portomonee Import Formaat):",
+	"detaillabelenterprivatekey": "Voeg prive sleutel toe",
+	"qrcaminstructiontitle": "Scan QR code in door gebruik te maken van je webcam",
+	"paperqrnotsupported": "Sorry, maar je webbrowser heeft geen ondersteuning voor HTML5 camera controls. Probeer het nog een keer via een nieuwe versie van Firefox (aanbevolen), Chrome of Opera.",
+	"paperqrpermissiondenied": "<p>Toegang afgewezen. Je browser zou een bericht moeten tonen waarbij toegang tot je webcam wordt gevraagd. Klik alsjeblief op de \"Allow\" knop om je webcam toegang te geven.</p>",
+	"detaillabelpassphrase": "Voeg een BIP38 wachtwoordzin toe",
+	"detaillabelnote1": "Je prive sleutel is een unieke geheime nummer waarvan alleen jij op de hoogte bent. Het kan encoded worden in een aantal verschillende formaten. Hieronder laten we de Publiek adres en Publieke sleutel zien dat correspondeerd met je prive sleutel zowel als je prive sleutel in de meest populaire encoding formaten (WIF, WIFC, HEX, B64).",
+	"detaillabelbitcoinaddress": "Publiek Adres",
+	"detaillabelbitcoinaddresscomp": "Publiek Adres gecomprimeerd",
+	"detaillabelpublickey": "Publieke Sleutel (130 karakters [0-9A-F]):",
+	"detaillabelpublickeycomp": "Publieke Sleutel (gecomprimeerd, 66 karakters [0-9A-F]):",
+	"detaillabelprivwif": "Prive Sleutel WIF<br>51 karakters Base58",
+	"detaillabelprivwifcomp": "Prive Sleutel WIF Gecomprimeerd<br>52 karakters Base58",
+	"detaillabelprivhex": "Prive Sleutel Hexadecimal Formaat (64 characters [0-9A-F]):",
+	"detaillabelprivb64": "Prive Sleutel Base64 (44 karakters):",
+	"detaillabelprivmini": "Prive Sleutel Mini Formaat (22, 26 or 30 karakters):",
+	"detaillabelprivb6": "Prive Sleutel Base6 Formaat (99 karakters [0-5]):",
+	"detaillabelprivbip38": "Prive Sleutel BIP38 Formaat (58 karakters Base58):",
+	"detaillabelq1": "Hoe maak ik een portomonee aan met een dobbelsteen? Wat is B6?",
+    "detaila1": "Een belangrijk onderdeel bij het maken van een cryto-currency portomonee, is om er zeker van te zijn dat de willekeurig gegenereerde nummers die gebruikt zijn om de portomonee te genereren daadwerkelijk willekeurig zijn. Fysieke willekeurigheid is beter dan computer gegenereerde pseudo-willekeurigheid. De meest eenvoudige manier om fysieke willekeurigheid te creëren is met dobbelstenen. Om een crypto-currency private key te genereren heb je alleen een zes zijdige dobbelsteen nodig welke je 99 keer rolt. Waarbij je elke keer stopt om de gerolde waarde te noteren. Bij het noteren de de waardes volg je de volgende regels: 1=1, 2=2, 3=3, 4=4, 5=5, 6=0. Door dit te doen noteer je de grote willekeurige nummer, je prive sleutel, in B6 of base 6 formaat. Je kunt dan vervolgens de 99 karakters base 6 prive sleutel toevoegen in het veld boven en door View Details te klikken. Je zult dan je publiek adres gerelateerd aan je prive sleutel zien. Je zou het beste ook een notitie kunnen maken van je prive sleutels in WIF format, aangezien dit meer gebruikt wordt.",
+	"donatetextfooter": "Om het development van deze wallet te steunen, kun je een donatie maken naar de volgende addressen. Als ondersteuning voor een valuta toe wordt gevoegd door een externe inbrenger, zal hij of zij de donaties zelf ontvangen.",
+	"footersupport": "Steun WalletGenerator.net",
+	"footerlabelgithub": "Download (GitHub Repository)",
+	"footerlabelcopyright2": "JavaScript copyrights zijn toegevoegd in de code.",
+	"footerlabelnowarranty": "Geen garantie.",
+	"defaultTitle": "WalletGenerator.net - Universeel Papieren portomonee generator voor Bitcoin en andere cyrptocurrencies",
+	"title": "Papieren Portomonee Generator",
+	"brainalertpassphrasewarning": "Waarschuwing: Het kiezen van een sterk wachtwoordzin is belangrijk om geforceerde inbraak pogingen om je wachtwoordzin te raden en het stelen van je munten te voorkomen.",
+	"brainalertpassphrasetooshort": "De wachtwoordzin die je ingevuld hebt is te kort.",
+	"brainalertpassphrasedoesnotmatch": "De wachtwoordzin komt niet overeen met de bevestigde wachtwoordzin",
+	"bulkgeneratingaddresses": "Genereerd adressen...",
+	"bip38alertincorrectpassphrase": "Onjuiste wachtwoordzin voor deze versleutelde prive sleutel.",
+	"bip38alertpassphraserequired": "Wachtwoordzin vereist voor BIP38 sleutel",
+	"detailconfirmsha256": "De tekst die je ingevuld hebt is niet een valide Prive Sleutel!\nZou je gebruik willen maken van de ingevulde tekst als wachtwoordzin en daarbij het aanmaken van een Prive Sleutel die gebruik maakt van SHA256 hash van de wachtwoordzin?\nWaarschuwing: Het kiezen van een sterk wachtwoordzin is belangrijk om geforceerde inbraak pogingen te vermijden, zodat inbrekers er niet met je munten van door kunnen.",
+	"detailalertnotvalidprivatekey": "De tekst die je hebt ingevuld is niet een geldigde Prive Sleutel",
+	"securitychecklistrandomOK": "Je browser heeft de mogelijkheid om wllekeurige crypto sleutels te genereren door het gebruik van window.crypto.getRandomValues",
+	"securitychecklistrandomNOK": " Jouw browser heeft geen ondersteuning voor window.crypto.getRandomValues(), welke belangrijk wordt voor het genereren van de meest veilige willekeurige numbers mogelijk. Gebruik een moderne browser om dit mogelijk te maken.",
+	"securitychecklistofflineNOK": "Het lijkt er op dat je gebruik maakt van deze generator terwijl je connectie hebt met de website, wij raden je aan dit niet te doen bij het aanmaken van waardevolle protomonees. Inplaats daarvan kun je gebruik maken de download link onderaan deze pagina om het zip bestand van GitHub te downloaden en 'lokaal' de HTML bestanden te openen.",
+	"securitychecklistofflineOK": "Je bent deze generator van je eigen lokale download aan het draaien.",
+	"paperwalletback": "<ul><li>Om fondsen naar deze portomonee over te maken, kun je munten naar dit publiek adres sturen, wanneer je  maar wilt.</li><li>Bevestig je fondsen door een publieke blockchain explorers te kijken in zoals blockchain.info.</li><li><b>LAAT NOOIT JE PRIVE SLEUTEL ZIEN</b> totdat je bereid bent de balans van deze portomonee te importeren in deze client portomonee, een exchange of een online portomonee.</li></ul><b>Hoeveelheid :</b> ___________       <b>Datum :</b> ________________<br /><b>Notities :</b> ______________________________________",
+},
+		"ru": {
 	"choosecurrency": "Выберите валюту",
 	"singlewallet": "Единичный кошелек",
 	"paperwallet": "Бумажный кошелек",
@@ -11375,7 +11677,7 @@ ninja.translator = {
 	"securitychecklistofflineOK": "Вы запустили генератор из локального файла.",
 	"paperwalletback": "<ul><li>Для пополнения средств этого бумажного кошелька отправьте криптовалюту на его открытый адрес.</li><li>Проверьте Ваш балас, найдя открытый адрес в просмотрщиках блокчейна, таких как blockchain.info.</li><li><b>НЕ РАССКРЫВАЙТЕ ЗАКРЫТЫЙ КЛЮЧ</b> пока Вы не будете готовы импортировать баланс этого кошелька в крипто-клиент, биржу или онлайн-кошелек.</li></ul><b>Сумма :</b> ___________       <b>Дата :</b> ________________<br /><b>Пометки :</b> ______________________________________",
 },
-    "es": {
+		"es": {
     "choosecurrency": "Elige criptodivisa",
     "singlewallet": "Cartera única",
     "paperwallet": "Cartera de papel",
@@ -11457,6 +11759,215 @@ ninja.translator = {
     "securitychecklistofflineNOK": "Pare que estás ejecutando este generador desde un sitio online, lo que no se recomienda si vas a crear carteras valiosas. En vez de esto, utiliza el enlace de descarga al final de esta página para descargar un archivo ZIP de GitHub y ejecuta este generador offline como un archivo HTML 'local'.",
     "securitychecklistofflineOK": "Estás ejecutando este generador de forma local.",
     "paperwalletback": "<ul><li>Para depositar fondos en esta cartera de papel, envía criptomonedas a su dirección pública, en cualquier momento.</li><li>Comprueba tu balance buscando la dirección pública en un explorador de bloques como blockchain.info.</li><li><b>NUNCA REVELES LA CLAVE PRIVADA</b> hasta que estés listo para importar el balance de esta cartera a un cliente de criptomoneda, portal de cambio o cartera online.</li></ul><b>Cantidad:</b> ___________       <b>Fecha:</b> ________________<br /><b>Notas:</b> ______________________________________",
+},
+
+		﻿"it": {
+    "choosecurrency": "Scegli una valuta",
+	  "singlewallet": "Singolo portafogli",
+    "paperwallet": "Paper Wallet",
+    "bulkwallet": "Portafogli multipli",
+    "brainwallet": "Brain Wallet",
+    "vanitywallet": "Vanity Wallet",
+    "detailwallet": "Dettagli portafogli",
+	  "singletip1": "<b>Un portafogli bitcoin</b> è composto semplicemente da una coppia di valori: l'indirizzo e la sua chiave privata. Un portafogli è stato appena generato sul tuo browser e mostrato sopra.",
+    "singletip2": "<b>Per mettere in sicurezza questo portafogli</b> devi stampare o quantomeno salvare l'indirizzo bitcoin e la Chiave privata. È molto importante fare una copia di backup della chiave privata e conservarla in un posto sicuro. Questo sito non conosce la tua chiave privata. Se hai familiarità con PGP, puoi scaricare per intero questa pagina HTML e controllare la sua autentiticità. Puoi confrontare il codice SHA1 della pagina scaricata con il codice firmato dall'autore che trovi nella cronologia delle versioni (in fondo alla pagina). Se abbandoni/aggiorni la pagina web oppure premi il tasto Genera, un nuovo indirizzo sostituirà quello vecchio che non potrà più essere recuperato. La chiave privata dovrebbe essere tenuta segreta, chiunque conosca la chiave privata può avere accesso e spendere i tuoi bitcoin. Se stampi il tuo portafogli conservalo in una busta di plastica sigillata per tenerla al riparo dall'acqua. Tratta quanto stampato alla stregua di una banconota.",
+    "singletip3": "<b>Ricevi fondi</b> su questo portafogli mostrando l'indirizzo bitcoin per il versamento.",
+    "singletip4": "<b>Controlla il saldo</b> visitando blockchain.info o blockexplorer.com cercando il tuo indirizzo bitcoin.",
+    "singletip5": "<b>Spendi i tuoi bitcoin</b> aprendo un account su blockchain.info o mtgox.com usando la chiave privata. Puoi anche spendere i tuoi bitcoin scaricando il popolare client p2p ed importando in esso il portafogli. Tieni presente che quando importi una chiave nel client p2p, nel momento in cui spendi le monete, la chiave viene raggruppata insieme alle altre presenti nel programma con i restanti bitcoin. Quando esegui una transazione gli spiccioli verranno invitati verso un altro indirizzo all'interno del tuo portafogli gestito dal client p2p. Quindi dovresti tenere un backup del portafogli contenuto nel client p2p e tenere questo in un posto sicuro fin tanto terrai dei bitcoin lì. Satoshi consiglia di non cancellare mai un portafogli. ",
+	"tagline": "Open Source JavaScript Client-Side Multi Coin Wallet Generator",
+	"donate": "Supporto",
+	"generatelabelbitcoinaddress": "Generazione Indirizzo Bitcoin...",
+	"generatelabelmovemouse": "MUOVI il tuo mouse per contribuire alla generazione dei numeri casuali...",
+	"generatelabelkeypress": "OPPURE digitare lettere casuali nel campo di testo",
+	"skipMessage": "È possibile saltare questo passaggio se non si desidera generare portafogli",
+	"singlelabelbitcoinaddress": "Indirizzo Pubblico",
+	"singleshare": "PUBBLICO",
+	"singlelabelprivatekey": "Chiave Privata (formato WIF)",
+	"singlesecret": "SEGRETO",
+	"securitystep0title": "Passo 0. Seguire le raccomandazioni dell'elenco di sicurezza",
+	"securitystep0": "Il primo passo è quello di <strong> scaricare </ strong> questo sito da <a href=\"https://github.com/MichaelMure/PaperWallet/archive/master.zip\">Github</a> ed aprire il file index.html direttamente nel computer.È troppo facile aggiungere codice dannoso alle oltre 6000 linee di script Java per intercettare la vostra chiave privata, e non vuoi vedere i tuoi fondi rubati, non è vero? La versione del codice sorgente rende molto più semplice verificare da parte di persone esterne il codice che viene eseguito. Per una maggiore sicurezza, <strong> scollegare l'accesso a Internet </ strong> durante la generazione del portafogli.",
+	"securitystep1title": "Passo 1. Generare un nuovo indirizzo",
+	"securitystep1": "Scegli la tua valuta e fai clic sul pulsante \"Generazione nuovo indirizzo\".",
+	"securitystep2title": "Passo 2. Stampare il Vostro portafogli",
+	"securitystep2": "Fai clic sulla scheda \"portafogli\" e stampa la pagina in alta qualità. <strong> Non salvare mai la pagina in formato PDF in quanto è più probabile che sia violato un file piuttosto che un foglio di carta.</strong>",
+	"securitystep3title": "Passo 3. Piegare il portafogli",
+	"securitystep3": "Piegate il vostro nuovo portafogli seguendo le linee.\n<img src=\"images/foldinginstructions.png\" alt=\"Piegare a metà longitudinalmente e poi in tre nella direzione della larghezza.\"><br>\nÈ possibile inserire un lato nell'altro per chiudere il portafogli.",
+	"securitystep4title": "Passo 4. Condividi il tuo indirizzo pubblico",
+	"securitystep4": "Invia il tuo indirizzo pubblico per ricevere denaro da altri utenti nella stessa valuta. Puoi condividere l'indirizzo pubblico quanto vuoi.",
+	"securitystep5title": "Passo 5. Mantenere segreta la tua chiave privata",
+	"securitystep5": "La chiave privata è letteralmente la chiave per accedere ai tuoi soldi. Se qualcuno dovesse accedervi, potrebbe utilizzare tutti i fondi attualmente nel portafogli, nonché tutti i fondi che saranno depositati in futuro.",
+	"securitystep6": "Prima di ricevere grandi pagamenti fai alcune prove di piccolo importo.",
+	"securitychecktitle": "Controllo di sicurezza :",
+	"securitychecklivecd": "Utilizzi un sistema operativo garantito senza malware o virus, ad esempio un CD live-Ubuntu?",
+	"supportedcurrencylbl": "valute supportate !",
+	"paperlabelencrypt": "Crittografare in BIP38?",
+	"paperlabelBIPPassphrase": "Frase d'accesso:",
+	"bulklabelstartindex": "Indice iniziale:",
+    "bulklabelrowstogenerate": "Righe da generare:",
+    "bulklabelcompressed": "Indirizzo compresso?",
+    "bulkgenerate": "Genera",
+    "bulkprint": "Stampa",
+	"bulklabelcsv": "Valori Separati da virgola: (CSV): Indice, Indirizzo, Chiave privata (WIF)",
+	"brainlabelenterPassphraselbl": "Frase d'accesso:",
+	"brainlabelconfirmlbl": "Conferma Frase d'accesso:",
+	"brainalgorithm": "Algoritmo: SHA256(Frase d'accesso)",
+	"brainlabelbitcoinaddress": "Indirizzo pubblico",
+	"brainlabelprivatekey": "Chiave privata (formato WIF):",
+	"detaillabelenterprivatekey": "Inserisci la Chiave Privata",
+	"qrcaminstructiontitle": "Scansiona il tuo codice QR con la tua webcam",
+	"paperqrnotsupported": "Spiacenti, ma il tuo browser non supporta i controlli della webcam HTML5. Provare con una versione recente di Firefox (consigliata), Chrome o Opera",
+	"paperqrpermissiondenied": "<p>Permesso negato. Il tuo browser dovrebbe visualizzare un messaggio che richiede l'autorizzazione per accedere alla tua webcam. Fare clic sul pulsante \"Permetti\" per attivare la webcam.</p>",
+	"detaillabelPassphrase": "Inserisci Passphrase BIP38",
+	"detaillabelnote1": "La tua Chiave privata Bitcoin è rappresentata da un numero segreto, unico al mondo, che dovresti conoscere soltanto tu. Può essere codificato in molti formati differenti. Di seguito verrà mostrato l'indirizzo e la chiave pubblica, con la corrispondente chiave privata, nei più diffusi formati di codifica (WIF, WIFC, HEX, B64, MINI).",
+	"detaillabelbitcoinaddress": "Indirizzo pubblico",
+	"detaillabelbitcoinaddresscomp": "Indirizzo pubblico compresso",
+	"detaillabelpublickey": "Chiave pubblica (130 caratteri [0-9A-F]):",
+	"detaillabelpublickeycomp": "Chiave pubblica compressa (66 caratteri [0-9A-F]):",
+	"detaillabelprivwif": "Chiave privata WIF<br>51 caratteri base58, inizia per a",
+	"detaillabelprivwifcomp": "Chiave privata WIF compressa<br>52 caratteri base58, inizia per 'a'",
+	"detaillabelprivhex": "Chiave privata formato esadecimale (64 caratteri [0-9A-F]):",
+    "detaillabelprivb64": "Chiave privata Base64 (44 caratteri):",
+    "detaillabelprivmini": "Chiave privata formato mini (22, 26 or 30 caratteri, inizia per 'S'):",
+    "detaillabelPassphrase": "Inserisci Passphrase BIP38",
+    "detaildecrypt": "Decripta BIP38",
+	"detaillabelprivb6": "Chiave privata Base6 (99 caratteri [0-5]):",
+	"detaillabelprivbip38": "Chiave privata cifrata in formato BIP38 (58 caratteri Base58):",
+	"detaillabelq1": "Come generare un portafoglio con dadi? Che cosa è Base6 (B6)?",
+	"detaila1": "Una parte importante della creazione di un portafogli per le valute crittografiche è garantire che i numeri casuali utilizzati per la generazione siano effettivamente casuali. L'origine casuale fisica è migliore di quella pseudo-casuale generata da un computer. Il modo più semplice per generare un casuale fisico è quello di utilizzare i dadi. Per una chiave privata, è necessario solo un dado a 6 facciate che eseguirà 99 lanci. Arrestare dopo ogni lancio per registrare il valore. Per registrare il valore, seguire le seguenti regole: 1 = 1, 2 = 2, 3 = 3, 4 = 4, 5 = 5, 6 = 0. In questo modo, genera un numero casuale di grandi dimensioni, la chiave privata, in Base6 (B6). Potete inserire i 99 caratteri B6 della chiave privata nel campo di testo sopra e fare clic su \"View Details\". Vedrai poi l'indirizzo pubblico associato a questa chiave privata. Devi anche annotare la chiave privata in formato WIF, in quanto è più comune della chiave privata.",
+	"donatetextfooter": "Per sostenere lo sviluppo di questo generatore di portafogli, è possibile effettuare una donazione tramite i seguenti indirizzi. Quando il contributo di una valuta è stato aggiunto da un collaboratore al di fuori del progetto, le donazioni lo raggiungono direttamente. ",
+	"footerlabeldonations": "Donazioni:",
+	"footerlabeltranslatedby": "F3de81",
+	"footersupport": "Supportare WalletGenerator.net",
+	"footerlabelgithub": "Repository GitHub",
+	"footerlabelversion": "Cronologia Versioni",
+	"footerlabelcopyright1": "Copyright bitaddress.org.",
+	"footerlabelcopyright2": "Le note di copyright dei file JavaScript sono inclusi nei sorgenti stessi.",
+	"footerlabelnowarranty": "Nessuna garanzia.",
+	"defaultTitle": "Generatore universale di portafogli per Bitcoin e altre valute crittografiche",
+	"title": "Generatore di PaperWallet",
+	"brainalertPassphrasewarning":"Attenzione: La scelta di una Passphrase robusta è importante per evitare attacchi brute force in grado di indovinare la tua Passphrase e rubare i tuoi fondi",
+	"brainalertPassphrasetooshort": "La Passphrase inserita è troppo corta.\n\n",
+	"brainalertPassphrasedoesnotmatch": "La Passphrase non combacia con quella data per la conferma.",
+	"bulkgeneratingaddresses": "Generazione indirizzi...",
+	"bip38alertincorrectPassphrase": "Passphrase non corretta per questa chiave privata criptata.",
+	"bip38alertPassphraserequired": "Passphrase richiesta per chiave BIP38",
+    "detailconfirmsha256": "Il testo inserito non rappresenta una Chiave privata valida!\n\nVorresti usare il testo inserito come Passphrase e creare da questa un hash SHA256 e generare così una Chiave Privata?\n\nAvvertenza: La scelta di una Passphrase robusta è importante per evitare che attacchi di tipo \"brute force\" vadano a segno indovinando il testo segreto e di conseguenza far perdere i fondi.",
+	"detailalertnotvalidprivatekey": "Il testo inserito non rappresenta una Chiave Privata valida",
+	"securitychecklistrandomOK": "Il tuo browser è in grado di generare chiavi crittografiche sicure usando window.crypto.getRandomValues",
+	"securitychecklistrandomNOK": "Il tuo browser NON supporta window.crypto.getRandomValues (), importante per generare i portafogli più sicuri. Utilizza un browser più moderno. ",
+	"securitychecklistofflineNOK": "Sembra che utilizzi questo generatore direttamente dal sito web, che non è raccomandato per la generazione di portafogli. Utilizza invece il link di download in fondo a questa pagina per scaricare un archivio ZIP da Github e eseguire questo generatore offline come file HTML locale.",
+	"securitychecklistofflineOK": "Esegui questo generatore dal tuo download.",
+	"paperwalletback": "<ul><li>Per trasferire i fondi a questo portafogli, inviare i fondi all' indirizzo pubblico in qualsiasi momento.</li><li>Verificare il vostro saldo cercando l'Indirizzo pubblico in un Blockchain explorer.</li><li><b>NON RIVELARE LA CHIAVE PRIVATA</b> fino a quando non si desidera importare proprio saldo in un portafoglio software.</li></ul><b>Quantità :</b> ___________       <b>Data :</b> ________________<br /><b>Note :</b> ______________________________________",
+	"paperlabelbitcoinaddress": "Indirizzo Bitcoin:",
+    "paperlabelprivatekey": "Chiave privata (Wallet Import Format):",
+    "paperlabelencryptedkey": "Chiave privata criptata (password richiesta)",
+	"vanityinvalidinputcouldnotcombinekeys": "Dati inseriti non validi. Le chiavi non possono essere combinate.",
+    "vanityalertinvalidinputpublickeysmatch": "Dati inseriti non validi. Entrambe le chiavi pubbliche combaciano. Devi inserire due chiavi differenti.",
+    "vanityalertinvalidinputcannotmultiple": "Dati inseriti non validi. Impossibile moltiplicare due chiavi pubbliche. Seleziona 'Aggiungi' per inserire due chiavi pubbliche ed ottenere l'indirizzo Bitcoin.",
+    "vanityprivatekeyonlyavailable": "Non disponibile quando vengono combinate due chiavi private",
+    "vanityalertinvalidinputprivatekeysmatch": "Dati inseriti non validi. Entrambe le chiavi private combaciano. Devi inserire due chiavi differenti.",
+},
+
+		"ua": {
+  "choosecurrency": "Оберіть валюту",
+    "singlewallet": "Один гаманець",
+    "paperwallet": "Паперовий гаманець",
+    "bulkwallet": "Кілька гаманців",
+    "brainwallet": "Розумний гаманець",
+    "detailwallet": "Детальніше про гаманець",
+    "donate": "Пожертвувати",
+    "generatelabelbitcoinaddress": "Створюється нова адреса...",
+    "generatelabelmovemouse": "РУХАЙТЕ мишкою, щоб збільшити випадковість...",
+    "generatelabelkeypress": "АБО введіть будь-які випадкові символи у це текстове поле",
+    "skipMessage": "Ви можете пропустити цей крок, якщо ви не плануєте використовувати генератор випадкових ключів",
+    "singlelabelbitcoinaddress": "Публічна адреса",
+    "singleshare": "ДЛЯ ПОШИРЕННЯ",
+    "singlelabelprivatekey": "Приватний ключ (формат імпорту гаманця - WIF)",
+    "singlesecret": "СЕКРЕТНИЙ (ЗАХОВАТИ)",
+    "securitystep0title": "Крок 0. Дотримуйтесь рекомендацій \"Пам'ятки безпеки\"",
+    "securitystep0": "Насамперед <strong>завантажте</strong> цей сайт з <a href=\"https://github.com/MichaelMure/PaperWallet/archive/master.zip\">Github</a>, розархівуйте його і безпосередньо з вашого комп'ютера відкрийте файл index.html. Це достатньо просто сховати деякий шкідливий код у 6000+ рядків javascript, щоб поцупити ваш приватний ключ, але ви ж не хочете довідатися, що ваші кошти вкрадено. Контроль версії кода дозволяє набагато простіше перевіряти діючу програму. Для забезпечення додаткової безпеки, <strong>відключіть доступ до Інтернету</strong> під час створення вашого гаманця.",
+    "securitystep1title": "Крок 1. Створіть нову адресу",
+    "securitystep1": "Оберіть вашу валюту й клацніть на кнопку \"Створити нову адресу\".",
+    "securitystep2title": "Крок 2. Роздрукуйте паперовий гаманець",
+    "securitystep2": "Клацніть на закладку \"Паперовий гаманець\" та роздрукуйте сторінку якнайякісніше. <strong>Ніколи не зберігайте сторінку як PDF файл, щоб роздрукувати її згодом, бо файл швидше буде зламаний хакерами ніж клаптик паперу.</strong>",
+    "securitystep3title": "Крок 3. Складіть паперовий гаманець",
+    "securitystep3": "Складіть ваш новий паперовий гаманець відповідно до ліній.\n<img src=\"images/foldinginstructions.png\" alt=\"Зігніть навпіл уздовж, а потім кожну третину поперечно.\"><br>\nВи можете вставити одну частину всередину іншої, щоб закріпити гаманець.",
+    "securitystep4title": "Крок 4. Поширюйте вашу публічну адресу",
+    "securitystep4": "Використовуйте свою публічну адресу, щоб отримувати гроші від інших користувачів криптовалюти. Ви можете поширювати свою публічну адресу без обмежень.",
+    "securitystep5title": "Крок 5. Зберігайте ваш приватний ключ у таємниці",
+    "securitystep5": "Приватний ключ фактично є ключем до ваших монет. Якщо хтось сторонній отримає цей ключ, він зможе безперешкодно вивести усі кошти, які будуть у гаманці; він також зможе виводити кошти, які в майбутньому надходитимуть на цей гаманець.",
+    "securitystep6": "Перш ніж одержувати великі суми на гаманець, будь ласка спробуйте вивести з гаманця невеличкі кошти.",
+    "securitychecktitle": "Пам'ятка безпеки :",
+    "securitychecklivecd": "Чи використовуєте ви безпечну операційну систему, яка гарантує захист від шпигунських програм і вірусів, наприклад, таку як Ubuntu LiveCD?",
+    "supportedcurrencylbl": "доступних валют !",
+    "paperlabelencrypt": "Зашифрувати за допомогою BIP38?",
+    "paperlabelBIPpassphrase": "Парольна фраза:",
+    "bulklabelstartindex": "Початковий індекс:",
+    "bulklabelrowstogenerate": "Кількість рядків, що буде створено:",
+    "bulklabelcompressed": "Чи створювати стиснуті адреси?",
+    "bulklabelcsv": "Дані, що розділені комою: індекс, адреса, приватний ключ (WIF)",
+    "brainlabelenterpassphraselbl": "Введіть парольну фразу:",
+    "brainlabelconfirmlbl": "Повторіть парольну фразу:",
+    "brainalgorithm": "Алгоритм: SHA256(парольна фраза)",
+    "brainlabelbitcoinaddress": "Публічна адреса:",
+    "brainlabelprivatekey": "Приватний ключ (формат імпорту гаманця - WIF):",
+    "detaillabelenterprivatekey": "Введіть приватний ключ",
+    "qrcaminstructiontitle": "Скануйте QR код, використовуючи вашу камеру",
+    "paperqrnotsupported": "Вибачте, ваш переглядач не підтримує можливості HTML5 з управління камерою. Спробуйте використовувати останню версію Firefox (радимо), Chrome або Opera.",
+    "paperqrpermissiondenied": "<p>Не дозволено. Ваш браузер повинен відобразити повідомлення із запитом на доступ до вашої камери. Будь ласка, клацніть на кнопку \"Дозволити\", щоб включити вашу камеру.</p>",
+    "detaillabelpassphrase": "Введіть парольну фразу BIP38",
+    "detaillabelnote1": "Ваш приватний ключ - це унікальний секретний номер, який знаєте лише ви. Він може бути закодований у кількох різних форматах. Нижче показано публічну адресу та публічний ключ, які відповідають вашому приватному ключу. Також показано ваш приватний ключ у найпопулярніших форматах кодування (WIF, WIFC, HEX, B64).",
+    "detaillabelbitcoinaddress": "Публічна адреса",
+    "detaillabelbitcoinaddresscomp": "Публічна адреса (стиснута)",
+    "detaillabelpublickey": "Публічний ключ (130 знаків [0-9A-F]):",
+    "detaillabelpublickeycomp": "Публічний ключ (стиснутий, 66 знаків [0-9A-F]):",
+    "detaillabelprivwif": "Приватний ключ WIF<br>51 знак Base58",
+    "detaillabelprivwifcomp": "Приватний ключ WIF, стиснутий<br>52 знаки Base58",
+    "detaillabelprivhex": "Приватний ключ, шістнадцятковий формат (64 знаки [0-9A-F]):",
+    "detaillabelprivb64": "Приватний ключ Base64 (44 знаки):",
+    "detaillabelprivmini": "Приватний ключ, міні формат (22, 26 або 30 знаків):",
+    "detaillabelprivb6": "Приватний ключ, формат Base6 (99 знаків [0-5]):",
+    "detaillabelprivbip38": "Приватний ключ, формат BIP38 (58 знаків Base58):",
+    "detaillabelq1": "Як я можу створити гаманець за допомогою кубіків? Що таке B6?",
+    "detaila1": "При створенні гаманця для криптовалюти, важливо переконатися, що використовуються випадкові числа. Фізична випадковість краща ніж згенеровані комп'ютером псевдо-випадкові числа. Найпростіший шлях згенерувати фізично випадкові числа - це гральний кубік. Щоб створити криптовалютний приватний ключ вам слід кинути шестигранний кубік 99 разів. Занотуйте кожне значення, дотримуючись наступного правила: 1=1, 2=2, 3=3, 4=4, 5=5, 6=0. Таким чином ви одержите довге випадкове число - ваш приватний ключ у форматі B6. Тепер ви можете ввести ці 99 знаків вашого приватного ключа B6 у текстове поле зверху сторінки і клацніть на кнопку \"Показати подробиці\". Ви побачите публічну адресу, яка створена від відповідного приватного ключа. Зверніть увагу на ваш приватний ключ у форматі WIF, бо цей формат є найпоширенішим.",
+    "donatetextfooter": "Для пожертв розробникам цього генератора гаманців, використовуйте наступні адреси. Якщо підтримка для валюти додана зовнішнім учасником проекту, він одержує пожертви напряму.",
+    "footersupport": "Підтримати WalletGenerator.net",
+    "footerlabelgithub": "Завантажити (репозиторій на GitHub)",
+    "footerlabelcopyright2": "Авторські права на JavaScript включено у джерела.",
+    "footerlabelnowarranty": "Гарантії не надаються.",
+    "defaultTitle": "WalletGenerator.net - універсальний генератор паперових гаманців для біткойнів та інших криптовалют",
+    "title": "Генератор паперових гаманців",
+    "brainalertpassphrasewarning": "Увага: Вибір складної парольної фрази вельми важливий щоб запобігти шахраям поцупити ваші гроші.",
+    "brainalertpassphrasetooshort": "Парольна фраза, що ви її ввели, є дуже короткою.",
+    "brainalertpassphrasedoesnotmatch": "Ваша парольна фраза та її повтор не співпадають.",
+    "bulkgeneratingaddresses": "Створюються адреса...",
+    "bip38alertincorrectpassphrase": "Неправильна парольна фраза для цього зашифрованого приватного ключа.",
+    "bip38alertpassphraserequired": "Для ключа у форматі BIP38 необхідна парольна фраза",
+    "detailconfirmsha256": "Текст, що ви його ввели, не є приватним ключем!\nЧи ви бажаєте використовувати введений текст в якості парольної фрази і створити приватний ключ, використовуючи SHA256 геш цієї парольної фрази?\nУвага: Вибір складної парольної фрази вельми важливий щоб запобігти шахраям поцупити ваші гроші.",
+    "detailalertnotvalidprivatekey": "Текст, що ви його ввели, не є дійсним приватним ключем",
+    "securitychecklistrandomOK": "Ваш переглядач спроможен генерувати криптографічно випадкові ключі за допомогою window.crypto.getRandomValues",
+    "securitychecklistrandomNOK": "Ваш переглядач НЕ підтримує window.crypto.getRandomValues(), що є необхідним для генерації найбезпечніших випадкових чисел. Будь ласка, використовуйте сучасніший переглядач.",
+    "securitychecklistofflineNOK": "Здається, що ви запустили цей генератор із сайту, який не рекомендується для створення цінних гаманців. Замість цього, використовуйте посилання внизу цієї сторінки, щоб завантажити ZIP файл з GitHub та запустіть цей генератор із HTML файла на вашому комп'ютері, відключивши попередньо інтернет.",
+    "securitychecklistofflineOK": "Ви запустили цей генератор із вашого власного завантаженого файла.",
+    "paperwalletback": "<ul><li>Внести гроші на паперовий гаманець: відправте кошти на публічну адресу.</li><li>Перевірити стан рахунку: введіть публічну адресу гаманця в оглядач блокчейна (для біткойна це blockchain.info).</li><li><b>НІКОЛИ НІКОМУ НЕ ПОКАЗУЙТЕ ПРИВАТНИЙ КЛЮЧ</b>, аж поки ви не зберетесь імпортувати кошти з цього гаманця на інший будь-який гаманець.</li></ul><b>Кількість :</b> ___________      <b>Дата :</b> ____________<br /><b>Нотатки :</b> _______________________________",
+},
+
+		"tr": {
+    "defaultTitle" : "WalletGenerator.net - Bitcoin ve diger kripto para birimleri için Evrensel Kagit cüzdan üreticisi",
+    "title" : "Kagit Cüzdan Üreticisi",
+    "bulkgeneratingaddresses": "Cüzdan Yaratiliyor... ",
+    "brainalertpassphrasetooshort": "Girmis oldugunuz parola çok kisa.\n\n",
+    "brainalertpassphrasewarning": "Uyari: Tahmini çok zor parola seçmeniz, brute force gibi yöntemler ile paranizin çalinmamasi için çok önemlidir.",
+    "brainalertpassphrasedoesnotmatch": "Girdiginiz iki parola birbiri ile uyusmuyor.",
+    "detailalertnotvalidprivatekey": "Girdiginiz key geçerli bir key degildir.",
+    "detailconfirmsha256": "Girdiginiz metin geçerli bir Özel Anahtar degil!\n\nGirilen metni bir parola olarak kullanmak ve parolanın bir SHA256 karmasını kullanarak bir Özel Anahtar oluşturmak ister misiniz?\n\nUyari: Tahmini çok zor parola seçmeniz, brute force gibi yöntemler ile paranizin çalinmamasi için çok önemlidir.",
+    "bip38alertincorrectpassphrase": "Bu sifreli özel anahtar için, yanlis sifre girdiniz.",
+    "bip38alertpassphraserequired": "BIP38 anahtari için sifre gereklidir",
+	"securitychecklistrandomOK": "Tarayıcınız window.crypto.getRandomValues kullanarak kriptografik olarak rastgele anahtarlar üretebilir.",
+	"securitychecklistrandomNOK": "Tarayiciniz, mümkün olan en güvenli rasgele sayilari üretmek için önemli olan \'window.crypto.getRandomValues ()\' ögesini desteklemiyor!. Lütfen daha modern bir tarayici kullanin.",
+	"securitychecklistofflineNOK": "Bu Cüzdan üretecini canli bir web sitesinden calistirdiginiz gorülüyor; Bu yontem degerli bir cuzdan yaratmak icin onerilmiyor. Bunun yerine, Bu sistemin bir kopyasini GitHub'dan indirmeniz ve Cevrim Disi bir \'YEREL\' HTML dosyasi olarak calistirmaniz oneriliyor. Asagidaki indirme linkini kullanin.",
+	"securitychecklistofflineOK": "Bu Ureteci kendi yüklemenizden/bilgisayarinizdan çalistiriyorsunuz :).",
+	"paperwalletback": "<ul><li>Bu kağıt cüzdanına para yatırmak için her zaman ortak adresine kripto para birimi gönderin.</li><li>Blockchain.info gibi bir blok gezgini site araciligi ile yerel adresinizdeki bakiyeyi dogrulayin</li><li><b>PRIVATE KEY KESINLIKLE YAYINLAMAYIN</b>Ta ki bu cüzdan üzerindeki bakiyeyi, bir sifreleme sunucusu, Borsa veya çevrimiçi cüzdan'a aktarmaya hazir olana kadar.</li></ul><b>Miktar :</b> ___________ &nbsp; &nbsp; &nbsp; <b>Tarih :</b> ________________<br /><b>Notlar :</b> ______________________________________",
 },
 
 	}
