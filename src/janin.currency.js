@@ -97,6 +97,7 @@ janin.currencies = [
     janin.currency.createCurrency ("Auroracoin",          0x17, 0x97, "6",    "T"    , "AVWH1ZutLd4Y5LPDDj5FkBjbm2Gci4iFx3"),
     janin.currency.createCurrency ("Aquariuscoin",        0x17, 0x97, "6",    "P"    , "ARk4VoaCHDoPDn2dctGizJaHFvXNRiDUDr"),
     janin.currency.createCurrency ("BBQcoin",             0x55, 0xd5, "6",    "T"    , "bTFFC3Gg2XzQygLxxakHkNM3ravBZby1y9"),
+    janin.currency.createCurrency ("BeanCash",            0x03, 0x83, "5",    "L"    , "2NZM2ehuP4mvZZS4PLno4naZouDyLpBjiT"),
     janin.currency.createCurrency ("Biblepay",            0x19, 0xb6, "7",    "[TU]" , "BDvP86n4oVsLnFh1tCRXWLgBPK6ZtKrJQa"),
     janin.currency.createCurrency ("Bitcoin",             0x00, 0x80, "5",    "[LK]" , "15DHZzv7eBUwss77qczZiL3DUEZLjDYhbM"),
     janin.currency.createCurrency ("BitcoinCash",         0x00, 0x80, "5",    "[LK]" , "15DHZzv7eBUwss77qczZiL3DUEZLjDYhbM"),
