@@ -1,4 +1,4 @@
-<!doctype html>
+es<!doctype html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -10568,7 +10568,7 @@ janin.currencies = [
     janin.currency.createCurrency ("Emerald",             0x22, 0xa2, "6",    "[QR]" , "EnJnzAQSpPp7RshMhNx9zhRnabxTLird6W"),
     janin.currency.createCurrency ("Emercoin",            0x21, 0x80, "5",    "[LK]" , "EN5nVyEbLrhYfcjoyGgQFtD3QHETyj1dy1"),
     janin.currency.createCurrency ("EnergyCoin",          0x5c, 0xdc, "8",    "Z"    , "eD2P3q5PdyHYNwT94Dg6Wt4pBz64k8gwGf"),
-    janin.currency.createCurrency ("Espers",              0x21, 0xa1, "6",    "Q"    , "EbENTy3x9Mr4PcmnNyzfdSALfkPaFSW3dt"),
+    janin.currency.createCurrency ("Espers",              0x21, 0x90, "5",    "N"    , "EVB5z1zoYYZrjUnGw3fekn1aMjfVhMUKHW"),
     janin.currency.createCurrency ("Fastcoin",            0x60, 0xe0, "8",    "a"    , "frxe8F7gQdiAVgy4mRXjpXH5vN1wyta1db"),
     janin.currency.createCurrency ("Feathercoin",         0x0e, 0x8e, "5",    "N"    , "6dxAP6oacHsove5X2kZPpddcT1Am167YzC"),
     janin.currency.createCurrency ("Fedoracoin",          0x21, 0x80, "5",    "[KL]" , "ENRPj6iEh14Xky2hv4B7zTJGMe5Kchjeo8"),
@@ -13529,38 +13529,4 @@ if (ninja.getQueryString()["i18nextract"]) {
     var i18n = "\"" + culture + "\": {\n";
     for(x=0; x<a.length; x++) {
         i18n += "\t";
-        i18n += "\"" + a[x].id + "\": \"";
-        if(ninja.translator.translations[culture] && ninja.translator.translations[culture][a[x].id])
-            i18n += cleani18n(ninja.translator.translations[culture][a[x].id]);
-        else
-            i18n += "(ENGLISH)" + cleani18n(a[x].innerHTML);
-        i18n += "\",\n";
-    }
-    for(x=0; x<ninja.translator.staticID.length; x++) {
-        i18n += "\t";
-        i18n += "\"" + ninja.translator.staticID[x] + "\": \"";
-        if(ninja.translator.translations[culture] && ninja.translator.translations[culture][ninja.translator.staticID[x]])
-            i18n += cleani18n(ninja.translator.translations[culture][ninja.translator.staticID[x]]);
-        else
-            i18n += "(ENGLISH)" + cleani18n(ninja.translator.translations["en"][ninja.translator.staticID[x]]);
-        i18n += "\",\n";
-    }
-    
-    i18n += "},"
-    
-    elem.innerHTML = i18n;
-    div.appendChild(elem);
-    document.body.appendChild(div);
-}
-function cleani18n(string) {
-    return string.replace(/^\s\s*/, '').replace(/\s\s*$/, '') // remove leading and trailing space
-                .replace(/\s*\n+\s*/g, '\\n') // replace new line
-                .replace(/"/g, '\\"');
-}
-
-ninja.envSecurityCheck();
-ninja.browserSecurityCheck();
-
-  </script>
-</body>
-</html>
+        i18n += "\"" + a[x].id + "\
