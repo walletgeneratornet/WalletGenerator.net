@@ -15,7 +15,7 @@
     "singlelabelprivatekey": "Chave Privada (Formato de Importação da Carteira)",
     "singlesecret": "SEGREDO",
     "securitystep0title": "Passo 0. Siga a lista de recomendações de segurança",
-    "securitystep0": "O primeiro passo é <strong>baixar</strong> esse website do <a href=\"https://github.com/MichaelMure/WalletGenerator.net/archive/master.zip\">Github</a> e abrir o arquivo index.html diretamente de seu computador. É simplesmente muito fácil de esconder algum código malicioso em mais de 6000 linhas de JavaScript para vazar sua chave privada, e você não quer ver seus fundos serem roubados. O controle de versão de código torna muito mais fácil verificar de forma intercalada o que realmente executa. Para segurança extra, <strong>desconecte seu acesso a internet</strong> enquanto gerando sua carteira.",
+    "securitystep0": "O primeiro passo é <strong>baixar</strong> esse website do <a href=\"https://github.com/unsofter/wallets.roro.by/archive/master.zip\">Github</a> e abrir o arquivo index.html diretamente de seu computador. É simplesmente muito fácil de esconder algum código malicioso em mais de 6000 linhas de JavaScript para vazar sua chave privada, e você não quer ver seus fundos serem roubados. O controle de versão de código torna muito mais fácil verificar de forma intercalada o que realmente executa. Para segurança extra, <strong>desconecte seu acesso a internet</strong> enquanto gerando sua carteira.",
     "securitystep1title": "Passo 1. Gere um endereço novo",
     "securitystep1": "Escolha sua moeda e clique no botão \"Generate new address\" (gerar novo endereço).",
     "securitystep2title": "Passo 2. Imprima a Carteira de Papel",

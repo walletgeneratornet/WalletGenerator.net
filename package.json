@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/MichaelMure/WalletGenerator.net.git"
+    "url": "git://github.com/unsofter/wallets.roro.by.git"
   },
   "keywords": [
     "bitcoin address wallet generator"
@@ -19,6 +19,6 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "bugs": {
-    "url": "https://github.com/MichaelMure/WalletGenerator.net/issues"
+    "url": "https://github.com/unsofter/wallets.roro.by/issues"
   }
 }

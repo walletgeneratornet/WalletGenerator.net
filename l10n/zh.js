@@ -15,7 +15,7 @@
     "singlelabelprivatekey": "私鑰(可導入電子錢包客戶端)",
     "singlesecret": "私鑰",
     "securitystep0title": "首先：安全檢查清單建議的步驟",
-    "securitystep0": "請先自<a href=\"https://github.com/MichaelMure/WalletGenerator.net/archive/master.zip\">Github</a>處<strong>下載</strong>這個網站，接著直接在您的電腦開啟index.html檔案。為了提高安全性，在生成錢包地址時，請<strong>斷開網路連結</strong>(例如拔除網路線或關閉wifi)。駭客很輕易能在6000多行javascript中找到你的私鑰，透過原始碼版本控制。可以交叉確認是否運行順利。",
+    "securitystep0": "請先自<a href=\"https://github.com/unsofter/wallets.roro.by/archive/master.zip\">Github</a>處<strong>下載</strong>這個網站，接著直接在您的電腦開啟index.html檔案。為了提高安全性，在生成錢包地址時，請<strong>斷開網路連結</strong>(例如拔除網路線或關閉wifi)。駭客很輕易能在6000多行javascript中找到你的私鑰，透過原始碼版本控制。可以交叉確認是否運行順利。",
     "securitystep1title": "第一步：產生新的地址",
     "securitystep1": "選擇欲產生的幣種，接著按下「產生新的地址」按鈕",
     "securitystep2title": "第二步：列印出紙錢包",
