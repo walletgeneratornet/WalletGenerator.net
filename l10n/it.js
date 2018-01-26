@@ -74,7 +74,7 @@
 	"donatetextfooter": "Per sostenere lo sviluppo di questo generatore di portafogli, è possibile effettuare una donazione tramite i seguenti indirizzi. Quando il contributo di una valuta è stato aggiunto da un collaboratore al di fuori del progetto, le donazioni lo raggiungono direttamente. ",
 	"footerlabeldonations": "Donazioni:",
 	"footerlabeltranslatedby": "F3de81",
-	"footersupport": "Supportare WalletGenerator.net",
+	"footersupport": "Supportare wallets.roro.by",
 	"footerlabelgithub": "Repository GitHub",
 	"footerlabelversion": "Cronologia Versioni",
 	"footerlabelcopyright1": "Copyright bitaddress.org.",

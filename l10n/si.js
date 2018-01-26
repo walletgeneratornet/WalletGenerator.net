@@ -1,5 +1,5 @@
 ﻿"si": {
-    "defaultTitle" : "WalletGenerator.net - Univerzalni generator papirnatih/ denarnic/trezorjev za Bitcoin in ostale kriptovalute",
+    "defaultTitle" : "wallets.roro.by - Univerzalni generator papirnatih/ denarnic/trezorjev za Bitcoin in ostale kriptovalute",
     "title" : "Generator paprirnatih denarnic",
     "bulkgeneratingaddresses": "Generiram naslove... ",
     "brainalertpassphrasetooshort": "Vaša obnovitvena fraza/geslo je prekratka.\n\n",

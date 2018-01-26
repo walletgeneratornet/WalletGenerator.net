@@ -1,5 +1,5 @@
 ﻿"en": {
-    "defaultTitle" : "WalletGenerator.net - Universal Paper wallet generator for Bitcoin and other cryptocurrencies",
+    "defaultTitle" : "wallets.roro.by - Universal Paper wallet generator for Bitcoin and other cryptocurrencies",
     "title" : "Paper Wallet Generator",
     "bulkgeneratingaddresses": "Generating addresses... ",
     "brainalertpassphrasetooshort": "The passphrase you entered is too short.\n\n",
