@@ -9,11 +9,11 @@
 
 Notice of Copyrights and Licenses:
 ---------------------------------------
-The WalletGenerator.net project, software and embedded resources are copyright WalletGenerator.net.
-The WalletGenerator.net name and logo are not part of the open source license.
+The wallets.roro.by project, software and embedded resources are copyright wallets.roro.by.
+The wallets.roro.by name and logo are not part of the open source license.
 
-Portions of the all-in-one HTML document contain JavaScript codes that are the copyrights of others.
-The individual copyrights are included throughout the document along with their licenses. Included
+Portions of the all-in-one HTML document contain JavaScript codes that are the copyrights of others. 
+The individual copyrights are included throughout the document along with their licenses. Included 
 JavaScript libraries are separated with HTML script tags.
 
 Summary of JavaScript functions with a redistributable license:
@@ -27,31 +27,23 @@ window.BigInteger     BSD License
 window.QRCode         MIT License
 window.Bitcoin        MIT License
 jsqrcode              Apache License, 2.0
+janin                 MIT License
 
 
-The WalletGenerator.net software is available under The MIT License (MIT)
-Copyright (c) 2014 WalletGenerator.net
+The wallets.roro.by software is available under The MIT License (MIT)
+Copyright (c) 2014 wallets.roro.by
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
-associated documentation files (the "Software"), to deal in the Software without restriction,
-including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
-and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so,
-subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all copies or substantial
-portions of the Software.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
-NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
-  GitHub Repository: https://github.com/MichaelMure/WalletGenerator.net
+  GitHub Repository: https://github.com/unsofter/wallets.roro.by
   -->
 
-  <title>WalletGenerator.net - Universal Paper wallet generator for Bitcoin and other cryptocurrencies</title>
+  <title>wallets.roro.by - Universal Paper wallet generator for Bitcoin and other cryptocurrencies</title>
 
   <script type="text/javascript">
 //array.map.js
@@ -121,18 +113,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   <div id="busyblock"></div>
   <div id="main">
     <div id="culturemenu">
-      <span><a href="?culture=en" hreflang="en" id="cultureen" class="selected">English</a></span> |
-      <span><a href="?culture=fr" hreflang="fr" id="culturefr">Français</a></span> |
-      <span><a href="?culture=de" hreflang="de" id="culturede">German</a></span> |
-      <span><a href="?culture=nl" hreflang="nl" id="culturenl">Dutch</a></span> |
-      <span><a href="?culture=pt" hreflang="pt" id="culturept">Português</a></span> |
-      <span><a href="?culture=ru" hreflang="ru" id="cultureru">Русский</a></span> |
-      <span><a href="?culture=es" hreflang="es" id="culturees">Spanish</a></span> |
-      <span><a href="?culture=it" hreflang="it" id="cultureit">Italiano</a></span> |
-      <span><a href="?culture=ua" hreflang="ua" id="cultureua">Українська</a></span> |
-      <span><a href="?culture=tr" hreflang="tr" id="culturetr">Türk</a></span> |
-      <span><a href="?culture=pl" hreflang="pl" id="culturepl">Polski</a></span> |
-      <span><a href="?culture=zh" hreflang="zh" id="culturezh">中文</a></span>
+      <span><a href="?culture=en" hreflang="en" id="cultureen">English</a></span> |
+      <span><a href="?culture=ru" hreflang="ru" id="cultureru" class="selected">Русский</a></span> |
     </div>
 
     <div class="banner">
@@ -215,7 +197,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
             <h3 id="securitystep0title" class="i18n">Step 0. Follow the security checklist recommendation</h3>
             <p id="securitystep0" class="i18n">
-              First step is to <strong>download</strong> this website from <a href="https://github.com/MichaelMure/WalletGenerator.net/archive/master.zip">Github</a> and open the index.html file directly from your computer. It's just too easy to sneak some evil code in the 6000+ lines of javascript to leak your private key, and you don't want to see your fund stolen. Code version control make it much easier to cross-check what actually run. For extra security, <strong>unplug your Internet access</strong> while generating your wallet.
+              First step is to <strong>download</strong> this website from <a href="https://github.com/unsofter/wallets.roro.by/archive/master.zip">Github</a> and open the index.html file directly from your computer. It's just too easy to sneak some evil code in the 6000+ lines of javascript to leak your private key, and you don't want to see your fund stolen. Code version control make it much easier to cross-check what actually run. For extra security, <strong>unplug your Internet access</strong> while generating your wallet.
             </p>
             <h3 id="securitystep1title" class="i18n">Step 1. Generate new address</h3>
             <p id="securitystep1" class="i18n">
@@ -271,70 +253,6 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
               <div id="supportedcurrencies"></div>
             </div>
           </div>
-        </div>
-
-        <div id="faqZone">
-          <h2>Frequently asked questions :</h2>
-
-          <h3 class="faqQuestion"><a class="faqLink" onclick="ninja.toggleFaqQuestion('faqQuestion1');ninja.toggleFaqQuestion('faqQuestion1.1')">&#8226; Is it safe ?</a></h3>
-          <p class="faqAnswer" id="faqQuestion1">
-            We try to make it that way ! The core of the tool, that generate the keys is 99% the same as the well reviewed bitaddress.org. We only changed it to be able to generate addresses for different crypto-currencies.
-          </p>
-          <p class="faqAnswer" id="faqQuestion1.1">
-We think that having a unique generator for multiple currencies lead to a much better reviewed tool for all than having a myriad of half-backed generators.
-Changes made to this generator are available on Github in small and divided commits and those are easy to review and reuse.
-Walletgenerator.net use the same security measures as the original project. All-in-one html document, no ajax, no analytics, no external calls, no CDN that can inject anything they want. And trust us, we have seen some nasty things when reviewing some wallet generator.
-          </p>
-
-          <h3 class="faqQuestion"><a class="faqLink" onclick="ninja.toggleFaqQuestion('faqQuestion2');">&#8226; Why should I use a paper wallet ?</a></h3>
-          <p class="faqAnswer" id="faqQuestion2">
-              Advantages of a paper wallet are multiple:<br/><br/>
-              <span class="faqListBullet">&#8658;</span> They are not subject to malwares and keyloggers<br/>
-              <span class="faqListBullet">&#8658;</span> You don’t rely on a third party’s honesty or capacity to protect your coins<br/>
-              <span class="faqListBullet">&#8658;</span> You won't lose your coins when your device break
-          </p>
-
-          <h3 class="faqQuestion"><a class="faqLink" onclick="ninja.toggleFaqQuestion('faqQuestion3');">&#8226; How to use a paper wallet ?</a></h3>
-          <p class="faqAnswer" id="faqQuestion3">
-            Once you have generated and printed a wallet, you can send coins to the public address, like for any wallet. Store your paper wallet securely. It contains everything that is needed to spend your funds. Consider using BIP38 to secure your paper wallet with a password.
-          </p>
-
-          <h3 class="faqQuestion"><a class="faqLink" onclick="ninja.toggleFaqQuestion('faqQuestion4');">&#8226; How to spend the coins stored in a paper wallet ?</a></h3>
-          <p class="faqAnswer" id="faqQuestion4">
-            You will need to import your private key in a real client, that you can download from the currency website. The exact method to do that will depend on the client. If there is no integrated method, you can usually fall back to the debug console and use the command “importprivkey [yourprivatekey]“.
-          </p>
-
-          <h3 class="faqQuestion"><a class="faqLink" onclick="ninja.toggleFaqQuestion('faqQuestion5');">&#8226; How walletgenerator.net is different than another wallet generator ?</a></h3>
-          <p class="faqAnswer" id="faqQuestion5">
-            It’s not that different. You will find another design for the paper wallet and some improvements here and there. The big difference is that this is a unique project for a lot of currencies, so more people can review it and check its safety.
-          </p>
-
-          <h3 class="faqQuestion"><a class="faqLink" onclick="ninja.toggleFaqQuestion('faqQuestion7');">&#8226; Can you add support for cryptocurrency XYZ ?</a></h3>
-          <p class="faqAnswer" id="faqQuestion7">
-            Absolutely ! To help us do that, you can <a href="https://docs.google.com/forms/d/1nPIvukVWxlaveUPEUAEhGKwvEuwJiPSgs5zc5LhDVpk/viewform">fill this  form</a>. But keep in mind that there is some currency that we cannot support. If the developers made some change in the address format, we won’t hack the crypto core of the project and take the risk to tamper the security of the others currencies.
-            You can also implement the support yourself by following this <a href="https://github.com/MichaelMure/WalletGenerator.net/wiki/How-to-add-a-new-currency">non-developer How-To</a>
-          </p>
-
-          <h3 class="faqQuestion"><a class="faqLink" onclick="ninja.toggleFaqQuestion('faqQuestion8');">&#8226; Why should I make a donation ?</a></h3>
-          <p class="faqAnswer" id="faqQuestion8">
-            Donations money are used to pay our hosting service provider, but it’ll also be used to make walletgenerator.net more secure as we plan to organize a CrowdCurity campain as soon as we get enough money to pay for it.
-          </p>
-
-          <h3 class="faqQuestion"><a class="faqLink" onclick="ninja.toggleFaqQuestion('faqQuestion9');">&#8226; I found a bug, what shall I do ?</a></h3>
-          <p class="faqAnswer" id="faqQuestion9">
-            You can report bugs using GitHub. You can also contact us using our Twitter account (<a href="http://twitter.com/WalletGenerator" target="_blank">@WalletGenerator</a>). Just try to explain clearly what is wrong and we will try to fix the bug as soon as possible.
-          </p>
-
-          <h3 class="faqQuestion"><a class="faqLink" onclick="ninja.toggleFaqQuestion('faqQuestion10');">&#8226; Who are you ?</a></h3>
-          <p class="faqAnswer" id="faqQuestion10">
-            We are just two random guy having fun with a side project.
-          </p>
-
-          <h3 class="faqQuestion"><a class="faqLink" onclick="ninja.toggleFaqQuestion('faqQuestion11');">&#8226; How can I help ?</a></h3>
-          <p class="faqAnswer" id="faqQuestion11">
-            Donation are always welcome, but you can also help us translate the website. It's really easy. Just add "?i18nextract=LANGUAGECODE" in the end of the url (for instance http://walletgenerator.net/?i18nextract=es for Spanish). You will see at the end of the page a pre-filled javascript array ready to be translated. Translate or correct it, and send it to us the way you prefer. Even partial translation are helpful !
-          </p>
-
         </div>
       </div>
 
@@ -798,7 +716,7 @@ Walletgenerator.net use the same security measures as the original project. All-
       04.2014 --
         <ul>
           <li>Add support for Blackcoin and Primecoin</li>
-          <li>Add direct access to a currency. Example: <a href="http://walletgenerator.net/?currency=Vertcoin">http://walletgenerator.net/?currency=Vertcoin</a></li>
+          <li>Add direct access to a currency. Example: <a href="http://wallets.roro.by/?currency=Vertcoin">http://wallets.roro.by/?currency=Vertcoin</a></li>
         </ul>
       <p>
       04.2014 --
@@ -814,11 +732,11 @@ Walletgenerator.net use the same security measures as the original project. All-
 
     <div id="footer" class="footer">
       <div>
-        <span class="item"><a id="footersupport" href="#" onclick="ninja.tabSwitch(document.getElementById('donate'));" class="i18n">Support WalletGenerator.net</a></span>
-        <span class="item"><a href="https://github.com/MichaelMure/WalletGenerator.net" target="_blank" id="footerlabelgithub" class="i18n">Download (GitHub Repository)</a></span>
+        <span class="item"><a id="footersupport" href="#" onclick="ninja.tabSwitch(document.getElementById('donate'));" class="i18n">Support wallets.roro.by</a></span>
+        <span class="item"><a href="https://github.com/unsofter/wallets.roro.by" target="_blank" id="footerlabelgithub" class="i18n">Download (GitHub Repository)</a></span>
       </div>
       <div class="copyright">
-        <span id="footerlabelcopyright1">Copyright WalletGenerator.net.</span>
+        <span id="footerlabelcopyright1">Copyright wallets.roro.by.</span>
         <span id="footerlabelcopyright2" class="i18n">JavaScript copyrights are included in the source.</span>
         <span id="footerlabelnowarranty" class="i18n">No warranty.</span>
       </div>
