@@ -161,6 +161,7 @@ janin.currencies = [
     janin.currency.createCurrency ("Florincoin",          0x23, 0xb0, "6",    "T"    , "FLJ7vLPZDLMVr2KPEvZMgWvh8TCXj5Bn3m"),
     janin.currency.createCurrency ("Flurbo",              0x23, 0x30, "6",    "8"    , "FH65pxAbpGjLzjGGfGETSZhgLf2SXGuGBi"),
     janin.currency.createCurrency ("Fluttercoin",         0x23, 0xa3, "6",    "R"    , "FJioRLt3gLtqk3tUdMhwjAVo1sdWjRuwqt"),
+    janin.currency.createCurrency ("F0ME",                0x23, 0xa3, "6",    "R"    , "FFtJRcUb5menXSskUDhgo9hihGqqVqfn4w"),
     janin.currency.createCurrency ("FrazCoin",            0x23, 0xA3, "6",    "R"    , "F8uHqHrLrToXSMrVVTzap34LBhVSEEWUmm"),
     janin.currency.createCurrency ("Freicoin",            0x00, 0x80, "5",    "[LK]" , "18kVnAk5Undi7CqEgGx63YDKBPFpxYJmT9"),
     janin.currency.createCurrency ("FUDcoin",             0x23, 0xa3, "6",    "R"    , "FEKsbaLJHjbEnuMiRDvtnyvxaJqehBtQ5V"),
