@@ -125,6 +125,7 @@ janin.currencies = [
     janin.currency.createCurrency ("Catcoin",             0x15, 0x95, "[56]", "P"    , "9rEXDemG6S3k2ddAsKFzRpnMVz3bVryYXZ"),
     janin.currency.createCurrency ("ChainCoin",           0x1c, 0x9c, "6",    "Q"    , "Ca62ZnR3sfKotqDJzsBW6k75rTFFgFkw1x"),
     janin.currency.createCurrency ("ColossusCoinXT",      0x1e, 0xd4, "5",    "[LK]" , "D9buTahK9CXNxoGzXLZ9tamwrQzdW2MzvG"),
+    janin.currency.createCurrency ("Clams",               0x89, 0x85, "5",    "L"    , "xCLAMSP16kFJ22zn4rJNEtGLELJcSzcsnX"),
     janin.currency.createCurrency ("Condensate",          0x3c, 0xbc, "7",    "U"    , "RRZZMHaYZXCeUWRVeRvttKCNcvTRCxBfqD"),
     janin.currency.createCurrency ("Copico",              0x1c, 0x90, "5",    "N"    , "CKWBhVUwQP4fRw6xJk4nxCqKYCMz74bPKr"),
     janin.currency.createCurrency ("CopperCoin",          0x1c, 0x9c, "6",    "Q"    , "CXh8p64WqmEwTkQSDk9azaZUqrnXE9WESV"),
