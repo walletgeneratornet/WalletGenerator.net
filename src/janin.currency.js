@@ -35,7 +35,6 @@ janin.currency = {
     // Switch currency
     useCurrency: function(index) {
         janin.selectedCurrency = janin.currencies[index];
-        console.log("CURRENCY selected" + index);
         var coinImgUrl = "logos/" + janin.currency.name().toLowerCase() + ".png";
 
         // Update title depending on currency
@@ -67,19 +66,6 @@ janin.currency = {
         // Reset wallet tab when expensive or not applicable
         document.getElementById("bulktextarea").value = "";
         document.getElementById("suppliedPrivateKey").value = "";
-
-        // easter egg doge ;)
-        if(janin.currency.name() == "Dogecoin")
-        {
-            janin.doge = new Doge(['wow', 'so paper wallet', 'such random', 'very pretty', 'much design', 'awesome', 'much crypto', 'such coin', 'wow!!', 'to da moon']);
-            return;
-        }
-
-        if(janin.doge != null)
-        {
-            janin.doge.stop();
-            janin.doge = null;
-        }
     },
 };
 
