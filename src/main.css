@@ -146,7 +146,7 @@ h1 { margin: 0px; height: 91px; }
 .redText { color: red; }
 .greenText { color: green; }
 
-#coinLogo { width: 55px; height: 55px; padding: 10px; position: absolute; top: 2px; left: 10px; }
+#coinLogo { width: 184px; height: 55px; padding: 10px; position: absolute; top: 2px; left: 10px; }
 #coinLogoImg { width: 100%; height: 100%; }
 
 .coinIcoin { width: 64px; height: 64px; padding: 10px; position: absolute; top: 272px; left: 48px; }
@@ -257,10 +257,8 @@ h1 { margin: 0px; height: 91px; }
 .dialog { z-index: 6000; position: relative; background: white; border: 2px solid #f7931a; width: 600px; margin: 150px auto; padding: 1em; }
 .dialog-narrow { width: 300px; }
 
-#currencyddl { margin: 20px; position: absolute; right: 0; top: 60px; width: 320px; font-size: 14px; }
-#currencyddl select { font-size: 14px; }
 
-.banner { font-size: 46px; text-shadow: 1px 1px 3px #000; color: #FF9547; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); text-align: left; position: relative; }
+.banner { font-size: 46px; text-shadow: 1px 1px 3px #000; color: #FF9547; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); text-align: right; position: relative; }
 
 #donateqrcode { padding: 8px; position: absolute; left: 550px; margin: 25px; border: black solid 1px; background-color: white; }
 #donatelist { padding: 20px; }

@@ -5,7 +5,6 @@ ninja.wallets.singlewallet = {
 		}
 		document.getElementById("walletCommands").style.display = "block";
 		document.getElementById("keyarea").style.display = "block";
-		document.getElementById("currencyddl").style.display = "block";
 		document.getElementById("singlearea").style.display = "block";
 		document.getElementById("initBanner").style.display = "none";
 	},
