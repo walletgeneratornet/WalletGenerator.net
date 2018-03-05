@@ -1,5 +1,11 @@
 **** LOOKING FOR THE ZIP FILE TO DOWNLOAD ? ***********************************
-It's here: https://github.com/MichaelMure/WalletGenerator.net/archive/master.zip
+It's here: https://github.com/stamanuel/SafeCoin-Paperwallet-Generator/archive/master.zip
+*******************************************************************************
+
+
+
+*******************************************************************************
+This is a fork from https://github.com/MichaelMure/WalletGenerator.net/ and basically dumbed down to generate SafeCoin wallets only. Many thx for the awesome project!
 *******************************************************************************
 
 WalletGenerator.net
