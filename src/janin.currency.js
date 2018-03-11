@@ -129,6 +129,7 @@ janin.currencies = [
     janin.currency.createCurrency ("Copico",              0x1c, 0x90, "5",    "N"    , "CKWBhVUwQP4fRw6xJk4nxCqKYCMz74bPKr"),
     janin.currency.createCurrency ("CopperCoin",          0x1c, 0x9c, "6",    "Q"    , "CXh8p64WqmEwTkQSDk9azaZUqrnXE9WESV"),
     janin.currency.createCurrency ("Corgicoin",           0x1c, 0x9c, "6",    "Q"    , "CNwV11TaKrfB3TnBS8vQjNbWT6CNxV8GBi"),
+    janin.currency.createCurrency ("CRYPLY",              0x1c, 0x7b, "5",    "K"    , "CHpKKCdRY26tYehX2B1qAFEsDmtSf6EJ22"),
     janin.currency.createCurrency ("CryptoBullion",       0x0b, 0x8b, "5",    "M"    , "Cd9CgzTChm9yJQZ3SL3PUSsMkEEN8LGwCF"),
     janin.currency.createCurrency ("CryptoClub",          0x23, 0xa3, "6",    "R"    , "FKPFTw5LjoeGTZP1d3zHLfZNm91FktgPWY"),
     janin.currency.createCurrency ("Cryptoescudo",        0x1c, 0x9c, "6",    "Q"    , "Cd9CgzTChm9yJQZ3SL3PUSsMkEEN8LGwCF"),
