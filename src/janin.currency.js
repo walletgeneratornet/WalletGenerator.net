@@ -222,6 +222,7 @@ janin.currencies = [
     janin.currency.createCurrency ("Nyancoin",            0x2d, 0xad, "6",    "S"    , "KHRsf8ofFYqGm4XoeHuFakKPLs5CH2dhK3"),
     janin.currency.createCurrency ("Ocupy",               0x73, 0xf3, "9",    "[cd]" , "ocLKVPkQRFtKn5mFygrd4QJG9eZd1sKTyi"),
     janin.currency.createCurrency ("Omnicoin",            0x73, 0xf3, "9",    "[cd]" , "oMesh62joeab2yMoJUH28mGE8h2suDzcYc"),
+    janin.currency.createCurrency ("Onixcoins",           0x4b, 0xcb, "7",     "x"   , "XSHA9DKr4NFYukiJBwy1eVEaeo8GqaXtLv"),
     janin.currency.createCurrency ("Onyxcoin",            0x73, 0xf3, "9",    "[cd]" , "odRRCGXooJvKs7cn7sax1bJv9EJwwEy94Z"),
     janin.currency.createCurrency ("PacCoin",             0x18, 0x98, "6",    "P"    , ""),
     janin.currency.createCurrency ("Particl",             0x38, 0x6c, "4",    "[HG]" , ""),
