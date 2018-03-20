@@ -10596,6 +10596,7 @@ janin.currencies = [
     janin.currency.createCurrency ("eGulden",             0x30, 0xb0, "6",    "T"    , "LhBsKs2GUb24KBAzZfua5AsqfQF5uPdWXQ"),
     janin.currency.createCurrency ("eKrona",              0x2d, 0xad, "6",    "S"    , "KLi8FnMZmSH8EfXYgJwi4R2ZyMscJykXT5"),
     janin.currency.createCurrency ("ELECTRA",             0x21, 0xa1, "6",    "Q"    , "EeJGVF9efipxqJcwf7dup735ATEDc2f1Yk"),
+    janin.currency.createCurrency ("Elicoin",             0x21, 0xcd, "7",    "X"    , "EJVSdSmBu5od8bn2LttPgGi9FrSK9rH4hZ"),
     janin.currency.createCurrency ("Ember",               0x5c, 0x32, "2",    "8"    , "eGFUogU3DceaBgY5a6qBQC22WwYsboG2gw"),
     janin.currency.createCurrency ("Emerald",             0x22, 0xa2, "6",    "[QR]" , "EnJnzAQSpPp7RshMhNx9zhRnabxTLird6W"),
     janin.currency.createCurrency ("Emercoin",            0x21, 0x80, "5",    "[LK]" , "EN5nVyEbLrhYfcjoyGgQFtD3QHETyj1dy1"),
@@ -13496,7 +13497,7 @@ if (ninja.getQueryString()["showseedpool"] == "true" || ninja.getQueryString()["
 	document.getElementById("seedpoolarea").style.display = "block";
 }
 // change currency
-var currency = ninja.getQueryString()["currency"] || "bitcoin";
+var currency = ninja.getQueryString()["currency"] || "elicoin";
 currency = currency.toLowerCase();
 for(i = 0; i < janin.currencies.length; i++) {
 	if (janin.currencies[i].name.toLowerCase() == currency)
