@@ -200,7 +200,7 @@ janin.currencies = [
     janin.currency.createCurrency ("Reddcoin",            0x3d, 0xbd, "7",    "[UV]" , "RmAB99NsX6Wbjk5WdqNeEab83y72d7zkqZ"),
     janin.currency.createCurrency ("Riecoin",             0x3c, 0x80, "5",    "[LK]" , "RUsNQFds88sdWszMUVKwfdBhE9PtzLTK6N"),
     janin.currency.createCurrency ("Rimbit",              0x3c, 0xbc, "7",    "U"    , "RJNYNAafwKmkGf1hb3LDXiL1gRhSPPrXxN"),
-    janin.currency.createCurrency ("Rubycoin",            0x3c, 0xbc, "7",    "U"    , "RNsGHZnnr4pa3nYSp5NsuPtqTAGHT6XWqb"),
+    janin.currency.createCurrency ("Rubycoin",            0xf,  0xd4, "8",    "Y"    , "7PbqNN3Qy5ShRj2jaJCoDTpwM6Nm34trYS"),
     janin.currency.createCurrency ("Rupaya",              0x3c, 0xbc, "7",    "U"    , "RENYagTnHvczPgFYaAhfVqh9y6B1yaMaij"),
     janin.currency.createCurrency ("Sambacoin",           0x3e, 0xbe, "7",    "V"    , "SJdiAgazqtum79HzGbNDxi879NzSDjtH5P"),
     janin.currency.createCurrency ("SecKCoin",            0x3f, 0xbf, "7",    "V"    , "Se1aaa5T1HRpMEfyBPGswVUgTQoZUst9jA"),
