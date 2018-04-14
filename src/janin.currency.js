@@ -255,6 +255,7 @@ janin.currencies = [
     janin.currency.createCurrency ("SmileyCoin",          0x19, 0x99, "6",    "P"    , "BEaZDZ8gCbbP1y3t2gPNKwqZa76rUDfR73"),
     janin.currency.createCurrency ("SongCoin",            0x3f, 0xbf, "7",    "V"    , "SSK9MXormZXgF5ZfV599okJRXYh3g9RXGN"),
     janin.currency.createCurrency ("SpreadCoin",          0x3f, 0xbf, "7",    "V"    , "SjPkh7V2KkySjL52wsD2CpEj4quTtjiaVW"),
+    janin.currency.createCurrency ("StakeNet",            0x4c, 0xcc, "7",    "X"    , "Xnq17k1oiwbt8AjMRwNB7RLvLStJna9roC"),
     janin.currency.createCurrency ("StealthCoin",         0x3e, 0xbe, "7",    "V"    , "SJJGGq7UyoUH1TExGJCQ6ee49ztJr2quF8"),
     janin.currency.createCurrency ("Stratis",             0x3f, 0xbf, "7",    "V"    , "ScMNGH91SpNwbRDeK8vYXXJ3aYpwBr9Pen"),
     janin.currency.createCurrency ("SwagBucks",           0x3f, 0x99, "6",    "P"    , "SJJGGq7UyoUH1TExGJCQ6ee49ztJr2quF8"),
