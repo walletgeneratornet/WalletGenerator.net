@@ -89,6 +89,7 @@ janin.currencies = [
     janin.currency.createCurrency ("2GIVE",               0x27, 0xa7, "6",    "R"    , "Givewmf4yv8uuHZG6Eb7sm17fJS2Trf6U8"),
     janin.currency.createCurrency ("42coin",              0x08, 0x88, "5",    "M"    , "4Fs42jYtLYrUMfKEXc6arojuhRsnYnerxN"),
     janin.currency.createCurrency ("Acoin",               0x17, 0xe6, "8",    "b"    , "AJvChtExuvLgAor9aw1Xz9bkvJY7JKD9uL"),
+    janin.currency.createCurrency ("AdCoin",              0x17, 0xb0, "6",    "T"    , "AUoQdE76QPyeDGvVJFLCq2bY3ogoEo6wkj"),
     janin.currency.createCurrency ("AGAcoin",             0x53, 0xd3, "8",    "Y"    , "aWg2jDBnecc17UHrDF5Rz5pj1rTqTDTnTH"),
     janin.currency.createCurrency ("Alphacoin",           0x52, 0xd2, "8",    "Y"    , "aAWhiGBDUugXC9ZBvw8CDNQH7KRurjy4Nq"),
     janin.currency.createCurrency ("Alqo",                0x17, 0xc1, "7",    "V"    , "ALF9ykkthT5UwmqdrThMRGb1GNgdCUciHL"),
