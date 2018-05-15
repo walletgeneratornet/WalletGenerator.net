@@ -103,6 +103,7 @@ janin.currencies = [
     janin.currency.createCurrency ("Bitcoin",             0x00, 0x80, "5",    "[LK]" , "15DHZzv7eBUwss77qczZiL3DUEZLjDYhbM"),
     janin.currency.createCurrency ("BitcoinCash",         0x00, 0x80, "5",    "[LK]" , "15DHZzv7eBUwss77qczZiL3DUEZLjDYhbM"),
     janin.currency.createCurrency ("BitcoinDark",         0x3c, 0xbc, "7",    "U"    , "RWtY5fg9ZQ9tYaPd7WJLgsdae1m1ZfrVRe"),
+    janin.currency.createCurrency ("BitcoinPrivate",[0x13,0x25], 0x80, "5",    "[LK]" , "b1FoQGwBMdyJF91SL8cocJyD15JcWnrUP1H"),
     janin.currency.createCurrency ("Bitcore",             0x00, 0x80, "5",    "[LK]" , "1H7fhCsyRfPP8XnJWhezXmi9YNqtBh9xxW"),
     janin.currency.createCurrency ("BitcoinGold",         0x26, 0x80, "5",    "[LK]" , "GYjahzU24Am88oZco6oFtpNzgwJTp9S4eB"),
     janin.currency.createCurrency ("Bitconnect",          0x12, 0x92, "5",    "N"    , "8Zixqosp1KFejfcVQzTWa2EsPa2VxSgeJX"),
