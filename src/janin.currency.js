@@ -86,6 +86,7 @@ janin.currency = {
 
 janin.currencies = [
     //                              name, networkVersion, privateKeyPrefix, WIF_Start, CWIF_Start, donate
+
     janin.currency.createCurrency ("2GIVE",               0x27, 0xa7, "6",    "R"    , "Givewmf4yv8uuHZG6Eb7sm17fJS2Trf6U8"),
     janin.currency.createCurrency ("42coin",              0x08, 0x88, "5",    "M"    , "4Fs42jYtLYrUMfKEXc6arojuhRsnYnerxN"),
     janin.currency.createCurrency ("Acoin",               0x17, 0xe6, "8",    "b"    , "AJvChtExuvLgAor9aw1Xz9bkvJY7JKD9uL"),
@@ -242,6 +243,7 @@ janin.currencies = [
     janin.currency.createCurrency ("Quark",               0x3a, 0xba, "7",    "U"    , "QNGJBwRApKKwEevTvDwpeoSgmo6w6wv8yQ"),
     janin.currency.createCurrency ("Qubitcoin",           0x26, 0xe0, "8",    "a"    , "GeNTNSwEh5ZCRCE6LtnMwHCk8VU2Lu8QE7"),
     janin.currency.createCurrency ("Reddcoin",            0x3d, 0xbd, "7",    "[UV]" , "RmAB99NsX6Wbjk5WdqNeEab83y72d7zkqZ"),
+    janin.currency.createCurrency ("Reden",               0x3c, 0x21, "2",    "[56]" , "RCtdPKieca3dqwTeYieNjrbNDWpyfhK6CA"),
     janin.currency.createCurrency ("Riecoin",             0x3c, 0x80, "5",    "[LK]" , "RUsNQFds88sdWszMUVKwfdBhE9PtzLTK6N"),
     janin.currency.createCurrency ("Rimbit",              0x3c, 0xbc, "7",    "U"    , "RJNYNAafwKmkGf1hb3LDXiL1gRhSPPrXxN"),
     janin.currency.createCurrency ("ROIcoin",             0x3c, 0x80, "5",    "[LK]" , "RKUwWKMfwoq2trvQ4Q3a529U7KZq3Pq6gw"),
@@ -283,6 +285,7 @@ janin.currencies = [
     janin.currency.createCurrency ("Yenten",              0x4e, 0x7b, "5",    "K"    , "YStuCpv1U9iT3L1VqBr52B9nBxrNgt4Fpj"),
     janin.currency.createCurrency ("Zcash",        [0x1c,0xb8], 0x80, "5",    "[LK]" , "t1XA64Hw47QaCxCUEgZbc4FVdH811RMd1xp"),
     janin.currency.createCurrency ("Zetacoin",            0x50, 0xE0, "8",    "a"    , "ZRU6TP8NLzoyey4DPPaa3uCCgDNDc96PXJ"),
+    janin.currency.createCurrency ("argo",				  0x17, 0x97, "6", 	  "P"    , "AFxQ3W5paTij9LZ1tdpr265f51ngLxhLko"),
 
 
 
