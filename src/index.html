@@ -121,15 +121,18 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   <div id="busyblock"></div>
   <div id="main">
     <div id="culturemenu">
-      <span><a href="?culture=en" id="cultureen" class="selected">English</a></span> |
-      <span><a href="?culture=fr" id="culturefr">Français</a></span> |
-      <span><a href="?culture=de" id="culturede">German</a></span> |
-      <span><a href="?culture=nl" id="culturenl">Dutch</a></span> |
-      <span><a href="?culture=ru" id="cultureru">Русский</a></span> |
-      <span><a href="?culture=es" id="culturees">Spanish</a></span> |
-      <span><a href="?culture=it" id="cultureit">Italiano</a></span> |
-      <span><a href="?culture=ua" id="cultureua">Українська</a></span> |
-      <span><a href="?culture=tr" id="culturetr">Türk</a></span> |
+      <span><a href="?culture=en" hreflang="en" id="cultureen" class="selected">English</a></span> |
+      <span><a href="?culture=fr" hreflang="fr" id="culturefr">Français</a></span> |
+      <span><a href="?culture=de" hreflang="de" id="culturede">German</a></span> |
+      <span><a href="?culture=nl" hreflang="nl" id="culturenl">Dutch</a></span> |
+      <span><a href="?culture=pt" hreflang="pt" id="culturept">Português</a></span> |
+      <span><a href="?culture=ru" hreflang="ru" id="cultureru">Русский</a></span> |
+      <span><a href="?culture=es" hreflang="es" id="culturees">Spanish</a></span> |
+      <span><a href="?culture=it" hreflang="it" id="cultureit">Italiano</a></span> |
+      <span><a href="?culture=ua" hreflang="ua" id="cultureua">Українська</a></span> |
+      <span><a href="?culture=tr" hreflang="tr" id="culturetr">Türk</a></span> |
+      <span><a href="?culture=pl" hreflang="pl" id="culturepl">Polski</a></span> |
+      <span><a href="?culture=zh" hreflang="zh" id="culturezh">中文</a></span>
     </div>
 
     <div class="banner">
@@ -212,7 +215,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
             <h3 id="securitystep0title" class="i18n">Step 0. Follow the security checklist recommendation</h3>
             <p id="securitystep0" class="i18n">
-              First step is to <strong>download</strong> this website from <a href="https://github.com/MichaelMure/PaperWallet/archive/master.zip">Github</a> and open the index.html file directly from your computer. It's just too easy to sneak some evil code in the 6000+ lines of javascript to leak your private key, and you don't want to see your fund stolen. Code version control make it much easier to cross-check what actually run. For extra security, <strong>unplug your Internet access</strong> while generating your wallet.
+              First step is to <strong>download</strong> this website from <a href="https://github.com/MichaelMure/WalletGenerator.net/archive/master.zip">Github</a> and open the index.html file directly from your computer. It's just too easy to sneak some evil code in the 6000+ lines of javascript to leak your private key, and you don't want to see your fund stolen. Code version control make it much easier to cross-check what actually run. For extra security, <strong>unplug your Internet access</strong> while generating your wallet.
             </p>
             <h3 id="securitystep1title" class="i18n">Step 1. Generate new address</h3>
             <p id="securitystep1" class="i18n">
@@ -523,10 +526,65 @@ Walletgenerator.net use the same security measures as the original project. All-
       <hr/>
       <h3>Release notes</h3>
       <p>
+      01.2018 --
+        <ul>
+          <li>Add support for multi-prefix currencies (like ZCash). Contribution from terryxsq.</li>
+          <li>Fix Espers configuration. Contribution from ctgiant.</li>
+          <li>Update Espers logo. Contribution from nazarsh.</li>
+          <li>Add support for Dimecoin. Contribution from hanoncs.</li>
+          <li>Add support for LBRY Credits. Contribution from todd1251.</li>
+          <li>Add support for AGAcoin. Contribution from vx28643.</li>
+          <li>Add support for PacCOin. Contribution from al-mac.</li>
+          <li>Add support for HFRcoin. Contribution from hfrcoin.</li>
+          <li>Add support for CampusCoin. Contribution from campuscoindev.</li>
+          <li>Add support for Bitcore, CopperCoin, Ember, KittehCoin, NYC, Peercoin, PiggyCoin. Contribution from jdspringer.</li>
+          <li>Add support for AXE. Contribution from charlesrocket.</li>
+          <li>Add support for ROIcoin. Contribution from DisasterFaster.</li>
+          <li>Add support for ZCash. Contribution from terryxsq.</li>
+          <li>Add support for Yenten. Contribution from WorldBot.</li>
+          <li>Add support for NEETCOIN. Contribution from rmdfwqclmrkcvpbe.</li>
+          <li>Add support for Garlicoin.</li>
+        </ul>
+      <p>
+      12.2017 --
+        <ul>
+          <li>Update Vertcoin to new wallet format.</li>
+          <li>Update Vertcoin background graphics.</li>
+          <li>Update Bitcoin Cash logo.</li>
+        </ul>
+      <p>
+      12.2017 --
+        <ul>
+          <li>New translation in portugese ! Contribution from Gabriel Barreiro.</li>
+          <li>New translation in polish ! Contribution from Piotr Gerus.</li>
+          <li>New partial translation in chinese ! Contribution from Frank Ou.</li>
+          <li>Fix Emercoin support. Contribution from vx28643.</li>
+          <li>Add support for Stratis and NavCoin. Contribution from Sean Auriti.</li>
+          <li>Add support for Flurbo. Contribution from Flurbos.</li>
+          <li>Add support for BitcoinGold. Contribution from F3de81.</li>
+          <li>Add support for XP. Contribution from Jason Brink.</li>
+          <li>Add support for ROI. Contribution from DisasterFaster.</li>
+          <li>Add support for BolivarCoin. Contribution from Elpidio Moreno.</li>
+          <li>Add support for TrezarCoin, contribution from fenrisl.</li>
+          <li>Add support for BiblePay. Contribution from John Doer.</li>
+          <li>Add support for ColossusCoinXt. Contribution from Дмитрий Брега.</li>
+          <li>Add support for HOdlcoin. Contribution from R4FKEN.</li>
+          <li>Add support for BitConnect. Contribution from ExtendLord.</li>
+          <li>Add support for Nyancoin. Contribution from jwflame.</li>
+          <li>Add support for BitZeny. Contribution from rmdfwqclmrkcvpbe.</li>
+          <li>Add support for Alqo, Copico and DNotes. Contribution from drewrothstein.</li>
+          <li>Add support for Blocknet. Contribution from mthf.</li>
+          <li>Add support for BoxyCoin. Contribution from BoxyCoin team.</li>
+          <li>Add support for VergeCoin. Contribution from Graham Pratt.</li>
+          <li>Add support for KHcoin. Contribution from In Mean.</li>
+          <li>Remove support for HTML5Coin and add support for HTMLCoin. Contribution from bonchien.</li>
+        </ul>
+      <p>
       10.2017 --
         <ul>
           <li>New translation in Dutch ! Contribution from MadnessJax.</li>
           <li>New translation in German ! Contribution from fflo.</li>
+          <li>New translation in italian ! Contribution from F3de81.</li>
           <li>New partial translation in Turkish ! Contribution from snipeTR.</li>
           <li>Add support for WACoins. Contribution from WACoinsTeam.</li>
           <li>Add support forNeedleCoin. Contribution from F3de81.</li>
@@ -758,7 +816,6 @@ Walletgenerator.net use the same security measures as the original project. All-
       <div>
         <span class="item"><a id="footersupport" href="#" onclick="ninja.tabSwitch(document.getElementById('donate'));" class="i18n">Support WalletGenerator.net</a></span>
         <span class="item"><a href="https://github.com/MichaelMure/WalletGenerator.net" target="_blank" id="footerlabelgithub" class="i18n">Download (GitHub Repository)</a></span>
-        <span class="item"><a href="https://twitter.com/WalletGenerator">@WalletGenerator</a></span>
       </div>
       <div class="copyright">
         <span id="footerlabelcopyright1">Copyright WalletGenerator.net.</span>

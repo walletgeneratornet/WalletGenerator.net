@@ -16,7 +16,12 @@ Bitcoin.Address.prototype.toString = function () {
 	var hash = this.hash.slice(0);
 
 	// Version
-	hash.unshift(janin.currency.networkVersion());
+	var networkVersion = janin.currency.networkVersion();
+	if (networkVersion instanceof Array) {
+		hash = networkVersion.concat(hash);
+	} else {
+		hash.unshift(networkVersion);
+	}
 	var checksum = Crypto.SHA256(Crypto.SHA256(hash, { asBytes: true }), { asBytes: true });
 	var bytes = hash.concat(checksum.slice(0, 4));
 	return Bitcoin.Base58.encode(bytes);
@@ -31,13 +36,14 @@ Bitcoin.Address.prototype.getHashBase64 = function () {
 */
 Bitcoin.Address.decodeString = function (string) {
 	var bytes = Bitcoin.Base58.decode(string);
-	var hash = bytes.slice(0, 21);
+	var length = bytes.length;
+	var hash = bytes.slice(0, length - 4);
 	var checksum = Crypto.SHA256(Crypto.SHA256(hash, { asBytes: true }), { asBytes: true });
 
-	if (checksum[0] != bytes[21] ||
-			checksum[1] != bytes[22] ||
-			checksum[2] != bytes[23] ||
-			checksum[3] != bytes[24]) {
+	if (checksum[0] != bytes[length - 4] ||
+			checksum[1] != bytes[length - 3] ||
+			checksum[2] != bytes[length - 2] ||
+			checksum[3] != bytes[length - 1]) {
 		throw "Checksum validation failed!";
 	}
 

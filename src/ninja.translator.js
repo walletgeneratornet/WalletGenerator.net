@@ -64,10 +64,13 @@ ninja.translator = {
 		//fr.js
 		//de.js
 		//nl.js
+		//pt.js
 		//ru.js
 		//es.js
 		//it.js
 		//ua.js
 		//tr.js
+		//pl.js
+		//zh.js
 	}
 };
