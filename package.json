@@ -1,6 +1,6 @@
 {
-  "name": "walletgenerator.net",
-  "version": "3.3.0",
+  "name": "citycoin.walletgenerator.net",
+  "version": "3.3.1",
   "description": "Open Source JavaScript Client-Side Bitcoin Wallet Generator",
   "main": "Gruntfile.js",
   "dependencies": {
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/MichaelMure/WalletGenerator.net.git"
+    "url": "git://github.com/CityChainFoundation/WalletGenerator.net.git"
   },
   "keywords": [
     "bitcoin address wallet generator"
   ],
-  "author": "MichaelMure",
+  "author": "CityChainFoundation",
   "license": "MIT",
   "readmeFilename": "README.md",
   "bugs": {
-    "url": "https://github.com/MichaelMure/WalletGenerator.net/issues"
+    "url": "https://github.com/CityChainFoundation/WalletGenerator.net/issues"
   }
 }
