@@ -269,6 +269,7 @@ janin.currencies = [
     janin.currency.createCurrency ("Unobtanium",          0x82, 0xe0, "8",    "a"    , "uZ8Gq61NGJ2wz3PLybXyXKLYC1FhRpz8Kq"),
     janin.currency.createCurrency ("USDe",                0x26, 0xa6, "6",    "R"    , "GQTeNSfx6xPbBNsUfqoZNrrCBQXeY5Dtdu"),
     janin.currency.createCurrency ("Vcash",               0x47, 0xc7, "7",    "W"    , "VoaKH8ndxJoFfM3XJ7DK3P6g7kxASpCf5g"),
+    janin.currency.createCurrency ("Veil",                0x50, 0x80, "5",    "[LK]" , "3AX1WaDGJN2iDDeqpM6jGqqKmt2TTbTuEN"),    
     janin.currency.createCurrency ("Versioncoin",         0x46, 0xc6, "7",    "W"    , "VRYmn3ABchWK7ZSx2V3VD6TzxmqCLsxJSH"),
     janin.currency.createCurrency ("VergeCoin",           0x1e, 0x9e, "6",    "Q"    , "DJvyiaUdFAH7zmn23SaWzSj9FT5X9a3pSS"),
     janin.currency.createCurrency ("Vertcoin",            0x47, 0x80, "5",    "[LK]" , "VkmBz8JJWLP1sVH9sGwc1Fz7o5RtXLW4J5"),
@@ -285,10 +286,10 @@ janin.currencies = [
     janin.currency.createCurrency ("Zetacoin",            0x50, 0xE0, "8",    "a"    , "ZRU6TP8NLzoyey4DPPaa3uCCgDNDc96PXJ"),
 
 
-
     janin.currency.createCurrency ("Testnet Bitcoin",     0x6f, 0xef, "9",    "c"    , null),
     janin.currency.createCurrency ("Testnet Dogecoin",    0x71, 0xf1, "9",    "c"    , null),
     janin.currency.createCurrency ("Testnet MonetaryUnit",0x26, 0x40, "3",    "A"    , null),
     janin.currency.createCurrency ("Testnet PIVX",        0x8b, 0xef, "9",    "c"    , null),
+    janin.currency.createCurrency ("Testnet Veil",        0xc4, 0xef, "9",    "c"    , "2Mx42c5HYAf5oiZFstAQDJyucbPdFScvhy3"),    
     janin.currency.createCurrency ("Testnet WACoins",     0x51, 0xd1, "8",    "[XY]" , null)
                    ];
