@@ -87,6 +87,6 @@ janin.currency = {
 janin.currencies = [
     //                              name, networkVersion, privateKeyPrefix, WIF_Start, CWIF_Start, donate
 
-    janin.currency.createCurrency ("Domocoin",            0x1e, 0xba, "7",    "U"    , ""),
+    janin.currency.createCurrency ("Domocoin",            0x1e, 0xba, "7",    "U"    , "")
 
                    ];
