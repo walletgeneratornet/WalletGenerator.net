@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Universal Open Source Client-Side Paper Wallet Generator for BitCoins and other cryptocurrencies. Create your own paper wallet in a few easy steps : Generate, Print and Fold !">
-  <meta name="keywords" content="universal, paper, wallet, generator, cryptocurrencies, bitcoin, litecoin, dogecoin" />
+  <meta name="description" content="Universal Open Source Client-Side Paper Wallet Generator for Domocoin. Create your own paper wallet in a few easy steps : Generate, Print and Fold !">
+  <meta name="keywords" content="universal, paper, wallet, generator, cryptocurrencies, domocoin, dogecoin, bitcoin" />
 
   <!--
 
@@ -51,7 +51,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   GitHub Repository: https://github.com/MichaelMure/WalletGenerator.net
   -->
 
-  <title>WalletGenerator.net - Universal Paper wallet generator for Bitcoin and other cryptocurrencies</title>
+  <title>Domocoin PaperWallet Generator - Universal Paper wallet generator for DOMOcoin, BTC and DOGE</title>
 
   <script type="text/javascript">
 // Array.prototype.map function is in the public domain.
@@ -9785,7 +9785,7 @@ h1 { margin: 0px; height: 91px; }
             </p>
             <h3 id="securitystep7title" class="i18n">Consider supporting us</h3>
             <p id="securitystep7" class="i18n">
-              This service is free and will stay free, without advertising or tracking of any sort. Please consider <a href="#" onclick="ninja.tabSwitch(document.getElementById('donate'));">making a donation</a> to support us and the people that add support for new currencies.
+              This service is free and will stay free, without advertising or tracking of any sort.
             </p>
 
           </div>
@@ -9851,7 +9851,6 @@ Walletgenerator.net use the same security measures as the original project. All-
 
           <h3 class="faqQuestion"><a class="faqLink" onclick="ninja.toggleFaqQuestion('faqQuestion7');">&#8226; Can you add support for cryptocurrency XYZ ?</a></h3>
           <p class="faqAnswer" id="faqQuestion7">
-            Absolutely ! To help us do that, you can <a href="https://docs.google.com/forms/d/1nPIvukVWxlaveUPEUAEhGKwvEuwJiPSgs5zc5LhDVpk/viewform">fill this  form</a>. But keep in mind that there is some currency that we cannot support. If the developers made some change in the address format, we won’t hack the crypto core of the project and take the risk to tamper the security of the others currencies.
             You can also implement the support yourself by following this <a href="https://github.com/MichaelMure/WalletGenerator.net/wiki/How-to-add-a-new-currency">non-developer How-To</a>
           </p>
 
@@ -9862,7 +9861,7 @@ Walletgenerator.net use the same security measures as the original project. All-
 
           <h3 class="faqQuestion"><a class="faqLink" onclick="ninja.toggleFaqQuestion('faqQuestion9');">&#8226; I found a bug, what shall I do ?</a></h3>
           <p class="faqAnswer" id="faqQuestion9">
-            You can report bugs using GitHub. You can also contact us using our Twitter account (<a href="http://twitter.com/WalletGenerator" target="_blank">@WalletGenerator</a>). Just try to explain clearly what is wrong and we will try to fix the bug as soon as possible.
+            You can report bugs using GitHub. You can also contact us using our Twitter account (<a href="http://twitter.com/Domocoin" target="_blank">@Domocoin</a>). Just try to explain clearly what is wrong and we will try to fix the bug as soon as possible.
           </p>
 
           <h3 class="faqQuestion"><a class="faqLink" onclick="ninja.toggleFaqQuestion('faqQuestion10');">&#8226; Who are you ?</a></h3>
@@ -10358,7 +10357,7 @@ Walletgenerator.net use the same security measures as the original project. All-
         <span class="item"><a href="https://github.com/MichaelMure/WalletGenerator.net" target="_blank" id="footerlabelgithub" class="i18n">Download (GitHub Repository)</a></span>
       </div>
       <div class="copyright">
-        <span id="footerlabelcopyright1">Copyright WalletGenerator.net.</span>
+        <span id="footerlabelcopyright1">Copyright DOMO & WalletGenerator.net</span>
         <span id="footerlabelcopyright2" class="i18n">JavaScript copyrights are included in the source.</span>
         <span id="footerlabelnowarranty" class="i18n">No warranty.</span>
       </div>
@@ -10533,9 +10532,9 @@ janin.currency = {
 
 janin.currencies = [
     //                              name, networkVersion, privateKeyPrefix, WIF_Start, CWIF_Start, donate
+	janin.currency.createCurrency ("Domocoin",            0x1e, 0xba, "7",    "U"    , "DSQaXCGrmApXPRCHHUcJq3PbBK7YDU8gMC"),
     janin.currency.createCurrency ("Bitcoin",             0x00, 0x80, "5",    "[LK]" , "15DHZzv7eBUwss77qczZiL3DUEZLjDYhbM"),
-    janin.currency.createCurrency ("Dogecoin",            0x1e, 0x9e, "6",    "Q"    , "D74Npoqhwhjw9fShkm5wbj6DD2BJXpmzPj"),
-    janin.currency.createCurrency ("Domocoin",            0x1e, 0xba, "7",    "U"    , "")
+    janin.currency.createCurrency ("Dogecoin",            0x1e, 0x9e, "6",    "Q"    , "D74Npoqhwhjw9fShkm5wbj6DD2BJXpmzPj")
                    ];
 
   </script>
