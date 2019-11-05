@@ -4,7 +4,7 @@ a { position: relative; z-index: 20; text-decoration: none; color: #d58424; }
 .right { text-align: right; }
 .walletarea { display: none; border: 1px solid #BFBFBF; background-color: white; }
 hr { margin: 20px 0; border-top: 1px dashed #008000; }
-.keyarea { height: 110px; text-align: left; position: relative; padding: 25px 25px 10px; }
+.keyarea { height: 110px; text-align: left; position: relative; padding: 25px 25px 10px; margin-bottom: 20px; }
 .keyarea .public { float: left; }
 .keyarea .pubaddress { display: inline-block; height: 40px; padding: 0 0 0 10px; float: left; }
 .keyarea .privwif { margin: 0;  float: right; text-align: right; padding: 0 20px 0 0; position: relative; }
@@ -159,7 +159,7 @@ h1 { margin: 0px; height: 91px; }
 
 #paperarea { min-height: 120px; display: none; }
 #paperarea .keyarea { border: 1px solid #BFBFBF; border-top: 0; }
-#paperarea .keyarea.art { display: block; height: auto; border: 0; font-family: Ubuntu, Arial; padding: 0; margin: 0; }
+#paperarea .keyarea.art { display: block; height: auto; border: 0; font-family: Ubuntu, Arial; padding: 0; }
 #paperarea .artwallet .papersvg { width: 1004px; height: 426px; border: 0; margin: 0; padding: 0; left: 0; }
 #paperarea .artwallet .qrcode_public { top: 263px; left: 780px; z-index: 100; margin: 0; float: none; display: block; position: absolute; background-color: #FFFFFF;
                                     padding: 5px 5px 2px 5px; }
