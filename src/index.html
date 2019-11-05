@@ -343,6 +343,7 @@ Walletgenerator.net use the same security measures as the original project. All-
           <div id="papercommands" class="row">
             <span><label id="paperlabelencrypt" for="paperencrypt" class="i18n">BIP38 Encrypt?</label> <input type="checkbox" id="paperencrypt" onchange="ninja.wallets.paperwallet.toggleEncrypt(this);" /></span>
             <span><label id="paperlabelBIPpassphrase" for="paperpassphrase" class="i18n">Passphrase:</label> <input type="text" id="paperpassphrase" /></span>
+            <span><label id="paperlabelamount" for="amount" class="i18n">amount:</label> <input type="text" id="amount" value="1" /></span>
 
             <br/>
             <input type="button" id="papergenerate" value="Randomly generate" onclick="ninja.wallets.paperwallet.build(document.getElementById('paperpassphrase').value);" />

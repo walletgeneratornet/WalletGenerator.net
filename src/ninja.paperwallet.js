@@ -19,18 +19,15 @@ ninja.wallets.paperwallet = {
 		document.getElementById("main").setAttribute("class", ""); // remove 'paper' class from main div
 	},
 
-	remaining: null, // use to keep track of how many addresses are left to process when building the paper wallet
-	count: 0,
-	pageBreakAtDefault: 1,
-	pageBreakAtArtisticDefault: 1,
-	pageBreakAt: null,
+	pageBreakAt: 3,
 
 	build: function (passphrase) {
-		var numWallets = 1;
-		var pageBreakAt = 1;
-		ninja.wallets.paperwallet.remaining = numWallets;
+		const amount = document.getElementById("amount").value;
+
+		// use to keep track of how many addresses are left to process when building the paper wallet
+		ninja.wallets.paperwallet.remaining = amount;
 		ninja.wallets.paperwallet.count = 0;
-		ninja.wallets.paperwallet.pageBreakAt = pageBreakAt;
+
 		document.getElementById("paperkeyarea").innerHTML = "";
 		if (ninja.wallets.paperwallet.encrypt) {
 			if (passphrase == "") {

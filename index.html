@@ -9315,7 +9315,7 @@ a { position: relative; z-index: 20; text-decoration: none; color: #d58424; }
 .right { text-align: right; }
 .walletarea { display: none; border: 1px solid #BFBFBF; background-color: white; }
 hr { margin: 20px 0; border-top: 1px dashed #008000; }
-.keyarea { height: 110px; text-align: left; position: relative; padding: 25px 25px 10px; }
+.keyarea { height: 110px; text-align: left; position: relative; padding: 25px 25px 10px; margin-bottom: 20px; }
 .keyarea .public { float: left; }
 .keyarea .pubaddress { display: inline-block; height: 40px; padding: 0 0 0 10px; float: left; }
 .keyarea .privwif { margin: 0;  float: right; text-align: right; padding: 0 20px 0 0; position: relative; }
@@ -9470,7 +9470,7 @@ h1 { margin: 0px; height: 91px; }
 
 #paperarea { min-height: 120px; display: none; }
 #paperarea .keyarea { border: 1px solid #BFBFBF; border-top: 0; }
-#paperarea .keyarea.art { display: block; height: auto; border: 0; font-family: Ubuntu, Arial; padding: 0; margin: 0; }
+#paperarea .keyarea.art { display: block; height: auto; border: 0; font-family: Ubuntu, Arial; padding: 0; }
 #paperarea .artwallet .papersvg { width: 1004px; height: 426px; border: 0; margin: 0; padding: 0; left: 0; }
 #paperarea .artwallet .qrcode_public { top: 263px; left: 780px; z-index: 100; margin: 0; float: none; display: block; position: absolute; background-color: #FFFFFF;
                                     padding: 5px 5px 2px 5px; }
@@ -9883,6 +9883,7 @@ Walletgenerator.net use the same security measures as the original project. All-
           <div id="papercommands" class="row">
             <span><label id="paperlabelencrypt" for="paperencrypt" class="i18n">BIP38 Encrypt?</label> <input type="checkbox" id="paperencrypt" onchange="ninja.wallets.paperwallet.toggleEncrypt(this);" /></span>
             <span><label id="paperlabelBIPpassphrase" for="paperpassphrase" class="i18n">Passphrase:</label> <input type="text" id="paperpassphrase" /></span>
+            <span><label id="paperlabelamount" for="amount" class="i18n">amount:</label> <input type="text" id="amount" value="1" /></span>
 
             <br/>
             <input type="button" id="papergenerate" value="Randomly generate" onclick="ninja.wallets.paperwallet.build(document.getElementById('paperpassphrase').value);" />
@@ -12393,18 +12394,15 @@ ninja.wallets.paperwallet = {
 		document.getElementById("main").setAttribute("class", ""); // remove 'paper' class from main div
 	},
 
-	remaining: null, // use to keep track of how many addresses are left to process when building the paper wallet
-	count: 0,
-	pageBreakAtDefault: 1,
-	pageBreakAtArtisticDefault: 1,
-	pageBreakAt: null,
+	pageBreakAt: 3,
 
 	build: function (passphrase) {
-		var numWallets = 1;
-		var pageBreakAt = 1;
-		ninja.wallets.paperwallet.remaining = numWallets;
+		const amount = document.getElementById("amount").value;
+
+		// use to keep track of how many addresses are left to process when building the paper wallet
+		ninja.wallets.paperwallet.remaining = amount;
 		ninja.wallets.paperwallet.count = 0;
-		ninja.wallets.paperwallet.pageBreakAt = pageBreakAt;
+
 		document.getElementById("paperkeyarea").innerHTML = "";
 		if (ninja.wallets.paperwallet.encrypt) {
 			if (passphrase == "") {
