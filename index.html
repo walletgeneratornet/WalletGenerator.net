@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Universal Open Source Client-Side Paper Wallet Generator for BitCoins and other cryptocurrencies. Create your own paper wallet in a few easy steps : Generate, Print and Fold !">
-  <meta name="keywords" content="universal, paper, wallet, generator, cryptocurrencies, bitcoin, litecoin, dogecoin" />
+  <meta name="description" content="Universal Open Source Client-Side Paper Wallet Generator for Domocoin. Create your own paper wallet in a few easy steps : Generate, Print and Fold !">
+  <meta name="keywords" content="universal, paper, wallet, generator, cryptocurrencies, domocoin, dogecoin, bitcoin" />
 
   <!--
 
@@ -51,63 +51,63 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   GitHub Repository: https://github.com/MichaelMure/WalletGenerator.net
   -->
 
-  <title>WalletGenerator.net - Universal Paper wallet generator for Bitcoin and other cryptocurrencies</title>
+  <title>Domocoin PaperWallet Generator - Universal Paper wallet generator for DOMOcoin, BTC and DOGE</title>
 
   <script type="text/javascript">
 // Array.prototype.map function is in the public domain.
-// Production steps of ECMA-262, Edition 5, 15.4.4.19  
-// Reference: http://es5.github.com/#x15.4.4.19  
+// Production steps of ECMA-262, Edition 5, 15.4.4.19
+// Reference: http://es5.github.com/#x15.4.4.19
 if (!Array.prototype.map) {
 	Array.prototype.map = function (callback, thisArg) {
 		var T, A, k;
 		if (this == null) {
 			throw new TypeError(" this is null or not defined");
 		}
-		// 1. Let O be the result of calling ToObject passing the |this| value as the argument.  
+		// 1. Let O be the result of calling ToObject passing the |this| value as the argument.
 		var O = Object(this);
-		// 2. Let lenValue be the result of calling the Get internal method of O with the argument "length".  
-		// 3. Let len be ToUint32(lenValue).  
+		// 2. Let lenValue be the result of calling the Get internal method of O with the argument "length".
+		// 3. Let len be ToUint32(lenValue).
 		var len = O.length >>> 0;
-		// 4. If IsCallable(callback) is false, throw a TypeError exception.  
-		// See: http://es5.github.com/#x9.11  
+		// 4. If IsCallable(callback) is false, throw a TypeError exception.
+		// See: http://es5.github.com/#x9.11
 		if ({}.toString.call(callback) != "[object Function]") {
 			throw new TypeError(callback + " is not a function");
 		}
-		// 5. If thisArg was supplied, let T be thisArg; else let T be undefined.  
+		// 5. If thisArg was supplied, let T be thisArg; else let T be undefined.
 		if (thisArg) {
 			T = thisArg;
 		}
-		// 6. Let A be a new array created as if by the expression new Array(len) where Array is  
-		// the standard built-in constructor with that name and len is the value of len.  
+		// 6. Let A be a new array created as if by the expression new Array(len) where Array is
+		// the standard built-in constructor with that name and len is the value of len.
 		A = new Array(len);
-		// 7. Let k be 0  
+		// 7. Let k be 0
 		k = 0;
-		// 8. Repeat, while k < len  
+		// 8. Repeat, while k < len
 		while (k < len) {
 			var kValue, mappedValue;
-			// a. Let Pk be ToString(k).  
-			//   This is implicit for LHS operands of the in operator  
-			// b. Let kPresent be the result of calling the HasProperty internal method of O with argument Pk.  
-			//   This step can be combined with c  
-			// c. If kPresent is true, then  
+			// a. Let Pk be ToString(k).
+			//   This is implicit for LHS operands of the in operator
+			// b. Let kPresent be the result of calling the HasProperty internal method of O with argument Pk.
+			//   This step can be combined with c
+			// c. If kPresent is true, then
 			if (k in O) {
-				// i. Let kValue be the result of calling the Get internal method of O with argument Pk.  
+				// i. Let kValue be the result of calling the Get internal method of O with argument Pk.
 				kValue = O[k];
-				// ii. Let mappedValue be the result of calling the Call internal method of callback  
-				// with T as the this value and argument list containing kValue, k, and O.  
+				// ii. Let mappedValue be the result of calling the Call internal method of callback
+				// with T as the this value and argument list containing kValue, k, and O.
 				mappedValue = callback.call(T, kValue, k, O);
-				// iii. Call the DefineOwnProperty internal method of A with arguments  
-				// Pk, Property Descriptor {Value: mappedValue, Writable: true, Enumerable: true, Configurable: true},  
-				// and false.  
-				// In browsers that support Object.defineProperty, use the following:  
-				// Object.defineProperty(A, Pk, { value: mappedValue, writable: true, enumerable: true, configurable: true });  
-				// For best browser support, use the following:  
+				// iii. Call the DefineOwnProperty internal method of A with arguments
+				// Pk, Property Descriptor {Value: mappedValue, Writable: true, Enumerable: true, Configurable: true},
+				// and false.
+				// In browsers that support Object.defineProperty, use the following:
+				// Object.defineProperty(A, Pk, { value: mappedValue, writable: true, enumerable: true, configurable: true });
+				// For best browser support, use the following:
 				A[k] = mappedValue;
 			}
-			// d. Increase k by 1.  
+			// d. Increase k by 1.
 			k++;
 		}
-		// 9. return A  
+		// 9. return A
 		return A;
 	};
 }
@@ -606,7 +606,7 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 			// Allow mode to override options
 			if (mode.fixOptions) mode.fixOptions(options);
 
-			var 
+			var
 
 			// Convert to bytes if message is a string
 		m = (
@@ -647,7 +647,7 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 			// Allow mode to override options
 			if (mode.fixOptions) mode.fixOptions(options);
 
-			var 
+			var
 
 			// Convert to bytes if ciphertext is a string
 		c = (
@@ -1089,9 +1089,9 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 
 	/**
 	* Electronic Code Book mode.
-	* 
+	*
 	* ECB applies the cipher directly against each block of the input.
-	* 
+	*
 	* ECB does not require an initialization vector.
 	*/
 	var ECB = C_mode.ECB = function () {
@@ -1126,7 +1126,7 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 
 	/**
 	* Cipher block chaining
-	* 
+	*
 	* The first block is XORed with the IV. Subsequent blocks are XOR with the
 	* previous cipher output.
 	*/
@@ -1180,11 +1180,11 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 
 	/**
 	* Cipher feed back
-	* 
+	*
 	* The cipher output is XORed with the plain text to produce the cipher output,
 	* which is then fed back into the cipher to produce a bit pattern to XOR the
 	* next block with.
-	* 
+	*
 	* This is a stream cipher mode and does not require padding.
 	*/
 	var CFB = C_mode.CFB = function () {
@@ -1232,10 +1232,10 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 
 	/**
 	* Output feed back
-	* 
+	*
 	* The cipher repeatedly encrypts its own output. The output is XORed with the
 	* plain text to produce the cipher text.
-	* 
+	*
 	* This is a stream cipher mode and does not require padding.
 	*/
 	var OFB = C_mode.OFB = function () {
@@ -1491,11 +1491,11 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
   <script type="text/javascript">
 /*!
 * Random number generator with ArcFour PRNG
-* 
+*
 * NOTE: For best results, put code like
 * <body onclick='SecureRandom.seedTime();' onkeypress='SecureRandom.seedTime();'>
 * in your main HTML document.
-* 
+*
 * Copyright Tom Wu, bitaddress.org  BSD License.
 * http://www-cs-students.stanford.edu/~tjw/jsbn/LICENSE
 */
@@ -1547,7 +1547,7 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 			alert("Premature initialisation of the random generator. Something is really wrong, do not generate wallets.");
 			return NaN;
 		}
-		
+
 		if (sr.state == null) {
 			sr.seedTime();
 			sr.state = sr.ArcFour(); // Plug in your RNG constructor here
@@ -1683,7 +1683,7 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 * Basic Javascript Elliptic Curve implementation
 * Ported loosely from BouncyCastle's Java EC code
 * Only Fp curves implemented for now
-* 
+*
 * Copyright Tom Wu, bitaddress.org  BSD License.
 * http://www-cs-students.stanford.edu/~tjw/jsbn/LICENSE
 */
@@ -1744,7 +1744,7 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 	/**
 	* return a sqrt root - the routine verifies that the calculation
 	* returns the right value - if none exists it returns null.
-	* 
+	*
 	* Copyright (c) 2000 - 2011 The Legion Of The Bouncy Castle (http://www.bouncycastle.org)
 	* Ported to JavaScript by bitaddress.org
 	*/
@@ -2033,7 +2033,7 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 		var len = 32; // integerToBytes will zero pad if integer is less than 32 bytes. 32 bytes length is required by the Bitcoin protocol.
 		var enc = ec.integerToBytes(x, len);
 
-		// when compressed prepend byte depending if y point is even or odd 
+		// when compressed prepend byte depending if y point is even or odd
 		if (compressed) {
 			if (y.isEven()) {
 				enc.unshift(0x02);
@@ -2351,7 +2351,7 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
   <script type="text/javascript">
 /*!
 * Basic JavaScript BN library - subset useful for RSA encryption. v1.3
-* 
+*
 * Copyright (c) 2005  Tom Wu
 * All Rights Reserved.
 * BSD License
@@ -3632,7 +3632,7 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 // Licensed under the MIT license:
 //   http://www.opensource.org/licenses/mit-license.php
 //
-// The word "QR Code" is registered trademark of 
+// The word "QR Code" is registered trademark of
 // DENSO WAVE INCORPORATED
 //   http://www.denso-wave.com/qrcode/faqpatent-e.html
 //
@@ -3846,7 +3846,7 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 			var data = (this.errorCorrectLevel << 3) | maskPattern;
 			var bits = QRCode.Util.getBCHTypeInfo(data);
 
-			// vertical		
+			// vertical
 			for (var i = 0; i < 15; i++) {
 
 				var mod = (!test && ((bits >> i) & 1) == 1);
@@ -4529,7 +4529,7 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 	[2, 35, 17],
 	[2, 35, 13],
 
-	// 4		
+	// 4
 	[1, 100, 80],
 	[2, 50, 32],
 	[2, 50, 24],
@@ -4547,7 +4547,7 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 	[4, 43, 19],
 	[4, 43, 15],
 
-	// 7		
+	// 7
 	[2, 98, 78],
 	[4, 49, 31],
 	[2, 32, 14, 4, 33, 15],
@@ -4565,7 +4565,7 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 	[4, 36, 16, 4, 37, 17],
 	[4, 36, 12, 4, 37, 13],
 
-	// 10		
+	// 10
 	[2, 86, 68, 2, 87, 69],
 	[4, 69, 43, 1, 70, 44],
 	[6, 43, 19, 2, 44, 20],
@@ -4941,7 +4941,7 @@ Bitcoin.ECDSA = (function () {
 		* Parses a byte array containing a DER-encoded signature.
 		*
 		* This function will return an object of the form:
-		* 
+		*
 		* {
 		*   r: BigInteger,
 		*   s: BigInteger
@@ -5119,7 +5119,7 @@ Bitcoin.ECKey = (function () {
 			} else if (ECKey.isBase64Format(input)) {
 				bytes = Crypto.util.base64ToBytes(input);
 			}
-			
+
 			if (ECKey.isBase6Format(input)) {
 				this.priv = new BigInteger(input, 6);
 			} else if (bytes == null || bytes.length != 32) {
@@ -5217,7 +5217,7 @@ Bitcoin.ECKey = (function () {
 		return this;
 	};
 
-	// Sipa Private Key Wallet Import Format 
+	// Sipa Private Key Wallet Import Format
 	ECKey.prototype.getBitcoinWalletImportFormat = function () {
 		var bytes = this.getBitcoinPrivateKeyByteArray();
 		bytes.unshift(janin.currency.privateKeyPrefix()); // prepend private key prefix
@@ -5228,12 +5228,12 @@ Bitcoin.ECKey = (function () {
 		return privWif;
 	};
 
-	// Private Key Hex Format 
+	// Private Key Hex Format
 	ECKey.prototype.getBitcoinHexFormat = function () {
 		return Crypto.util.bytesToHex(this.getBitcoinPrivateKeyByteArray()).toString().toUpperCase();
 	};
 
-	// Private Key Base64 Format 
+	// Private Key Base64 Format
 	ECKey.prototype.getBitcoinBase64Format = function () {
 		return Crypto.util.bytesToBase64(this.getBitcoinPrivateKeyByteArray());
 	};
@@ -5241,7 +5241,7 @@ Bitcoin.ECKey = (function () {
 	ECKey.prototype.getBitcoinPrivateKeyByteArray = function () {
 		// Get a copy of private key as a byte array
 		var bytes = this.priv.toByteArrayUnsigned();
-		// zero pad if private key is less than 32 bytes 
+		// zero pad if private key is less than 32 bytes
 		while (bytes.length < 32) bytes.unshift(0x00);
 		return bytes;
 	};
@@ -5465,17 +5465,17 @@ Bitcoin.Util = {
   <script type="text/javascript">
 /*
 * Copyright (c) 2010-2011 Intalio Pte, All Rights Reserved
-* 
+*
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
 * in the Software without restriction, including without limitation the rights
 * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 * copies of the Software, and to permit persons to whom the Software is
 * furnished to do so, subject to the following conditions:
-* 
+*
 * The above copyright notice and this permission notice shall be included in
 * all copies or substantial portions of the Software.
-* 
+*
 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -5495,7 +5495,7 @@ Bitcoin.Util = {
 	* N = Cpu cost
 	* r = Memory cost
 	* p = parallelization cost
-	* 
+	*
 	*/
 	window.Crypto_scrypt = function (passwd, salt, N, r, p, dkLen, callback) {
 		if (N == 0 || (N & (N - 1)) != 0) throw Error("N must be > 0 and a power of 2");
@@ -5761,10 +5761,10 @@ Bitcoin.Util = {
   </script>
   <script type="text/javascript">
 /*
-  Ported to JavaScript by Lazar Laszlo 2011 
-  
+  Ported to JavaScript by Lazar Laszlo 2011
+
   lazarsoft@gmail.com, www.lazarsoft.info
-  
+
 */
 
 /*
@@ -5855,7 +5855,7 @@ GridSampler.checkAndNudgePoints=function( image,  points)
 				}
 			}
 		}
-	
+
 
 
 GridSampler.sampleGrid3=function( image,  dimension,  transform)
@@ -5908,7 +5908,7 @@ GridSampler.sampleGrid3=function( image,  dimension,  transform)
 GridSampler.sampleGridx=function( image,  dimension,  p1ToX,  p1ToY,  p2ToX,  p2ToY,  p3ToX,  p3ToY,  p4ToX,  p4ToY,  p1FromX,  p1FromY,  p2FromX,  p2FromY,  p3FromX,  p3FromY,  p4FromX,  p4FromY)
 {
 	var transform = PerspectiveTransform.quadrilateralToQuadrilateral(p1ToX, p1ToY, p2ToX, p2ToY, p3ToX, p3ToY, p4ToX, p4ToY, p1FromX, p1FromY, p2FromX, p2FromY, p3FromX, p3FromY, p4FromX, p4FromY);
-			
+
 	return GridSampler.sampleGrid3(image, dimension, transform);
 }
 
@@ -5916,7 +5916,7 @@ function ECB(count,  dataCodewords)
 {
 	this.count = count;
 	this.dataCodewords = dataCodewords;
-	
+
 	this.__defineGetter__("Count", function()
 	{
 		return this.count;
@@ -5934,17 +5934,17 @@ function ECBlocks( ecCodewordsPerBlock,  ecBlocks1,  ecBlocks2)
 		this.ecBlocks = new Array(ecBlocks1, ecBlocks2);
 	else
 		this.ecBlocks = new Array(ecBlocks1);
-	
+
 	this.__defineGetter__("ECCodewordsPerBlock", function()
 	{
 		return this.ecCodewordsPerBlock;
 	});
-	
+
 	this.__defineGetter__("TotalECCodewords", function()
 	{
 		return  this.ecCodewordsPerBlock * this.NumBlocks;
 	});
-	
+
 	this.__defineGetter__("NumBlocks", function()
 	{
 		var total = 0;
@@ -5954,7 +5954,7 @@ function ECBlocks( ecCodewordsPerBlock,  ecBlocks1,  ecBlocks2)
 		}
 		return total;
 	});
-	
+
 	this.getECBlocks=function()
 			{
 				return this.ecBlocks;
@@ -5966,7 +5966,7 @@ function Version( versionNumber,  alignmentPatternCenters,  ecBlocks1,  ecBlocks
 	this.versionNumber = versionNumber;
 	this.alignmentPatternCenters = alignmentPatternCenters;
 	this.ecBlocks = new Array(ecBlocks1, ecBlocks2, ecBlocks3, ecBlocks4);
-	
+
 	var total = 0;
 	var ecCodewords = ecBlocks1.ECCodewordsPerBlock;
 	var ecbArray = ecBlocks1.getECBlocks();
@@ -5976,12 +5976,12 @@ function Version( versionNumber,  alignmentPatternCenters,  ecBlocks1,  ecBlocks
 		total += ecBlock.Count * (ecBlock.DataCodewords + ecCodewords);
 	}
 	this.totalCodewords = total;
-	
+
 	this.__defineGetter__("VersionNumber", function()
 	{
 		return  this.versionNumber;
 	});
-	
+
 	this.__defineGetter__("AlignmentPatternCenters", function()
 	{
 		return  this.alignmentPatternCenters;
@@ -5994,19 +5994,19 @@ function Version( versionNumber,  alignmentPatternCenters,  ecBlocks1,  ecBlocks
 	{
 		return  17 + 4 * this.versionNumber;
 	});
-	
+
 	this.buildFunctionPattern=function()
 		{
 			var dimension = this.DimensionForVersion;
 			var bitMatrix = new BitMatrix(dimension);
-			
+
 			// Top left finder pattern + separator + format
 			bitMatrix.setRegion(0, 0, 9, 9);
 			// Top right finder pattern + separator + format
 			bitMatrix.setRegion(dimension - 8, 0, 8, 9);
 			// Bottom left finder pattern + separator + format
 			bitMatrix.setRegion(0, dimension - 8, 9, 8);
-			
+
 			// Alignment patterns
 			var max = this.alignmentPatternCenters.length;
 			for (var x = 0; x < max; x++)
@@ -6022,12 +6022,12 @@ function Version( versionNumber,  alignmentPatternCenters,  ecBlocks1,  ecBlocks
 					bitMatrix.setRegion(this.alignmentPatternCenters[y] - 2, i, 5, 5);
 				}
 			}
-			
+
 			// Vertical timing pattern
 			bitMatrix.setRegion(6, 9, 1, dimension - 17);
 			// Horizontal timing pattern
 			bitMatrix.setRegion(9, 6, dimension - 17, 1);
-			
+
 			if (this.versionNumber > 6)
 			{
 				// Version info, top right
@@ -6035,7 +6035,7 @@ function Version( versionNumber,  alignmentPatternCenters,  ecBlocks1,  ecBlocks
 				// Version info, bottom left
 				bitMatrix.setRegion(0, dimension - 11, 6, 3);
 			}
-			
+
 			return bitMatrix;
 		}
 	this.getECBlocksForLevel=function( ecLevel)
@@ -6106,45 +6106,45 @@ Version.decodeVersionInformation=function( versionBits)
 
 function buildVersions()
 {
-	return new Array(new Version(1, new Array(), new ECBlocks(7, new ECB(1, 19)), new ECBlocks(10, new ECB(1, 16)), new ECBlocks(13, new ECB(1, 13)), new ECBlocks(17, new ECB(1, 9))), 
-	new Version(2, new Array(6, 18), new ECBlocks(10, new ECB(1, 34)), new ECBlocks(16, new ECB(1, 28)), new ECBlocks(22, new ECB(1, 22)), new ECBlocks(28, new ECB(1, 16))), 
-	new Version(3, new Array(6, 22), new ECBlocks(15, new ECB(1, 55)), new ECBlocks(26, new ECB(1, 44)), new ECBlocks(18, new ECB(2, 17)), new ECBlocks(22, new ECB(2, 13))), 
-	new Version(4, new Array(6, 26), new ECBlocks(20, new ECB(1, 80)), new ECBlocks(18, new ECB(2, 32)), new ECBlocks(26, new ECB(2, 24)), new ECBlocks(16, new ECB(4, 9))), 
-	new Version(5, new Array(6, 30), new ECBlocks(26, new ECB(1, 108)), new ECBlocks(24, new ECB(2, 43)), new ECBlocks(18, new ECB(2, 15), new ECB(2, 16)), new ECBlocks(22, new ECB(2, 11), new ECB(2, 12))), 
-	new Version(6, new Array(6, 34), new ECBlocks(18, new ECB(2, 68)), new ECBlocks(16, new ECB(4, 27)), new ECBlocks(24, new ECB(4, 19)), new ECBlocks(28, new ECB(4, 15))), 
-	new Version(7, new Array(6, 22, 38), new ECBlocks(20, new ECB(2, 78)), new ECBlocks(18, new ECB(4, 31)), new ECBlocks(18, new ECB(2, 14), new ECB(4, 15)), new ECBlocks(26, new ECB(4, 13), new ECB(1, 14))), 
-	new Version(8, new Array(6, 24, 42), new ECBlocks(24, new ECB(2, 97)), new ECBlocks(22, new ECB(2, 38), new ECB(2, 39)), new ECBlocks(22, new ECB(4, 18), new ECB(2, 19)), new ECBlocks(26, new ECB(4, 14), new ECB(2, 15))), 
-	new Version(9, new Array(6, 26, 46), new ECBlocks(30, new ECB(2, 116)), new ECBlocks(22, new ECB(3, 36), new ECB(2, 37)), new ECBlocks(20, new ECB(4, 16), new ECB(4, 17)), new ECBlocks(24, new ECB(4, 12), new ECB(4, 13))), 
-	new Version(10, new Array(6, 28, 50), new ECBlocks(18, new ECB(2, 68), new ECB(2, 69)), new ECBlocks(26, new ECB(4, 43), new ECB(1, 44)), new ECBlocks(24, new ECB(6, 19), new ECB(2, 20)), new ECBlocks(28, new ECB(6, 15), new ECB(2, 16))), 
-	new Version(11, new Array(6, 30, 54), new ECBlocks(20, new ECB(4, 81)), new ECBlocks(30, new ECB(1, 50), new ECB(4, 51)), new ECBlocks(28, new ECB(4, 22), new ECB(4, 23)), new ECBlocks(24, new ECB(3, 12), new ECB(8, 13))), 
-	new Version(12, new Array(6, 32, 58), new ECBlocks(24, new ECB(2, 92), new ECB(2, 93)), new ECBlocks(22, new ECB(6, 36), new ECB(2, 37)), new ECBlocks(26, new ECB(4, 20), new ECB(6, 21)), new ECBlocks(28, new ECB(7, 14), new ECB(4, 15))), 
-	new Version(13, new Array(6, 34, 62), new ECBlocks(26, new ECB(4, 107)), new ECBlocks(22, new ECB(8, 37), new ECB(1, 38)), new ECBlocks(24, new ECB(8, 20), new ECB(4, 21)), new ECBlocks(22, new ECB(12, 11), new ECB(4, 12))), 
-	new Version(14, new Array(6, 26, 46, 66), new ECBlocks(30, new ECB(3, 115), new ECB(1, 116)), new ECBlocks(24, new ECB(4, 40), new ECB(5, 41)), new ECBlocks(20, new ECB(11, 16), new ECB(5, 17)), new ECBlocks(24, new ECB(11, 12), new ECB(5, 13))), 
-	new Version(15, new Array(6, 26, 48, 70), new ECBlocks(22, new ECB(5, 87), new ECB(1, 88)), new ECBlocks(24, new ECB(5, 41), new ECB(5, 42)), new ECBlocks(30, new ECB(5, 24), new ECB(7, 25)), new ECBlocks(24, new ECB(11, 12), new ECB(7, 13))), 
-	new Version(16, new Array(6, 26, 50, 74), new ECBlocks(24, new ECB(5, 98), new ECB(1, 99)), new ECBlocks(28, new ECB(7, 45), new ECB(3, 46)), new ECBlocks(24, new ECB(15, 19), new ECB(2, 20)), new ECBlocks(30, new ECB(3, 15), new ECB(13, 16))), 
-	new Version(17, new Array(6, 30, 54, 78), new ECBlocks(28, new ECB(1, 107), new ECB(5, 108)), new ECBlocks(28, new ECB(10, 46), new ECB(1, 47)), new ECBlocks(28, new ECB(1, 22), new ECB(15, 23)), new ECBlocks(28, new ECB(2, 14), new ECB(17, 15))), 
-	new Version(18, new Array(6, 30, 56, 82), new ECBlocks(30, new ECB(5, 120), new ECB(1, 121)), new ECBlocks(26, new ECB(9, 43), new ECB(4, 44)), new ECBlocks(28, new ECB(17, 22), new ECB(1, 23)), new ECBlocks(28, new ECB(2, 14), new ECB(19, 15))), 
-	new Version(19, new Array(6, 30, 58, 86), new ECBlocks(28, new ECB(3, 113), new ECB(4, 114)), new ECBlocks(26, new ECB(3, 44), new ECB(11, 45)), new ECBlocks(26, new ECB(17, 21), new ECB(4, 22)), new ECBlocks(26, new ECB(9, 13), new ECB(16, 14))), 
-	new Version(20, new Array(6, 34, 62, 90), new ECBlocks(28, new ECB(3, 107), new ECB(5, 108)), new ECBlocks(26, new ECB(3, 41), new ECB(13, 42)), new ECBlocks(30, new ECB(15, 24), new ECB(5, 25)), new ECBlocks(28, new ECB(15, 15), new ECB(10, 16))), 
-	new Version(21, new Array(6, 28, 50, 72, 94), new ECBlocks(28, new ECB(4, 116), new ECB(4, 117)), new ECBlocks(26, new ECB(17, 42)), new ECBlocks(28, new ECB(17, 22), new ECB(6, 23)), new ECBlocks(30, new ECB(19, 16), new ECB(6, 17))), 
-	new Version(22, new Array(6, 26, 50, 74, 98), new ECBlocks(28, new ECB(2, 111), new ECB(7, 112)), new ECBlocks(28, new ECB(17, 46)), new ECBlocks(30, new ECB(7, 24), new ECB(16, 25)), new ECBlocks(24, new ECB(34, 13))), 
-	new Version(23, new Array(6, 30, 54, 74, 102), new ECBlocks(30, new ECB(4, 121), new ECB(5, 122)), new ECBlocks(28, new ECB(4, 47), new ECB(14, 48)), new ECBlocks(30, new ECB(11, 24), new ECB(14, 25)), new ECBlocks(30, new ECB(16, 15), new ECB(14, 16))), 
-	new Version(24, new Array(6, 28, 54, 80, 106), new ECBlocks(30, new ECB(6, 117), new ECB(4, 118)), new ECBlocks(28, new ECB(6, 45), new ECB(14, 46)), new ECBlocks(30, new ECB(11, 24), new ECB(16, 25)), new ECBlocks(30, new ECB(30, 16), new ECB(2, 17))), 
-	new Version(25, new Array(6, 32, 58, 84, 110), new ECBlocks(26, new ECB(8, 106), new ECB(4, 107)), new ECBlocks(28, new ECB(8, 47), new ECB(13, 48)), new ECBlocks(30, new ECB(7, 24), new ECB(22, 25)), new ECBlocks(30, new ECB(22, 15), new ECB(13, 16))), 
-	new Version(26, new Array(6, 30, 58, 86, 114), new ECBlocks(28, new ECB(10, 114), new ECB(2, 115)), new ECBlocks(28, new ECB(19, 46), new ECB(4, 47)), new ECBlocks(28, new ECB(28, 22), new ECB(6, 23)), new ECBlocks(30, new ECB(33, 16), new ECB(4, 17))), 
+	return new Array(new Version(1, new Array(), new ECBlocks(7, new ECB(1, 19)), new ECBlocks(10, new ECB(1, 16)), new ECBlocks(13, new ECB(1, 13)), new ECBlocks(17, new ECB(1, 9))),
+	new Version(2, new Array(6, 18), new ECBlocks(10, new ECB(1, 34)), new ECBlocks(16, new ECB(1, 28)), new ECBlocks(22, new ECB(1, 22)), new ECBlocks(28, new ECB(1, 16))),
+	new Version(3, new Array(6, 22), new ECBlocks(15, new ECB(1, 55)), new ECBlocks(26, new ECB(1, 44)), new ECBlocks(18, new ECB(2, 17)), new ECBlocks(22, new ECB(2, 13))),
+	new Version(4, new Array(6, 26), new ECBlocks(20, new ECB(1, 80)), new ECBlocks(18, new ECB(2, 32)), new ECBlocks(26, new ECB(2, 24)), new ECBlocks(16, new ECB(4, 9))),
+	new Version(5, new Array(6, 30), new ECBlocks(26, new ECB(1, 108)), new ECBlocks(24, new ECB(2, 43)), new ECBlocks(18, new ECB(2, 15), new ECB(2, 16)), new ECBlocks(22, new ECB(2, 11), new ECB(2, 12))),
+	new Version(6, new Array(6, 34), new ECBlocks(18, new ECB(2, 68)), new ECBlocks(16, new ECB(4, 27)), new ECBlocks(24, new ECB(4, 19)), new ECBlocks(28, new ECB(4, 15))),
+	new Version(7, new Array(6, 22, 38), new ECBlocks(20, new ECB(2, 78)), new ECBlocks(18, new ECB(4, 31)), new ECBlocks(18, new ECB(2, 14), new ECB(4, 15)), new ECBlocks(26, new ECB(4, 13), new ECB(1, 14))),
+	new Version(8, new Array(6, 24, 42), new ECBlocks(24, new ECB(2, 97)), new ECBlocks(22, new ECB(2, 38), new ECB(2, 39)), new ECBlocks(22, new ECB(4, 18), new ECB(2, 19)), new ECBlocks(26, new ECB(4, 14), new ECB(2, 15))),
+	new Version(9, new Array(6, 26, 46), new ECBlocks(30, new ECB(2, 116)), new ECBlocks(22, new ECB(3, 36), new ECB(2, 37)), new ECBlocks(20, new ECB(4, 16), new ECB(4, 17)), new ECBlocks(24, new ECB(4, 12), new ECB(4, 13))),
+	new Version(10, new Array(6, 28, 50), new ECBlocks(18, new ECB(2, 68), new ECB(2, 69)), new ECBlocks(26, new ECB(4, 43), new ECB(1, 44)), new ECBlocks(24, new ECB(6, 19), new ECB(2, 20)), new ECBlocks(28, new ECB(6, 15), new ECB(2, 16))),
+	new Version(11, new Array(6, 30, 54), new ECBlocks(20, new ECB(4, 81)), new ECBlocks(30, new ECB(1, 50), new ECB(4, 51)), new ECBlocks(28, new ECB(4, 22), new ECB(4, 23)), new ECBlocks(24, new ECB(3, 12), new ECB(8, 13))),
+	new Version(12, new Array(6, 32, 58), new ECBlocks(24, new ECB(2, 92), new ECB(2, 93)), new ECBlocks(22, new ECB(6, 36), new ECB(2, 37)), new ECBlocks(26, new ECB(4, 20), new ECB(6, 21)), new ECBlocks(28, new ECB(7, 14), new ECB(4, 15))),
+	new Version(13, new Array(6, 34, 62), new ECBlocks(26, new ECB(4, 107)), new ECBlocks(22, new ECB(8, 37), new ECB(1, 38)), new ECBlocks(24, new ECB(8, 20), new ECB(4, 21)), new ECBlocks(22, new ECB(12, 11), new ECB(4, 12))),
+	new Version(14, new Array(6, 26, 46, 66), new ECBlocks(30, new ECB(3, 115), new ECB(1, 116)), new ECBlocks(24, new ECB(4, 40), new ECB(5, 41)), new ECBlocks(20, new ECB(11, 16), new ECB(5, 17)), new ECBlocks(24, new ECB(11, 12), new ECB(5, 13))),
+	new Version(15, new Array(6, 26, 48, 70), new ECBlocks(22, new ECB(5, 87), new ECB(1, 88)), new ECBlocks(24, new ECB(5, 41), new ECB(5, 42)), new ECBlocks(30, new ECB(5, 24), new ECB(7, 25)), new ECBlocks(24, new ECB(11, 12), new ECB(7, 13))),
+	new Version(16, new Array(6, 26, 50, 74), new ECBlocks(24, new ECB(5, 98), new ECB(1, 99)), new ECBlocks(28, new ECB(7, 45), new ECB(3, 46)), new ECBlocks(24, new ECB(15, 19), new ECB(2, 20)), new ECBlocks(30, new ECB(3, 15), new ECB(13, 16))),
+	new Version(17, new Array(6, 30, 54, 78), new ECBlocks(28, new ECB(1, 107), new ECB(5, 108)), new ECBlocks(28, new ECB(10, 46), new ECB(1, 47)), new ECBlocks(28, new ECB(1, 22), new ECB(15, 23)), new ECBlocks(28, new ECB(2, 14), new ECB(17, 15))),
+	new Version(18, new Array(6, 30, 56, 82), new ECBlocks(30, new ECB(5, 120), new ECB(1, 121)), new ECBlocks(26, new ECB(9, 43), new ECB(4, 44)), new ECBlocks(28, new ECB(17, 22), new ECB(1, 23)), new ECBlocks(28, new ECB(2, 14), new ECB(19, 15))),
+	new Version(19, new Array(6, 30, 58, 86), new ECBlocks(28, new ECB(3, 113), new ECB(4, 114)), new ECBlocks(26, new ECB(3, 44), new ECB(11, 45)), new ECBlocks(26, new ECB(17, 21), new ECB(4, 22)), new ECBlocks(26, new ECB(9, 13), new ECB(16, 14))),
+	new Version(20, new Array(6, 34, 62, 90), new ECBlocks(28, new ECB(3, 107), new ECB(5, 108)), new ECBlocks(26, new ECB(3, 41), new ECB(13, 42)), new ECBlocks(30, new ECB(15, 24), new ECB(5, 25)), new ECBlocks(28, new ECB(15, 15), new ECB(10, 16))),
+	new Version(21, new Array(6, 28, 50, 72, 94), new ECBlocks(28, new ECB(4, 116), new ECB(4, 117)), new ECBlocks(26, new ECB(17, 42)), new ECBlocks(28, new ECB(17, 22), new ECB(6, 23)), new ECBlocks(30, new ECB(19, 16), new ECB(6, 17))),
+	new Version(22, new Array(6, 26, 50, 74, 98), new ECBlocks(28, new ECB(2, 111), new ECB(7, 112)), new ECBlocks(28, new ECB(17, 46)), new ECBlocks(30, new ECB(7, 24), new ECB(16, 25)), new ECBlocks(24, new ECB(34, 13))),
+	new Version(23, new Array(6, 30, 54, 74, 102), new ECBlocks(30, new ECB(4, 121), new ECB(5, 122)), new ECBlocks(28, new ECB(4, 47), new ECB(14, 48)), new ECBlocks(30, new ECB(11, 24), new ECB(14, 25)), new ECBlocks(30, new ECB(16, 15), new ECB(14, 16))),
+	new Version(24, new Array(6, 28, 54, 80, 106), new ECBlocks(30, new ECB(6, 117), new ECB(4, 118)), new ECBlocks(28, new ECB(6, 45), new ECB(14, 46)), new ECBlocks(30, new ECB(11, 24), new ECB(16, 25)), new ECBlocks(30, new ECB(30, 16), new ECB(2, 17))),
+	new Version(25, new Array(6, 32, 58, 84, 110), new ECBlocks(26, new ECB(8, 106), new ECB(4, 107)), new ECBlocks(28, new ECB(8, 47), new ECB(13, 48)), new ECBlocks(30, new ECB(7, 24), new ECB(22, 25)), new ECBlocks(30, new ECB(22, 15), new ECB(13, 16))),
+	new Version(26, new Array(6, 30, 58, 86, 114), new ECBlocks(28, new ECB(10, 114), new ECB(2, 115)), new ECBlocks(28, new ECB(19, 46), new ECB(4, 47)), new ECBlocks(28, new ECB(28, 22), new ECB(6, 23)), new ECBlocks(30, new ECB(33, 16), new ECB(4, 17))),
 	new Version(27, new Array(6, 34, 62, 90, 118), new ECBlocks(30, new ECB(8, 122), new ECB(4, 123)), new ECBlocks(28, new ECB(22, 45), new ECB(3, 46)), new ECBlocks(30, new ECB(8, 23), new ECB(26, 24)), new ECBlocks(30, new ECB(12, 15), 		new ECB(28, 16))),
-	new Version(28, new Array(6, 26, 50, 74, 98, 122), new ECBlocks(30, new ECB(3, 117), new ECB(10, 118)), new ECBlocks(28, new ECB(3, 45), new ECB(23, 46)), new ECBlocks(30, new ECB(4, 24), new ECB(31, 25)), new ECBlocks(30, new ECB(11, 15), new ECB(31, 16))), 
-	new Version(29, new Array(6, 30, 54, 78, 102, 126), new ECBlocks(30, new ECB(7, 116), new ECB(7, 117)), new ECBlocks(28, new ECB(21, 45), new ECB(7, 46)), new ECBlocks(30, new ECB(1, 23), new ECB(37, 24)), new ECBlocks(30, new ECB(19, 15), new ECB(26, 16))), 
-	new Version(30, new Array(6, 26, 52, 78, 104, 130), new ECBlocks(30, new ECB(5, 115), new ECB(10, 116)), new ECBlocks(28, new ECB(19, 47), new ECB(10, 48)), new ECBlocks(30, new ECB(15, 24), new ECB(25, 25)), new ECBlocks(30, new ECB(23, 15), new ECB(25, 16))), 
-	new Version(31, new Array(6, 30, 56, 82, 108, 134), new ECBlocks(30, new ECB(13, 115), new ECB(3, 116)), new ECBlocks(28, new ECB(2, 46), new ECB(29, 47)), new ECBlocks(30, new ECB(42, 24), new ECB(1, 25)), new ECBlocks(30, new ECB(23, 15), new ECB(28, 16))), 
-	new Version(32, new Array(6, 34, 60, 86, 112, 138), new ECBlocks(30, new ECB(17, 115)), new ECBlocks(28, new ECB(10, 46), new ECB(23, 47)), new ECBlocks(30, new ECB(10, 24), new ECB(35, 25)), new ECBlocks(30, new ECB(19, 15), new ECB(35, 16))), 
-	new Version(33, new Array(6, 30, 58, 86, 114, 142), new ECBlocks(30, new ECB(17, 115), new ECB(1, 116)), new ECBlocks(28, new ECB(14, 46), new ECB(21, 47)), new ECBlocks(30, new ECB(29, 24), new ECB(19, 25)), new ECBlocks(30, new ECB(11, 15), new ECB(46, 16))), 
-	new Version(34, new Array(6, 34, 62, 90, 118, 146), new ECBlocks(30, new ECB(13, 115), new ECB(6, 116)), new ECBlocks(28, new ECB(14, 46), new ECB(23, 47)), new ECBlocks(30, new ECB(44, 24), new ECB(7, 25)), new ECBlocks(30, new ECB(59, 16), new ECB(1, 17))), 
-	new Version(35, new Array(6, 30, 54, 78, 102, 126, 150), new ECBlocks(30, new ECB(12, 121), new ECB(7, 122)), new ECBlocks(28, new ECB(12, 47), new ECB(26, 48)), new ECBlocks(30, new ECB(39, 24), new ECB(14, 25)),new ECBlocks(30, new ECB(22, 15), new ECB(41, 16))), 
-	new Version(36, new Array(6, 24, 50, 76, 102, 128, 154), new ECBlocks(30, new ECB(6, 121), new ECB(14, 122)), new ECBlocks(28, new ECB(6, 47), new ECB(34, 48)), new ECBlocks(30, new ECB(46, 24), new ECB(10, 25)), new ECBlocks(30, new ECB(2, 15), new ECB(64, 16))), 
-	new Version(37, new Array(6, 28, 54, 80, 106, 132, 158), new ECBlocks(30, new ECB(17, 122), new ECB(4, 123)), new ECBlocks(28, new ECB(29, 46), new ECB(14, 47)), new ECBlocks(30, new ECB(49, 24), new ECB(10, 25)), new ECBlocks(30, new ECB(24, 15), new ECB(46, 16))), 
-	new Version(38, new Array(6, 32, 58, 84, 110, 136, 162), new ECBlocks(30, new ECB(4, 122), new ECB(18, 123)), new ECBlocks(28, new ECB(13, 46), new ECB(32, 47)), new ECBlocks(30, new ECB(48, 24), new ECB(14, 25)), new ECBlocks(30, new ECB(42, 15), new ECB(32, 16))), 
-	new Version(39, new Array(6, 26, 54, 82, 110, 138, 166), new ECBlocks(30, new ECB(20, 117), new ECB(4, 118)), new ECBlocks(28, new ECB(40, 47), new ECB(7, 48)), new ECBlocks(30, new ECB(43, 24), new ECB(22, 25)), new ECBlocks(30, new ECB(10, 15), new ECB(67, 16))), 
+	new Version(28, new Array(6, 26, 50, 74, 98, 122), new ECBlocks(30, new ECB(3, 117), new ECB(10, 118)), new ECBlocks(28, new ECB(3, 45), new ECB(23, 46)), new ECBlocks(30, new ECB(4, 24), new ECB(31, 25)), new ECBlocks(30, new ECB(11, 15), new ECB(31, 16))),
+	new Version(29, new Array(6, 30, 54, 78, 102, 126), new ECBlocks(30, new ECB(7, 116), new ECB(7, 117)), new ECBlocks(28, new ECB(21, 45), new ECB(7, 46)), new ECBlocks(30, new ECB(1, 23), new ECB(37, 24)), new ECBlocks(30, new ECB(19, 15), new ECB(26, 16))),
+	new Version(30, new Array(6, 26, 52, 78, 104, 130), new ECBlocks(30, new ECB(5, 115), new ECB(10, 116)), new ECBlocks(28, new ECB(19, 47), new ECB(10, 48)), new ECBlocks(30, new ECB(15, 24), new ECB(25, 25)), new ECBlocks(30, new ECB(23, 15), new ECB(25, 16))),
+	new Version(31, new Array(6, 30, 56, 82, 108, 134), new ECBlocks(30, new ECB(13, 115), new ECB(3, 116)), new ECBlocks(28, new ECB(2, 46), new ECB(29, 47)), new ECBlocks(30, new ECB(42, 24), new ECB(1, 25)), new ECBlocks(30, new ECB(23, 15), new ECB(28, 16))),
+	new Version(32, new Array(6, 34, 60, 86, 112, 138), new ECBlocks(30, new ECB(17, 115)), new ECBlocks(28, new ECB(10, 46), new ECB(23, 47)), new ECBlocks(30, new ECB(10, 24), new ECB(35, 25)), new ECBlocks(30, new ECB(19, 15), new ECB(35, 16))),
+	new Version(33, new Array(6, 30, 58, 86, 114, 142), new ECBlocks(30, new ECB(17, 115), new ECB(1, 116)), new ECBlocks(28, new ECB(14, 46), new ECB(21, 47)), new ECBlocks(30, new ECB(29, 24), new ECB(19, 25)), new ECBlocks(30, new ECB(11, 15), new ECB(46, 16))),
+	new Version(34, new Array(6, 34, 62, 90, 118, 146), new ECBlocks(30, new ECB(13, 115), new ECB(6, 116)), new ECBlocks(28, new ECB(14, 46), new ECB(23, 47)), new ECBlocks(30, new ECB(44, 24), new ECB(7, 25)), new ECBlocks(30, new ECB(59, 16), new ECB(1, 17))),
+	new Version(35, new Array(6, 30, 54, 78, 102, 126, 150), new ECBlocks(30, new ECB(12, 121), new ECB(7, 122)), new ECBlocks(28, new ECB(12, 47), new ECB(26, 48)), new ECBlocks(30, new ECB(39, 24), new ECB(14, 25)),new ECBlocks(30, new ECB(22, 15), new ECB(41, 16))),
+	new Version(36, new Array(6, 24, 50, 76, 102, 128, 154), new ECBlocks(30, new ECB(6, 121), new ECB(14, 122)), new ECBlocks(28, new ECB(6, 47), new ECB(34, 48)), new ECBlocks(30, new ECB(46, 24), new ECB(10, 25)), new ECBlocks(30, new ECB(2, 15), new ECB(64, 16))),
+	new Version(37, new Array(6, 28, 54, 80, 106, 132, 158), new ECBlocks(30, new ECB(17, 122), new ECB(4, 123)), new ECBlocks(28, new ECB(29, 46), new ECB(14, 47)), new ECBlocks(30, new ECB(49, 24), new ECB(10, 25)), new ECBlocks(30, new ECB(24, 15), new ECB(46, 16))),
+	new Version(38, new Array(6, 32, 58, 84, 110, 136, 162), new ECBlocks(30, new ECB(4, 122), new ECB(18, 123)), new ECBlocks(28, new ECB(13, 46), new ECB(32, 47)), new ECBlocks(30, new ECB(48, 24), new ECB(14, 25)), new ECBlocks(30, new ECB(42, 15), new ECB(32, 16))),
+	new Version(39, new Array(6, 26, 54, 82, 110, 138, 166), new ECBlocks(30, new ECB(20, 117), new ECB(4, 118)), new ECBlocks(28, new ECB(40, 47), new ECB(7, 48)), new ECBlocks(30, new ECB(43, 24), new ECB(22, 25)), new ECBlocks(30, new ECB(10, 15), new ECB(67, 16))),
 	new Version(40, new Array(6, 30, 58, 86, 114, 142, 170), new ECBlocks(30, new ECB(19, 118), new ECB(6, 119)), new ECBlocks(28, new ECB(18, 47), new ECB(31, 48)), new ECBlocks(30, new ECB(34, 24), new ECB(34, 25)), new ECBlocks(30, new ECB(20, 15), new ECB(61, 16))));
 }
 
@@ -6207,7 +6207,7 @@ function PerspectiveTransform( a11,  a21,  a31,  a12,  a22,  a32,  a13,  a23,  a
 
 PerspectiveTransform.quadrilateralToQuadrilateral=function( x0,  y0,  x1,  y1,  x2,  y2,  x3,  y3,  x0p,  y0p,  x1p,  y1p,  x2p,  y2p,  x3p,  y3p)
 {
-	
+
 	var qToS = this.quadrilateralToSquare(x0, y0, x1, y1, x2, y2, x3, y3);
 	var sToQ = this.squareToQuadrilateral(x0p, y0p, x1p, y1p, x2p, y2p, x3p, y3p);
 	return sToQ.times(qToS);
@@ -6251,7 +6251,7 @@ function Detector(image)
 {
 	this.image=image;
 	this.resultPointCallback = null;
-	
+
 	this.sizeOfBlackWhiteBlackRun=function( fromX,  fromY,  toX,  toY)
 		{
 			// Mild variant of Bresenham's algorithm;
@@ -6266,7 +6266,7 @@ function Detector(image)
 				toX = toY;
 				toY = temp;
 			}
-			
+
 			var dx = Math.abs(toX - fromX);
 			var dy = Math.abs(toY - fromY);
 			var error = - dx >> 1;
@@ -6275,7 +6275,7 @@ function Detector(image)
 			var state = 0; // In black pixels, looking for white, first or second time
 			for (var x = fromX, y = fromY; x != toX; x += xstep)
 			{
-				
+
 				var realX = steep?y:x;
 				var realY = steep?x:y;
 				if (state == 1)
@@ -6293,7 +6293,7 @@ function Detector(image)
 						state++;
 					}
 				}
-				
+
 				if (state == 3)
 				{
 					// Found black, white, black, and stumbled back onto white; done
@@ -6317,12 +6317,12 @@ function Detector(image)
 			return  Math.sqrt( (diffX2 * diffX2 + diffY2 * diffY2));
 		}
 
-	
+
 	this.sizeOfBlackWhiteBlackRunBothWays=function( fromX,  fromY,  toX,  toY)
 		{
-			
+
 			var result = this.sizeOfBlackWhiteBlackRun(fromX, fromY, toX, toY);
-			
+
 			// Now count other way -- don't run off image though of course
 			var scale = 1.0;
 			var otherToX = fromX - (toX - fromX);
@@ -6337,7 +6337,7 @@ function Detector(image)
 				otherToX = qrcode.width - 1;
 			}
 			var otherToY = Math.floor (fromY - (toY - fromY) * scale);
-			
+
 			scale = 1.0;
 			if (otherToY < 0)
 			{
@@ -6350,13 +6350,13 @@ function Detector(image)
 				otherToY = qrcode.height - 1;
 			}
 			otherToX = Math.floor (fromX + (otherToX - fromX) * scale);
-			
+
 			result += this.sizeOfBlackWhiteBlackRun(fromX, fromY, otherToX, otherToY);
 			return result - 1.0; // -1 because we counted the middle pixel twice
 		}
-		
 
-	
+
+
 	this.calculateModuleSizeOneWay=function( pattern,  otherPattern)
 		{
 			var moduleSizeEst1 = this.sizeOfBlackWhiteBlackRunBothWays(Math.floor( pattern.X), Math.floor( pattern.Y), Math.floor( otherPattern.X), Math.floor(otherPattern.Y));
@@ -6374,7 +6374,7 @@ function Detector(image)
 			return (moduleSizeEst1 + moduleSizeEst2) / 14.0;
 		}
 
-	
+
 	this.calculateModuleSize=function( topLeft,  topRight,  bottomLeft)
 		{
 			// Take the average
@@ -6389,24 +6389,24 @@ function Detector(image)
 	}
 	this.computeDimension=function( topLeft,  topRight,  bottomLeft,  moduleSize)
 		{
-			
+
 			var tltrCentersDimension = Math.round(this.distance(topLeft, topRight) / moduleSize);
 			var tlblCentersDimension = Math.round(this.distance(topLeft, bottomLeft) / moduleSize);
 			var dimension = ((tltrCentersDimension + tlblCentersDimension) >> 1) + 7;
 			switch (dimension & 0x03)
 			{
-				
+
 				// mod 4
-				case 0: 
+				case 0:
 					dimension++;
 					break;
 					// 1? do nothing
-				
-				case 2: 
+
+				case 2:
 					dimension--;
 					break;
-				
-				case 3: 
+
+				case 3:
 					throw "Error";
 				}
 			return dimension;
@@ -6423,14 +6423,14 @@ function Detector(image)
 			{
 				throw "Error";
 			}
-			
+
 			var alignmentAreaTopY = Math.max(0, estAlignmentY - allowance);
 			var alignmentAreaBottomY = Math.min(qrcode.height - 1, estAlignmentY + allowance);
-			
+
 			var alignmentFinder = new AlignmentPatternFinder(this.image, alignmentAreaLeftX, alignmentAreaTopY, alignmentAreaRightX - alignmentAreaLeftX, alignmentAreaBottomY - alignmentAreaTopY, overallEstModuleSize, this.resultPointCallback);
 			return alignmentFinder.find();
 		}
-		
+
 	this.createTransform=function( topLeft,  topRight,  bottomLeft, alignmentPattern, dimension)
 		{
 			var dimMinusThree =  dimension - 3.5;
@@ -6451,26 +6451,26 @@ function Detector(image)
 				bottomRightY = (topRight.Y - topLeft.Y) + bottomLeft.Y;
 				sourceBottomRightX = sourceBottomRightY = dimMinusThree;
 			}
-			
+
 			var transform = PerspectiveTransform.quadrilateralToQuadrilateral(3.5, 3.5, dimMinusThree, 3.5, sourceBottomRightX, sourceBottomRightY, 3.5, dimMinusThree, topLeft.X, topLeft.Y, topRight.X, topRight.Y, bottomRightX, bottomRightY, bottomLeft.X, bottomLeft.Y);
-			
+
 			return transform;
-		}		
-	
+		}
+
 	this.sampleGrid=function( image,  transform,  dimension)
 		{
-			
+
 			var sampler = GridSampler;
 			return sampler.sampleGrid3(image, dimension, transform);
 		}
-	
+
 	this.processFinderPatternInfo = function( info)
 		{
-			
+
 			var topLeft = info.TopLeft;
 			var topRight = info.TopRight;
 			var bottomLeft = info.BottomLeft;
-			
+
 			var moduleSize = this.calculateModuleSize(topLeft, topRight, bottomLeft);
 			if (moduleSize < 1.0)
 			{
@@ -6479,22 +6479,22 @@ function Detector(image)
 			var dimension = this.computeDimension(topLeft, topRight, bottomLeft, moduleSize);
 			var provisionalVersion = Version.getProvisionalVersionForDimension(dimension);
 			var modulesBetweenFPCenters = provisionalVersion.DimensionForVersion - 7;
-			
+
 			var alignmentPattern = null;
 			// Anything above version 1 has an alignment pattern
 			if (provisionalVersion.AlignmentPatternCenters.length > 0)
 			{
-				
+
 				// Guess where a "bottom right" finder pattern would have been
 				var bottomRightX = topRight.X - topLeft.X + bottomLeft.X;
 				var bottomRightY = topRight.Y - topLeft.Y + bottomLeft.Y;
-				
+
 				// Estimate that alignment pattern is closer by 3 modules
 				// from "bottom right" to known top left location
 				var correctionToTopLeft = 1.0 - 3.0 /  modulesBetweenFPCenters;
 				var estAlignmentX = Math.floor (topLeft.X + correctionToTopLeft * (bottomRightX - topLeft.X));
 				var estAlignmentY = Math.floor (topLeft.Y + correctionToTopLeft * (bottomRightY - topLeft.Y));
-				
+
 				// Kind of arbitrary -- expand search radius before giving up
 				for (var i = 4; i <= 16; i <<= 1)
 				{
@@ -6510,11 +6510,11 @@ function Detector(image)
 				}
 				// If we didn't find alignment pattern... well try anyway without it
 			}
-			
+
 			var transform = this.createTransform(topLeft, topRight, bottomLeft, alignmentPattern, dimension);
-			
+
 			var bits = this.sampleGrid(this.image, transform, dimension);
-			
+
 			var points;
 			if (alignmentPattern == null)
 			{
@@ -6526,14 +6526,14 @@ function Detector(image)
 			}
 			return new DetectorResult(bits, points);
 		}
-		
 
-	
+
+
 	this.detect=function()
 	{
 		var info =  new FinderPatternFinder().findFinderPattern(this.image);
-			
-		return this.processFinderPatternInfo(info); 
+
+		return this.processFinderPatternInfo(info);
 	}
 }
 
@@ -6668,7 +6668,7 @@ function BitMatrix( width,  height)
 	this.bits = new Array(rowSize * height);
 	for(var i=0;i<this.bits.length;i++)
 		this.bits[i]=0;
-	
+
 	this.__defineGetter__("Width", function()
 	{
 		return this.width;
@@ -6685,7 +6685,7 @@ function BitMatrix( width,  height)
 		}
 		return this.width;
 	});
-	
+
 	this.get_Renamed=function( x,  y)
 		{
 			var offset = y * this.rowSize + (x >> 5);
@@ -6740,7 +6740,7 @@ function DataBlock(numDataCodewords,  codewords)
 {
 	this.numDataCodewords = numDataCodewords;
 	this.codewords = codewords;
-	
+
 	this.__defineGetter__("NumDataCodewords", function()
 	{
 		return this.numDataCodewords;
@@ -6749,20 +6749,20 @@ function DataBlock(numDataCodewords,  codewords)
 	{
 		return this.codewords;
 	});
-}	
-	
+}
+
 DataBlock.getDataBlocks=function(rawCodewords,  version,  ecLevel)
 {
-	
+
 	if (rawCodewords.length != version.TotalCodewords)
 	{
 		throw "ArgumentException";
 	}
-	
+
 	// Figure out the number and size of data blocks used by this version and
 	// error correction level
 	var ecBlocks = version.getECBlocksForLevel(ecLevel);
-	
+
 	// First count the total number of data blocks
 	var totalBlocks = 0;
 	var ecBlockArray = ecBlocks.getECBlocks();
@@ -6770,7 +6770,7 @@ DataBlock.getDataBlocks=function(rawCodewords,  version,  ecLevel)
 	{
 		totalBlocks += ecBlockArray[i].Count;
 	}
-	
+
 	// Now establish DataBlocks of the appropriate size and number of data codewords
 	var result = new Array(totalBlocks);
 	var numResultBlocks = 0;
@@ -6784,7 +6784,7 @@ DataBlock.getDataBlocks=function(rawCodewords,  version,  ecLevel)
 			result[numResultBlocks++] = new DataBlock(numDataCodewords, new Array(numBlockCodewords));
 		}
 	}
-	
+
 	// All blocks have the same amount of data, except that the last n
 	// (where n may be 0) have 1 more byte. Figure out where these start.
 	var shorterBlocksTotalCodewords = result[0].codewords.length;
@@ -6799,7 +6799,7 @@ DataBlock.getDataBlocks=function(rawCodewords,  version,  ecLevel)
 		longerBlocksStartAt--;
 	}
 	longerBlocksStartAt++;
-	
+
 	var shorterBlocksNumDataCodewords = shorterBlocksTotalCodewords - ecBlocks.ECCodewordsPerBlock;
 	// The last elements of result may be 1 element longer;
 	// first fill out as many elements as all of them have
@@ -6839,19 +6839,19 @@ function BitMatrixParser(bitMatrix)
 	this.bitMatrix = bitMatrix;
 	this.parsedVersion = null;
 	this.parsedFormatInfo = null;
-	
+
 	this.copyBit=function( i,  j,  versionBits)
 	{
 		return this.bitMatrix.get_Renamed(i, j)?(versionBits << 1) | 0x1:versionBits << 1;
 	}
-	
+
 	this.readFormatInformation=function()
 	{
 			if (this.parsedFormatInfo != null)
 			{
 				return this.parsedFormatInfo;
 			}
-			
+
 			// Read top-left format info bits
 			var formatInfoBits = 0;
 			for (var i = 0; i < 6; i++)
@@ -6867,13 +6867,13 @@ function BitMatrixParser(bitMatrix)
 			{
 				formatInfoBits = this.copyBit(8, j, formatInfoBits);
 			}
-			
+
 			this.parsedFormatInfo = FormatInformation.decodeFormatInformation(formatInfoBits);
 			if (this.parsedFormatInfo != null)
 			{
 				return this.parsedFormatInfo;
 			}
-			
+
 			// Hmm, failed. Try the top-right/bottom-left pattern
 			var dimension = this.bitMatrix.Dimension;
 			formatInfoBits = 0;
@@ -6886,30 +6886,30 @@ function BitMatrixParser(bitMatrix)
 			{
 				formatInfoBits = this.copyBit(8, j, formatInfoBits);
 			}
-			
+
 			this.parsedFormatInfo = FormatInformation.decodeFormatInformation(formatInfoBits);
 			if (this.parsedFormatInfo != null)
 			{
 				return this.parsedFormatInfo;
 			}
-			throw "Error readFormatInformation";	
+			throw "Error readFormatInformation";
 	}
 	this.readVersion=function()
 		{
-			
+
 			if (this.parsedVersion != null)
 			{
 				return this.parsedVersion;
 			}
-			
+
 			var dimension = this.bitMatrix.Dimension;
-			
+
 			var provisionalVersion = (dimension - 17) >> 2;
 			if (provisionalVersion <= 6)
 			{
 				return Version.getVersionForNumber(provisionalVersion);
 			}
-			
+
 			// Read top-right version info: 3 wide by 6 tall
 			var versionBits = 0;
 			var ijMin = dimension - 11;
@@ -6920,13 +6920,13 @@ function BitMatrixParser(bitMatrix)
 					versionBits = this.copyBit(i, j, versionBits);
 				}
 			}
-			
+
 			this.parsedVersion = Version.decodeVersionInformation(versionBits);
 			if (this.parsedVersion != null && this.parsedVersion.DimensionForVersion == dimension)
 			{
 				return this.parsedVersion;
 			}
-			
+
 			// Hmm, failed. Try bottom left: 6 wide by 3 tall
 			versionBits = 0;
 			for (var i = 5; i >= 0; i--)
@@ -6936,7 +6936,7 @@ function BitMatrixParser(bitMatrix)
 					versionBits = this.copyBit(i, j, versionBits);
 				}
 			}
-			
+
 			this.parsedVersion = Version.decodeVersionInformation(versionBits);
 			if (this.parsedVersion != null && this.parsedVersion.DimensionForVersion == dimension)
 			{
@@ -6946,18 +6946,18 @@ function BitMatrixParser(bitMatrix)
 		}
 	this.readCodewords=function()
 		{
-			
+
 			var formatInfo = this.readFormatInformation();
 			var version = this.readVersion();
-			
+
 			// Get the data mask for the format used in this QR Code. This will exclude
 			// some bits from reading as we wind through the bit matrix.
 			var dataMask = DataMask.forReference( formatInfo.DataMask);
 			var dimension = this.bitMatrix.Dimension;
 			dataMask.unmaskBitMatrix(this.bitMatrix, dimension);
-			
+
 			var functionPattern = version.buildFunctionPattern();
-			
+
 			var readingUp = true;
 			var result = new Array(version.TotalCodewords);
 			var resultOffset = 0;
@@ -7230,7 +7230,7 @@ function ReedSolomonDecoder(field)
 				received[position] = GF256.addOrSubtract(received[position], errorMagnitudes[i]);
 			}
 	}
-	
+
 	this.runEuclideanAlgorithm=function( a,  b,  R)
 		{
 			// Assume a's degree is >= b's
@@ -7240,14 +7240,14 @@ function ReedSolomonDecoder(field)
 				a = b;
 				b = temp;
 			}
-			
+
 			var rLast = a;
 			var r = b;
 			var sLast = this.field.One;
 			var s = this.field.Zero;
 			var tLast = this.field.Zero;
 			var t = this.field.One;
-			
+
 			// Run Euclidean algorithm until r's degree is less than R/2
 			while (r.Degree >= Math.floor(R / 2))
 			{
@@ -7257,7 +7257,7 @@ function ReedSolomonDecoder(field)
 				rLast = r;
 				sLast = s;
 				tLast = t;
-				
+
 				// Divide rLastLast by rLast, with quotient in q and remainder in r
 				if (rLast.Zero)
 				{
@@ -7276,17 +7276,17 @@ function ReedSolomonDecoder(field)
 					r = r.addOrSubtract(rLast.multiplyByMonomial(degreeDiff, scale));
 					//r.EXE();
 				}
-				
+
 				s = q.multiply1(sLast).addOrSubtract(sLastLast);
 				t = q.multiply1(tLast).addOrSubtract(tLastLast);
 			}
-			
+
 			var sigmaTildeAtZero = t.getCoefficient(0);
 			if (sigmaTildeAtZero == 0)
 			{
 				throw "ReedSolomonException sigmaTilde(0) was zero";
 			}
-			
+
 			var inverse = this.field.inverse(sigmaTildeAtZero);
 			var sigma = t.multiply2(inverse);
 			var omega = r.multiply2(inverse);
@@ -7376,7 +7376,7 @@ function GF256Poly(field,  coefficients)
 	{
 		this.coefficients = coefficients;
 	}
-	
+
 	this.__defineGetter__("Zero", function()
 	{
 		return this.coefficients[0] == 0;
@@ -7389,12 +7389,12 @@ function GF256Poly(field,  coefficients)
 	{
 		return this.coefficients;
 	});
-	
+
 	this.getCoefficient=function( degree)
 	{
 		return this.coefficients[this.coefficients.length - 1 - degree];
 	}
-	
+
 	this.evaluateAt=function( a)
 	{
 		if (a == 0)
@@ -7420,7 +7420,7 @@ function GF256Poly(field,  coefficients)
 		}
 		return result2;
 	}
-	
+
 	this.addOrSubtract=function( other)
 		{
 			if (this.field != other.field)
@@ -7435,7 +7435,7 @@ function GF256Poly(field,  coefficients)
 			{
 				return this;
 			}
-			
+
 			var smallerCoefficients = this.coefficients;
 			var largerCoefficients = other.coefficients;
 			if (smallerCoefficients.length > largerCoefficients.length)
@@ -7449,12 +7449,12 @@ function GF256Poly(field,  coefficients)
 			// Copy high-order terms only found in higher-degree polynomial's coefficients
 			//Array.Copy(largerCoefficients, 0, sumDiff, 0, lengthDiff);
 			for(var ci=0;ci<lengthDiff;ci++)sumDiff[ci]=largerCoefficients[ci];
-			
+
 			for (var i = lengthDiff; i < largerCoefficients.length; i++)
 			{
 				sumDiff[i] = GF256.addOrSubtract(smallerCoefficients[i - lengthDiff], largerCoefficients[i]);
 			}
-			
+
 			return new GF256Poly(field, sumDiff);
 	}
 	this.multiply1=function( other)
@@ -7529,13 +7529,13 @@ function GF256Poly(field,  coefficients)
 			{
 				throw "Divide by 0";
 			}
-			
+
 			var quotient = this.field.Zero;
 			var remainder = this;
-			
+
 			var denominatorLeadingTerm = other.getCoefficient(other.Degree);
 			var inverseDenominatorLeadingTerm = this.field.inverse(denominatorLeadingTerm);
-			
+
 			while (remainder.Degree >= other.Degree && !remainder.Zero)
 			{
 				var degreeDifference = remainder.Degree - other.Degree;
@@ -7545,7 +7545,7 @@ function GF256Poly(field,  coefficients)
 				quotient = quotient.addOrSubtract(iterationQuotient);
 				remainder = remainder.addOrSubtract(term);
 			}
-			
+
 			return new Array(quotient, remainder);
 		}
 }
@@ -7573,7 +7573,7 @@ function GF256( primitive)
 	this.zero = new GF256Poly(this, new Array(at0));
 	var at1=new Array(1);at1[0]=1;
 	this.one = new GF256Poly(this, new Array(at1));
-	
+
 	this.__defineGetter__("Zero", function()
 	{
 		return this.zero;
@@ -7632,7 +7632,7 @@ function GF256( primitive)
 				return a;
 			}
 			return this.expTable[(this.logTable[a] + this.logTable[b]) % 255];
-		}		
+		}
 }
 
 GF256.QR_CODE_FIELD = new GF256(0x011D);
@@ -7679,13 +7679,13 @@ Decoder.decode=function(bits)
 	var parser = new BitMatrixParser(bits);
 	var version = parser.readVersion();
 	var ecLevel = parser.readFormatInformation().ErrorCorrectionLevel;
-	
+
 	// Read codewords
 	var codewords = parser.readCodewords();
 
 	// Separate into data blocks
 	var dataBlocks = DataBlock.getDataBlocks(codewords, version, ecLevel);
-	
+
 	// Count total number of data bytes
 	var totalBytes = 0;
 	for (var i = 0; i < dataBlocks.length; i++)
@@ -7694,7 +7694,7 @@ Decoder.decode=function(bits)
 	}
 	var resultBytes = new Array(totalBytes);
 	var resultOffset = 0;
-	
+
 	// Error-correct and copy data blocks together into a stream of bytes
 	for (var j = 0; j < dataBlocks.length; j++)
 	{
@@ -7707,7 +7707,7 @@ Decoder.decode=function(bits)
 			resultBytes[resultOffset++] = codewordBytes[i];
 		}
 	}
-	
+
 	// Decode the contents of that stream of bytes
 	var reader = new QRCodeDataBlockReader(resultBytes, version.VersionNumber, ecLevel.Bits);
 	return reader;
@@ -7727,7 +7727,7 @@ qrcode.sizeOfDataLengthInfo =  [  [ 10, 9, 8, 8 ],  [ 12, 11, 16, 10 ],  [ 14, 1
 qrcode.callback = null;
 
 qrcode.decode = function(src){
-    
+
     if(arguments.length==0)
     {
         var canvas_qr = document.getElementById("qr-canvas");
@@ -7758,7 +7758,7 @@ qrcode.decode = function(src){
 
             canvas_qr.width = nwidth;
             canvas_qr.height = nheight;
-            
+
             context.drawImage(image, 0, 0, canvas_qr.width, canvas_qr.height );
             qrcode.width = canvas_qr.width;
             qrcode.height = canvas_qr.height;
@@ -7770,7 +7770,7 @@ qrcode.decode = function(src){
                     qrcode.callback(qrcode.result);
                 return;
             }
-            
+
             try
             {
                 qrcode.result = qrcode.process(context);
@@ -7825,12 +7825,12 @@ qrcode.decode_utf8 = function ( s )
 }
 
 qrcode.process = function(ctx){
-    
+
     var start = new Date().getTime();
 
     var image = qrcode.grayScaleToBitmap(qrcode.grayscale());
     //var image = qrcode.binarize(128);
-    
+
     if(qrcode.debug)
     {
         for (var y = 0; y < qrcode.height; y++)
@@ -7845,13 +7845,13 @@ qrcode.process = function(ctx){
         }
         ctx.putImageData(qrcode.imagedata, 0, 0);
     }
-    
+
     //var finderPatternInfo = new FinderPatternFinder().findFinderPattern(image);
-    
+
     var detector = new Detector(image);
 
     var qRCodeMatrix = detector.detect();
-    
+
     /*for (var y = 0; y < qRCodeMatrix.bits.Height; y++)
     {
         for (var x = 0; x < qRCodeMatrix.bits.Width; x++)
@@ -7864,7 +7864,7 @@ qrcode.process = function(ctx){
     }*/
     if(qrcode.debug)
         ctx.putImageData(qrcode.imagedata, 0, 0);
-    
+
     var reader = Decoder.decode(qRCodeMatrix.bits);
     var data = reader.DataByte;
     var str="";
@@ -7873,11 +7873,11 @@ qrcode.process = function(ctx){
         for(var j=0;j<data[i].length;j++)
             str+=String.fromCharCode(data[i][j]);
     }
-    
+
     var end = new Date().getTime();
     var time = end - start;
     console.log(time);
-    
+
     return qrcode.decode_utf8(str);
     //alert("Time:" + time + " Code: "+str);
 }
@@ -7901,7 +7901,7 @@ qrcode.binarize = function(th){
         for (var x = 0; x < qrcode.width; x++)
         {
             var gray = qrcode.getPixel(x, y);
-            
+
             ret[x+y*qrcode.width] = gray<=th?true:false;
         }
     }
@@ -7957,7 +7957,7 @@ qrcode.getMiddleBrightnessPerArea=function(image)
         //Console.out.println("");
     }
     //Console.out.println("");
-    
+
     return middle;
 }
 
@@ -7968,7 +7968,7 @@ qrcode.grayScaleToBitmap=function(grayScale)
     var areaWidth = Math.floor(qrcode.width / sqrtNumArea);
     var areaHeight = Math.floor(qrcode.height / sqrtNumArea);
     var bitmap = new Array(qrcode.height*qrcode.width);
-    
+
     for (var ay = 0; ay < sqrtNumArea; ay++)
     {
         for (var ax = 0; ax < sqrtNumArea; ax++)
@@ -7992,7 +7992,7 @@ qrcode.grayscale = function(){
         for (var x = 0; x < qrcode.width; x++)
         {
             var gray = qrcode.getPixel(x, y);
-            
+
             ret[x+y*qrcode.width] = gray;
         }
     }
@@ -8024,14 +8024,14 @@ var CENTER_QUORUM = 2;
 
 qrcode.orderBestPatterns=function(patterns)
 		{
-			
+
 			function distance( pattern1,  pattern2)
 			{
 				xDiff = pattern1.X - pattern2.X;
 				yDiff = pattern1.Y - pattern2.Y;
 				return  Math.sqrt( (xDiff * xDiff + yDiff * yDiff));
 			}
-			
+
 			/// <summary> Returns the z component of the cross product between vectors BC and BA.</summary>
 			function crossProductZ( pointA,  pointB,  pointC)
 			{
@@ -8040,12 +8040,12 @@ qrcode.orderBestPatterns=function(patterns)
 				return ((pointC.x - bX) * (pointA.y - bY)) - ((pointC.y - bY) * (pointA.x - bX));
 			}
 
-			
+
 			// Find distances between pattern centers
 			var zeroOneDistance = distance(patterns[0], patterns[1]);
 			var oneTwoDistance = distance(patterns[1], patterns[2]);
 			var zeroTwoDistance = distance(patterns[0], patterns[2]);
-			
+
 			var pointA, pointB, pointC;
 			// Assume one closest to other two is B; A and C will just be guesses at first
 			if (oneTwoDistance >= zeroOneDistance && oneTwoDistance >= zeroTwoDistance)
@@ -8066,7 +8066,7 @@ qrcode.orderBestPatterns=function(patterns)
 				pointA = patterns[0];
 				pointC = patterns[1];
 			}
-			
+
 			// Use cross product to figure out whether A and C are correct or flipped.
 			// This asks whether BC x BA has a positive z component, which is the arrangement
 			// we want for A, B, C. If it's negative, then we've got it flipped around and
@@ -8077,7 +8077,7 @@ qrcode.orderBestPatterns=function(patterns)
 				pointA = pointC;
 				pointC = temp;
 			}
-			
+
 			patterns[0] = pointA;
 			patterns[1] = pointB;
 			patterns[2] = pointC;
@@ -8090,11 +8090,11 @@ function FinderPattern(posX, posY,  estimatedModuleSize)
 	this.y=posY;
 	this.count = 1;
 	this.estimatedModuleSize = estimatedModuleSize;
-	
+
 	this.__defineGetter__("EstimatedModuleSize", function()
 	{
 		return this.estimatedModuleSize;
-	}); 
+	});
 	this.__defineGetter__("Count", function()
 	{
 		return this.count;
@@ -8120,7 +8120,7 @@ function FinderPattern(posX, posY,  estimatedModuleSize)
 			}
 			return false;
 		}
-	
+
 }
 
 function FinderPatternInfo(patternCenters)
@@ -8131,15 +8131,15 @@ function FinderPatternInfo(patternCenters)
 	this.__defineGetter__("BottomLeft", function()
 	{
 		return this.bottomLeft;
-	}); 
+	});
 	this.__defineGetter__("TopLeft", function()
 	{
 		return this.topLeft;
-	}); 
+	});
 	this.__defineGetter__("TopRight", function()
 	{
 		return this.topRight;
-	}); 
+	});
 }
 
 function FinderPatternFinder()
@@ -8149,7 +8149,7 @@ function FinderPatternFinder()
 	this.hasSkipped = false;
 	this.crossCheckStateCount = new Array(0,0,0,0,0);
 	this.resultPointCallback = null;
-	
+
 	this.__defineGetter__("CrossCheckStateCount", function()
 	{
 		this.crossCheckStateCount[0] = 0;
@@ -8158,8 +8158,8 @@ function FinderPatternFinder()
 		this.crossCheckStateCount[3] = 0;
 		this.crossCheckStateCount[4] = 0;
 		return this.crossCheckStateCount;
-	}); 
-	
+	});
+
 	this.foundPatternCross=function( stateCount)
 		{
 			var totalModuleSize = 0;
@@ -8188,10 +8188,10 @@ function FinderPatternFinder()
 	this.crossCheckVertical=function( startI,  centerJ,  maxCount,  originalStateCountTotal)
 		{
 			var image = this.image;
-			
+
 			var maxI = qrcode.height;
 			var stateCount = this.CrossCheckStateCount;
-			
+
 			// Start counting up from center
 			var i = startI;
 			while (i >= 0 && image[centerJ + i*qrcode.width])
@@ -8222,7 +8222,7 @@ function FinderPatternFinder()
 			{
 				return NaN;
 			}
-			
+
 			// Now also count down from center
 			i = startI + 1;
 			while (i < maxI && image[centerJ +i*qrcode.width])
@@ -8252,7 +8252,7 @@ function FinderPatternFinder()
 			{
 				return NaN;
 			}
-			
+
 			// If we found a finder-pattern-like section, but its size is more than 40% different than
 			// the original, assume it's a false positive
 			var stateCountTotal = stateCount[0] + stateCount[1] + stateCount[2] + stateCount[3] + stateCount[4];
@@ -8260,16 +8260,16 @@ function FinderPatternFinder()
 			{
 				return NaN;
 			}
-			
+
 			return this.foundPatternCross(stateCount)?this.centerFromEnd(stateCount, i):NaN;
 		}
 	this.crossCheckHorizontal=function( startJ,  centerI,  maxCount, originalStateCountTotal)
 		{
 			var image = this.image;
-			
+
 			var maxJ = qrcode.width;
 			var stateCount = this.CrossCheckStateCount;
-			
+
 			var j = startJ;
 			while (j >= 0 && image[j+ centerI*qrcode.width])
 			{
@@ -8298,7 +8298,7 @@ function FinderPatternFinder()
 			{
 				return NaN;
 			}
-			
+
 			j = startJ + 1;
 			while (j < maxJ && image[j+ centerI*qrcode.width])
 			{
@@ -8327,7 +8327,7 @@ function FinderPatternFinder()
 			{
 				return NaN;
 			}
-			
+
 			// If we found a finder-pattern-like section, but its size is significantly different than
 			// the original, assume it's a false positive
 			var stateCountTotal = stateCount[0] + stateCount[1] + stateCount[2] + stateCount[3] + stateCount[4];
@@ -8335,7 +8335,7 @@ function FinderPatternFinder()
 			{
 				return NaN;
 			}
-			
+
 			return this.foundPatternCross(stateCount)?this.centerFromEnd(stateCount, j):NaN;
 		}
 	this.handlePossibleCenter=function( stateCount,  i,  j)
@@ -8377,17 +8377,17 @@ function FinderPatternFinder()
 			}
 			return false;
 		}
-		
+
 	this.selectBestPatterns=function()
 		{
-			
+
 			var startSize = this.possibleCenters.length;
 			if (startSize < 3)
 			{
 				// Couldn't find enough finder patterns
 				throw "Couldn't find enough finder patterns";
 			}
-			
+
 			// Filter outlier possibilities whose module size is too different
 			if (startSize > 3)
 			{
@@ -8427,7 +8427,7 @@ function FinderPatternFinder()
 					}
 				}
 			}
-			
+
 			if (this.possibleCenters.length > 3)
 			{
 				// Throw away all but those first size candidate points we found.
@@ -8437,10 +8437,10 @@ function FinderPatternFinder()
 					return 0;
 				});
 			}
-			
+
 			return new Array( this.possibleCenters[0],  this.possibleCenters[1],  this.possibleCenters[2]);
 		}
-		
+
 	this.findRowSkip=function()
 		{
 			var max = this.possibleCenters.length;
@@ -8472,7 +8472,7 @@ function FinderPatternFinder()
 			}
 			return 0;
 		}
-	
+
 	this.haveMultiplyConfirmedCenters=function()
 		{
 			var confirmedCount = 0;
@@ -8504,7 +8504,7 @@ function FinderPatternFinder()
 			}
 			return totalDeviation <= 0.05 * totalModuleSize;
 		}
-		
+
 	this.findFinderPattern = function(image){
 		var tryHarder = false;
 		this.image=image;
@@ -8515,7 +8515,7 @@ function FinderPatternFinder()
 		{
 				iSkip = MIN_SKIP;
 		}
-		
+
 		var done = false;
 		var stateCount = new Array(5);
 		for (var i = iSkip - 1; i < maxI && !done; i += iSkip)
@@ -8570,7 +8570,7 @@ function FinderPatternFinder()
 											// and top of presumed third confirmed center
 											// but back up a bit to get a full chance of detecting
 											// it, entire width of center of finder pattern
-											
+
 											// Skip by rowSkip, but back off by stateCount[2] (size of last center
 											// of pattern we saw) to be conservative, and also back off by iSkip which
 											// is about to be re-added
@@ -8582,7 +8582,7 @@ function FinderPatternFinder()
 								else
 								{
 									// Advance to next black pixel
-									do 
+									do
 									{
 										j++;
 									}
@@ -8634,10 +8634,10 @@ function FinderPatternFinder()
 				}
 			}
 		}
-		
+
 		var patternInfo = this.selectBestPatterns();
 		qrcode.orderBestPatterns(patternInfo);
-		
+
 		return new FinderPatternInfo(patternInfo);
 	};
 }
@@ -8648,11 +8648,11 @@ function AlignmentPattern(posX, posY,  estimatedModuleSize)
 	this.y=posY;
 	this.count = 1;
 	this.estimatedModuleSize = estimatedModuleSize;
-	
+
 	this.__defineGetter__("EstimatedModuleSize", function()
 	{
 		return this.estimatedModuleSize;
-	}); 
+	});
 	this.__defineGetter__("Count", function()
 	{
 		return this.count;
@@ -8678,7 +8678,7 @@ function AlignmentPattern(posX, posY,  estimatedModuleSize)
 			}
 			return false;
 		}
-	
+
 }
 
 function AlignmentPatternFinder( image,  startX,  startY,  width,  height,  moduleSize,  resultPointCallback)
@@ -8692,7 +8692,7 @@ function AlignmentPatternFinder( image,  startX,  startY,  width,  height,  modu
 	this.moduleSize = moduleSize;
 	this.crossCheckStateCount = new Array(0,0,0);
 	this.resultPointCallback = resultPointCallback;
-	
+
 	this.centerFromEnd=function(stateCount,  end)
 		{
 			return  (end - stateCount[2]) - stateCount[1] / 2.0;
@@ -8714,13 +8714,13 @@ function AlignmentPatternFinder( image,  startX,  startY,  width,  height,  modu
 	this.crossCheckVertical=function( startI,  centerJ,  maxCount,  originalStateCountTotal)
 		{
 			var image = this.image;
-			
+
 			var maxI = qrcode.height;
 			var stateCount = this.crossCheckStateCount;
 			stateCount[0] = 0;
 			stateCount[1] = 0;
 			stateCount[2] = 0;
-			
+
 			// Start counting up from center
 			var i = startI;
 			while (i >= 0 && image[centerJ + i*qrcode.width] && stateCount[1] <= maxCount)
@@ -8742,7 +8742,7 @@ function AlignmentPatternFinder( image,  startX,  startY,  width,  height,  modu
 			{
 				return NaN;
 			}
-			
+
 			// Now also count down from center
 			i = startI + 1;
 			while (i < maxI && image[centerJ + i*qrcode.width] && stateCount[1] <= maxCount)
@@ -8763,16 +8763,16 @@ function AlignmentPatternFinder( image,  startX,  startY,  width,  height,  modu
 			{
 				return NaN;
 			}
-			
+
 			var stateCountTotal = stateCount[0] + stateCount[1] + stateCount[2];
 			if (5 * Math.abs(stateCountTotal - originalStateCountTotal) >= 2 * originalStateCountTotal)
 			{
 				return NaN;
 			}
-			
+
 			return this.foundPatternCross(stateCount)?this.centerFromEnd(stateCount, i):NaN;
 		}
-		
+
 	this.handlePossibleCenter=function( stateCount,  i,  j)
 		{
 			var stateCountTotal = stateCount[0] + stateCount[1] + stateCount[2];
@@ -8801,7 +8801,7 @@ function AlignmentPatternFinder( image,  startX,  startY,  width,  height,  modu
 			}
 			return null;
 		}
-		
+
 	this.find = function()
 	{
 			var startX = this.startX;
@@ -8884,17 +8884,17 @@ function AlignmentPatternFinder( image,  startX,  startY,  width,  height,  modu
 					}
 				}
 			}
-			
+
 			// Hmm, nothing we saw was observed and confirmed twice. If we had
 			// any guess at all, return it.
 			if (!(this.possibleCenters.length == 0))
 			{
 				return  this.possibleCenters[0];
 			}
-			
+
 			throw "Couldn't find enough alignment patterns";
 		}
-	
+
 }
 
 function QRCodeDataBlockReader(blocks,  version,  numErrorCorrectionCode)
@@ -8910,9 +8910,9 @@ function QRCodeDataBlockReader(blocks,  version,  numErrorCorrectionCode)
 		this.dataLengthMode = 1;
 	else if (version >= 27 && version <= 40)
 		this.dataLengthMode = 2;
-		
+
 	this.getNextBits = function( numBits)
-		{			
+		{
 			var bits = 0;
 			if (numBits < this.bitPointer + 1)
 			{
@@ -8923,7 +8923,7 @@ function QRCodeDataBlockReader(blocks,  version,  numErrorCorrectionCode)
 					mask += (1 << i);
 				}
 				mask <<= (this.bitPointer - numBits + 1);
-				
+
 				bits = (this.blocks[this.blockPointer] & mask) >> (this.bitPointer - numBits + 1);
 				this.bitPointer -= numBits;
 				return bits;
@@ -8939,7 +8939,7 @@ function QRCodeDataBlockReader(blocks,  version,  numErrorCorrectionCode)
 				bits = (this.blocks[this.blockPointer] & mask1) << (numBits - (this.bitPointer + 1));
                 this.blockPointer++;
 				bits += ((this.blocks[this.blockPointer]) >> (8 - (numBits - (this.bitPointer + 1))));
-				
+
 				this.bitPointer = this.bitPointer - numBits % 8;
 				if (this.bitPointer < 0)
 				{
@@ -8954,24 +8954,24 @@ function QRCodeDataBlockReader(blocks,  version,  numErrorCorrectionCode)
 				var mask3 = 0; // mask of 3rd block
 				//bitPointer + 1 : number of bits of the 1st block
 				//8 : number of the 2nd block (note that use already 8bits because next word uses 3 data blocks)
-				//numBits - (bitPointer + 1 + 8) : number of bits of the 3rd block 
+				//numBits - (bitPointer + 1 + 8) : number of bits of the 3rd block
 				for (var i = 0; i < this.bitPointer + 1; i++)
 				{
 					mask1 += (1 << i);
 				}
 				var bitsFirstBlock = (this.blocks[this.blockPointer] & mask1) << (numBits - (this.bitPointer + 1));
 				this.blockPointer++;
-				
+
 				var bitsSecondBlock = this.blocks[this.blockPointer] << (numBits - (this.bitPointer + 1 + 8));
 				this.blockPointer++;
-				
+
 				for (var i = 0; i < numBits - (this.bitPointer + 1 + 8); i++)
 				{
 					mask3 += (1 << i);
 				}
 				mask3 <<= 8 - (numBits - (this.bitPointer + 1 + 8));
 				var bitsThirdBlock = (this.blocks[this.blockPointer] & mask3) >> (8 - (numBits - (this.bitPointer + 1 + 8)));
-				
+
 				bits = bitsFirstBlock + bitsSecondBlock + bitsThirdBlock;
 				this.bitPointer = this.bitPointer - (numBits - 8) % 8;
 				if (this.bitPointer < 0)
@@ -9001,7 +9001,7 @@ function QRCodeDataBlockReader(blocks,  version,  numErrorCorrectionCode)
 					break;
 				index++;
 			}
-			
+
 			return this.getNextBits(qrcode.sizeOfDataLengthInfo[this.dataLengthMode][index]);
 		}
 	this.getRomanAndFigureString=function( dataLength)
@@ -9010,7 +9010,7 @@ function QRCodeDataBlockReader(blocks,  version,  numErrorCorrectionCode)
 			var intData = 0;
 			var strData = "";
 			var tableRomanAndFigure = new Array('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', ' ', unescape('%24'), '%', '*', '+', '-', '.', '/', ':');
-			do 
+			do
 			{
 				if (length > 1)
 				{
@@ -9029,7 +9029,7 @@ function QRCodeDataBlockReader(blocks,  version,  numErrorCorrectionCode)
 				}
 			}
 			while (length > 0);
-			
+
 			return strData;
 		}
 	this.getFigureString=function( dataLength)
@@ -9037,7 +9037,7 @@ function QRCodeDataBlockReader(blocks,  version,  numErrorCorrectionCode)
 			var length = dataLength;
 			var intData = 0;
 			var strData = "";
-			do 
+			do
 			{
 				if (length >= 3)
 				{
@@ -9063,7 +9063,7 @@ function QRCodeDataBlockReader(blocks,  version,  numErrorCorrectionCode)
 				strData += intData;
 			}
 			while (length > 0);
-			
+
 			return strData;
 		}
 	this.get8bitByteArray=function( dataLength)
@@ -9071,8 +9071,8 @@ function QRCodeDataBlockReader(blocks,  version,  numErrorCorrectionCode)
 			var length = dataLength;
 			var intData = 0;
 			var output = new Array();
-			
-			do 
+
+			do
 			{
 				intData = this.getNextBits(8);
 				output.push( intData);
@@ -9086,12 +9086,12 @@ function QRCodeDataBlockReader(blocks,  version,  numErrorCorrectionCode)
 			var length = dataLength;
 			var intData = 0;
 			var unicodeString = "";
-			do 
+			do
 			{
 				intData = getNextBits(13);
 				var lowerByte = intData % 0xC0;
 				var higherByte = intData / 0xC0;
-				
+
 				var tempWord = (higherByte << 8) + lowerByte;
 				var shiftjisWord = 0;
 				if (tempWord + 0x8140 <= 0x9FFC)
@@ -9104,7 +9104,7 @@ function QRCodeDataBlockReader(blocks,  version,  numErrorCorrectionCode)
 					// between E040 - EBBF on Shift_JIS character set
 					shiftjisWord = tempWord + 0xC140;
 				}
-				
+
 				//var tempByte = new Array(0,0);
 				//tempByte[0] = (sbyte) (shiftjisWord >> 8);
 				//tempByte[1] = (sbyte) (shiftjisWord & 0xFF);
@@ -9113,8 +9113,8 @@ function QRCodeDataBlockReader(blocks,  version,  numErrorCorrectionCode)
 				length--;
 			}
 			while (length > 0);
-			
-			
+
+
 			return unicodeString;
 		}
 
@@ -9125,7 +9125,7 @@ function QRCodeDataBlockReader(blocks,  version,  numErrorCorrectionCode)
 	    var MODE_ROMAN_AND_NUMBER = 2;
 	    var MODE_8BIT_BYTE = 4;
 	    var MODE_KANJI = 8;
-		do 
+		do
 					{
 						var mode = this.NextMode();
 						//canvas.println("mode: " + mode);
@@ -9152,8 +9152,8 @@ function QRCodeDataBlockReader(blocks,  version,  numErrorCorrectionCode)
 						//canvas.println("length: " + dataLength);
 						switch (mode)
 						{
-							
-							case MODE_NUMBER: 
+
+							case MODE_NUMBER:
 								//canvas.println("Mode: Figure");
 								var temp_str = this.getFigureString(dataLength);
 								var ta = new Array(temp_str.length);
@@ -9161,8 +9161,8 @@ function QRCodeDataBlockReader(blocks,  version,  numErrorCorrectionCode)
 									ta[j]=temp_str.charCodeAt(j);
 								output.push(ta);
 								break;
-							
-							case MODE_ROMAN_AND_NUMBER: 
+
+							case MODE_ROMAN_AND_NUMBER:
 								//canvas.println("Mode: Roman&Figure");
 								var temp_str = this.getRomanAndFigureString(dataLength);
 								var ta = new Array(temp_str.length);
@@ -9171,16 +9171,16 @@ function QRCodeDataBlockReader(blocks,  version,  numErrorCorrectionCode)
 								output.push(ta );
 								//output.Write(SystemUtils.ToByteArray(temp_sbyteArray2), 0, temp_sbyteArray2.Length);
 								break;
-							
-							case MODE_8BIT_BYTE: 
+
+							case MODE_8BIT_BYTE:
 								//canvas.println("Mode: 8bit Byte");
 								//sbyte[] temp_sbyteArray3;
 								var temp_sbyteArray3 = this.get8bitByteArray(dataLength);
 								output.push(temp_sbyteArray3);
 								//output.Write(SystemUtils.ToByteArray(temp_sbyteArray3), 0, temp_sbyteArray3.Length);
 								break;
-							
-							case MODE_KANJI: 
+
+							case MODE_KANJI:
 								//canvas.println("Mode: Kanji");
 								//sbyte[] temp_sbyteArray4;
 								//temp_sbyteArray4 = SystemUtils.ToSByteArray(SystemUtils.ToByteArray(getKanjiString(dataLength)));
@@ -9189,7 +9189,7 @@ function QRCodeDataBlockReader(blocks,  version,  numErrorCorrectionCode)
 								output.push(temp_str);
 								break;
 							}
-						//			
+						//
 						//canvas.println("DataLength: " + dataLength);
 						//Console.out.println(dataString);
 					}
@@ -9250,7 +9250,7 @@ function QRCodeScanner(width, height, container, success, error) {
 			_video = document.getElementById(_id_video);
 
 			navigator.getUserMedia(
-				{video: true}, 
+				{video: true},
 				function(stream) {
 					_stream = stream;
 					_video.src = window.URL.createObjectURL(stream) || stream;
@@ -9259,7 +9259,7 @@ function QRCodeScanner(width, height, container, success, error) {
 						canvasInit();
 						_interval = setInterval(captureToCanvas, 500);
 					}, 250); // Needed to get videoWidth/videoHeight
-				}, 
+				},
 				function(error) {
 					_container.innerHTML = '';
 					_video = null;
@@ -9755,7 +9755,7 @@ h1 { margin: 0px; height: 91px; }
 
             <h3 id="securitystep0title" class="i18n">Step 0. Follow the security checklist recommendation</h3>
             <p id="securitystep0" class="i18n">
-              First step is to <strong>download</strong> this website from <a href="https://github.com/MichaelMure/WalletGenerator.net/archive/master.zip">Github</a> and open the index.html file directly from your computer. It's just too easy to sneak some evil code in the 6000+ lines of javascript to leak your private key, and you don't want to see your fund stolen. Code version control make it much easier to cross-check what actually run. For extra security, <strong>unplug your Internet access</strong> while generating your wallet.
+              First step is to <strong>download</strong> this website from Github</a> and open the index.html file directly from your computer. It's just too easy to sneak some evil code in the 6000+ lines of javascript to leak your private key, and you don't want to see your fund stolen. Code version control make it much easier to cross-check what actually run. For extra security, <strong>unplug your Internet access</strong> while generating your wallet.
             </p>
             <h3 id="securitystep1title" class="i18n">Step 1. Generate new address</h3>
             <p id="securitystep1" class="i18n">
@@ -9785,7 +9785,7 @@ h1 { margin: 0px; height: 91px; }
             </p>
             <h3 id="securitystep7title" class="i18n">Consider supporting us</h3>
             <p id="securitystep7" class="i18n">
-              This service is free and will stay free, without advertising or tracking of any sort. Please consider <a href="#" onclick="ninja.tabSwitch(document.getElementById('donate'));">making a donation</a> to support us and the people that add support for new currencies.
+              This service is free and will stay free, without advertising or tracking of any sort.
             </p>
 
           </div>
@@ -9851,7 +9851,6 @@ Walletgenerator.net use the same security measures as the original project. All-
 
           <h3 class="faqQuestion"><a class="faqLink" onclick="ninja.toggleFaqQuestion('faqQuestion7');">&#8226; Can you add support for cryptocurrency XYZ ?</a></h3>
           <p class="faqAnswer" id="faqQuestion7">
-            Absolutely ! To help us do that, you can <a href="https://docs.google.com/forms/d/1nPIvukVWxlaveUPEUAEhGKwvEuwJiPSgs5zc5LhDVpk/viewform">fill this  form</a>. But keep in mind that there is some currency that we cannot support. If the developers made some change in the address format, we won’t hack the crypto core of the project and take the risk to tamper the security of the others currencies.
             You can also implement the support yourself by following this <a href="https://github.com/MichaelMure/WalletGenerator.net/wiki/How-to-add-a-new-currency">non-developer How-To</a>
           </p>
 
@@ -9862,7 +9861,7 @@ Walletgenerator.net use the same security measures as the original project. All-
 
           <h3 class="faqQuestion"><a class="faqLink" onclick="ninja.toggleFaqQuestion('faqQuestion9');">&#8226; I found a bug, what shall I do ?</a></h3>
           <p class="faqAnswer" id="faqQuestion9">
-            You can report bugs using GitHub. You can also contact us using our Twitter account (<a href="http://twitter.com/WalletGenerator" target="_blank">@WalletGenerator</a>). Just try to explain clearly what is wrong and we will try to fix the bug as soon as possible.
+            You can report bugs using GitHub. You can also contact us using our Twitter account (<a href="http://twitter.com/Domocoin" target="_blank">@Domocoin</a>). Just try to explain clearly what is wrong and we will try to fix the bug as soon as possible.
           </p>
 
           <h3 class="faqQuestion"><a class="faqLink" onclick="ninja.toggleFaqQuestion('faqQuestion10');">&#8226; Who are you ?</a></h3>
@@ -10065,289 +10064,6 @@ Walletgenerator.net use the same security measures as the original project. All-
     <div id="changelog">
       <hr/>
       <h3>Release notes</h3>
-      <p>
-      01.2018 --
-        <ul>
-          <li>Add support for multi-prefix currencies (like ZCash). Contribution from terryxsq.</li>
-          <li>Fix Espers configuration. Contribution from ctgiant.</li>
-          <li>Update Espers logo. Contribution from nazarsh.</li>
-          <li>Add support for Dimecoin. Contribution from hanoncs.</li>
-          <li>Add support for LBRY Credits. Contribution from todd1251.</li>
-          <li>Add support for AGAcoin. Contribution from vx28643.</li>
-          <li>Add support for PacCOin. Contribution from al-mac.</li>
-          <li>Add support for HFRcoin. Contribution from hfrcoin.</li>
-          <li>Add support for CampusCoin. Contribution from campuscoindev.</li>
-          <li>Add support for Bitcore, CopperCoin, Ember, KittehCoin, NYC, Peercoin, PiggyCoin. Contribution from jdspringer.</li>
-          <li>Add support for AXE. Contribution from charlesrocket.</li>
-          <li>Add support for ROIcoin. Contribution from DisasterFaster.</li>
-          <li>Add support for ZCash. Contribution from terryxsq.</li>
-          <li>Add support for Yenten. Contribution from WorldBot.</li>
-          <li>Add support for NEETCOIN. Contribution from rmdfwqclmrkcvpbe.</li>
-          <li>Add support for Garlicoin.</li>
-        </ul>
-      <p>
-      12.2017 --
-        <ul>
-          <li>Update Vertcoin to new wallet format.</li>
-          <li>Update Vertcoin background graphics.</li>
-          <li>Update Bitcoin Cash logo.</li>
-        </ul>
-      <p>
-      12.2017 --
-        <ul>
-          <li>New translation in portugese ! Contribution from Gabriel Barreiro.</li>
-          <li>New translation in polish ! Contribution from Piotr Gerus.</li>
-          <li>New partial translation in chinese ! Contribution from Frank Ou.</li>
-          <li>Fix Emercoin support. Contribution from vx28643.</li>
-          <li>Add support for Stratis and NavCoin. Contribution from Sean Auriti.</li>
-          <li>Add support for Flurbo. Contribution from Flurbos.</li>
-          <li>Add support for BitcoinGold. Contribution from F3de81.</li>
-          <li>Add support for XP. Contribution from Jason Brink.</li>
-          <li>Add support for ROI. Contribution from DisasterFaster.</li>
-          <li>Add support for BolivarCoin. Contribution from Elpidio Moreno.</li>
-          <li>Add support for TrezarCoin, contribution from fenrisl.</li>
-          <li>Add support for BiblePay. Contribution from John Doer.</li>
-          <li>Add support for ColossusCoinXt. Contribution from Дмитрий Брега.</li>
-          <li>Add support for HOdlcoin. Contribution from R4FKEN.</li>
-          <li>Add support for BitConnect. Contribution from ExtendLord.</li>
-          <li>Add support for Nyancoin. Contribution from jwflame.</li>
-          <li>Add support for BitZeny. Contribution from rmdfwqclmrkcvpbe.</li>
-          <li>Add support for Alqo, Copico and DNotes. Contribution from drewrothstein.</li>
-          <li>Add support for Blocknet. Contribution from mthf.</li>
-          <li>Add support for BoxyCoin. Contribution from BoxyCoin team.</li>
-          <li>Add support for VergeCoin. Contribution from Graham Pratt.</li>
-          <li>Add support for KHcoin. Contribution from In Mean.</li>
-          <li>Remove support for HTML5Coin and add support for HTMLCoin. Contribution from bonchien.</li>
-        </ul>
-      <p>
-      10.2017 --
-        <ul>
-          <li>New translation in Dutch ! Contribution from MadnessJax.</li>
-          <li>New translation in German ! Contribution from fflo.</li>
-          <li>New translation in italian ! Contribution from F3de81.</li>
-          <li>New partial translation in Turkish ! Contribution from snipeTR.</li>
-          <li>Add support for WACoins. Contribution from WACoinsTeam.</li>
-          <li>Add support forNeedleCoin. Contribution from F3de81.</li>
-          <li>Add support for Rupaya. Contribution from rupaya-project.</li>
-          <li>Add support for Particl. Contribution from dasource.</li>
-          <li>Add support for Madbytecoin. Contribution from mvidberg.</li>
-          <li>Add support for CryptoWisdomCoin. Contribution from mvidberg.</li>
-          <li>Add support for Terracoin. Contribution from caique39.</li>
-          <li>Add support for SixEleven. Contribution from fflo.</li>
-          <li>Update Syscoin to new wallet format. Contribution from donredhorse.</li>
-          <li>Update MonetaryUnit to new wallet format. Contribution from BBoBBG.</li>
-          <li>Improved Chaincoin graphics. Contribution from suprnurd.</li>
-        </ul>
-      <p>
-      09.2017 --
-        <ul>
-          <li>New translation in Ukrainian ! Contribution from Dmytro.</li>
-          <li>Add support for Bitcoin Cash.</li>
-          <li>Add support for C2Coin. Contribution from Chris.</li>
-          <li>Add support for frazcoin. Contribution from frazcoin.</li>
-          <li>Add support for Condensate. Contribution from OBAVi.</li>
-          <li>Add support for pinkcoin. Contribution from Christopher Siminski.</li>
-          <li>Add support for innox. Contribution from Dave</li>
-          <li>Add support for electra. Contribution from bob van egeraat.</li>
-          <li>Add support for ChainCoin. Contribution from brakmic.</li>
-          <li>Add support for prospercoin classic. Contribution from inmean.</li>
-          <li>Add support for Cagecoin. Contribution from knkrth.</li>
-          <li>Add support for deeponion. Contribution from deeponion.</li>
-          <li>Add support for Florin. Contribution from bitspill.</li>
-          <li>Add support for SmileyCoin. Contribution from fridasnaedis.</li>
-          <li>Add support for Cryptonite. Contribution from tnotm.</li>
-          <li>Add support for 2Give, Fedoracoin and Qubitcoin. Contribution from jemekite.</li>
-          <li>Add support for Versioncoin. Contribution from CryptoRagazzo.</li>
-          <li>Add support fpr PIVX and Testnet PIVX. Contribution from Fuzzbawls.</li>
-          <li>Add support for lomocoin. Contribution from liuji.</li>
-          <li>Add support for SwagBucks. Contribution from pinkmagicdev.</li>
-        </ul>
-      <p>
-      01.2017 --
-        <ul>
-          <li>Add support for Espers. Contribution from ctgiant.</li>
-          <li>Add support for Vcash, Dogecoin testnet and BitSynq. Contribution from tloriato.</li>
-          <li>Add support for Deutsche eMark. Contribution from xBlackEye.</li>
-          <li>Add support for MintCoin. Contribution from Fuzzbawls.</li>
-          <li>Add support for IncaKoin. Contribution from WorldBot.</li>
-          <li>Add support for Aquariuscoin, Lanacoin, Tajcoin and Nevacoin. Contribution from cryptosi.</li>
-          <li>Add support for DigiByte. Contribution from Maurice van Beurden.</li>
-          <li>Add support for Emerald. contribution from Paraskewas Zormbalas.</li>
-        </ul>
-      <p>
-      05.2016 --
-        <ul>
-          <li>Add support for ParkByte. Contribution from ParkByte.</li>
-          <li>Add support for BlackJack. Contribution from BlackJackDev.</li>
-          <li>Add support for SecKCoin. Contribution from hevsnt.</li>
-          <li>Add support for CashCoin. Contribution from BigDig.</li>
-          <li>Add support for iCash. Contribution from Alexander Pochtov.</li>
-        </ul>
-      02.2016 --
-        <ul>
-          <li>Add support for TransferCoin. Contribution from Stoner19.</li>
-          <li>Add support for BitcoinDark and Spreadcoin. Contribution from vx28643.</li>
-          <li>Rename Guldencoin to Gulden. Contribution from mjmacleod.</li>
-        </ul>
-      <p>
-      11.2015 --
-        <ul>
-          <li>Add support for Neoscoin, Rubycoin, Influxcoin and Hyperstake. Contribution from Stoner19.</li>
-        </ul>
-      <p>
-      10.2015 --
-        <ul>
-          <li>Add support for SibCoin. Contribution from testzcrypto.</li>
-          <li>Replace Gridcoin with GridcoinResearch. Contribution from esspam.</li>
-          <li>Add support for CryptoClub. Contribution from cryptoclubber.</li>
-          <li>Add support for Capricoin. contribution from Jackie Love4u.</li>
-          <li>Add support for CryptoBullion, contribution from John Sacco.</li>
-          <li>Update FuelCoin logo. contribution from Jackie Love4u.</li>
-          <li>Add support for MartexCoin. contribution from MartexCoin.</li>
-          <li>Add support for GabenCoin. contribution from Jan Visser.</li>
-        </ul>
-      <p>
-      08.2015 --
-        <ul>
-          <li>Add support for masterdoge. Contribution from koad.</li>
-          <li>New translation in Spanish ! Contribution from PrAeToRiAn.</li>
-          <li>Improved Russian translation. Contribution from UdjinM6.</li>
-          <li>Fixed Fujicoin address generation. Contribution from Fujicoin.</li>
-        </ul>
-      <p>
-      07.2015 --
-        <ul>
-          <li>Add support for Animecoin, EnergyCoin and USDe. Contribution from TestZ.</li>
-          <li>Add support for LiteDoge, Pesetacoin, Syscoin and Viacoin. Contribution from Puppy Firelyte.</li>
-        </ul>
-      <p>
-      05.2015 --
-        <ul>
-          <li>Add support for Emercoin. Contribution from vx28643.</li>
-        </ul>
-      <p>
-      05.2015 --
-        <ul>
-          <li>New translation in russian ! Contribution from UdjinM6.</li>
-          <li>Darkcoin rebranded as Dash. Contribution from UdjinM6.</li>
-          <li>Add support for Cryptoescudo, Fujicoin and Sambacoin. Contribution from Marcdnd.</li>
-        </ul>
-      <p>
-      04.2015 --
-        <ul>
-          <li>Add support for Omnicoin. Contribution from MeshCollider.</li>
-          <li>Add support for Canada eCoin. Contribution from koad</li>
-        </ul>
-      <p>
-      03.2015 --
-        <ul>
-          <li>Add support for PhoenixCoin. Contribution from rekkitcwts.</li>
-        </ul>
-      <p>
-      02.2015 --
-        <ul>
-          <li>Add support for DogecoinDark, Riecoin, and WorldCoin. Contribution from rekkitcwts.</li>
-        </ul>
-      <p>
-      02.2015 --
-        <ul>
-          <li>Add support for Quark, CannabisCoin and SongCoin. Contribution from rekkitcwts.</li>
-        </ul>
-      <p>
-      12.2014 --
-      <ul>
-        <li>Add support for DeafDollars, MobiusCoin, BunnyCoin, Ocupy, FUDcoin, StealthCoin, Rimbit, Paycoin and MonetaryUnit.</li>
-      </ul>
-      <p>
-      11.2014 --
-        <ul>
-          <li>Add support for IridiumCoin, Latium, Magicoin, Nubits, TittieCoin, WankCoin, HamRadioCoin, ImperiumCoin, IncognitoCoin and Mooncoin</li>
-          <li>HTTPS support is here !</li>
-        </ul>
-      <p>
-      10.2014 --
-        <ul>
-          <li>Add support for Jumbucks. Contribution from Julian Yap.</li>
-        </ul>
-      <p>
-      10.2014 --
-        <ul>
-          <li>Add support for HTML5Coin, W2Coin, PandaCoin, ACoin, Fibre, and Titcoin.</li>
-          <li>Remove support fo HTMLCoin</li>
-        </ul>
-      <p>
-      09.2014 --
-        <ul>
-          <li>Add support for eKrona, Mazacoin, iXcoin, eGulden and Potcoin.</li>
-        </ul>
-      <p>
-      08.2014 --
-        <ul>
-          <li>Enter your own private key to print a paper wallet, and BIP38 encrypt them as well !</li>
-          <li>Add support for Apexcoin, Cassubian Detk, Freicoin, Judgecoin, Myriadcoin and Onyxcoin.</li>
-        </ul>
-      <p>
-      07.2014 --
-        <ul>
-          <li>Add support for Unobtanium, WeAreSatoshi Coin, Zetacoin, Vikingcoin, Guldencoin, PHCoin and Fuelcoin.</li>
-        </ul>
-      <p>
-      07.2014 --
-        <ul>
-          <li>Fix a vulnerability that lead to the generation of less random wallet that normal on old browser. If you use a browser older than the mentionned version/date, we advise you to regenerate your wallets.
-            <ul>
-              <li>Firefox 21: may 2013</li>
-              <li>Chrome 11: april 2011</li>
-              <li>IE 11: october 2013</li>
-              <li>Opera 14: july 2013</li>
-              <li>Safari 3.1: march 2008</li>
-            </ul>
-          </li>
-          <li>Added a Frequently Asked Question section on the main page</li>
-        </ul>
-      <p>
-      06.2014 --
-        <ul>
-          <li>Add support for GlobalBoost, Fluttercoin, Guncoin and Birdcoin.</li>
-        </ul>
-      <p>
-      06.2014 --
-        <ul>
-          <li>Add support for Monocle, TreasureHuntCoin and GoodCoin.</li>
-        </ul>
-      <p>
-      05.2014 --
-        <ul>
-          <li>Add support for Gridcoin and Fastcoin.</li>
-        </ul>
-      <p>
-      05.2014 --
-        <ul>
-          <li>Add support for 11 new currencies (42coin, Alphacoin, Anoncoin, Corgicoin, Darkcoin, Devcoin, Digitalcoin, HTMLCoin, Magic Internet Money, Megacoin and Novacoin).</li>
-          <li>Ability to scan a QRCode with your webcam to check the wallet details.</li>
-          <li>New design for Peercoin and Dogecoin paperwallets, such wow.</li>
-        </ul>
-      <p>
-      04.2014 --
-        <ul>
-          <li>Bring back the wallet details to decrypt Bip38 encoded wallet.</li>
-          <li>Add a button to skip the seeding. Don't skip if you intend to use the generated wallet !</li>
-          <li>Fix a display bug for a Bip38 encoded paper wallet.</li>
-        </ul>
-      <p>
-      04.2014 --
-        <ul>
-          <li>Add support for Blackcoin and Primecoin</li>
-          <li>Add direct access to a currency. Example: <a href="http://walletgenerator.net/?currency=Vertcoin">http://walletgenerator.net/?currency=Vertcoin</a></li>
-        </ul>
-      <p>
-      04.2014 --
-        <ul>
-          <li>Multi-currency support with 13 different currencies</li>
-          <li>Original design for the paper wallet</li>
-          <li>Improved design of the website</li>
-          <li>Security checklist and more user-friendly explanations</li>
-        </ul>
     </div>
       </div>
     </div>
@@ -10355,10 +10071,10 @@ Walletgenerator.net use the same security measures as the original project. All-
     <div id="footer" class="footer">
       <div>
         <span class="item"><a id="footersupport" href="#" onclick="ninja.tabSwitch(document.getElementById('donate'));" class="i18n">Support WalletGenerator.net</a></span>
-        <span class="item"><a href="https://github.com/MichaelMure/WalletGenerator.net" target="_blank" id="footerlabelgithub" class="i18n">Download (GitHub Repository)</a></span>
+        <span class="item"><a href="https://domoproject.me" target="_blank" id="footerlabelgithub" class="i18n">Visit DOMO Homepage</a></span>
       </div>
       <div class="copyright">
-        <span id="footerlabelcopyright1">Copyright WalletGenerator.net.</span>
+        <span id="footerlabelcopyright1">Copyright DOMO & WalletGenerator.net</span>
         <span id="footerlabelcopyright2" class="i18n">JavaScript copyrights are included in the source.</span>
         <span id="footerlabelnowarranty" class="i18n">No warranty.</span>
       </div>
@@ -10533,211 +10249,9 @@ janin.currency = {
 
 janin.currencies = [
     //                              name, networkVersion, privateKeyPrefix, WIF_Start, CWIF_Start, donate
-    janin.currency.createCurrency ("2GIVE",               0x27, 0xa7, "6",    "R"    , "Givewmf4yv8uuHZG6Eb7sm17fJS2Trf6U8"),
-    janin.currency.createCurrency ("42coin",              0x08, 0x88, "5",    "M"    , "4Fs42jYtLYrUMfKEXc6arojuhRsnYnerxN"),
-    janin.currency.createCurrency ("Acoin",               0x17, 0xe6, "8",    "b"    , "AJvChtExuvLgAor9aw1Xz9bkvJY7JKD9uL"),
-    janin.currency.createCurrency ("AGAcoin",             0x53, 0xd3, "8",    "Y"    , "aWg2jDBnecc17UHrDF5Rz5pj1rTqTDTnTH"),
-    janin.currency.createCurrency ("Alphacoin",           0x52, 0xd2, "8",    "Y"    , "aAWhiGBDUugXC9ZBvw8CDNQH7KRurjy4Nq"),
-    janin.currency.createCurrency ("Alqo",                0x17, 0xc1, "7",    "V"    , "ALF9ykkthT5UwmqdrThMRGb1GNgdCUciHL"),
-    janin.currency.createCurrency ("Animecoin",           0x17, 0x97, "6",    "P"    , "AdA5nLS5FtPws6A3BX8aXccbP7fReptdw7"),
-    janin.currency.createCurrency ("Anoncoin",            0x17, 0x97, "6",    "P"    , "AS3BvkE4wvsXJpn1bGhQni5vZajthnrWQE"),
-    janin.currency.createCurrency ("Apexcoin",            0x17, 0x97, "6",    "P"    , "AdPxUCGLDUhHUTGYftffwFVdxbFy2nkXGX"),
-    janin.currency.createCurrency ("Auroracoin",          0x17, 0x97, "6",    "T"    , "AVWH1ZutLd4Y5LPDDj5FkBjbm2Gci4iFx3"),
-    janin.currency.createCurrency ("Aquariuscoin",        0x17, 0x97, "6",    "P"    , "ARk4VoaCHDoPDn2dctGizJaHFvXNRiDUDr"),
-    janin.currency.createCurrency ("Axe",                 0x4B, 0xCB, "7",    "X"    , ""),
-    janin.currency.createCurrency ("BBQcoin",             0x55, 0xd5, "6",    "T"    , "bTFFC3Gg2XzQygLxxakHkNM3ravBZby1y9"),
-    janin.currency.createCurrency ("Biblepay",            0x19, 0xb6, "7",    "[TU]" , "BDvP86n4oVsLnFh1tCRXWLgBPK6ZtKrJQa"),
-    janin.currency.createCurrency ("Bitcoin",             0x00, 0x80, "5",    "[LK]" , "15DHZzv7eBUwss77qczZiL3DUEZLjDYhbM"),
-    janin.currency.createCurrency ("BitcoinCash",         0x00, 0x80, "5",    "[LK]" , "15DHZzv7eBUwss77qczZiL3DUEZLjDYhbM"),
-    janin.currency.createCurrency ("BitcoinDark",         0x3c, 0xbc, "7",    "U"    , "RWtY5fg9ZQ9tYaPd7WJLgsdae1m1ZfrVRe"),
-    janin.currency.createCurrency ("Bitcore",             0x00, 0x80, "5",    "[LK]" , "1H7fhCsyRfPP8XnJWhezXmi9YNqtBh9xxW"),
-    janin.currency.createCurrency ("BitcoinGold",         0x26, 0x80, "5",    "[LK]" , "GYjahzU24Am88oZco6oFtpNzgwJTp9S4eB"),
-    janin.currency.createCurrency ("Bitconnect",          0x12, 0x92, "5",    "N"    , "8Zixqosp1KFejfcVQzTWa2EsPa2VxSgeJX"),
-    janin.currency.createCurrency ("Birdcoin",            0x2f, 0xaf, "6",    "[ST]" , "L97vGT4wRnyyiugHpLXzZzjqueN8YWRdRJ"),
-    janin.currency.createCurrency ("BitSynq",             0x3f, 0xbf, "7",    "V"    , "SRtKRZxSjjwb9BXujkmvLfRHiutk7s7VXh"),
-    janin.currency.createCurrency ("BitZeny",             0x51, 0x80, "5",    "[LK]" , "ZxUsfFszPsKdot4XnoZHZcMKg2PPS3NUji"),
-    janin.currency.createCurrency ("Blackcoin",           0x19, 0x99, "6",    "P"    , "BFeJrZGyJ6bntd7RLXoNGvdn1HB5AQeiz4"),
-    janin.currency.createCurrency ("BlackJack",           0x15, 0x95, "[56]", "P"    , "9pzHRZkJ4Df3EBiqXhDVgtB2A7FaAq6nnG"),
-    janin.currency.createCurrency ("BlockNet",            0x1a, 0x9a, "6",    "P"    , "BhGtBAnfp7EUvbVr7R7uTJyHXF7Kt17wni"),
-    janin.currency.createCurrency ("BolivarCoin",         0x55, 0xd5, "8",    "Y"    , "1J1HqJd2CRyacjEkMXxGzWVUYq6XfRqJEP"),
-    janin.currency.createCurrency ("BoxyCoin",            0x4b, 0xcb, "7",    "X"    , "9pzHRZkJ4Df3EBiqXhDVgtB2A7FaAq6nnG"),
-    janin.currency.createCurrency ("BunnyCoin",           0x1a, 0x9a, "6",    "P"    , "BosRXiiSB6WmiSbvzVAdUjpezCWhqpJGyW"),
-    janin.currency.createCurrency ("Cagecoin",            0x1f, 0x9f, "6",    "Q"    , "DjUXeu9pUYq5RsN7qpowb1C8LcvPNi9Bx3"),
-    janin.currency.createCurrency ("CampusCoin",          0x1c, 0x9c, "6",    "Q"    , "Cawn4BSvSuPFHk3wo43Nm85CG8TW1Y2s1H"),
-    janin.currency.createCurrency ("CanadaeCoin",         0x1c, 0x9c, "6",    "Q"    , "CbaoyW9KYP8qQHb9Lu59crvjemryCD88Hv"),
-    janin.currency.createCurrency ("CannabisCoin",        0x1c, 0x9c, "6",    "Q"    , "Cb7SSkHpnk1PwKqKbreMALzJpnmAsBNvnG"),
-    janin.currency.createCurrency ("Capricoin",           0x1c, 0x9c, "6",    "Q"    , "CS1mBL1dyCR8jH5hRrQiZ4Xz37UWwcbUAJ"),
-    janin.currency.createCurrency ("CassubianDetk",       0x1e, 0x9e, "6",    "Q"    , "DBPagysmjfdkND4Zp1SM4myLenNfXpFWnG"),
-    janin.currency.createCurrency ("CashCoin",            0x22, 0xa2, "6",    "[QR]" , "F3bkQC7xGZZcPFmsucYas7KuHoEwCPtGHC"),
-    janin.currency.createCurrency ("Catcoin",             0x15, 0x95, "[56]", "P"    , "9rEXDemG6S3k2ddAsKFzRpnMVz3bVryYXZ"),
-    janin.currency.createCurrency ("ChainCoin",           0x1c, 0x9c, "6",    "Q"    , "Ca62ZnR3sfKotqDJzsBW6k75rTFFgFkw1x"),
-    janin.currency.createCurrency ("ColossusCoinXT",      0x1e, 0xd4, "5",    "[LK]" , "D9buTahK9CXNxoGzXLZ9tamwrQzdW2MzvG"),
-    janin.currency.createCurrency ("Condensate",          0x3c, 0xbc, "7",    "U"    , "RRZZMHaYZXCeUWRVeRvttKCNcvTRCxBfqD"),
-    janin.currency.createCurrency ("Copico",              0x1c, 0x90, "5",    "N"    , "CKWBhVUwQP4fRw6xJk4nxCqKYCMz74bPKr"),
-    janin.currency.createCurrency ("CopperCoin",          0x1c, 0x9c, "6",    "Q"    , "CXh8p64WqmEwTkQSDk9azaZUqrnXE9WESV"),
-    janin.currency.createCurrency ("Corgicoin",           0x1c, 0x9c, "6",    "Q"    , "CNwV11TaKrfB3TnBS8vQjNbWT6CNxV8GBi"),
-    janin.currency.createCurrency ("CryptoBullion",       0x0b, 0x8b, "5",    "M"    , "Cd9CgzTChm9yJQZ3SL3PUSsMkEEN8LGwCF"),
-    janin.currency.createCurrency ("CryptoClub",          0x23, 0xa3, "6",    "R"    , "FKPFTw5LjoeGTZP1d3zHLfZNm91FktgPWY"),
-    janin.currency.createCurrency ("Cryptoescudo",        0x1c, 0x9c, "6",    "Q"    , "Cd9CgzTChm9yJQZ3SL3PUSsMkEEN8LGwCF"),
-    janin.currency.createCurrency ("Cryptonite",          0x1c, 0x80, "5",    "[LK]" , "CP6uhgcDnXzdgQhnz2q1xhSFMFinmqkQkh"),
-    janin.currency.createCurrency ("CryptoWisdomCoin",    0x49, 0x87, "5",    "[LM]" , "WYeSz9KmpjgdtycPiJVPcQdp7bBqECfr3W"),
-    janin.currency.createCurrency ("C2coin",              0x1c, 0x9c, "6",    "Q"    , "Cd3kyj77p2zivnqbcoBzNya7LD1w7uUU9v"),
-    janin.currency.createCurrency ("Dash",                0x4c, 0xcc, "7",    "X"    , "XdYX6AbDzjb3AVL1tAmWjuYMD28LD9fcWS"),
-    janin.currency.createCurrency ("DeafDollars",         0x30, 0xb0, "6",    "T"    , "LNHYnoqySwoN5aMyEVavEBT3CxHA9WrTZs"),
-    janin.currency.createCurrency ("DeepOnion",           0x1f, 0x9f, "6",    "Q"    , "DhUAMCqydnYNx9PmeQ1wnyeyAxi477DbTz"),
-    janin.currency.createCurrency ("Deutsche eMark",      0x35, 0xb5, "7",    "T"    , "Ni4112Tmv1ScZ9fkN76knJ4jRTxeHQieJM"),
-    janin.currency.createCurrency ("Devcoin",             0x00, 0x80, "5",    "[LK]" , "1GUeBfpVhN7xySQej3HiSe5c8jQoVQPosv"),
-    janin.currency.createCurrency ("DigiByte",            0x1e, 0x9e, "6",    "Q"    , "D9s71nQPBCEbM2SvGwHQcrhay6KrJaVo3Z"),
-    janin.currency.createCurrency ("Digitalcoin",         0x1e, 0x9e, "6",    "Q"    , "D7fJwPfW4dFSJNq4NHbMiYJhYnrZehMpqx"),
-    janin.currency.createCurrency ("Dimecoin",            0x0f, 0x8f, "5",    "N"    , "7CRKjq135uBC2FgatpAzoJFLPRGL9gCqVp"),
-    janin.currency.createCurrency ("DNotes",              0x1f, 0x9f, "6",    "Q"    , "DqmNyJd9xiaNpE65meAYX6EqJCFDwhsQoX"),
-    janin.currency.createCurrency ("Dogecoin",            0x1e, 0x9e, "6",    "Q"    , "D74Npoqhwhjw9fShkm5wbj6DD2BJXpmzPj"),
-    janin.currency.createCurrency ("DogecoinDark",        0x1e, 0x9e, "6",    "Q"    , "DLbjdRYsfiT62JZf5YxSAfNZJo1VKxDTNP"),
-    janin.currency.createCurrency ("eGulden",             0x30, 0xb0, "6",    "T"    , "LhBsKs2GUb24KBAzZfua5AsqfQF5uPdWXQ"),
-    janin.currency.createCurrency ("eKrona",              0x2d, 0xad, "6",    "S"    , "KLi8FnMZmSH8EfXYgJwi4R2ZyMscJykXT5"),
-    janin.currency.createCurrency ("ELECTRA",             0x21, 0xa1, "6",    "Q"    , "EeJGVF9efipxqJcwf7dup735ATEDc2f1Yk"),
-    janin.currency.createCurrency ("Ember",               0x5c, 0x32, "2",    "8"    , "eGFUogU3DceaBgY5a6qBQC22WwYsboG2gw"),
-    janin.currency.createCurrency ("Emerald",             0x22, 0xa2, "6",    "[QR]" , "EnJnzAQSpPp7RshMhNx9zhRnabxTLird6W"),
-    janin.currency.createCurrency ("Emercoin",            0x21, 0x80, "5",    "[LK]" , "EN5nVyEbLrhYfcjoyGgQFtD3QHETyj1dy1"),
-    janin.currency.createCurrency ("EnergyCoin",          0x5c, 0xdc, "8",    "Z"    , "eD2P3q5PdyHYNwT94Dg6Wt4pBz64k8gwGf"),
-    janin.currency.createCurrency ("Espers",              0x21, 0x90, "5",    "N"    , "EVB5z1zoYYZrjUnGw3fekn1aMjfVhMUKHW"),
-    janin.currency.createCurrency ("Fastcoin",            0x60, 0xe0, "8",    "a"    , "frxe8F7gQdiAVgy4mRXjpXH5vN1wyta1db"),
-    janin.currency.createCurrency ("Feathercoin",         0x0e, 0x8e, "5",    "N"    , "6dxAP6oacHsove5X2kZPpddcT1Am167YzC"),
-    janin.currency.createCurrency ("Fedoracoin",          0x21, 0x80, "5",    "[KL]" , "ENRPj6iEh14Xky2hv4B7zTJGMe5Kchjeo8"),
-    janin.currency.createCurrency ("Fibre",               0x23, 0xa3, "6",    "R"    , "F6qGSM29vJm2q3Q9uvozpym7WYqKXBrpqm"),
-    janin.currency.createCurrency ("Florincoin",          0x23, 0xb0, "6",    "T"    , "FLJ7vLPZDLMVr2KPEvZMgWvh8TCXj5Bn3m"),
-    janin.currency.createCurrency ("Flurbo",              0x23, 0x30, "6",    "8"    , "FH65pxAbpGjLzjGGfGETSZhgLf2SXGuGBi"),
-    janin.currency.createCurrency ("Fluttercoin",         0x23, 0xa3, "6",    "R"    , "FJioRLt3gLtqk3tUdMhwjAVo1sdWjRuwqt"),
-    janin.currency.createCurrency ("FrazCoin",            0x23, 0xA3, "6",    "R"    , "F8uHqHrLrToXSMrVVTzap34LBhVSEEWUmm"),
-    janin.currency.createCurrency ("Freicoin",            0x00, 0x80, "5",    "[LK]" , "18kVnAk5Undi7CqEgGx63YDKBPFpxYJmT9"),
-    janin.currency.createCurrency ("FUDcoin",             0x23, 0xa3, "6",    "R"    , "FEKsbaLJHjbEnuMiRDvtnyvxaJqehBtQ5V"),
-    janin.currency.createCurrency ("Fuelcoin",            0x24, 0x80, "5",    "[KL]" , "Fq1sL24MgDt7tTiKh8MPvhz2UMP8e1uCo4"),
-    janin.currency.createCurrency ("Fujicoin",            0x24, 0xa4, "6",    "R"    , "Fqr2ZrqWPCryqsfjdghwMT3enGHukGonit"),
-    janin.currency.createCurrency ("GabenCoin",           0x10, 0x90, "5",    "N"    , "7cwtF11nW4qAGp2pFdLuUZ5gzJWiXtUvi1"),
-    janin.currency.createCurrency ("Garlicoin",           0x26, 0xb0, "6",    "T"    , "GdHMURSy1H9NbognUvKNmBXciMnqEpRnjg"),
-    janin.currency.createCurrency ("GlobalBoost",         0x26, 0xa6, "6",    "R"    , "GeXdH1WhzA7ayYim9sdCCQKcVukUq1W8LJ"),
-    janin.currency.createCurrency ("Goodcoin",            0x26, 0xa6, "6",    "R"    , "GM3kAbQGaMVAYk8U3CrVGhSwz1hZaF6gVM"),
-    janin.currency.createCurrency ("GridcoinResearch",    0x3e, 0xbe, "7",    "V"    , "SHs9ESzUL9VAEcq7kStfF1JUAMaNT1EYzJ"),
-    janin.currency.createCurrency ("Gulden",              0x26, 0xa6, "6",    "R"    , "GLD7BDBYyddx6Sr72zGfreRG21dJAe74j8"),
-    janin.currency.createCurrency ("Guncoin",             0x27, 0xa7, "6",    "R"    , "GwVej6c3tF9GqEdSKmwJiUDWtQVK2wY9fP"),
-    janin.currency.createCurrency ("HamRadioCoin",        0x00, 0x80, "5",    "LK"   , "1JQVWKT1NQJUJbbq4UdJUY8DbWmgqrrHWz"),
-    janin.currency.createCurrency ("HFRcoin",             0x10, 0x90, "5",    "N"    , ""),
-    janin.currency.createCurrency ("HOdlcoin",            0x28, 0xa8, "5",    "[LK]" , "H9SvPiwASJnsCcNS6QWJc3vi3FxoEHEKVb"),
-    janin.currency.createCurrency ("HTMLCoin",            0x29, 0xa9, "6",    "S"    , "HskoM3SRgw3QLV1vHm98cCbFQedHfXZyM2"),
-    janin.currency.createCurrency ("HyperStake",          0x75, 0xf5, "9",    "d"    , "p71G6VRVxTTxg3Hqa9CbENeJY1PumBjtvL"),
-    janin.currency.createCurrency ("ImperiumCoin",        0x30, 0xb0, "6",    "T"    , "LKcNNWGDyKyedwL8QNsCkg2122fBQyiDat"),
-    janin.currency.createCurrency ("IncaKoin",            0x35, 0xb5, "7",    "T"    , "NdEXATr2NSG1pkzC2kScnEnj6g3KYpLnT9"),
-    janin.currency.createCurrency ("IncognitoCoin",       0x00, 0x80, "5",    "LK"   , "1BbRmhGKyKshFge9kBMdfJyQr3KZoh5K5t"),
-    janin.currency.createCurrency ("Influxcoin",          0x66, 0xe6, "8",    "b"    , "i83eN9HxFvfsxSwjXiZQZaWf13cWF25K9Y"),
-    janin.currency.createCurrency ("Innox",               0x4b, 0xcb, "7",    "X"    , "XQm6Vy2tTh87ZnWg6cBdZBmYVExbVuScBF"),
-    janin.currency.createCurrency ("IridiumCoin",         0x30, 0xb0, "6",    "T"    , "LKTu2strS8zV1mDJxJtgE3HLqChD2m54yN"),
-    janin.currency.createCurrency ("iCash",               0x66, 0xcc, "7",    "X"    , "iKCghTCFEPhriPxrduWxks2SCDE1XKzCU6"),
-    janin.currency.createCurrency ("iXcoin",              0x8a, 0x80, "5",    "[LK]" , "xnF1nshqFLaVdDGBmQ4k2jBQkr8nbuCkLz"),
-    janin.currency.createCurrency ("Judgecoin",           0x2b, 0xab, "6",    "S"    , "JbF9ZnvoFkBdasPEq21jCCTnTUDSiyWrAQ"),
-    janin.currency.createCurrency ("Jumbucks",            0x2b, 0xab, "6",    "S"    , "JSzHiaoD6ewtymBMJHsHqkpFzCYKBzxJeC"),
-    janin.currency.createCurrency ("KHcoin",              0x30, 0xb0, "6",    "T"    , "LZWM2nptWZpSDZna5k96Rk1uqN8NDTigvK"),
-    janin.currency.createCurrency ("KittehCoin",          0x2d, 0xad, "6",    "S"    , "KQkaGcgZvbKXoNWaPh5upwUMvEVvvEY5tY"),
-    janin.currency.createCurrency ("Lanacoin",            0x30, 0xb0, "6",    "T"    , "LhqrrTHtfNMn8rZi7QesFbbpJYeGWX7319"),
-    janin.currency.createCurrency ("Latium",              0x17, 0x80, "5",    "[LK]" , "ASz2EgegeXfKyHaY1SbJ6nCDK6sxd7BpXg"),
-    janin.currency.createCurrency ("LBRY Credits",        0x55, 0x80, "5",    "[LK]" , "bTLCuxhV5m6DK9yPmADz9H23PyoaQo84KP"),
-    janin.currency.createCurrency ("Litecoin",            0x30, 0xb0, "6",    "T"    , "LiScnsyPcqsyxn1fx92BcFguryXcw4DgCy"),
-    janin.currency.createCurrency ("LiteDoge",            0x5a, 0xab, "6",    "S"    , "daaV1gQ63HpHHn4Ny1fJZHMA7KCeUVE538"),
-    janin.currency.createCurrency ("LoMoCoin",            0x30, 0xb0, "6",    "T"    , "LSdeGMxfMFX38GHCFQT65SJaU1E8ezT2og"),
-    janin.currency.createCurrency ("MadbyteCoin",         0x32, 0x6e, "4",    "H"    , "MCBdZDK326yhGM77nWjj3vHX96edd2PQW3"),
-    janin.currency.createCurrency ("MagicInternetMoney",  0x30, 0xb0, "6",    "T"    , "LPRqCTYEy53FkEzhRTCauLc7Qq23Z5mxZU"),
-    janin.currency.createCurrency ("Magicoin",            0x14, 0x94, "5",    "[NP]" , "9H6ddyu9S9gyrEHxVrpMBTBZWrwAvdtehD"),
-    janin.currency.createCurrency ("Marscoin",            0x32, 0xb2, "6",    "T"    , "M8caDttyKt2r7V7WHMMkRZ1jEzxj16fgCn"),
-    janin.currency.createCurrency ("MarteXcoin",          0x32, 0xb2, "6",    "T"    , "M8DSVG13j3qpNDRbuuUBh5juQmSd15wLXH"),
-    janin.currency.createCurrency ("MasterDoge",          0x33, 0x8b, "5",    "M"    , "Mm4Xqy9FYZ8N1NJzuXCaJLZcw8o2cmVC7c"),
-    janin.currency.createCurrency ("Mazacoin",            0x32, 0xe0, "8",    "a"    , "MLUXCv3GfNgmUSXc5Ek3ePaQ4cfsJwEXHa"),
-    janin.currency.createCurrency ("Megacoin",            0x32, 0xb2, "6",    "T"    , "MPeVmJHvkXN3caneWCB5zGgtGHRRBSLmWd"),
-    janin.currency.createCurrency ("MintCoin",            0x33, 0xb3, "[67]", "T"    , "MdT7t7MhbgQLSdMhHJCyoGHUuniqZDrj4h"),
-    janin.currency.createCurrency ("MobiusCoin",          0x00, 0x80, "5",    "[LK]" , "1HKNrUR3BaFC8u4VMfnjCuXDPrYGh7jU8S"),
-    janin.currency.createCurrency ("MonetaryUnit",        0x10, 0x7e, "5",    "K"    , "7gzstwRu4owvwk7Se5pPVG8A5pgdgsDzUV"),
-    janin.currency.createCurrency ("Monocle",             0x32, 0xb2, "6",    "T"    , "M9CFHZjyCipuKqByD5K1sCHmt7etuCFGsc"),
-    janin.currency.createCurrency ("MoonCoin",            0x03, 0x83, "5",    "L"    , "2P2V9npcK7apbUFsWN3zL7R6ARBMwTJ4hA"),
-    janin.currency.createCurrency ("Myriadcoin",          0x32, 0xb2, "6",    "T"    , "MWGDtjDw9c8C6zicDQF22yZBWbEX53v4o9"),
-    janin.currency.createCurrency ("NameCoin",            0x34, 0x80, "5",    "[LK]" , "NASxLK4nt5hgX9wQEny5qPPJ2q4uSGCvT9"),
-    janin.currency.createCurrency ("Navcoin",             0x35, 0x96, "6",    "P"    , "NP2wVKjiT1PbpkFMCfkSxR7QsV3iezf4T6"),
-    janin.currency.createCurrency ("NeedleCoin",          0x35, 0xb5, "7",    "T"    , "NYtEDYHNabMqiad5J2tEPFwE9wnhJQpN1W"),
-    janin.currency.createCurrency ("NEETCOIN",            0x35, 0xb5, "7",    "T"    , "NgTALUftFyFk8osvqo5TryBkeNYKvGBssp"),
-    janin.currency.createCurrency ("NYC",                 0x3c, 0xbc, "7",    "U"    , "RY1XJPWksA5zUTCNJ416XJhY9yiFSFfTvz"),
-    janin.currency.createCurrency ("Neoscoin",            0x35, 0xb1, "6",    "T"    , "NZw6WJPiKYcXxua1VveieihiNJRYanHjrP"),
-    janin.currency.createCurrency ("Nevacoin",            0x35, 0xb1, "6",    "T"    , "NQDJrKGP3TNhKhKzaHMdg1Wk9FWCT4Nx3q"),
-    janin.currency.createCurrency ("Novacoin",            0x08, 0x88, "5",    "M"    , "4EZMrEA5LnmwtcK5b2JfCq9k5YS4ZVZrtT"),
-    janin.currency.createCurrency ("Nubits",              0x19, 0xbf, "7",    "V"    , "BPWCkyaVqWdaf3uqahrgdTjB2QTnRZzPMM"),
-    janin.currency.createCurrency ("Nyancoin",            0x2d, 0xad, "6",    "S"    , "KHRsf8ofFYqGm4XoeHuFakKPLs5CH2dhK3"),
-    janin.currency.createCurrency ("Ocupy",               0x73, 0xf3, "9",    "[cd]" , "ocLKVPkQRFtKn5mFygrd4QJG9eZd1sKTyi"),
-    janin.currency.createCurrency ("Omnicoin",            0x73, 0xf3, "9",    "[cd]" , "oMesh62joeab2yMoJUH28mGE8h2suDzcYc"),
-    janin.currency.createCurrency ("Onyxcoin",            0x73, 0xf3, "9",    "[cd]" , "odRRCGXooJvKs7cn7sax1bJv9EJwwEy94Z"),
-    janin.currency.createCurrency ("PacCoin",             0x18, 0x98, "6",    "P"    , ""),
-    janin.currency.createCurrency ("Particl",             0x38, 0x6c, "4",    "[HG]" , ""),
-    janin.currency.createCurrency ("Paycoin",             0x37, 0xb7, "7",    "U"    , "PV2t9zzj9rQm81c9VJqqL8edj1ndpcW9HD"),
-    janin.currency.createCurrency ("Pandacoin",           0x37, 0xb7, "7",    "U"    , "PT6guZjCgsrBkqCUhTnG1NNBYBqgzo8gVv"),
-    janin.currency.createCurrency ("ParkByte",            0x37, 0xb7, "7",    "U"    , "PCLozfQ5cBinqdRFGEf6DkuC56YU1jWzMQ"),
-    janin.currency.createCurrency ("Peercoin",            0x37, 0xb7, "7",    "U"    , "PSnwUwknbmqUU1GCcM1DNxcANqihpdt3tW"),
-    janin.currency.createCurrency ("Pesetacoin",          0x2f, 0xaf, "6",    "[ST]" , "L6qoz2SQN6U9vGNoST35QP85PQbg4s5rDn"),
-    janin.currency.createCurrency ("PHCoin",              0x37, 0xb7, "7",    "U"    , "P9e6c714JUHUfuBVHSS36eqaxGCN6X8nyU"),
-    janin.currency.createCurrency ("PhoenixCoin",         0x38, 0xb8, "7",    "U"    , "PsaaD2mLfAPUJXhMYdC1DBavkJhZj14k6X"),
-    janin.currency.createCurrency ("PiggyCoin",           0x76, 0xf6, "9",    "d"    , "pqXotCKo6mmtYtLY5mi9uEW22mPFgKoLvx"),
-    janin.currency.createCurrency ("Pinkcoin",            0x3,  0x83, "[RQP]","L"    , "2Xgy8K2n5cVmnm8Se2rDojQ1GdfHdktx8r"),
-    janin.currency.createCurrency ("PIVX",                0x1e, 0xd4, "8",    "Y"    , "DSiCurCzgdzqSP1urFg3VZJfrpyhMWjEAp"),
-    janin.currency.createCurrency ("Peercoin",            0x37, 0xb7, "7",    "U"    , "PSnwUwknbmqUU1GCcM1DNxcANqihpdt3tW"),
-    janin.currency.createCurrency ("Potcoin",             0x37, 0xb7, "7",    "U"    , "PQcMNuCdeooMcS5H3DGwxXnSE2kmyVMU39"),
-    janin.currency.createCurrency ("Primecoin",           0x17, 0x97, "6",    "P"    , "AbXChfoHyFESePFuVh1xLZdn7Rj1mfD2a4"),
-    janin.currency.createCurrency ("ProsperCoinClassic",  0x3a, 0xba, "7",    "Q"    , "QXLqozFHKP1fdvx4LKMYmtEHWciEZ9pD2F"),
-    janin.currency.createCurrency ("Quark",               0x3a, 0xba, "7",    "U"    , "QNGJBwRApKKwEevTvDwpeoSgmo6w6wv8yQ"),
-    janin.currency.createCurrency ("Qubitcoin",           0x26, 0xe0, "8",    "a"    , "GeNTNSwEh5ZCRCE6LtnMwHCk8VU2Lu8QE7"),
-    janin.currency.createCurrency ("Reddcoin",            0x3d, 0xbd, "7",    "[UV]" , "RmAB99NsX6Wbjk5WdqNeEab83y72d7zkqZ"),
-    janin.currency.createCurrency ("Riecoin",             0x3c, 0x80, "5",    "[LK]" , "RUsNQFds88sdWszMUVKwfdBhE9PtzLTK6N"),
-    janin.currency.createCurrency ("Rimbit",              0x3c, 0xbc, "7",    "U"    , "RJNYNAafwKmkGf1hb3LDXiL1gRhSPPrXxN"),
-    janin.currency.createCurrency ("ROIcoin",             0x3c, 0x80, "5",    "[LK]" , "RKUwWKMfwoq2trvQ4Q3a529U7KZq3Pq6gw"),
-    janin.currency.createCurrency ("Rubycoin",            0x3c, 0xbc, "7",    "U"    , "RNsGHZnnr4pa3nYSp5NsuPtqTAGHT6XWqb"),
-    janin.currency.createCurrency ("Rupaya",              0x3c, 0xbc, "7",    "U"    , "RENYagTnHvczPgFYaAhfVqh9y6B1yaMaij"),
-    janin.currency.createCurrency ("Sambacoin",           0x3e, 0xbe, "7",    "V"    , "SJdiAgazqtum79HzGbNDxi879NzSDjtH5P"),
-    janin.currency.createCurrency ("SecKCoin",            0x3f, 0xbf, "7",    "V"    , "Se1aaa5T1HRpMEfyBPGswVUgTQoZUst9jA"),
-    janin.currency.createCurrency ("SibCoin",             0x3f, 0x80, "5",    "[LK]" , "SY7GAzvFVS8bUA89e7hosPMxqMS482ecsp"),
-    janin.currency.createCurrency ("SixEleven",           0x34, 0x80, "5",    "[LK]" , "NGPimZxoZMmAsoF4eJME8TkG7UW8vqoJQJ"),
-    janin.currency.createCurrency ("SmileyCoin",          0x19, 0x99, "6",    "P"    , "BEaZDZ8gCbbP1y3t2gPNKwqZa76rUDfR73"),
-    janin.currency.createCurrency ("SongCoin",            0x3f, 0xbf, "7",    "V"    , "SSK9MXormZXgF5ZfV599okJRXYh3g9RXGN"),
-    janin.currency.createCurrency ("SpreadCoin",          0x3f, 0xbf, "7",    "V"    , "SjPkh7V2KkySjL52wsD2CpEj4quTtjiaVW"),
-    janin.currency.createCurrency ("StealthCoin",         0x3e, 0xbe, "7",    "V"    , "SJJGGq7UyoUH1TExGJCQ6ee49ztJr2quF8"),
-    janin.currency.createCurrency ("Stratis",             0x3f, 0xbf, "7",    "V"    , "ScMNGH91SpNwbRDeK8vYXXJ3aYpwBr9Pen"),
-    janin.currency.createCurrency ("SwagBucks",           0x3f, 0x99, "6",    "P"    , "SJJGGq7UyoUH1TExGJCQ6ee49ztJr2quF8"),
-    janin.currency.createCurrency ("Syscoin",             0x00, 0x80, "5",    "[LK]" , "133miKEHohCR5qnbEZ64MFZkCzFM2HpeAd"),
-    janin.currency.createCurrency ("Tajcoin",             0x41, 0x6f, "6",    "H"    , "TWYZCoBw6Kd5fKZ5wWpqgJaeNAbuRF9Qg8"),
-    janin.currency.createCurrency ("Terracoin",           0x00, 0x80, "5",    "[LK]" , "1BQH6gBzkxxyMQG3VSJCHnmVGfWu64nbPL"),
-    janin.currency.createCurrency ("Titcoin",             0x00, 0x80, "5",    "[LK]" , "1CHAo7muicsLHdPk5q4asrEbh6aUeSPpdC"),
-    janin.currency.createCurrency ("TittieCoin",          0x41, 0xc1, "7",    "V"    , "TYrdtLy9irV4u1yo2YQVCkS27RzDzBqWwJ"),
-    janin.currency.createCurrency ("Topcoin",             0x42, 0xc2, "7",    "V"    , "TmDTsQqqv1LWGw4xjGNiJ7ABwdCenf2BFF"),
-    janin.currency.createCurrency ("TransferCoin",        0x42, 0x99, "6",    "P"    , "TbnW6ih8314ksuutJpRjwUbc2mAkz64Tij"),
-    janin.currency.createCurrency ("TreasureHuntCoin",    0x32, 0xb2, "6",    "T"    , "MKnC2upgCNfVMS2phkV8SqGaXUGkn39EaX"),
-    janin.currency.createCurrency ("TrezarCoin",          0x42, 0xC2, "7",    "V"    , "Tw1jsLJKfmcosUCkJuMevdLLJob9wD7PSE"),
-    janin.currency.createCurrency ("Unobtanium",          0x82, 0xe0, "8",    "a"    , "uZ8Gq61NGJ2wz3PLybXyXKLYC1FhRpz8Kq"),
-    janin.currency.createCurrency ("USDe",                0x26, 0xa6, "6",    "R"    , "GQTeNSfx6xPbBNsUfqoZNrrCBQXeY5Dtdu"),
-    janin.currency.createCurrency ("Vcash",               0x47, 0xc7, "7",    "W"    , "VoaKH8ndxJoFfM3XJ7DK3P6g7kxASpCf5g"),
-    janin.currency.createCurrency ("Versioncoin",         0x46, 0xc6, "7",    "W"    , "VRYmn3ABchWK7ZSx2V3VD6TzxmqCLsxJSH"),
-    janin.currency.createCurrency ("VergeCoin",           0x1e, 0x9e, "6",    "Q"    , "DJvyiaUdFAH7zmn23SaWzSj9FT5X9a3pSS"),
-    janin.currency.createCurrency ("Vertcoin",            0x47, 0x80, "5",    "[LK]" , "VkmBz8JJWLP1sVH9sGwc1Fz7o5RtXLW4J5"),
-    janin.currency.createCurrency ("Viacoin",             0x47, 0xc7, "7",    "W"    , "VeJMvqvsZFoTkYfitzEG8fYy7bC7hxMfT1"),
-    janin.currency.createCurrency ("VikingCoin",          0x46, 0x56, "3",    "D"    , "VJXz1cD1mDGQmu52aDdd7Q2G5ejqA6mcqw"),
-    janin.currency.createCurrency ("W2Coin",              0x49, 0xc9, "7",    "W"    , "Wa3AvKUP5J3BpEa93nwKHPAAQ2P1XdTCeU"),
-    janin.currency.createCurrency ("WACoins",             0x49, 0xc9, "7",    "W"    , ""),
-    janin.currency.createCurrency ("WankCoin",            0x00, 0x80, "5",    "[LK]" , "1CnEFZZxJQkNAvgFGdRV5JEKShkNj1LRWL"),
-    janin.currency.createCurrency ("WeAreSatoshiCoin",    0x87, 0x97, "6",    "P"    , "wSEgPsCGqQESLDyzBJkwCXvMP1z3e1Qi3X"),
-    janin.currency.createCurrency ("WorldCoin",           0x49, 0xc9, "7",    "W"    , "WNmGkn2WQZKS6xKHEsj5AqSbuE4sh9Upyb"),
-    janin.currency.createCurrency ("XP",                  0x4b, 0xcb, "7",    "X"    , "XLRykcGjFMpBDQ7PHfamR2DR4Z21qTUBHG"),
-    janin.currency.createCurrency ("Yenten",              0x4e, 0x7b, "5",    "K"    , "YStuCpv1U9iT3L1VqBr52B9nBxrNgt4Fpj"),
-    janin.currency.createCurrency ("Zcash",        [0x1c,0xb8], 0x80, "5",    "[LK]" , "t1XA64Hw47QaCxCUEgZbc4FVdH811RMd1xp"),
-    janin.currency.createCurrency ("Zetacoin",            0x50, 0xE0, "8",    "a"    , "ZRU6TP8NLzoyey4DPPaa3uCCgDNDc96PXJ"),
-
-
-
-    janin.currency.createCurrency ("Testnet Bitcoin",     0x6f, 0xef, "9",    "c"    , null),
-    janin.currency.createCurrency ("Testnet Dogecoin",    0x71, 0xf1, "9",    "c"    , null),
-    janin.currency.createCurrency ("Testnet MonetaryUnit",0x26, 0x40, "3",    "A"    , null),
-    janin.currency.createCurrency ("Testnet PIVX",        0x8b, 0xef, "9",    "c"    , null),
-    janin.currency.createCurrency ("Testnet WACoins",     0x51, 0xd1, "8",    "[XY]" , null)
+	janin.currency.createCurrency ("Domocoin",            0x1e, 0xba, "7",    "U"    , "DSQaXCGrmApXPRCHHUcJq3PbBK7YDU8gMC"),
+    janin.currency.createCurrency ("Bitcoin",             0x00, 0x80, "5",    "[LK]" , ""),
+    janin.currency.createCurrency ("Dogecoin",            0x1e, 0x9e, "6",    "Q"    , "")
                    ];
 
   </script>
@@ -10797,7 +10311,7 @@ ninja.privateKey = {
 			callback(new Error(ninja.translator.get("detailalertnotvalidprivatekey")));
 			return;
 		}
-		// first byte is always 0x01 
+		// first byte is always 0x01
 		else if (hex[0] != 0x01) {
 			callback(new Error(ninja.translator.get("detailalertnotvalidprivatekey")));
 			return;
@@ -10826,7 +10340,7 @@ ninja.privateKey = {
 				return;
 			}
 		}
-		// second byte for EC-multiplied key 
+		// second byte for EC-multiplied key
 		else if (hex[1] == 0x43) {
 			isECMult = true;
 			isCompPoint = (hex[2] & 0x20) != 0;
@@ -11112,7 +10626,7 @@ ninja.publicKey = {
 		isDone: function() {
 			return ninja.seeder.seedCount >= ninja.seeder.seedLimit;
 		},
-		
+
 		// seed function exists to wait for mouse movement to add more entropy before generating an address
 		seed: function (evt) {
 			if (!evt) var evt = window.event;
@@ -11172,7 +10686,7 @@ ninja.publicKey = {
 			div.setAttribute("class", "seedpoint");
 			div.style.top = y + "px";
 			div.style.left = x + "px";
-			
+
 			// let's make the entropy 'points' grow and change color!
 			percentageComplete = ninja.seeder.seedCount / ninja.seeder.seedLimit;
 			document.getElementById("progress-bar-percentage").style.width=Math.ceil(percentageComplete*100)+"%";
@@ -11241,7 +10755,7 @@ ninja.qrCode = {
 		return canvas;
 	},
 
-	// generate a QRCode and return it's representation as an Html table 
+	// generate a QRCode and return it's representation as an Html table
 	createTableHtml: function (text) {
 		var typeNumber = ninja.qrCode.getTypeNumber(text);
 		var qr = new QRCode(typeNumber, QRCode.ErrorCorrectLevel.H);
@@ -11264,7 +10778,7 @@ ninja.qrCode = {
 	},
 
 	// show QRCodes with canvas OR table (IE8)
-	// parameter: keyValuePair 
+	// parameter: keyValuePair
 	// example: { "id1": "string1", "id2": "string2"}
 	//		"id1" is the id of a div element where you want a QRCode inserted.
 	//		"string1" is the string you want encoded into the QRCode.
@@ -11308,7 +10822,7 @@ ninja.envSecurityCheck = function() {
 			innerHTML = '<span style="color: #009900;">' + ninja.translator.get("securitychecklistofflineOK") + '</span>';
 			break;
 		default:
-	} 
+	}
 	document.getElementById('envSecurityCheck').innerHTML = innerHTML;
 };
 
@@ -11318,7 +10832,7 @@ ninja.browserSecurityCheck = function() {
 		innerHTML = '<span style="color: #009900;">' + ninja.translator.get("securitychecklistrandomOK") + '</span>';
 	} else {
 		innerHTML = '<span style="color: #990000;">' + ninja.translator.get("securitychecklistrandomNOK") + '</span>';
-	} 
+	}
 	document.getElementById('browserSecurityCheck').innerHTML = innerHTML;
 }
 
@@ -11445,7 +10959,7 @@ ninja.translator = {
     "bip38alertpassphraserequired": "Passphrase required for BIP38 key",
 	"securitychecklistrandomOK": "Your browser is capable of generating cryptographically random keys using window.crypto.getRandomValues",
 	"securitychecklistrandomNOK": "Your browser does NOT support window.crypto.getRandomValues(), which is important for generating the most secure random numbers possible. Please use a more modern browser.",
-	"securitychecklistofflineNOK": "You appear to be running this generator off of a live website, which is not recommended for creating valuable wallets. Instead, use the download link at the bottom of this page to download the ZIP file from GitHub and run this generator offline as a \'local\' HTML file.",
+	"securitychecklistofflineNOK": "You appear to be running this generator off of a live website, which is not recommended for creating valuable wallets.",
 	"securitychecklistofflineOK": "You are running this generator from your own download.",
 	"paperwalletback": "<ul><li>To deposit funds to this paper wallet, send cryptocurrency to its public address, anytime.</li><li>Verify your balance by searching for the public address using a blockchain explorer such as blockchain.info.</li><li><b>DO NOT REVEAL THE PRIVATE KEY</b> until you are ready to import the balance on this wallet to a cryptocurrency client, exchange or online wallet.</li></ul><b>Amount :</b> ___________ &nbsp; &nbsp; &nbsp; <b>Date :</b> ________________<br /><b>Notes :</b> ______________________________________",
 },
@@ -11467,7 +10981,7 @@ ninja.translator = {
     "singlelabelprivatekey": "Clé privée (format WIF)",
     "singlesecret": "SECRET",
     "securitystep0title": "Étape 0. Suivez les recommandations de la liste de sécurité",
-    "securitystep0": "La première étape est de <strong>télécharger</strong> ce site à partir de <a href=\"https://github.com/MichaelMure/WalletGenerator.net/archive/master.zip\">Github</a> et d'ouvrir le fichier index.html directement sur votre ordinateur. Il est beaucoup trop facile d'ajouter du code malicieux dans les 6000+ lignes de javascript pour transmettre votre clé privée, et vous ne voulez pas voir vos fonds volés, n'est-ce pas ? Le versionnage de code source rend bien plus facile la vérification par des personnes extérieures du code qui est exécuté. Pour une sécurité supplémentaire, <strong>débranchez votre accès Internet</strong> pendant la génération de votre porte-monnaie.",
+    "securitystep0": "La première étape est de <strong>télécharger</strong> ce site à partir de Github et d'ouvrir le fichier index.html directement sur votre ordinateur. Il est beaucoup trop facile d'ajouter du code malicieux dans les 6000+ lignes de javascript pour transmettre votre clé privée, et vous ne voulez pas voir vos fonds volés, n'est-ce pas ? Le versionnage de code source rend bien plus facile la vérification par des personnes extérieures du code qui est exécuté. Pour une sécurité supplémentaire, <strong>débranchez votre accès Internet</strong> pendant la génération de votre porte-monnaie.",
     "securitystep1title": "Étape 1. Générez une nouvelle adresse",
     "securitystep1": "Choisissez votre monnaie et cliquez sur le bouton \"Générer une nouvelle adresse\".",
     "securitystep2title": "Étape 2. Imprimez votre porte-monnaie",
@@ -11531,7 +11045,7 @@ ninja.translator = {
     "detailalertnotvalidprivatekey": "Le texte que vous avez entré n'est pas une clé privée valide",
     "securitychecklistrandomOK": "Votre navigateur est capable de générer des clés cryptographiques sécurisés en utilisant window.crypto.getRandomValues",
     "securitychecklistrandomNOK": "Votre navigateur ne supporte PAS window.crypto.getRandomValues(), ce qui est important pour générer des portes-monnaies les plus sécurisé possible. Utilisez un navigateur plus moderne.",
-    "securitychecklistofflineNOK": "Il semble que vous utilisez ce générateur directement depuis le site web, ce qui n'est pas recommandé pour générer des portes-monnaie. A la place, utilisez le lien de téléchargement en bas de cette page pour télécharger une archive ZIP depuis Github et lancez ce générateur hors-ligne comme un fichier HTML local.",
+    "securitychecklistofflineNOK": "Il semble que vous utilisez ce générateur directement depuis le site web, ce qui n'est pas recommandé pour générer des portes-monnaie.",
     "securitychecklistofflineOK": "Vous exécutez ce générateur depuis votre propre téléchargement.",
     "paperwalletback": "<ul><li>Pour transférer des fonds sur ce porte-monnaie, envoyez des fonds à l'adresse publique, à n'importe quel moment.</li><li>Vérifier votre solde en cherchant l'adresse publique dans un explorateur de Blockchain.</li><li><b>NE REVELEZ PAS VOTRE CLE PRIVEE</b> jusqu'au moment où vous voudrez importer votre solde dans un porte-monnaie logiciel.</li></ul><b>Montant :</b> ___________       <b>Date :</b> ________________<br /><b>Notes :</b> ______________________________________",
 },
@@ -11552,7 +11066,7 @@ ninja.translator = {
     "singlelabelprivatekey": "Privater Schlüssel (Format: WIF)",
     "singlesecret": "GEHEIM",
     "securitystep0title": "Folgen Sie der Sicherheits Checkliste",
-    "securitystep0": "Zu Beginn <strong>downladen</strong> Sie dieses Programm von der <a href=\"https://github.com/MichaelMure/WalletGenerator.net/archive/master.zip\">Github</a> Webseite und öffnen die Datei index.html direkt auf Ihrem Computer, Notebook oder Tablet. Angreifer könnten anderenfalls auf einer Webseite möglicherweise den mehr als 6000 Zeilen umfassenden Code verändern und Ihren privaten Schlüssel abgreifen. Für zusätzliche Sicherheit unterbrechen Sie die Verbindung zum Internet, während Sie Ihre Geldbörse(n) generieren.",
+    "securitystep0": "Zu Beginn <strong>downladen</strong> Sie dieses Programm von der Github Webseite und öffnen die Datei index.html direkt auf Ihrem Computer, Notebook oder Tablet. Angreifer könnten anderenfalls auf einer Webseite möglicherweise den mehr als 6000 Zeilen umfassenden Code verändern und Ihren privaten Schlüssel abgreifen. Für zusätzliche Sicherheit unterbrechen Sie die Verbindung zum Internet, während Sie Ihre Geldbörse(n) generieren.",
     "securitystep1title": "Schritt 1: Generierung eines neuen Schlüssels",
     "securitystep1": "Wählen Sie eine Kryptowährung und wählen Sie \"Generiere neuen Schlüssel\".",
     "securitystep2title": "Schritt 2: Ausdruck Ihrer Papier Geldbörse",
@@ -11614,7 +11128,7 @@ ninja.translator = {
     "detailalertnotvalidprivatekey": "Ihr eingetragener Text ist kein gültiger privater Schlüssel",
     "securitychecklistrandomOK": "Ihr Browser kann kryptografische Zufallszahlen mit der Funktion wie folgt generieren: window.crypto.getRandomValues",
     "securitychecklistrandomNOK": "Ihr Browser unterstützt NICHT die Funktion window.crypto.getRandomValues(), die benötigt wird um möglichst sichere zufällige Zahlen zu generieren. Bitte verwenden Sie einen aktuelleren Browser...",
-    "securitychecklistofflineNOK": "Warnung: Sie verwenden diesen Generator von einer Live Webseite. Dies ist nicht empfohlen. Bitte laden Sie möglichst eine Kopie des Quelltextes von GitHub auf einen geschützten Computer, falls Sie beabsichtigen wertvolle Geldbeträge auf Ihre generierte(n) Papiergeldbörse(n) zu übertragen.",
+    "securitychecklistofflineNOK": "Warnung: Sie verwenden diesen Generator von einer Live Webseite. Dies ist nicht empfohlen.",
     "securitychecklistofflineOK": "OK: Sie verwenden eine lokale Kopie dieses Programmes zur Erstellung einer Papier Geldbörse für Kryptowährungen.",
     "paperwalletback": "<ul><li>Verwenden Sie Ihre öffentliche Adresse, um Zahlungen auf diese Geldbörse zu überweisen.</li><li>Kontrollieren Sie Ihr Guthaben durch Eingabe Ihrer öffentlichen Adresse mit Hilfe eines Online Blockchain-Explorers. z.B. https://chainz.cryptoid.info</li><li><b>NIEMALS DEN PRIVATEN SCHLÜSSEL PREISGEBEN!</b> Importieren Sie den privaten Schlüssel erst in eine Online-Geldbörse, wenn Sie Ihr Guthaben ausgeben möchten.</li></ul><b>Guthaben:</b> _____________ <b>Datum:</b> ________________<br /><b>Notizen:</b> ______________________________________",
 },
@@ -11635,7 +11149,7 @@ ninja.translator = {
 	"singlelabelprivatekey": "Prive Sleutel (Portomonee Import Formaat)",
 	"singlesecret": "GEHEIM",
 	"securitystep0title": "Stap 0. Volg de veiligheids controlelijst aanbevelingen",
-	"securitystep0": "De eerste stap is om deze website te <strong>downloaden</strong> van <a href=\"https://github.com/MichaelMure/WalletGenerator.net/archive/master.zip\">Github</a> en vervolgens het bestand index.html direct vanaf je computer te openen. Het is voor hackers gewoon te makkelijk om kwaadaardige code tussen de 6000+ regels javascript toe te voegen en om je prive sleutel uit te lezen, en je wilt natuurlijk niet zien hoe je fondsen gestolen worden. Versiebeheer maakt het makkelijk om te controleren wat er daadwerkelijk gerunt wordt. Om er extra zeker van te zijn dat je veilig bezig bent kun je het beste connectie met het internet verbreken.",
+	"securitystep0": "De eerste stap is om deze website te <strong>downloaden</strong> van Github en vervolgens het bestand index.html direct vanaf je computer te openen. Het is voor hackers gewoon te makkelijk om kwaadaardige code tussen de 6000+ regels javascript toe te voegen en om je prive sleutel uit te lezen, en je wilt natuurlijk niet zien hoe je fondsen gestolen worden. Versiebeheer maakt het makkelijk om te controleren wat er daadwerkelijk gerunt wordt. Om er extra zeker van te zijn dat je veilig bezig bent kun je het beste connectie met het internet verbreken.",
 	"securitystep1title": "Stap 1. Geneer een nieuw adres",
 	"securitystep1": "Kies een valuta en klik op de \"Generate new address\" knop.",
 	"securitystep2title": "Stap 2. Print de Papieren Portomonee",
@@ -11697,7 +11211,7 @@ ninja.translator = {
 	"detailalertnotvalidprivatekey": "De tekst die je hebt ingevuld is niet een geldigde Prive Sleutel",
 	"securitychecklistrandomOK": "Je browser heeft de mogelijkheid om wllekeurige crypto sleutels te genereren door het gebruik van window.crypto.getRandomValues",
 	"securitychecklistrandomNOK": " Jouw browser heeft geen ondersteuning voor window.crypto.getRandomValues(), welke belangrijk wordt voor het genereren van de meest veilige willekeurige numbers mogelijk. Gebruik een moderne browser om dit mogelijk te maken.",
-	"securitychecklistofflineNOK": "Het lijkt er op dat je gebruik maakt van deze generator terwijl je connectie hebt met de website, wij raden je aan dit niet te doen bij het aanmaken van waardevolle protomonees. Inplaats daarvan kun je gebruik maken de download link onderaan deze pagina om het zip bestand van GitHub te downloaden en 'lokaal' de HTML bestanden te openen.",
+	"securitychecklistofflineNOK": "Het lijkt er op dat je gebruik maakt van deze generator terwijl je connectie hebt met de website, wij raden je aan dit niet te doen bij het aanmaken van waardevolle protomonees.",
 	"securitychecklistofflineOK": "Je bent deze generator van je eigen lokale download aan het draaien.",
 	"paperwalletback": "<ul><li>Om fondsen naar deze portomonee over te maken, kun je munten naar dit publiek adres sturen, wanneer je  maar wilt.</li><li>Bevestig je fondsen door een publieke blockchain explorers te kijken in zoals blockchain.info.</li><li><b>LAAT NOOIT JE PRIVE SLEUTEL ZIEN</b> totdat je bereid bent de balans van deze portomonee te importeren in deze client portomonee, een exchange of een online portomonee.</li></ul><b>Hoeveelheid :</b> ___________       <b>Datum :</b> ________________<br /><b>Notities :</b> ______________________________________",
 },
@@ -11718,7 +11232,7 @@ ninja.translator = {
     "singlelabelprivatekey": "Chave Privada (Formato de Importação da Carteira)",
     "singlesecret": "SEGREDO",
     "securitystep0title": "Passo 0. Siga a lista de recomendações de segurança",
-    "securitystep0": "O primeiro passo é <strong>baixar</strong> esse website do <a href=\"https://github.com/MichaelMure/WalletGenerator.net/archive/master.zip\">Github</a> e abrir o arquivo index.html diretamente de seu computador. É simplesmente muito fácil de esconder algum código malicioso em mais de 6000 linhas de JavaScript para vazar sua chave privada, e você não quer ver seus fundos serem roubados. O controle de versão de código torna muito mais fácil verificar de forma intercalada o que realmente executa. Para segurança extra, <strong>desconecte seu acesso a internet</strong> enquanto gerando sua carteira.",
+    "securitystep0": "O primeiro passo é <strong>baixar</strong> esse website do Github e abrir o arquivo index.html diretamente de seu computador. É simplesmente muito fácil de esconder algum código malicioso em mais de 6000 linhas de JavaScript para vazar sua chave privada, e você não quer ver seus fundos serem roubados. O controle de versão de código torna muito mais fácil verificar de forma intercalada o que realmente executa. Para segurança extra, <strong>desconecte seu acesso a internet</strong> enquanto gerando sua carteira.",
     "securitystep1title": "Passo 1. Gere um endereço novo",
     "securitystep1": "Escolha sua moeda e clique no botão \"Generate new address\" (gerar novo endereço).",
     "securitystep2title": "Passo 2. Imprima a Carteira de Papel",
@@ -11782,7 +11296,7 @@ ninja.translator = {
     "detailalertnotvalidprivatekey": "O texto que você inseriu não é uma chave privada válida",
     "securitychecklistrandomOK": "Seu navegador suporta a geração de chaves criptograficamente aleatórias usando window.crypto.getRandomValues",
     "securitychecklistrandomNOK": "Seu navegador NÃO supota window.crypto.getRandomValues(), que é importante para gerar os números aleatórios mais seguros possíveis. Por favor, use um navegador mais moderno.",
-    "securitychecklistofflineNOK": "Você aparenta estar usando esse gerador de um site online, o que não é recomendado para a criação de carteiras de valor. Ao invés disso, use o link de download no final da página para baixar o arquivo ZIP do GitHub e rodar esse gerador offline como um arquivo HTML local.",
+    "securitychecklistofflineNOK": "Você aparenta estar usando esse gerador de um site online, o que não é recomendado para a criação de carteiras de valor.",
     "securitychecklistofflineOK": "Você está usando esse gerador de seu próprio download (offline).",
     "paperwalletback": "<ul><li>Para depositar fundos nessa Carteira de Papel, envie dinheiro para seu endereço público, a qualquer momento.</li><li>Verifique seu saldo pesquisando por seu endereço público usando um explorador de blockchain como o blockchain.info.</li><li><b>NÃO MOSTRE A CHAVE PRIVADA</b> até que você esteja pronto para importar o saldo para um cliente de cripto-moeda, casa de câmbio (exchange) ou carteira online.</li></ul><b>Valor: </b>___________       <b>Data: </b>_______________<br /><b>Notas :</b> ______________________________________",
 },
@@ -11803,7 +11317,7 @@ ninja.translator = {
 	"singlelabelprivatekey": "Закрытый ключ (в формате импорта в кошелек - WIF)",
 	"singlesecret": "СЕКРЕТНЫЙ",
 	"securitystep0title": "Шаг 0. Следуйте рекомендациям в \"Перечне безопасности\"",
-	"securitystep0": "Первым делом <strong>скачайте</strong> этот веб-сайт с <a href=\"https://github.com/MichaelMure/WalletGenerator.net/archive/master.zip\">Github</a>, распакуйте и откройте файл index.html непосредственно с Вашего компьютера. Cпрятать вредоносный код в 6000+ строках javascript, чтобы украсть Ваш закрытый ключ, довольно просто, а Вам вряд ли этого хочется. Система контроля версий позволяет значительно упростить взаимную проверку исполняемого кода. Для большей безопасности <strong>отключитесь от Интернета</strong> на время создания кошелька.",
+	"securitystep0": "Первым делом <strong>скачайте</strong> этот веб-сайт с Github, распакуйте и откройте файл index.html непосредственно с Вашего компьютера. Cпрятать вредоносный код в 6000+ строках javascript, чтобы украсть Ваш закрытый ключ, довольно просто, а Вам вряд ли этого хочется. Система контроля версий позволяет значительно упростить взаимную проверку исполняемого кода. Для большей безопасности <strong>отключитесь от Интернета</strong> на время создания кошелька.",
 	"securitystep1title": "Шаг 1. Создайте новый адрес",
 	"securitystep1": "Выберите Вашу валюту и нажмите на кнопку \"Создать новый адрес\"",
 	"securitystep2title": "Шаг 2. Распечатайте бумажный кошелек",
@@ -11865,7 +11379,7 @@ ninja.translator = {
 	"detailalertnotvalidprivatekey": "Введенный Вами текст не является закрытым ключом",
 	"securitychecklistrandomOK": "Ваш браузер способен генерировать криптографически случайные ключи с помощью функции window.crypto.getRandomValues",
 	"securitychecklistrandomNOK": "Ваш браузер НЕ поддерживает функцию window.crypto.getRandomValues(), которая важна для генерирования максимально безопасных случайных чисел. Пожалуйста, используйте более современный браузер.",
-	"securitychecklistofflineNOK": "Похоже, что Вы запустили этот генератор с сайта, что не рекомендуется для создания ценных кошельков. Вместо этого, используйте ссылку внизу данной страницы для скачивания ZIP-файла с GitHub и запустите этот генератор из локального HTML-файла, отключив доступ к интернету.",
+	"securitychecklistofflineNOK": "Похоже, что Вы запустили этот генератор с сайта, что не рекомендуется для создания ценных кошельков.",
 	"securitychecklistofflineOK": "Вы запустили генератор из локального файла.",
 	"paperwalletback": "<ul><li>Для пополнения средств этого бумажного кошелька отправьте криптовалюту на его открытый адрес.</li><li>Проверьте Ваш баланс, найдя открытый адрес в просмотрщиках блокчейна, таких как blockchain.info.</li><li><b>НЕ РАССКРЫВАЙТЕ ЗАКРЫТЫЙ КЛЮЧ</b> пока Вы не будете готовы импортировать баланс этого кошелька в крипто-клиент, биржу или онлайн-кошелек.</li></ul><b>Сумма :</b> ___________       <b>Дата :</b> ________________<br /><b>Пометки :</b> ______________________________________",
 },
@@ -11887,7 +11401,7 @@ ninja.translator = {
     "singlelabelprivatekey": "Clave Privada (formato de importación de cartera, WIF)",
     "singlesecret": "SECRETO",
     "securitystep0title": "Paso 0. Sigue las recomendaciones de la lista de verificación de seguridad",
-    "securitystep0": "El primer paso es <strong>descargar</strong> este website de <a href=\"https://github.com/MichaelMure/WalletGenerator.net/archive/master.zip\">Github</a> y abrir el archivo index.html directamente desde tu ordenador. Simplemente, es muy sencillo colar algo de código maligno en el javascript de 6000+ líneas para filtrar tu clave privada, y no querrás ver tus fondos siendo robados. El código de control de versiones facilita mucho saber qué ha funcionado realmente hasta la fecha. Para mayor seguridad, <strong>desconecta tu acceso a internet</strong> mientras estás generando tu cartera.",
+    "securitystep0": "El primer paso es <strong>descargar</strong> este website de Github y abrir el archivo index.html directamente desde tu ordenador. Simplemente, es muy sencillo colar algo de código maligno en el javascript de 6000+ líneas para filtrar tu clave privada, y no querrás ver tus fondos siendo robados. El código de control de versiones facilita mucho saber qué ha funcionado realmente hasta la fecha. Para mayor seguridad, <strong>desconecta tu acceso a internet</strong> mientras estás generando tu cartera.",
     "securitystep1title": "Paso 1. Genera una nueva dirección",
     "securitystep1": "Elige tu criptodivisa y haz click en el botón \"Generar nueva dirección\".",
     "securitystep2title": "Paso 2. Imprime la cartera de papel",
@@ -11949,7 +11463,7 @@ ninja.translator = {
     "detailalertnotvalidprivatekey": "El texto introducido no es una clave privada válida",
     "securitychecklistrandomOK": "Tu navegador es capaz de generar claves criptográficamente aleatorias utilizando window.crypto.getRandomValues",
     "securitychecklistrandomNOK": "Tu navegador NO soporta window.crypto.getRandomValues(), que es importante para generar los números aleatorios más seguros posibles. Utiliza un navegador más moderno.",
-    "securitychecklistofflineNOK": "Pare que estás ejecutando este generador desde un sitio online, lo que no se recomienda si vas a crear carteras valiosas. En vez de esto, utiliza el enlace de descarga al final de esta página para descargar un archivo ZIP de GitHub y ejecuta este generador offline como un archivo HTML 'local'.",
+    "securitychecklistofflineNOK": "Pare que estás ejecutando este generador desde un sitio online, lo que no se recomienda si vas a crear carteras valiosas.",
     "securitychecklistofflineOK": "Estás ejecutando este generador de forma local.",
     "paperwalletback": "<ul><li>Para depositar fondos en esta cartera de papel, envía criptomonedas a su dirección pública, en cualquier momento.</li><li>Comprueba tu balance buscando la dirección pública en un explorador de bloques como blockchain.info.</li><li><b>NUNCA REVELES LA CLAVE PRIVADA</b> hasta que estés listo para importar el balance de esta cartera a un cliente de criptomoneda, portal de cambio o cartera online.</li></ul><b>Cantidad:</b> ___________       <b>Fecha:</b> ________________<br /><b>Notas:</b> ______________________________________",
 },
@@ -11978,7 +11492,7 @@ ninja.translator = {
 	"singlelabelprivatekey": "Chiave Privata (formato WIF)",
 	"singlesecret": "SEGRETO",
 	"securitystep0title": "Passo 0. Seguire le raccomandazioni dell'elenco di sicurezza",
-	"securitystep0": "Il primo passo è quello di <strong> scaricare </ strong> questo sito da <a href=\"https://github.com/MichaelMure/WalletGenerator.net/archive/master.zip\">Github</a> ed aprire il file index.html direttamente nel computer.È troppo facile aggiungere codice dannoso alle oltre 6000 linee di script Java per intercettare la vostra chiave privata, e non vuoi vedere i tuoi fondi rubati, non è vero? La versione del codice sorgente rende molto più semplice verificare da parte di persone esterne il codice che viene eseguito. Per una maggiore sicurezza, <strong> scollegare l'accesso a Internet </ strong> durante la generazione del portafogli.",
+	"securitystep0": "Il primo passo è quello di <strong> scaricare </ strong> questo sito da Github ed aprire il file index.html direttamente nel computer.È troppo facile aggiungere codice dannoso alle oltre 6000 linee di script Java per intercettare la vostra chiave privata, e non vuoi vedere i tuoi fondi rubati, non è vero? La versione del codice sorgente rende molto più semplice verificare da parte di persone esterne il codice che viene eseguito. Per una maggiore sicurezza, <strong> scollegare l'accesso a Internet </ strong> durante la generazione del portafogli.",
 	"securitystep1title": "Passo 1. Generare un nuovo indirizzo",
 	"securitystep1": "Scegli la tua valuta e fai clic sul pulsante \"Generazione nuovo indirizzo\".",
 	"securitystep2title": "Passo 2. Stampare il Vostro portafogli",
@@ -12048,7 +11562,7 @@ ninja.translator = {
 	"detailalertnotvalidprivatekey": "Il testo inserito non rappresenta una Chiave Privata valida",
 	"securitychecklistrandomOK": "Il tuo browser è in grado di generare chiavi crittografiche sicure usando window.crypto.getRandomValues",
 	"securitychecklistrandomNOK": "Il tuo browser NON supporta window.crypto.getRandomValues (), importante per generare i portafogli più sicuri. Utilizza un browser più moderno. ",
-	"securitychecklistofflineNOK": "Sembra che utilizzi questo generatore direttamente dal sito web, che non è raccomandato per la generazione di portafogli. Utilizza invece il link di download in fondo a questa pagina per scaricare un archivio ZIP da Github e eseguire questo generatore offline come file HTML locale.",
+	"securitychecklistofflineNOK": "Sembra che utilizzi questo generatore direttamente dal sito web, che non è raccomandato per la generazione di portafogli.",
 	"securitychecklistofflineOK": "Esegui questo generatore dal tuo download.",
 	"paperwalletback": "<ul><li>Per trasferire i fondi a questo portafogli, inviare i fondi all' indirizzo pubblico in qualsiasi momento.</li><li>Verificare il vostro saldo cercando l'Indirizzo pubblico in un Blockchain explorer.</li><li><b>NON RIVELARE LA CHIAVE PRIVATA</b> fino a quando non si desidera importare proprio saldo in un portafoglio software.</li></ul><b>Quantità :</b> ___________       <b>Data :</b> ________________<br /><b>Note :</b> ______________________________________",
 	"paperlabelbitcoinaddress": "Indirizzo Bitcoin:",
@@ -12078,7 +11592,7 @@ ninja.translator = {
     "singlelabelprivatekey": "Приватний ключ (формат імпорту гаманця - WIF)",
     "singlesecret": "СЕКРЕТНИЙ (ЗАХОВАТИ)",
     "securitystep0title": "Крок 0. Дотримуйтесь рекомендацій \"Пам'ятки безпеки\"",
-    "securitystep0": "Насамперед <strong>завантажте</strong> цей сайт з <a href=\"https://github.com/MichaelMure/WalletGenerator.net/archive/master.zip\">Github</a>, розархівуйте його і безпосередньо з вашого комп'ютера відкрийте файл index.html. Це достатньо просто сховати деякий шкідливий код у 6000+ рядків javascript, щоб поцупити ваш приватний ключ, але ви ж не хочете довідатися, що ваші кошти вкрадено. Контроль версії кода дозволяє набагато простіше перевіряти діючу програму. Для забезпечення додаткової безпеки, <strong>відключіть доступ до Інтернету</strong> під час створення вашого гаманця.",
+    "securitystep0": "Насамперед <strong>завантажте</strong> цей сайт з Github, розархівуйте його і безпосередньо з вашого комп'ютера відкрийте файл index.html. Це достатньо просто сховати деякий шкідливий код у 6000+ рядків javascript, щоб поцупити ваш приватний ключ, але ви ж не хочете довідатися, що ваші кошти вкрадено. Контроль версії кода дозволяє набагато простіше перевіряти діючу програму. Для забезпечення додаткової безпеки, <strong>відключіть доступ до Інтернету</strong> під час створення вашого гаманця.",
     "securitystep1title": "Крок 1. Створіть нову адресу",
     "securitystep1": "Оберіть вашу валюту й клацніть на кнопку \"Створити нову адресу\".",
     "securitystep2title": "Крок 2. Роздрукуйте паперовий гаманець",
@@ -12140,7 +11654,7 @@ ninja.translator = {
     "detailalertnotvalidprivatekey": "Текст, що ви його ввели, не є дійсним приватним ключем",
     "securitychecklistrandomOK": "Ваш переглядач спроможен генерувати криптографічно випадкові ключі за допомогою window.crypto.getRandomValues",
     "securitychecklistrandomNOK": "Ваш переглядач НЕ підтримує window.crypto.getRandomValues(), що є необхідним для генерації найбезпечніших випадкових чисел. Будь ласка, використовуйте сучасніший переглядач.",
-    "securitychecklistofflineNOK": "Здається, що ви запустили цей генератор із сайту, який не рекомендується для створення цінних гаманців. Замість цього, використовуйте посилання внизу цієї сторінки, щоб завантажити ZIP файл з GitHub та запустіть цей генератор із HTML файла на вашому комп'ютері, відключивши попередньо інтернет.",
+    "securitychecklistofflineNOK": "Здається, що ви запустили цей генератор із сайту, який не рекомендується для створення цінних гаманців.",
     "securitychecklistofflineOK": "Ви запустили цей генератор із вашого власного завантаженого файла.",
     "paperwalletback": "<ul><li>Внести гроші на паперовий гаманець: відправте кошти на публічну адресу.</li><li>Перевірити стан рахунку: введіть публічну адресу гаманця в оглядач блокчейна (для біткойна це blockchain.info).</li><li><b>НІКОЛИ НІКОМУ НЕ ПОКАЗУЙТЕ ПРИВАТНИЙ КЛЮЧ</b>, аж поки ви не зберетесь імпортувати кошти з цього гаманця на інший будь-який гаманець.</li></ul><b>Кількість :</b> ___________      <b>Дата :</b> ____________<br /><b>Нотатки :</b> _______________________________",
 },
@@ -12158,7 +11672,7 @@ ninja.translator = {
     "bip38alertpassphraserequired": "BIP38 anahtari için sifre gereklidir",
 	"securitychecklistrandomOK": "Tarayıcınız window.crypto.getRandomValues kullanarak kriptografik olarak rastgele anahtarlar üretebilir.",
 	"securitychecklistrandomNOK": "Tarayiciniz, mümkün olan en güvenli rasgele sayilari üretmek için önemli olan \'window.crypto.getRandomValues ()\' ögesini desteklemiyor!. Lütfen daha modern bir tarayici kullanin.",
-	"securitychecklistofflineNOK": "Bu Cüzdan üretecini canli bir web sitesinden calistirdiginiz gorülüyor; Bu yontem degerli bir cuzdan yaratmak icin onerilmiyor. Bunun yerine, Bu sistemin bir kopyasini GitHub'dan indirmeniz ve Cevrim Disi bir \'YEREL\' HTML dosyasi olarak calistirmaniz oneriliyor. Asagidaki indirme linkini kullanin.",
+	"securitychecklistofflineNOK": "Bu Cüzdan üretecini canli bir web sitesinden calistirdiginiz gorülüyor; Bu yontem degerli bir cuzdan yaratmak icin onerilmiyor.",
 	"securitychecklistofflineOK": "Bu Ureteci kendi yüklemenizden/bilgisayarinizdan çalistiriyorsunuz :).",
 	"paperwalletback": "<ul><li>Bu kağıt cüzdanına para yatırmak için her zaman ortak adresine kripto para birimi gönderin.</li><li>Blockchain.info gibi bir blok gezgini site araciligi ile yerel adresinizdeki bakiyeyi dogrulayin</li><li><b>PRIVATE KEY KESINLIKLE YAYINLAMAYIN</b>Ta ki bu cüzdan üzerindeki bakiyeyi, bir sifreleme sunucusu, Borsa veya çevrimiçi cüzdan'a aktarmaya hazir olana kadar.</li></ul><b>Miktar :</b> ___________ &nbsp; &nbsp; &nbsp; <b>Tarih :</b> ________________<br /><b>Notlar :</b> ______________________________________",
 },
@@ -12180,7 +11694,7 @@ ninja.translator = {
     "singlelabelprivatekey": "Klucz prywatny (format WIF)",
     "singlesecret": "TAJNE",
     "securitystep0title": "Krok 0. Sprawdź listę zaleceń bezpieczeństwa.",
-    "securitystep0": "Po pierwsze - <strong>pobierz</strong> tę stronę z <a href=\"https://github.com/MichaelMure/WalletGenerator.net/archive/master.zip\">Githuba</a> i otwórz plik index.html bezpośrednio ze swojego komputera. Wprowadzenie złośliwego kodu do strony, która zawiera ponad 6000 linijek kodu javascript jest dość proste i może skutkować wyciekiem Twojego klucza prywatnego, a co za tym idzie, utratą wszystkich środków z portfela. Aby zapewnić dodatkowe bezpieczeństwo, należy <strong>odłączyć się od Internetu</strong> podczas generowania portfela dla bezpieczeństwa.",
+    "securitystep0": "Po pierwsze - <strong>pobierz</strong> tę stronę <strong>odłączyć się od Internetu</strong> podczas generowania portfela dla bezpieczeństwa.",
     "securitystep1title": "Krok 1. Wygeneruj nowy adres",
     "securitystep1": "Wybierz swoją walutę i naciśnij przycisk \"Generate new address\".",
     "securitystep2title": "Krok 2. Wydrukuj papierowy portfel.",
@@ -12244,9 +11758,9 @@ ninja.translator = {
     "detailalertnotvalidprivatekey": "Wprowadzony tekst nie jest prawidłowym kluczem prywatnym",
     "securitychecklistrandomOK": "Twoja przeglądarka jest w stanie generować kryptograficznie losowe klucze, używając window.crypto.getRandomValues",
     "securitychecklistrandomNOK": "Twoja przeglądarka NIE wspiera window.crypto.getRandomValues(). Jest to istotne dla generowania możliwie najbezpieczniejszych losowych liczb. Prosimy o użycie nowoczesnej przeglądarki.",
-    "securitychecklistofflineNOK": "Wygląda na to, że używasz tego generatora, łącząc się z nim przez internet, czego nie rekomendujemy przy tworzeniu wartościowych portfeli. Zamiast tego, użyj linka na dole strony, aby pobrać plik ZIP z GitHuba i uruchomić ten generator offline jako “lokalny” plik HTML.",
+    "securitychecklistofflineNOK": "Wygląda na to, że używasz tego generatora, łącząc się z nim przez internet, czego nie rekomendujemy przy tworzeniu wartościowych portfeli.",
     "securitychecklistofflineOK": "Używasz tego generatora w wersji offline.",
-    "paperwalletback": "<ul><li> Aby wpłacić dodatkowe fundusze do tego portfela, wyślij bitcoiny na publiczny adres.</li><li> Sprawdź dostępne środki szukając publicznego adresu w usługach takich jak blockchain.info.</li><li><b>NIE ODSŁANIAJ KLUCZA PRYWATNEGO</b> dopóki nie jesteś gotowy na wydanie wszystkich środków, znajdujących się w tym portfelu.</li></ul><b>Wpłacona kwota :</b> ___________       <b>Data :</b> ________________<br /><b>Uwagi :</b> ______________________________________",
+    "paperwalletback": "<ul><li> Aby wpłacić dodatkowe fundusze do tego portfela, wyślij kryptowalutę na publiczny adres.</li><li> Sprawdź dostępne środki szukając publicznego adresu w usługach takich jak blockchain.info.</li><li><b>NIE ODSŁANIAJ KLUCZA PRYWATNEGO</b> dopóki nie jesteś gotowy na wydanie wszystkich środków, znajdujących się w tym portfelu.</li></ul><b>Wpłacona kwota :</b> ___________       <b>Data :</b> ________________<br /><b>Uwagi :</b> ______________________________________",
 },
 		"zh": {
   "choosecurrency": "選擇幣別",
@@ -12265,7 +11779,7 @@ ninja.translator = {
     "singlelabelprivatekey": "私鑰(可導入電子錢包客戶端)",
     "singlesecret": "私鑰",
     "securitystep0title": "首先：安全檢查清單建議的步驟",
-    "securitystep0": "請先自<a href=\"https://github.com/MichaelMure/WalletGenerator.net/archive/master.zip\">Github</a>處<strong>下載</strong>這個網站，接著直接在您的電腦開啟index.html檔案。為了提高安全性，在生成錢包地址時，請<strong>斷開網路連結</strong>(例如拔除網路線或關閉wifi)。駭客很輕易能在6000多行javascript中找到你的私鑰，透過原始碼版本控制。可以交叉確認是否運行順利。",
+    "securitystep0": "請先自 Github 處<strong>下載</strong>這個網站，接著直接在您的電腦開啟index.html檔案。為了提高安全性，在生成錢包地址時，請<strong>斷開網路連結</strong>(例如拔除網路線或關閉wifi)。駭客很輕易能在6000多行javascript中找到你的私鑰，透過原始碼版本控制。可以交叉確認是否運行順利。",
     "securitystep1title": "第一步：產生新的地址",
     "securitystep1": "選擇欲產生的幣種，接著按下「產生新的地址」按鈕",
     "securitystep2title": "第二步：列印出紙錢包",
@@ -12321,7 +11835,7 @@ ninja.translator = {
     "detailalertnotvalidprivatekey": "您輸入的私鑰無法辨識。",
     "securitychecklistrandomOK": "您的浏览器能够使用window.crypto.getRandomValues生成密码随机密钥",
     "securitychecklistrandomNOK": "您的浏览器不支持window.crypto.getRandomValues（），这对生成可能的最安全的随机数很重要。 请使用更现代的浏览器。",
-    "securitychecklistofflineNOK": "您正透過網際網路使用本產生器網站，但這並不安全。請在網頁最底處前往GitHub並下載ZIP檔，接著在離網環境開啟您所下載的HTML檔案。",
+    "securitychecklistofflineNOK": "您正透過網際網路使用本產生器網站，但這並不安全。",
     "securitychecklistofflineOK": "您正使用電腦中下載後的網頁。",
     "paperwalletback": "<ul><li>若您要使用這個紙錢包，您可以隨時的轉入加密貨幣到公鑰地址。</li><li>您可以透過blockchain.info等類似網站輸入公鑰查詢錢包餘額。在您準備將紙錢包餘額匯出或使用前，</li><li><b>絕對不要公開私鑰</b>。</li></ul><b>餘額：</b> ___________       <b>日期：</b> ________________<br /><b>備註：</b> ______________________________________",
 },
@@ -12467,10 +11981,10 @@ ninja.wallets.paperwallet = {
 			ninja.wallets.paperwallet.showArtisticWallet(idPostFix, bitcoinAddress, privateKeyWif);
 		}
 	},
-	
+
 	// Verify that a self-entered key is valid, and compute the corresponding
 	// public address, render the wallet.
-	testAndApplyVanityKey: function () { 
+	testAndApplyVanityKey: function () {
 		var suppliedKey = document.getElementById('suppliedPrivateKey').value;
 		suppliedKey = suppliedKey.trim(); // in case any spaces or whitespace got pasted in
 		document.getElementById('suppliedPrivateKey').value = suppliedKey;
@@ -12513,11 +12027,11 @@ ninja.wallets.paperwallet = {
 		var keyValuePair = {};
 		keyValuePair["qrcode_public" + idPostFix] = bitcoinAddress;
 		ninja.qrCode.showQrCode(keyValuePair, 3.5);
-		
+
         var keyValuePair = {};
         keyValuePair["qrcode_private" + idPostFix] = privateKey;
         ninja.qrCode.showQrCode(keyValuePair, 2.8);
-        
+
         document.getElementById("btcaddress" + idPostFix).innerHTML = bitcoinAddress;
 		document.getElementById("btcprivwif" + idPostFix).innerHTML = privateKey;
 	},
@@ -12586,8 +12100,8 @@ ninja.wallets.bulkwallet = {
 			bulkWallet.csv.push((bulkWallet.csvRowLimit - bulkWallet.csvRowsRemaining + bulkWallet.csvStartIndex)
 								+ ",\"" + key.getBitcoinAddress() + "\",\"" + key.toString("wif")
 			//+	"\",\"" + key.toString("wifcomp")    // uncomment these lines to add different private key formats to the CSV
-			//+ "\",\"" + key.getBitcoinHexFormat() 
-			//+ "\",\"" + key.toString("base64") 
+			//+ "\",\"" + key.getBitcoinHexFormat()
+			//+ "\",\"" + key.toString("base64")
 								+ "\"");
 
 			document.getElementById("bulktextarea").value = ninja.translator.get("bulkgeneratingaddresses") + bulkWallet.csvRowsRemaining;
@@ -12722,7 +12236,7 @@ ninja.wallets.detailwallet = {
 		document.getElementById("detailarea").style.display = "block";
 		document.getElementById("detailprivkey").focus();
 		if (!ninja.wallets.detailwallet.qrscanner.scanner) {
-			ninja.wallets.detailwallet.qrscanner.scanner = new QRCodeScanner(320, 240, 'paperqroutput', 
+			ninja.wallets.detailwallet.qrscanner.scanner = new QRCodeScanner(320, 240, 'paperqroutput',
 				function(data) {
 					document.getElementById('detailprivkey').value = data;
 					document.getElementById('paperqrscanner').className = '';
@@ -12878,12 +12392,12 @@ ninja.wallets.donate = {
     close: function () {
         document.getElementById("donatearea").style.display = "none";
     },
-    
+
     displayQrCode: function (currencyid, e) {
         var keyValuePair = {};
     	keyValuePair["donateqrcode"] = janin.currencies[currencyid].donate;
 		ninja.qrCode.showQrCode(keyValuePair, 4);
-        
+
         document.getElementById("donateqrcode").style.display = "block";
         document.getElementById("donateqrcode").style.top = (e.offsetTop+15) + 'px';
     }
@@ -13566,9 +13080,9 @@ if (ninja.getQueryString()["i18nextract"]) {
     elem.setAttribute("rows", "30");
     elem.setAttribute("style", "width: 99%");
     elem.setAttribute("wrap", "off");
-    
-    a=document.getElementsByClassName("i18n");    
-    
+
+    a=document.getElementsByClassName("i18n");
+
     var i18n = "\"" + culture + "\": {\n";
     for(x=0; x<a.length; x++) {
         i18n += "\t";
@@ -13588,9 +13102,9 @@ if (ninja.getQueryString()["i18nextract"]) {
             i18n += "(ENGLISH)" + cleani18n(ninja.translator.translations["en"][ninja.translator.staticID[x]]);
         i18n += "\",\n";
     }
-    
+
     i18n += "},"
-    
+
     elem.innerHTML = i18n;
     div.appendChild(elem);
     document.body.appendChild(div);
