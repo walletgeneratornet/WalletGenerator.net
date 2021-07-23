@@ -1,0 +1,5 @@
+stackbitVersion: ~0.3.0
+ssgName: nextjs
+cmsName: git
+nodeVersion: 12
+devCommand: npm run build
