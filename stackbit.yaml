@@ -1,0 +1,4 @@
+stackbitVersion: ~0.3.0
+ssgName: gatsby
+cmsName: netlifycms
+nodeVersion: 12
