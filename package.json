@@ -4,7 +4,7 @@
   "description": "Open Source JavaScript Client-Side Bitcoin Wallet Generator",
   "main": "Gruntfile.js",
   "dependencies": {
-    "grunt": "~0.4.1",
+    "grunt": "~1.5.3",
     "grunt-combine": "~0.8.3",
     "grunt-lineending": "~0.2.4"
   },
